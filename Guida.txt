@@ -1,0 +1,6 @@
+Questo è un piccolo programma da riga di comando che si prefigge lo scopo di gestire dei siti di cui 
+si svolge la funzione di amministratore, fornisce informazioni sulla connessione, l'hostname e avvia
+connessioni ftp per l'aggiornamento remoto delle pagine e dei contenuti del sito.
+Le opzioni del comando Trm sono:
+-i                    Emette gli indirizzi IP e l'indirizzo dei siti passati come argomento
+
