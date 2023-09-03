@@ -5,6 +5,8 @@ package linea;
  * di comando dei sistemi LINUX based.
  * @author Luca Alzetta
  */
+import java.io.Console;
+import java.io.IOException;
 public class Argos 
 {
     /**
@@ -26,7 +28,7 @@ this.CARATTERI = new int[0];
 System.out.println("Costruttore di default della classe Argos");
 }
 
-public Argos(String[] argomenti)
+public Argos(String[] argomenti)throws IOException
 {
     /**
      * Costruttore per la riga di comando, si dovrà porre molta attenzione al trattamento 
@@ -58,19 +60,54 @@ for(int b = 0; b < caratteri; b++)
     }
 
 System.out.printf("Numero di caratteri passati dalla riga di comando: %d%n",caratteri);
+this.options(CARATTERI);
 }
 
-private void options(int[] argomenti)
+private void options(int[] argomenti)throws IOException
 {
 /**
  * Questo metodo riceve l'array sotto forma di numeri interi degli argomenti passati 
  * al costruttore e ne estrae le opzioni per l'esecuzione del codice, ricorreremo alle
  * somme dei valori interi dei caratteri per stabilire quali azioni eseguire.
+ * @param opzioni definirà il valore delle opzioni.
+ * @param i contatore
+ * @param saluto stringa di appoggio
  */
  int opzioni = 0;
+ int i = 0;
+ String saluto;
+ 
  if (argomenti.length == 0 ) opzioni = 0;
  if (argomenti[0] != 45) opzioni = 0;//45 è il valore del segno '-' trattino alto
- 
+ if (argomenti[0] == 45) 
+    {
+    while ((argomenti[i] != 32) & (i < argomenti.length))//fino al primo spazio
+        {
+            opzioni = opzioni + argomenti[i];
+            i++;
+        }
+    }
+ System.out.printf("Valore della variabile opzioni: %d%n", opzioni);//riga di debug
+ switch (opzioni)
+    {
+     case 45:
+         System.out.printf("Non è stata specificata alcuna opzione valida!%n");
+         break;
+     case 149:
+         System.out.printf("É stata scelta l'opzione 'h'%n");
+         InputStream is = new InputStream("/home/luca/GDrive/Luca/Programmazione/JAVA/Terminale/Maschera.txt");
+        int lunghezzaFile = is.getLength();
+        System.out.printf("La lunghezza del file selezionato è; %d byte\n", lunghezzaFile);
+        is.mostraFile();
+        Console cs = System.console();
+        saluto = cs.readLine("\n");
+        cs.printf("Dal tuo input è stato letto: %s\n", saluto);
+         break;
+     case 150:
+         System.out.printf("É stata scelta l'opzione 'i'%n");
+         break;
+         
+    }
     
 }
 }

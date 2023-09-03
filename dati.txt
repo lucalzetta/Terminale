@@ -41,3 +41,4 @@ Carattere N° 37 dell'array, valore numerico: 97 rappresentazione del carattere:
 Carattere N° 38 dell'array, valore numerico: 39 rappresentazione del carattere: '''
 Carattere N° 39 dell'array, valore numerico: 32 rappresentazione del carattere: ' '
 Numero di caratteri passati dalla riga di comando: 40
+Valore della variabile opzioni: 260

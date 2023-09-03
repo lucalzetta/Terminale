@@ -1,0 +1,9 @@
+**************************************************************************************
+*                                                                                    *
+* 1) fornisce le informazioni su un elenco di siti passati come parametro            *
+*                                                                                    *
+* 2) avvia un server ftp che punta ad un sito passato come parametro                 *
+*                                                                                    *
+* 3) avvia un server html che punta ad un sito passato come parametro                *
+*                                                                                    *
+**************************************************************************************
