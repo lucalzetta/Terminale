@@ -23,6 +23,11 @@ public InputStream(String nomeFile)throws IOException
 }
 
 public int getLength()
+        /**
+         * Questo metodo consente di determinare la lunghezza di un file passato 
+         * come argomento in byte, può tornere utile nel dimensionamento di array 
+         * di byte da utilizzare nel programma.
+         */
 {
 int lunghezzaFile = 0;
 boolean b = true;
@@ -49,6 +54,9 @@ public void mostraFile()
 /**
 *Questo metodo mostra tutti i caratteri del fileInputStream.
 *Va a capo in corrispondenza di un carattere di ritorno a capo.
+* Un primo utilizzo ne viene fatto nella classe Argos per visualizzare
+* a console il file Maschera.txt in cui si sono memorizzate le opzioni 
+* di lancio del programma.
 */
 java.io.InputStream nf = null;
     

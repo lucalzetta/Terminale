@@ -14,8 +14,8 @@ public class Argos
      * @param ARGOMENTI è la stringa degli argomenti così come viene inserita dall'utente
      * @param CARATTERI contiene la stringa degli argomenti convertita in cifre
      */
-private String[] ARGOMENTI;
-private int[] CARATTERI;
+private final String[] ARGOMENTI;
+private final int[] CARATTERI;
 
 public Argos()
 {
@@ -61,6 +61,7 @@ for(int b = 0; b < caratteri; b++)
 
 System.out.printf("Numero di caratteri passati dalla riga di comando: %d%n",caratteri);
 this.options(CARATTERI);
+System.out.printf("Costruttore con parametri della classe Argos, risultato dell'elaborazione dei parametri %s%n",this.parametri(CARATTERI));
 }
 
 private void options(int[] argomenti)throws IOException
@@ -90,9 +91,36 @@ private void options(int[] argomenti)throws IOException
  System.out.printf("Valore della variabile opzioni: %d%n", opzioni);//riga di debug
  switch (opzioni)
     {
+     /**
+      * Questo caso fa uscire dalla procedura nel caso in cui non ci siano 
+      * opzioni valide
+      */
+     case 0:
+         break;
+     /**
+      * Questo caso ci aiuta a capire se il primo carattere delle opzioni è un trattino 
+      * alto 45.
+      */
      case 45:
          System.out.printf("Non è stata specificata alcuna opzione valida!%n");
          break;
+     /**
+      * Questo caso valuta se si è scelto di visualizzare le informazioni di base
+      * di un sito, passato senza parametri del sito da analizzare dovrà fornire le
+      * informazioni di un sito di default. Carattere 'i' 105
+      */     
+     case 150:
+         //a questo punto bisogna controllare la presenza di argomenti e passarli 
+         //alla procedura che fornisce le informazioni le prossime righe sono di 
+         //test, da modificare
+         InfoNet in = new InfoNet("menocchio.it");
+         saluto = in.genericInfos();
+         System.out.printf("É stata scelta l'opzione 'i'%nRisultato dell'elaborazione %s%n", saluto);
+         break;
+         /**
+          * Questo caso valuta se si è scelto di visualizzare le istruzioni del 
+          * programma. Carattere 'h' 104
+          */
      case 149:
          System.out.printf("É stata scelta l'opzione 'h'%n");
          InputStream is = new InputStream("/home/luca/GDrive/Luca/Programmazione/JAVA/Terminale/Maschera.txt");
@@ -103,11 +131,54 @@ private void options(int[] argomenti)throws IOException
         saluto = cs.readLine("\n");
         cs.printf("Dal tuo input è stato letto: %s\n", saluto);
          break;
-     case 150:
-         System.out.printf("É stata scelta l'opzione 'i'%n");
-         break;
-         
+     
     }
+}
+ private String parametri(int[] testo)
+ {
+ /**
+  * Questo metodo riceve dal costruttore l'array di caratteri degli argomenti 
+  * della linea di comando e ne estrae i parametri restituendo una stringa che 
+  * dovrebbe contenere i parametri per la ricerca dei siti e restituirli 
+  * in un array di stringhe.
+  * Correggere i tipi restituiti 04/09/2023
+  */
+     
+String disc = "";
+int opzioni = 0;
+int i = 0;
+
+if (testo.length == 0 ) opzioni = 0;
+
+if (testo[0] != 45)//45 è il valore del segno '-' trattino alto
+    {
+     while (i < testo.length)//fino alla fine del tasto
+        {
+         while (testo[i] != 32)//fino al primo spazio
+         {
+            disc = disc + (char)testo[i]; 
+            i++;
+         }
+         i++;       
+        }
+
+    }
+
+if (testo[0] == 45) 
+    {
+    while ((testo[i] != 32) & (i < testo.length))//fino al primo spazio
+        {
+            i++;
+        }
+    while (i < testo.length)//fino alla fine del tasto
+        {
+            disc = disc + (char)testo[i]; 
+            i++;
+        }    
+    }
+
+return disc;
+ }
     
 }
-}
+
