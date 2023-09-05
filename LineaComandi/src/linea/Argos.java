@@ -75,12 +75,19 @@ private void options(int[] argomenti)throws IOException
  * @param saluto stringa di appoggio
  */
  int opzioni = 0;
+ String argos = "";
  int i = 0;
  String saluto;
  
- if (argomenti.length == 0 ) opzioni = 0;
- if (argomenti[0] != 45) opzioni = 0;//45 è il valore del segno '-' trattino alto
- if (argomenti[0] == 45) 
+ if (argomenti.length == 0 ) 
+    {
+        opzioni = 0;
+    }
+ else if (argomenti[0] != 45) //45 è il valore del segno '-' trattino alto
+    {
+        opzioni = 0;
+    }
+else if (argomenti[0] == 45) 
     {
     while ((argomenti[i] != 32) & (i < argomenti.length))//fino al primo spazio
         {
@@ -89,6 +96,13 @@ private void options(int[] argomenti)throws IOException
         }
     }
  System.out.printf("Valore della variabile opzioni: %d%n", opzioni);//riga di debug
+ 
+/**
+ * A questo punto bisogna passare il controllo al metodo argomenti per l'estrazione degli argomenti
+ * di elaborazione, dopo di che, il codice successivo va inserito in un metodo a parte per le elaborazioni 
+ * complete.
+ */
+ 
  switch (opzioni)
     {
      /**
@@ -113,9 +127,13 @@ private void options(int[] argomenti)throws IOException
          //a questo punto bisogna controllare la presenza di argomenti e passarli 
          //alla procedura che fornisce le informazioni le prossime righe sono di 
          //test, da modificare
-         InfoNet in = new InfoNet("menocchio.it");
+         InfoNet in = new InfoNet(argos);
          saluto = in.genericInfos();
          System.out.printf("É stata scelta l'opzione 'i'%nRisultato dell'elaborazione %s%n", saluto);
+         saluto = in.localInfos();
+         System.out.printf("%nRisultato della ricerca di interfacce locali:%n %s%n", saluto);
+         saluto = in.mieInfos();
+         System.out.printf("%nRisultato della ricerca del mio indirizzo host: %s%n", saluto);
          break;
          /**
           * Questo caso valuta se si è scelto di visualizzare le istruzioni del 
@@ -148,9 +166,11 @@ String disc = "";
 int opzioni = 0;
 int i = 0;
 
-if (testo.length == 0 ) opzioni = 0;
-
-if (testo[0] != 45)//45 è il valore del segno '-' trattino alto
+if (testo.length == 0 ) 
+    {
+        opzioni = 0;
+    }
+else if (testo[0] != 45)//45 è il valore del segno '-' trattino alto
     {
      while (i < testo.length)//fino alla fine del tasto
         {
@@ -164,7 +184,7 @@ if (testo[0] != 45)//45 è il valore del segno '-' trattino alto
 
     }
 
-if (testo[0] == 45) 
+else if (testo[0] == 45) 
     {
     while ((testo[i] != 32) & (i < testo.length))//fino al primo spazio
         {

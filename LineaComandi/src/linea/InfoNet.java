@@ -9,6 +9,7 @@ package linea;
  */
 
 import java.net.*;
+import java.util.*;
 
 public class InfoNet 
 {
@@ -45,6 +46,38 @@ catch (UnknownHostException uh)
     {
     System.err.printf("Nome di dominio non riconosciuto: ", uh);
     }
+return inf;
+}
+
+public String localInfos()throws SocketException
+{
+String inf="";
+Enumeration<NetworkInterface> interfaces = NetworkInterface.getNetworkInterfaces();
+while(interfaces.hasMoreElements())
+    {
+        NetworkInterface ni = interfaces.nextElement();
+        inf = inf + interfaces.nextElement().toString() + "\n";
+        System.out.printf("%s", ni);
+    }
+System.out.printf("%s", inf);
+
+return inf;
+}
+
+public String mieInfos()
+{
+String inf = "";
+
+    try 
+    {
+      InetAddress me = InetAddress.getLocalHost();
+      inf = me.getHostAddress();
+      System.out.println("Il mio indirizzo è: " + inf);
+    } 
+    catch (UnknownHostException ex) 
+        {
+      System.out.println("Non riesco a trovare il mio indirizzo.");
+        }
 return inf;
 }
 }
