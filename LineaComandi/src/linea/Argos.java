@@ -16,6 +16,7 @@ public class Argos
      */
 private final String[] ARGOMENTI;
 private final int[] CARATTERI;
+private final String PARAMETRI;
 
 public Argos()
 {
@@ -25,6 +26,7 @@ public Argos()
      */
 this.ARGOMENTI = new String[0];
 this.CARATTERI = new int[0];
+PARAMETRI = "";
 System.out.println("Costruttore di default della classe Argos");
 }
 
@@ -54,14 +56,15 @@ for(int a = 0; a < caratteri; a++)
         CARATTERI[a] = testo.charAt(a);
     }
 
-for(int b = 0; b < caratteri; b++)
+/*for(int b = 0; b < caratteri; b++)
     {
         System.out.printf("Carattere N° %d dell'array, valore numerico: %d rappresentazione del carattere: '%c'%n",b, CARATTERI[b],CARATTERI[b]);
     }
-
-System.out.printf("Numero di caratteri passati dalla riga di comando: %d%n",caratteri);
+*/
+//System.out.printf("Numero di caratteri passati dalla riga di comando: %d%n",caratteri);
 this.options(CARATTERI);
-System.out.printf("Costruttore con parametri della classe Argos, risultato dell'elaborazione dei parametri %s%n",this.parametri(CARATTERI));
+this.PARAMETRI = parametri(CARATTERI);
+System.out.printf("Costruttore con parametri della classe Argos, risultato dell'elaborazione dei parametri %s%n",PARAMETRI);
 }
 
 private void options(int[] argomenti)throws IOException
@@ -75,9 +78,9 @@ private void options(int[] argomenti)throws IOException
  * @param saluto stringa di appoggio
  */
  int opzioni = 0;
- String argos = "";
+ //String argos = "";
  int i = 0;
- String saluto;
+ //String saluto;
  
  if (argomenti.length == 0 ) 
     {
@@ -102,7 +105,59 @@ else if (argomenti[0] == 45)
  * di elaborazione, dopo di che, il codice successivo va inserito in un metodo a parte per le elaborazioni 
  * complete.
  */
+ evalOpz(opzioni, ARGOMENTI[1]);
  
+}
+ private String parametri(int[] testo)
+ {
+ /**
+  * Questo metodo riceve dal costruttore l'array di caratteri degli argomenti 
+  * della linea di comando e ne estrae i parametri restituendo una stringa che 
+  * dovrebbe contenere i parametri per la ricerca dei siti e restituirli 
+  * in un array di stringhe.
+  * Correggere i tipi restituiti 04/09/2023
+  */
+     
+String disc = "";
+int i = 0;
+
+if (testo.length == 0 ) 
+    {
+        
+    }
+else if (testo[0] != 45)//45 è il valore del segno '-' trattino alto
+    {
+     while (i < testo.length)//fino alla fine del tasto
+        {
+         while (testo[i] != 32)//fino al primo spazio
+         {
+            disc = disc + (char)testo[i]; 
+            i++;
+         }
+         i++;       
+        }
+
+    }
+
+else if (testo[0] == 45) 
+    {
+    while ((testo[i] != 32) & (i < testo.length))//fino al primo spazio
+        {
+            i++;
+        }
+    while (i < testo.length)//fino alla fine del testo
+        {
+            disc = disc + (char)testo[i]; 
+            i++;
+        }    
+    }
+
+return disc;
+ }
+
+ private void evalOpz(int opzioni, String argos)throws IOException
+ {
+String saluto;     
  switch (opzioni)
     {
      /**
@@ -151,54 +206,5 @@ else if (argomenti[0] == 45)
          break;
      
     }
-}
- private String parametri(int[] testo)
- {
- /**
-  * Questo metodo riceve dal costruttore l'array di caratteri degli argomenti 
-  * della linea di comando e ne estrae i parametri restituendo una stringa che 
-  * dovrebbe contenere i parametri per la ricerca dei siti e restituirli 
-  * in un array di stringhe.
-  * Correggere i tipi restituiti 04/09/2023
-  */
-     
-String disc = "";
-int opzioni = 0;
-int i = 0;
-
-if (testo.length == 0 ) 
-    {
-        opzioni = 0;
-    }
-else if (testo[0] != 45)//45 è il valore del segno '-' trattino alto
-    {
-     while (i < testo.length)//fino alla fine del tasto
-        {
-         while (testo[i] != 32)//fino al primo spazio
-         {
-            disc = disc + (char)testo[i]; 
-            i++;
-         }
-         i++;       
-        }
-
-    }
-
-else if (testo[0] == 45) 
-    {
-    while ((testo[i] != 32) & (i < testo.length))//fino al primo spazio
-        {
-            i++;
-        }
-    while (i < testo.length)//fino alla fine del tasto
-        {
-            disc = disc + (char)testo[i]; 
-            i++;
-        }    
-    }
-
-return disc;
  }
-    
 }
-
