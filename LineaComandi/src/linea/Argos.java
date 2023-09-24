@@ -183,12 +183,18 @@ String saluto;
          //alla procedura che fornisce le informazioni le prossime righe sono di 
          //test, da modificare
          InfoNet in = new InfoNet(argos);
-         saluto = in.genericInfos();
-         System.out.printf("É stata scelta l'opzione 'i'%nRisultato dell'elaborazione %s%n", saluto);
+         /**
+          * I risultati del controllo delle interfacce locali vengono sempre restituiti tra le informazioni
+          * per evitarlo commentare le seguenti quattro righe di codice
+          */
+
          saluto = in.localInfos();
          System.out.printf("%nRisultato della ricerca di interfacce locali:%n %s%n", saluto);
          saluto = in.mieInfos();
          System.out.printf("%nRisultato della ricerca del mio indirizzo host: %s%n", saluto);
+
+         saluto = in.genericInfos();
+         System.out.printf("É stata scelta l'opzione 'i'%nRisultato dell'elaborazione %s%n", saluto);
          break;
          /**
           * Questo caso valuta se si è scelto di visualizzare le istruzioni del 
