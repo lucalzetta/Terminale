@@ -9,14 +9,14 @@ import java.io.IOException;
 *il contenuto.
  * @author luca
  */
-public class InputStream 
+public class TermInputStream 
 {
 
 private final java.io.InputStream in;
 private int[] dati;
 private final String nomeFile;
 
-public InputStream(String nomeFile)throws IOException
+public TermInputStream(String nomeFile)throws IOException
 {
     this.nomeFile = nomeFile;
     in = new FileInputStream(nomeFile);

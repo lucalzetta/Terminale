@@ -221,7 +221,7 @@ String saluto;
           */
      case 149:
          System.out.printf("É stata scelta l'opzione 'h'%n");
-         InputStream is = new InputStream("/home/luca/GDrive/Luca/Programmazione/JAVA/Terminale/Maschera.txt");
+         TermInputStream is = new TermInputStream("/home/luca/GDrive/Luca/Programmazione/JAVA/Terminale/Maschera.txt");
         int lunghezzaFile = is.getLength();
         System.out.printf("La lunghezza del file selezionato è; %d byte\n", lunghezzaFile);
         is.mostraFile();

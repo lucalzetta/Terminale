@@ -13,6 +13,8 @@ public class princip
 //            Argos ag = new Argos(args);
             /**
              * Inseriamo del codice per testare un URLConnection
+             * Questo tratto è destinato ad una classe specifica per ottenere
+             * le pagine grezze dai siti
              */
             
     if  (args.length > 0) 
@@ -23,9 +25,9 @@ public class princip
         // Open the URLConnection for reading
         URL u = new URL(args[0]);
         URLConnection uc = u.openConnection();
-        try (java.io.InputStream raw = uc.getInputStream()) 
+        try (InputStream raw = uc.getInputStream()) 
         { // autoclose
-          java.io.InputStream buffer = new BufferedInputStream(raw);
+          InputStream buffer = new BufferedInputStream(raw);
           // chain the InputStream to a Reader
           Reader reader = new InputStreamReader(buffer);
           int c;
