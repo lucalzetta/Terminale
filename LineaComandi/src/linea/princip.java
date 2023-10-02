@@ -1,12 +1,48 @@
 package linea;
-import java.io.IOException;
+import java.io.*;
+import java.net.*;
 
 public class princip 
 {
     public static void main(String[] args)throws IOException
-        {
-            System.out.println("Hello world!");
-            Argos ag = new Argos(args);
+    {
+            /**
+             * Codice di test per il debug dell'applicazione
+             */
+//            System.out.println("Hello world!");
+//            Argos ag = new Argos(args);
+            /**
+             * Inseriamo del codice per testare un URLConnection
+             */
+            
+    if  (args.length > 0) 
+    {
+        
+      try 
+      {
+        // Open the URLConnection for reading
+        URL u = new URL(args[0]);
+        URLConnection uc = u.openConnection();
+        try (java.io.InputStream raw = uc.getInputStream()) 
+        { // autoclose
+          java.io.InputStream buffer = new BufferedInputStream(raw);
+          // chain the InputStream to a Reader
+          Reader reader = new InputStreamReader(buffer);
+          int c;
+          while ((c = reader.read()) != -1) 
+          {
+            System.out.print((char) c);
+          }
         }
-    
-}
+      }
+      catch (MalformedURLException ex) 
+      {
+        System.err.println(args[0] + " is not a parseable URL");
+      }
+      catch (IOException ex) 
+      {
+        System.err.println(ex);
+      }
+    }
+  }
+  }

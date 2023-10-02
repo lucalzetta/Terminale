@@ -16,7 +16,7 @@ public class Argos
      */
 private final String[] ARGOMENTI;
 private final int[] CARATTERI;
-private final String PARAMETRI;
+private String PARAMETRI;
 
 public Argos()
 {
@@ -40,31 +40,43 @@ public Argos(String[] argomenti)throws IOException
      */
 this.ARGOMENTI = argomenti;
 int l = ARGOMENTI.length;
+this.PARAMETRI="";
 String testo = "";
 int caratteri = 0;
 
 System.out.printf("Numero di argomenti passati dalla riga di comando: %d%n",l);
-for (int i = 0; i < l; i ++)
-    {
-        caratteri = caratteri + ARGOMENTI[i].length() + 1;//l'aggiunta di uno serve a conteggiare gli spazi tra un argomento e l'altro
-        testo = testo + ARGOMENTI[i] + " ";
-    }
-caratteri = testo.length();
-this.CARATTERI = new int[caratteri];
-for(int a = 0; a < caratteri; a++)
-    {
-        CARATTERI[a] = testo.charAt(a);
-    }
 
-/*for(int b = 0; b < caratteri; b++)
-    {
-        System.out.printf("Carattere N° %d dell'array, valore numerico: %d rappresentazione del carattere: '%c'%n",b, CARATTERI[b],CARATTERI[b]);
-    }
-*/
-//System.out.printf("Numero di caratteri passati dalla riga di comando: %d%n",caratteri);
-this.options(CARATTERI);
-this.PARAMETRI = parametri(CARATTERI);
-System.out.printf("Costruttore con parametri della classe Argos, risultato dell'elaborazione dei parametri %s%n",PARAMETRI);
+for (int i = 0; i < l; i ++)
+        {
+            caratteri = caratteri + ARGOMENTI[i].length() + 1;//l'aggiunta di uno serve a conteggiare gli spazi tra un argomento e l'altro
+            testo = testo + ARGOMENTI[i] + " ";
+        }
+    caratteri = testo.length();
+    this.CARATTERI = new int[caratteri];
+    for(int a = 0; a < caratteri; a++)
+        {
+            CARATTERI[a] = testo.charAt(a);
+        }
+
+    /*for(int b = 0; b < caratteri; b++)
+        {
+            System.out.printf("Carattere N° %d dell'array, valore numerico: %d rappresentazione del carattere: '%c'%n",b, CARATTERI[b],CARATTERI[b]);
+        }
+    */
+    //System.out.printf("Numero di caratteri passati dalla riga di comando: %d%n",caratteri);
+
+if (l>0)
+{
+    
+    this.options(CARATTERI);
+    this.PARAMETRI = parametri(CARATTERI);
+    System.out.printf("Costruttore con parametri della classe Argos, risultato dell'elaborazione dei parametri %s%n",PARAMETRI);
+}
+else
+{
+    System.out.printf("Nessun argomento ottenuto dalla riga di comando. Si forniscono i dati dell'host locale\n");
+    this.options(CARATTERI);
+}
 }
 
 private void options(int[] argomenti)throws IOException
@@ -105,7 +117,14 @@ else if (argomenti[0] == 45)
  * di elaborazione, dopo di che, il codice successivo va inserito in un metodo a parte per le elaborazioni 
  * complete.
  */
- evalOpz(opzioni, ARGOMENTI[1]);
+if (ARGOMENTI.length > 0)
+    {
+        evalOpz(opzioni, ARGOMENTI[1]);
+    }
+else
+    {
+        evalOpz(150, "");
+    }
  
 }
  private String parametri(int[] testo)
@@ -194,7 +213,7 @@ String saluto;
          System.out.printf("%nRisultato della ricerca del mio indirizzo host: %s%n", saluto);
 
          saluto = in.genericInfos();
-         System.out.printf("É stata scelta l'opzione 'i'%nRisultato dell'elaborazione %s%n", saluto);
+         System.out.printf("Risultato dell'elaborazione %s%n", saluto);
          break;
          /**
           * Questo caso valuta se si è scelto di visualizzare le istruzioni del 
