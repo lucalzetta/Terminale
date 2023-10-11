@@ -8,11 +8,11 @@ import java.net.*;
 public class TestGET 
 {
 
-public TestGET()
+public TestGET(String QryString)
 {
     try 
       {
-        URL u = new URL("https://www.menocchio.it/?documenti");
+        URL u = new URL(QryString);
         URLConnection uc = u.openConnection();
       
         java.io.InputStream in = uc.getInputStream();
