@@ -1,6 +1,6 @@
 package linea;
 import java.io.*;
-import java.net.*;
+//import java.net.*;
 
 public class princip 
 {
@@ -20,6 +20,7 @@ public class princip
     if  (args.length > 0) 
     {
      TestGET tg = new TestGET(args[0]);   
+     System.out.println("Elaborazione completata.");
     }
   }
   }
