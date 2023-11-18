@@ -146,7 +146,7 @@ if (testo.length == 0 )
     }
 else if (testo[0] != 45)//45 è il valore del segno '-' trattino alto
     {
-     while (i < testo.length)//fino alla fine del tasto
+     while (i < testo.length)//fino alla fine del testo
         {
          while (testo[i] != 32)//fino al primo spazio
          {
