@@ -13,6 +13,7 @@ import java.io.IOException;
 public class SalvaPagine 
 {
 private String DESTINAZIONE;
+private StringBuilder TESTO;
 
 public SalvaPagine()
 {
