@@ -68,6 +68,8 @@ public void OttieniPagina()
         StringBuilder sb = new StringBuilder();
         StringBuilder file = new StringBuilder();
         SalvaPagine sp = new SalvaPagine(this.ROOT_DIR);
+        ArchivioURLS au = new ArchivioURLS();
+        au.set_root(ROOT_DIR);
         String page = u.getFile();
         String dir = ROOT_DIR;
       System.out.printf("La pagina: %s, verrà salvata in %s%n",page, dir);
@@ -102,7 +104,10 @@ public void OttieniPagina()
                         file.append(sb.charAt(i));
                         i++;
                     }
-                System.out.printf("Trovata l'occorrenza n° %d di <href=\" in posizione: %d\t%s%n",c,i,file.toString());
+                file.append("\n");
+                au.set_origin(file);
+                au.scrivi_su_file();
+                System.out.printf("Trovata l'occorrenza n° %d di <href=\" in posizione: %d\t%s",c,i,file.toString());
                 file.delete(0, file.length());
                 i++;
             }
@@ -111,22 +116,25 @@ public void OttieniPagina()
          */
         i = 0;
         c = 0;
-        f = sb.lastIndexOf("src=");
+        f = sb.lastIndexOf("src=\"");
         while (i < f)
             {
                 c++;
-                i = sb.indexOf("src=", i );
-                i = i + 4;
-                while((sb.charAt(i)!=';')&((sb.charAt(i)!='?'))&((sb.charAt(i)!='>')))
+                i = sb.indexOf("src=\"", i );
+                i = i + 5;
+                while((sb.charAt(i)!=';')&((sb.charAt(i)!='?'))&((sb.charAt(i)!='>'))&((sb.charAt(i)!='"')))
                     {
                         file.append(sb.charAt(i));
                         i++;
                     }
-                System.out.printf("Trovata l'occorrenza n° %d di 'src=' in posizione: %d\t%s%n",c,i,file.toString());
+                file.append("\n");
+                au.set_origin(file);
+                au.scrivi_su_file();
                 file.delete(0, file.length());
+                System.out.printf("Trovata l'occorrenza n° %d di 'src=' in posizione: %d\t%s%n",c,i,file.toString());
                 i++;
             }
-
+        
        }
       catch (IOException ex) 
        {
