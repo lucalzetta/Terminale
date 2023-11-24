@@ -27,10 +27,14 @@ public class princip
         //remota, preferibilmente la home page del sito e di recuperare tutti i 
         //riferimenti di tutto il sito per tentare di scaricarne il contenuto 
         //nella root directory specificata
-        TestGET tg = new TestGET();   
-        tg.setSite(args[0]);
-        tg.setRoot(args[1]);
-        tg.OttieniPagina();
+        //TestGET tg = new TestGET();   
+        //tg.setSite(args[0]);
+        //tg.setRoot(args[1]);
+        //tg.OttieniPagina();
+        //Ulteriore evoluzione 24/11/2023 passando per la classe argos per la validazione degli argomenti
+        //che, in seguito alla verifica imposta le variabili globali necessarie 
+        //al funzionamento del programma
+        Argos as = new Argos(args);
      System.out.println("Elaborazione completata.");
     }
     

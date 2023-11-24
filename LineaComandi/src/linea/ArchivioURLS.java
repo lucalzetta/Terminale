@@ -4,7 +4,7 @@ package linea;
  *
  * @author luca
  * Questa classe si occupa di archiviare in alcuni file tutti i riferimenti 
- * interni ed esterni del sito che sis ta scaricando
+ * interni ed esterni del sito che si sta scaricando
  */
 import java.io.File;
 import java.io.FileOutputStream;
@@ -12,18 +12,21 @@ import java.io.IOException;
 
 public class ArchivioURLS 
 {
-private String ROOTD;
+private final String ROOTD;
 private StringBuilder DATI_ORIGINE;
 
 
 public ArchivioURLS()
 {
-
+//ATTENZIONE! Prima di chiamare questo inizializzatore devono essere istanziate
+//le variabili globali dalla classe VariabiliGlobali()
+VariabiliGlobali vg = new linea.VariabiliGlobali();
+ROOTD = vg.get_root();
 }
 
-public void set_root(String root)
+public String get_root()
 {
-this.ROOTD=root;
+return ROOTD;
 }
 
 public void set_origin (StringBuilder dati)
@@ -33,9 +36,8 @@ this.DATI_ORIGINE=dati;
 
 public void scrivi_su_file()throws IOException
 {
-String nome_file="";
-nome_file = ROOTD + "ListaURLS.txt";
-File file = new File(nome_file);
+VariabiliGlobali vg = new VariabiliGlobali();    
+File file = vg.get_file_URLS();
 FileOutputStream fw = new FileOutputStream(file, true);
 try
     {

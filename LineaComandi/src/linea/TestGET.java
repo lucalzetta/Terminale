@@ -14,9 +14,13 @@ public class TestGET
 {
 private String SITO;
 private String ROOT_DIR;
+private VariabiliGlobali VG;
 
 public TestGET()
 {
+    VG = new VariabiliGlobali();
+    ROOT_DIR = VG.get_root();
+    SITO = VG.get_sito().toString();
 }
 /**
  * Questo costruttore in realtà è un costruttore di default per testare la possibilità 
@@ -31,7 +35,7 @@ public TestGET(String QryString)
 {
     try 
       {
-        URL u = new URL(QryString);
+        URL u = VG.get_sito();
         URLConnection uc = u.openConnection();
       
         java.io.InputStream in = uc.getInputStream();
@@ -49,27 +53,26 @@ public TestGET(String QryString)
        }
 }
 
-public void setSite(String site)
+public String getSite()
 {
-this.SITO = site;
+return VG.get_sito().toString();
 }
 
-public void setRoot(String root)
+public String getRoot()
 {
-this.ROOT_DIR = root;
+return VG.get_root();
 }
 
 public void OttieniPagina()
 {
     try 
       {
-        URL u = new URL(SITO);
+        URL u = VG.get_sito();
         URLConnection uc = u.openConnection();
         StringBuilder sb = new StringBuilder();
         StringBuilder file = new StringBuilder();
         SalvaPagine sp = new SalvaPagine(this.ROOT_DIR);
         ArchivioURLS au = new ArchivioURLS();
-        au.set_root(ROOT_DIR);
         String page = u.getFile();
         String dir = ROOT_DIR;
       System.out.printf("La pagina: %s, verrà salvata in %s%n",page, dir);
