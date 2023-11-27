@@ -41,7 +41,6 @@ File file = vg.get_file_URLS();
 FileOutputStream fw = new FileOutputStream(file, true);
 try
     {
-
         if (this.DATI_ORIGINE != null)
             {
                 for (int i = 0; i < (this.DATI_ORIGINE.length()); i++)

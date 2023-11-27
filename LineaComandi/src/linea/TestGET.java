@@ -14,24 +14,49 @@ public class TestGET
 {
 private String SITO;
 private String ROOT_DIR;
-private VariabiliGlobali VG;
+private VariabiliGlobali VG = new VariabiliGlobali();
 
-public TestGET()
+public TestGET()throws IOException
 {
-    VG = new VariabiliGlobali();
     ROOT_DIR = VG.get_root();
     SITO = VG.get_sito().toString();
+    //riga di test per provare le nuove classi, decommentare le classi interessate
+    TrovaDirs td = new TrovaDirs();
+    td.cerca_dire();
 }
 /**
  * Questo costruttore in realtà è un costruttore di default per testare la possibilità 
  * di scaricare dal sito le sue pagine costruttive, se il test funziona con la pagina
  * passata come argomento dalla linea di comando si può procedere al download completo
  * sfruttando l'impostazione della prima pagina e della root directory di destinazione
- * @param QryString questa variabile può esere impostata manualmente per recuperare una
+ * @param scarica_dati questa variabile può esere impostata manualmente per recuperare una
  * specifica pagina di un sito.
  */
 
-public TestGET(String QryString)
+public TestGET(boolean scarica_dati)
+{
+if(! scarica_dati)
+{
+    /**
+     * Questo if, valuta la richiesta di scaricare i dati e se non è impostata
+     * replica il comportamento di default usato come test.
+     */
+    ROOT_DIR = VG.get_root();
+    SITO = VG.get_sito().toString();
+    //riga di test per provare le nuove classi, decommentare le classi interessate
+    try
+        {
+            TrovaDirs td = new TrovaDirs();
+            td.cerca_dire();
+        }
+    catch(IOException ioe)
+        {
+            System.err.printf("Errore nel costruttore con argomenti della classe "
+                    + "TestGET(): ", ioe);
+        }
+
+}
+else
 {
     try 
       {
@@ -41,41 +66,37 @@ public TestGET(String QryString)
         java.io.InputStream in = uc.getInputStream();
         java.io.InputStream theHTML = new BufferedInputStream(in);
         Reader reader = new InputStreamReader(theHTML);
-        int c;
-        while ((c = reader.read()) != -1) 
-        {
-          System.out.print((char) c);
-        }
+       
+        OttieniPagina();
        }
       catch (IOException ex) 
        {
             System.err.println(ex);
        }
+} 
 }
 
-public String getSite()
-{
-return VG.get_sito().toString();
-}
-
-public String getRoot()
-{
-return VG.get_root();
-}
-
-public void OttieniPagina()
+public void OttieniPagina()throws IOException
 {
     try 
       {
+        String dir = VG.get_destinazione_files_sito();
         URL u = VG.get_sito();
         URLConnection uc = u.openConnection();
         StringBuilder sb = new StringBuilder();
         StringBuilder file = new StringBuilder();
-        SalvaPagine sp = new SalvaPagine(this.ROOT_DIR);
         ArchivioURLS au = new ArchivioURLS();
         String page = u.getFile();
-        String dir = ROOT_DIR;
-      System.out.printf("La pagina: %s, verrà salvata in %s%n",page, dir);
+        //Ci si può trovare nella situazione in cui il nome della pagina da scaricare 
+        //no sia ammesso come nome valido, in questo caso verrà convertito in index.html
+        switch(page)
+            {
+            case "/":
+                page = "index.html";
+            break;    
+            }
+        SalvaPagine sp = new SalvaPagine(dir, page);
+        System.out.printf("La pagina: %s, verrà salvata in %s%n",page, dir);
         java.io.InputStream in = uc.getInputStream();
         java.io.InputStream theHTML = new BufferedInputStream(in);
         Reader reader = new InputStreamReader(theHTML);
@@ -84,15 +105,19 @@ public void OttieniPagina()
          * Questa funzionalità è da migliorare per poterla estendere a tutti 
          * i tipi di file
          */
-        
+/*********************************************************************************/        
+        /**
+         * Questo ciclo legge i byte che il server emette per la pagina richiesta.
+         */        
         int c;
         while ((c = reader.read()) != -1) 
         {
           sb.append((char)c);
           //System.out.print((char) c);
         }
+/*********************************************************************************/        
         /**
-         * Il codice seguente serve a estrarre i riferimenti alle altre pagine del sito
+         * Il codice seguente serve a estrarre i riferimenti alle altre pagine del sito.
          */
         int i = 0;
         c = 0;
@@ -110,12 +135,13 @@ public void OttieniPagina()
                 file.append("\n");
                 au.set_origin(file);
                 au.scrivi_su_file();
-                System.out.printf("Trovata l'occorrenza n° %d di <href=\" in posizione: %d\t%s",c,i,file.toString());
+                //System.out.printf("Trovata l'occorrenza n° %d di <href=\" in posizione: %d\t%s",c,i,file.toString());
                 file.delete(0, file.length());
                 i++;
             }
+/*********************************************************************************/        
          /**
-         * Il codice seguente serve a estrarre i riferimenti alle immagini presenti nella pagina
+         * Il codice seguente serve a estrarre i riferimenti alle immagini presenti nella pagina.
          */
         i = 0;
         c = 0;
@@ -134,10 +160,23 @@ public void OttieniPagina()
                 au.set_origin(file);
                 au.scrivi_su_file();
                 file.delete(0, file.length());
-                System.out.printf("Trovata l'occorrenza n° %d di 'src=' in posizione: %d\t%s%n",c,i,file.toString());
+                //System.out.printf("Trovata l'occorrenza n° %d di 'src=' in posizione: %d\t%s%n",c,i,file.toString());
                 i++;
             }
-        
+/*********************************************************************************/        
+        /**
+         * Il codice seguente serve a scrivere la pagina in un file nella directory locale
+         * di replica del sito.
+         */
+        sp.scrivi();
+/*********************************************************************************/
+        /**
+         * Il codice seguente valuta le directory presenti nel file ListaURLS
+         * e crea l'albero delle directory nel file system locale.
+         */
+        System.out.printf("%nControllo passato a TrovaDirs%n");
+        TrovaDirs td = new TrovaDirs();
+        td.cerca_dire();
        }
       catch (IOException ex) 
        {

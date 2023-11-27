@@ -7,15 +7,20 @@ package linea;
  */
 import java.net.URL;
 import java.io .File;
+import java.io.IOException;
 
 public class VariabiliGlobali 
 {
 private final String ARCHIVIO_DIRS ="ArchivioDIRS.txt";
 private final String LISTA_URLS ="ListaURLS.txt";
+private static String CARTELLA_SITO = "httpdocs";
 private static String ROOT_D;
 private static URL SITO;
 private static File URLS;
 private static File DIRS;
+private static String ARGOMENTI_STRING;
+private static int[] ARGOMENTI_INT;
+private static String OPZIONI;
 
 public VariabiliGlobali()
 {
@@ -27,27 +32,76 @@ SITO = sito;
 }
 
 
-public void set_root(String root_d)
+public void set_root(String root_d)throws IOException
 {
 ROOT_D = root_d;
+CARTELLA_SITO = ROOT_D + CARTELLA_SITO;
+boolean dir = (new File(CARTELLA_SITO)).mkdirs();//crea la cartella, resta false 
+                                                       //se l'operazione fallisce
+if(dir)
+    {
+        System.out.println("Cartella di destinazione del sito: " + CARTELLA_SITO);
+    }
+else
+    {
+        System.out.println("La cartella di destinazione del sito: " + CARTELLA_SITO + ""
+                + " NON è stata creata, VERIFICARE l'errore!");
+    }
 }
 
-public void set_files()
+public void set_files()throws IOException
 {
-URLS = new File (ROOT_D, LISTA_URLS);
-DIRS = new File (ROOT_D, ARCHIVIO_DIRS);
+try
+    {
+        URLS = new File (ROOT_D, LISTA_URLS);
+        if(!URLS.exists())
+            {
+                URLS.createNewFile();
+            }
+        DIRS = new File (ROOT_D, ARCHIVIO_DIRS);
+        if(!DIRS.exists())
+            {
+                DIRS.createNewFile();
+            }
+    }
+catch(IOException ioe)
+    {
+       System.err.printf("Errore nella classe VariabiliGlobali, metodo set_files: ", ioe);
+    }
+}
+
+public void set_args(String argomenti)
+{
+ARGOMENTI_STRING = argomenti;
+}
+
+public void set_int_args(int[] argomenti_interi)
+{
+ARGOMENTI_INT = new int[(argomenti_interi.length)];
+for (int i = 0; i <  argomenti_interi.length; i++)
+    {
+        ARGOMENTI_INT[i] = argomenti_interi[i];
+    }
+}
+
+public void set_opzioni(String opz)
+{
+OPZIONI = opz;
+}
+
+public String get_root()
+{
+return ROOT_D;
 }
 public URL get_sito()
 {
 return SITO;
 }
 
-
-public String get_root()
+public String get_destinazione_files_sito()
 {
-return ROOT_D;
+return CARTELLA_SITO;
 }
-
 public File get_file_URLS()
 {
 return URLS;
@@ -56,6 +110,21 @@ return URLS;
 public File get_file_DIRS()
 {
 return DIRS;
+}
+
+public String get_args()
+{
+return ARGOMENTI_STRING;
+}
+
+public int[] get_int_args()
+{
+return ARGOMENTI_INT;
+}
+
+public String get_opzioni()
+{
+return OPZIONI;
 }
 
 }
