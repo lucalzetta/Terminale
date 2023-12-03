@@ -44,15 +44,24 @@ try
           //System.out.print((char) c);
         }
         c = 0;
-        //System.out.printf("Testo del file %s copiato nello StringBuilder", urle);
+        System.out.printf("Testo del file %s copiato nello StringBuilder", urle);
         //ricostruiamo le righe in successione e cancelliamo le ricorrenze che troviamo
         int y = 0;
-        while(y < 50)//urle.length()
+        while(y < 3)//urle.length())
             {
-                //System.out.printf("Variabili 'segno' %d.%n%n",segno);
+                System.out.printf("Variabili 'segno' %d.%n%n",segno);
                 acapo = urle.indexOf("\n", segno);
                 int x = acapo - segno;
-                riga = new char[(x)];
+                if(x < 0)
+                    {
+                        System.out.printf("Segno di nuova Linea non trovato, riga N°%d%n", y);
+                        //riga = new char[0];
+                        break;
+                    }
+                else
+                    {
+                        riga = new char[(x)];
+                    }
                 int i = 0;
                 System.out.printf("Variabili 'x' %d, 'i' %d, 'acapo' %d, 'segno' %d.%n",x,i,acapo,segno);
                 while ((i < x) & (x != -1))
@@ -61,7 +70,7 @@ try
                         segno ++;
                         i++;
                         System.out.printf("Test di del_URLS_doppi, ripetizione N° %d%n"
-                        + " nel ciclo annidato x vale: %d%n", i,  x);
+                        + " nel ciclo annidato x vale: %d%nsegno vale: %s%n", i,  x, segno);
                     }
                 //carichiamo i dati della variabile 'riga' in una stringa
                 s_riga = "";
@@ -70,11 +79,49 @@ try
                         s_riga =  s_riga + riga[a];
                     }
                 segno = acapo + 1;
+                System.out.printf("s_riga vale %s%n", s_riga);
                 //cerchiamo i duplicati e li cancelliamo
-                x = urle.indexOf(s_riga);
-                System.out.printf("Test di del_URLS_doppi, ripetizione N° %d%ns_riga vale: %s%n x vale: %d%n", y, s_riga, x);
+                /*x = urle.indexOf(s_riga);
+                x ++;*/
+                int a = 0;
+                int b = 0;
+                c = 0;
+                while((a < urle.length()) & (a != -1))
+                    {
+                        c ++;
+                        System.out.printf("?????%nTest di del_URLS_doppi, ripetizione N° "
+                                + "%d%ns_riga vale: %s%n a vale: %d%n", c, s_riga, a);
+                        //b = a;
+                        a = urle.indexOf(s_riga, b);
+                        b = a + s_riga.length();
+                        if((c > 0))// & (a != -1))//cancelliamo le istanze doppie di ogni stringa
+                        {
+                            if (a != -1)
+                                  {
+                                      System.out.printf("REGULA!%na vale: %d%nb vale: %d%ns_riga vale "
+                                              + "%s%nVerranno cancellati i caratteri: %s%n", a,b,s_riga, urle.substring(a,b));
+                                      urle.delete(a, b);
+                                  }
+                            else
+                                {
+                                    System.out.printf("ERRORE_1!%nSelezione if interna del ciclo di eliminazione delle righe"
+                                            + ", valore di c: %d\tvalore di a: %d%n", c,a);
+                                    a = 0;
+                                    break;
+                                }
+                        }
+                        else
+                        {
+                            System.out.printf("ERRORE_2!%nSelezione if esterna del ciclo di eliminazione delle righe"
+                                            + ", valore di c: %d\tvalore di a: %d%n", c,a);
+                            a = 0;
+                            break;
+                        }
+                    }
+                //System.out.printf("Trovate %d istanze di '%s'%n", c, s_riga);
                 y ++;
             }
+        System.out.printf("urle ora vale: %s%n",urle);
     }
 catch(IOException ioe)
     {

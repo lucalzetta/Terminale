@@ -88,7 +88,7 @@ public void OttieniPagina()throws IOException
         ArchivioURLS au = new ArchivioURLS();
         String page = u.getFile();
         //Ci si può trovare nella situazione in cui il nome della pagina da scaricare 
-        //no sia ammesso come nome valido, in questo caso verrà convertito in index.html
+        //non sia ammesso come nome valido, in questo caso verrà convertito in index.html
         switch(page)
             {
             case "/":
