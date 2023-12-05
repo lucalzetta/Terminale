@@ -18,10 +18,9 @@ import java.net.URL;
 import java.net.URLConnection;
 public class SalvaPagine 
 {
-private String DESTINAZIONE;
-private StringBuilder TESTO;
+private final String DESTINAZIONE;
 private static String NOME_PAGINA;
-private VariabiliGlobali VG = new VariabiliGlobali();
+private final VariabiliGlobali VG = new VariabiliGlobali();
 
 public SalvaPagine(String nome_pagina)
 {
@@ -45,9 +44,11 @@ try
         Reader reader = new InputStreamReader(orig);
         File pagina = new File(DESTINAZIONE, NOME_PAGINA); 
         FileOutputStream fos = new FileOutputStream(pagina);
+        
         int c;
         while ((c = reader.read()) != -1) 
         {
+          
           fos.write(c);
           //System.out.print((char) c);
         }

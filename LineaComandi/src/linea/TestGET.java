@@ -174,16 +174,14 @@ public void OttieniPagina()throws IOException
          * Il codice seguente valuta le directory presenti nel file ListaURLS
          * e crea l'albero delle directory nel file system locale.
          */
-        /**
-         * prima ripuliamo i files dai duplicati
-         */
-        System.out.printf("%nControllo passato a PuliziaFiles%n");
+        //prima ripuliamo i files dai duplicati
+        /*System.out.printf("%nControllo passato a PuliziaFiles%n");
         PuliziaFiles pf = new PuliziaFiles();
-        pf.del_URLS_doppi();
+        pf.del_URLS_doppi();*/
         //commentate le seguenti tre righe a scopo di debug
-        /*System.out.printf("%nControllo passato a TrovaDirs%n");
+        System.out.printf("%nControllo passato a TrovaDirs%n");
         TrovaDirs td = new TrovaDirs();
-        td.cerca_dire();*/
+        td.cerca_dire();
        }
       catch (IOException ex) 
        {

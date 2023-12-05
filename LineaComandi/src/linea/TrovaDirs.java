@@ -13,7 +13,7 @@ package linea;
  */
 import java.io.File;
 import java.io.FileInputStream;
-import java.net.URL;
+import java.util.Set;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.nio.file.Path;
@@ -42,7 +42,8 @@ public String cerca_dire()throws IOException
 {
 String tmp = "";
 String riga = "";
-
+String u_perc = "";
+Set <String> ts = VG.get_set_collegamenti();
 /**
  * Questo metodo esplora il contenuto del file in cui vengono
  * archiviati i collegamenti del sito e trasforma il loro percorso
@@ -57,8 +58,8 @@ try
         int limit = 0;//limitatore di esecuzioni per il debug
         while((c != -1) & (limit < 50))//fino alla fine del file
             {
-                System.out.printf("%n****************************************************%n");                
-                System.out.printf("Ciclo N° %d %s%n", limit,(char)c); 
+                //System.out.printf("%n****************************************************%n");                
+                //System.out.printf("Ciclo N° %d %s%n", limit,(char)c); 
                 while ((c != 10) & (c != -1))//fino alla fine della riga
                     {
                         c = fis.read();
@@ -68,18 +69,18 @@ try
                 perc = esame_directory(riga);
                 if(perc)
                     {
-                        System.out.printf("????????????????????????????????????????????????\n"
+                        /*System.out.printf("????????????????????????????????????????????????\n"
                                 + "Il percorso %s potrebbe contenere una directory\n"
-                                + "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n", riga);
+                                + "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n", riga);*/
                     try
                         {
                             //URL u_perc = new URL(CARTELLA_SITO + riga);
-                            String u_perc = CARTELLA_SITO + riga;
+                            u_perc = CARTELLA_SITO + riga;
                             File f_perc = new File(u_perc);
-                            System.out.printf("%nPercorso da creare: %s%n",u_perc);
+                            //System.out.printf("%nPercorso da creare: %s%n",u_perc);
                             Path percorso = Paths.get(u_perc);
 /**************************************************************************************************
- * Verificare la presenza di caratteri vietati prima di procedere alla creazione delle dirctory.  *
+ * Verificare la presenza di caratteri vietati prima di procedere alla creazione delle directory. *
  *Eliminare i possibili nomi di file dalla stringa del percorso.                                  *
  *Aggiungere il carattere di fine linea prima della scrittura sul file ArchivioDIRS.txt           *
  **************************************************************************************************/                            
@@ -103,12 +104,32 @@ try
                             System.err.printf("Errore nel metodo cerca_dire della classe TrovaDirs: ", mue);
                         }
                     }
+           /** Tratto di codice di test per la scrittura dei dati in una variabile 
+           * di tipo List, in seguito questo ottimizzerà anche la scrittura dei file.
+           * 05/11/2023
+           */  
+            /********************************************************************/
+                ts.add(u_perc);
                 tmp = tmp + riga;
                 riga = "";
                 limit ++;
                 c ++;
             }
-        System.out.printf("####################################%n%h%n", '/'); //47               
+         /** Tratto di codice di test per la scrittura dei dati in una variabile 
+           * di tipo List, in seguito questo ottimizzerà anche la scrittura dei file.
+           * 05/11/2023
+           */  
+            /********************************************************************/
+        System.out.printf("####################################%n%h%n", '/'); //47 
+        System.out.printf("%n----------------------------------------------------------------------%n"
+                + "Classe TrovaDirs, metodo cerca_dire(), lettura della lista dei link%n");
+        for (String t : ts)
+            {
+                System.out.printf("%s", t);
+            }
+        System.out.printf("%n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++%n"
+                + "Classe TrovaDirs, metodo cerca_dire(), fine lettura della lista dei link%n");
+        /***********************************************************************/
     }
 catch(IOException ioe)
     {
@@ -133,15 +154,15 @@ String nome_file = "";
 String testo = "Nome di file o percorso non valido.";
 
 Path riga = Paths.get(dir);
-System.out.printf("Elaborazione di %s:\tNome: %s\tNumero di elementi: %d%n"
+/*System.out.printf("Elaborazione di %s:\tNome: %s\tNumero di elementi: %d%n"
         + "\tPercorso: %s%n\tRadice: %s%n",riga.toString(), riga.getFileName(), riga.getNameCount()
-        , riga.getParent(), riga.getRoot());
+        , riga.getParent(), riga.getRoot());*/
 n_elementi = riga.getNameCount();
 
 switch (n_elementi)
         {
             case 0:
-                System.out.printf("%s",testo);
+//                System.out.printf("%s",testo);
                 contatore_file = false;
             break;
             case 1://se ha un elemento supponiamo che si tratti di un file
@@ -151,7 +172,7 @@ switch (n_elementi)
                     contatore_file = false;
             break;          
             default:
-                    System.out.printf("Costrutto switch, esecuzione di default.%n");
+                    //System.out.printf("Costrutto switch, esecuzione di default.%n");
                     contatore_file = caratteri_vietati(riga.toString());
             break;
         }
@@ -166,44 +187,44 @@ int index = -2;
 boolean abeam_strada = false;
             if(nome_file.contains("https:"))
                 {
-                    System.out.println("Trovato la stringa \"https:\" in posizione " + nome_file.indexOf("https:"));
-                    index= nome_file.indexOf("https:");
+                    /*System.out.println("Trovato la stringa \"https:\" in posizione " + nome_file.indexOf("https:"));
+                    index= nome_file.indexOf("https:");*/
                     abeam_strada = false;
                 }
             else if(nome_file.contains("?"))
                 {
-                    System.out.println("Trovato la stringa \"?\" in posizione " + nome_file.indexOf("?"));
-                    index= nome_file.indexOf("?");
+                    /*System.out.println("Trovato la stringa \"?\" in posizione " + nome_file.indexOf("?"));
+                    index= nome_file.indexOf("?");*/
                     abeam_strada = false;
                 }
             else if(nome_file.contains("="))
                 {
-                    System.out.println("Trovato la stringa \"=\" in posizione " + nome_file.indexOf("="));
-                    index= nome_file.indexOf("=");
+                    /*System.out.println("Trovato la stringa \"=\" in posizione " + nome_file.indexOf("="));
+                    index= nome_file.indexOf("=");*/
                     abeam_strada = false;
                 }
             else if(nome_file.contains("&"))
                 {
-                    System.out.println("Trovato la stringa \"&\" in posizione " + nome_file.indexOf("&"));
-                    index= nome_file.indexOf("&");
+                    /*System.out.println("Trovato la stringa \"&\" in posizione " + nome_file.indexOf("&"));
+                    index= nome_file.indexOf("&");*/
                     abeam_strada = false;
                 }
             else if(nome_file.contains(";"))
                 {
-                    System.out.println("Trovato la stringa \";\" in posizione " + nome_file.indexOf(";"));
-                    index= nome_file.indexOf(";");
+                    /*System.out.println("Trovato la stringa \";\" in posizione " + nome_file.indexOf(";"));
+                    index= nome_file.indexOf(";");*/
                     abeam_strada = false;
                 }
             else if(nome_file.contains("#"))
                 {
-                    System.out.println("Trovato la stringa \"#\" in posizione " + nome_file.indexOf("#"));
-                    index= nome_file.indexOf("#");
+                    /*System.out.println("Trovato la stringa \"#\" in posizione " + nome_file.indexOf("#"));
+                    index= nome_file.indexOf("#");*/
                     abeam_strada = false;
                 }
             else if (index > -1)
                 {
                     //nome_file = riga.getFileName().toString();
-                    System.out.printf("Questo non è un nome difile valido: %s", nome_file);
+                    //System.out.printf("Questo non è un nome difile valido: %s", nome_file);
                     abeam_strada = false;
                 }
             else

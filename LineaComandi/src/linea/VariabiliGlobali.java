@@ -8,6 +8,8 @@ package linea;
 import java.net.URL;
 import java.io .File;
 import java.io.IOException;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class VariabiliGlobali 
 {
@@ -21,6 +23,13 @@ private static File DIRS;
 private static String ARGOMENTI_STRING;
 private static int[] ARGOMENTI_INT;
 private static String OPZIONI;
+private final static Set <String> LISTA_URLS_LIST = new TreeSet<>();//lo scopo di questa lista è quello di memorizzare 
+                                                                //tutti i link della pagina scaricata
+private final static Set <String> LISTA_PAGINE = new TreeSet<>();//lo scopo di questa lista è quello di memorizzare 
+                                                                //tutte le pagine del sito
+
+private final static Set <String> LISTA_IMMAGINI = new TreeSet<>();//lo scopo di questa lista è quello di memorizzare 
+                                                                //i collegamenti a tutte le immagini del sito
 
 public VariabiliGlobali()
 {
@@ -127,4 +136,18 @@ public String get_opzioni()
 return OPZIONI;
 }
 
+public Set<String> get_set_collegamenti()
+{
+return LISTA_URLS_LIST;
+}
+
+public Set<String> get_set_pagina()
+{
+return LISTA_PAGINE;
+}
+
+public Set<String> get_set_immagini()
+{
+return LISTA_IMMAGINI;
+}
 }

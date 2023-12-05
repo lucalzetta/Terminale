@@ -69,7 +69,7 @@ return sito_da_lavorare;
   * Sarà utile per l'impostazione delle variabili globali.
   */
      String tmp = "";
-     String root_directory = "";
+     String root_directory;
      int i;
     i = dir.indexOf("http");
     //ripetiamo il ciclo del metodo sito per escludere, questa volta,
@@ -163,10 +163,10 @@ String saluto;
         VG.set_sito(sito(VG.get_args()));
         VG.set_root(directory(VG.get_args()));
         VG.set_files();
-        System.out.printf("É stata scelta l'opzione 's', verrà scaricato il "
+        /*System.out.printf("É stata scelta l'opzione 's', verrà scaricato il "
                 + "sito:%n%s%nNella directory:%n"
                 + "%s%ne scritti i "
-                + "file:%n%s%n%s%n",VG.get_sito().toString(),VG.get_root(), VG.get_file_URLS().toString(), VG.get_file_DIRS().toString());
+                + "file:%n%s%n%s%n",VG.get_sito().toString(),VG.get_root(), VG.get_file_URLS().toString(), VG.get_file_DIRS().toString());*/
         //a questo punto inizia la successione di comandi per l'esecuzione del programma
         TestGET tg = new TestGET(true);
         break;
