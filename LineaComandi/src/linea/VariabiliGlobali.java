@@ -13,15 +13,28 @@ import java.util.TreeSet;
 
 public class VariabiliGlobali 
 {
+/**
+ * @param LISTA_URLS_LIST
+ * questa variabile di tipo TreeSet ci permetterà di memorizzare tutti gli URL del 
+ * sito fino alla loro trascrizione sul file ListaURLS.txt senza il rischio di 
+ * memorizzare duplicati o valori nulli, stesso discorso vale, per scopi diversi, 
+ * per le variabili:
+ * @param LISTA_PAGINE
+ * @param LISTA_IMMAGINI
+ * @param LISTA_LINKS
+ */
 private final String ARCHIVIO_DIRS ="ArchivioDIRS.txt";
 private final String LISTA_URLS ="ListaURLS.txt";
+private static String PAGINA;
 private static String CARTELLA_SITO = "httpdocs";
 private static String ROOT_D;
+private static StringBuilder PAGINA_BUILDER;
 private static URL SITO;
 private static File URLS;
 private static File DIRS;
 private static String ARGOMENTI_STRING;
 private static int[] ARGOMENTI_INT;
+private static int CONTATORE;
 private static String OPZIONI;
 private final static Set <String> LISTA_URLS_LIST = new TreeSet<>();//lo scopo di questa lista è quello di memorizzare 
                                                                 //tutti i link della pagina scaricata
@@ -30,6 +43,7 @@ private final static Set <String> LISTA_PAGINE = new TreeSet<>();//lo scopo di q
 
 private final static Set <String> LISTA_IMMAGINI = new TreeSet<>();//lo scopo di questa lista è quello di memorizzare 
                                                                 //i collegamenti a tutte le immagini del sito
+private final static Set <String> LISTA_LINKS = new TreeSet<>();
 
 public VariabiliGlobali()
 {
@@ -98,6 +112,21 @@ public void set_opzioni(String opz)
 OPZIONI = opz;
 }
 
+public void set_page(String pagina)
+{
+PAGINA = pagina;    
+}
+
+public void set_page_builder(StringBuilder builder)
+{
+PAGINA_BUILDER = builder;
+}
+
+public void set_conter()
+{
+CONTATORE = CONTATORE + 1;
+}
+
 public String get_root()
 {
 return ROOT_D;
@@ -149,5 +178,25 @@ return LISTA_PAGINE;
 public Set<String> get_set_immagini()
 {
 return LISTA_IMMAGINI;
+}
+
+public Set<String> get_set_sitiext()
+{
+return LISTA_LINKS;
+}
+
+public String get_page()
+{
+    return PAGINA;
+}
+
+public StringBuilder get_pagina_builder()
+{
+return PAGINA_BUILDER;
+}
+
+public int get_conter()
+{
+return CONTATORE;
 }
 }

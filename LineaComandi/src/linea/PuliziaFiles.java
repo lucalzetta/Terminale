@@ -2,10 +2,12 @@ package linea;
 
 /**
  *
- * @author lucaamministratore
+ * @author luca Alzetta
  * Questa classe ha lo scopo di eliminare le righe doppie nei file di appoggio 
  * ListaURLS.txt e ArchivioDIRS.txt e altri eventuali file di appoggio su cui
  * potrebbe essere necessario compiere delle azioni aggiuntive.
+ * Lo sviluppo è sospeso perché è preferibile ricorrere a delle list<> che non
+ * ammettonon duplicati già nella loro interfaccia.
  */
 import java.io.File;
 import java.io.FileInputStream;

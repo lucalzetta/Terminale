@@ -44,14 +44,19 @@ try
         Reader reader = new InputStreamReader(orig);
         File pagina = new File(DESTINAZIONE, NOME_PAGINA); 
         FileOutputStream fos = new FileOutputStream(pagina);
-        
+        String str_pagina = "";
+        StringBuilder build_pagina = new StringBuilder();
         int c;
         while ((c = reader.read()) != -1) 
         {
           
           fos.write(c);
+          str_pagina = str_pagina + (char)c;
+          build_pagina.append((char)c);
           //System.out.print((char) c);
         }
+        VG.set_page(str_pagina);
+        VG.set_page_builder(build_pagina);
     }
 catch(FileNotFoundException fnf)
     {

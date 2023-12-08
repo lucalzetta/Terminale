@@ -59,7 +59,7 @@ try
         while((c != -1) & (limit < 50))//fino alla fine del file
             {
                 //System.out.printf("%n****************************************************%n");                
-                //System.out.printf("Ciclo N° %d %s%n", limit,(char)c); 
+                System.out.printf("Ciclo N° %d %s%n", limit,(char)c); 
                 while ((c != 10) & (c != -1))//fino alla fine della riga
                     {
                         c = fis.read();
@@ -93,8 +93,8 @@ try
                                 }
                             else
                                 {
-                                    System.out.println("La cartella : " + u_perc + ""
-                                                + " NON è stata creata, VERIFICARE l'errore!");
+                                    /*System.out.println("La cartella : " + u_perc + ""
+                                                + " NON è stata creata, VERIFICARE l'errore!");*/
                                 }
                             ad.set_origin(percorso.getParent().toString());
                             ad.scrivi_su_file();
@@ -109,7 +109,8 @@ try
            * 05/11/2023
            */  
             /********************************************************************/
-                ts.add(u_perc);
+                ts.add(riga + "\n");
+                System.out.printf("Valore di 'riga' in TrovaDirs.cerca_dire(): %s%n", riga);
                 tmp = tmp + riga;
                 riga = "";
                 limit ++;
@@ -184,7 +185,7 @@ private boolean caratteri_vietati(String nome)
 {
 String nome_file = nome;    
 int index = -2;
-boolean abeam_strada = false;
+boolean abeam_strada;
             if(nome_file.contains("https:"))
                 {
                     /*System.out.println("Trovato la stringa \"https:\" in posizione " + nome_file.indexOf("https:"));
