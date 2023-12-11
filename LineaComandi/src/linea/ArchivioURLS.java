@@ -4,7 +4,9 @@ package linea;
  *
  * @author luca
  * Questa classe si occupa di archiviare in alcuni file tutti i riferimenti 
- * interni ed esterni del sito che si sta scaricando
+ * interni ed esterni del sito che si sta scaricando.
+ * 
+ * 
  */
 import java.io.File;
 import java.io.FileWriter;
@@ -48,7 +50,7 @@ try
                 int a = 0;
                 while ((a < (this.DATI_ORIGINE.length())) & (a!=-1))
                     {
-                        while((DATI_ORIGINE.charAt(a)!=10) & (DATI_ORIGINE.charAt(a)!=-1))
+                        while((DATI_ORIGINE.charAt(a)!='\n') & (DATI_ORIGINE.charAt(a)!=-1))
                             {
                                 riga.append(DATI_ORIGINE.charAt(a));
                                 a++;

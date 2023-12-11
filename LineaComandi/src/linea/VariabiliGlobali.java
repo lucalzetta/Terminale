@@ -19,6 +19,7 @@ public class VariabiliGlobali
  * sito fino alla loro trascrizione sul file ListaURLS.txt senza il rischio di 
  * memorizzare duplicati o valori nulli, stesso discorso vale, per scopi diversi, 
  * per le variabili:
+ * @param LISTA_URLS
  * @param LISTA_PAGINE
  * @param LISTA_IMMAGINI
  * @param LISTA_LINKS
@@ -58,7 +59,7 @@ SITO = sito;
 public void set_root(String root_d)throws IOException
 {
 ROOT_D = root_d;
-CARTELLA_SITO = ROOT_D + CARTELLA_SITO;
+CARTELLA_SITO = ROOT_D;
 boolean dir = (new File(CARTELLA_SITO)).mkdirs();//crea la cartella, resta false 
                                                        //se l'operazione fallisce
 if(dir)
@@ -67,8 +68,8 @@ if(dir)
     }
 else
     {
-        System.out.println("La cartella di destinazione del sito: " + CARTELLA_SITO + ""
-                + " NON è stata creata, VERIFICARE l'errore!");
+        /*System.out.println("La cartella di destinazione del sito: " + CARTELLA_SITO + ""
+                + " NON è stata creata, VERIFICARE l'errore!");*/
     }
 }
 
@@ -138,6 +139,10 @@ return SITO;
 
 public String get_destinazione_files_sito()
 {
+    /**
+     * Questo metodo ritorna la directory locale a partire dalla quale vengono 
+     * archiviate le pagine e le cartelle del sito in esame
+     */
 return CARTELLA_SITO;
 }
 public File get_file_URLS()

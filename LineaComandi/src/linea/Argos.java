@@ -22,7 +22,7 @@ public class Argos
      */
 private static String[] ARGOMENTI;
 private static int[] CARATTERI;
-private VariabiliGlobali VG = new VariabiliGlobali();
+private final VariabiliGlobali VG = new VariabiliGlobali();
 
 public Argos()throws IOException
 {

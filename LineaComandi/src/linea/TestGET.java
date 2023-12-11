@@ -1,7 +1,7 @@
 package linea;
 import java.io.*;
 import java.net.*;
-import java.util.Set;
+//import java.util.Set;
 
 /**
  *
@@ -80,127 +80,69 @@ else
 } 
 }
 
-public void OttieniPagina()throws IOException
+private void OttieniPagina()throws IOException
 {
     try 
       {
         String dir = VG.get_destinazione_files_sito();
         URL u = VG.get_sito();
-//        URLConnection uc = u.openConnection();
-//        StringBuilder sb = new StringBuilder();
-//        StringBuilder file = new StringBuilder();
-//        StringBuilder riga = new StringBuilder();
-//        ArchivioURLS au = new ArchivioURLS();
-        String page = u.getFile();
-//        Set<String> pagine = VG.get_set_pagina();
-//        Set<String> immagini = VG.get_set_immagini();
-        //Ci si può trovare nella situazione in cui il nome della pagina da scaricare 
+        //il metodo get_file dell'oggetto URL non si rivela sempre affidabile
+        //perciò ricorriamo ad un ciclo sulla stringa che lo compone
+        String page = u.toString();
+        String nome = "";
+        int stop = page.length();
+        int start = page.lastIndexOf("/");
+        start = start +1;
+        while(start < stop)
+            {
+                nome = nome + page.charAt(start);
+                start++;
+            }
+        System.out.printf("Nome della pagina da salvare: %s%n", nome);
+       //Ci si può trovare nella situazione in cui il nome della pagina da scaricare 
         //non sia ammesso come nome valido, in questo caso verrà convertito in index.html
-        switch(page)
+        switch(nome)
             {
             case "/":
                 if (VG.get_conter() == 0)
                     {
-                        page = "index.html";
+                        nome = "index.html";
                         VG.set_conter();
                     }
                 else
                     {
-                        page="pagina_nominata_default(" + VG.get_conter() + ").html";
+                        nome="pagina_nominata_default(" + VG.get_conter() + ").html";
                         VG.set_conter();
                     }
             break;    
             }
-        SalvaPagine sp = new SalvaPagine(dir, page);//Questa riga salva la pagina richiesta nel file locale
+        System.out.printf("Nome della pagina da salvare (dopo l'if): %s%n", nome);
+        /**
+         * 11/12/2023 Il codice seguente è sospeso perché inefficace prima della creazione 
+         * delle directory di destinazione della pagine.
+         */
+       SalvaPagine sp = new SalvaPagine(dir, nome);//Questa riga salva la pagina richiesta nel file locale
                                                              //corrispondente
-        System.out.printf("La pagina: %s, verrà salvata in %s%n",page, dir);
+        System.out.printf("La pagina: %s, verrà salvata in %s%n",nome, dir);
         sp.scrivi();
 /*********************************************************************************/        
-        /**
-         * Il codice seguente serve a estrarre i riferimenti alle altre pagine del sito.
-         */
-        int i = 0;
-        c = 0;
-        int f = sb.lastIndexOf("href=\"");
-        file.delete(0, file.length());
-        while (i < f)
-            {
-                c++;
-                i = sb.indexOf("href=\"", i );
-                i = i + 6;
-                riga.delete(0, riga.length());
-                while(sb.charAt(i)!='\"')
-                    {
-                        file.append(sb.charAt(i));
-                        riga.append(sb.charAt(i));
-                        i++;
-                    }
-                file.append("\n");
-                pagine.add(riga.toString() + "\n");
-                au.set_origin(file);
-                au.scrivi_su_file();
-                //System.out.printf("Trovata l'occorrenza n° %d di <href=\" in posizione: %d\t%s",c,i,file.toString());
-                file.delete(0, file.length());
-                i++;
-            }
-        /**righe di debug, commentabili 07/12/2023***********************/
-                System.out.printf("%n%nElenco delle pagine presenti nel sito%n%n");
-                for(String g : pagine)
-                    {
-                        System.out.printf("%s", g);
-                    }
-                /****************************************************************/
-/*********************************************************************************/        
-         /**
-         * Il codice seguente serve a estrarre i riferimenti alle immagini presenti nella pagina.
-         */
-        i = 0;
-        c = 0;
-        f = sb.lastIndexOf("src=\"");
-        file.delete(0, file.length());
-        while ((i <= f) & (f != -1))
-            {
-                c++;
-                i = sb.indexOf("src=\"", i );
-                i = i + 5;
-                riga.delete(0, riga.length());
-                while((sb.charAt(i)!=';')&((sb.charAt(i)!='?'))&((sb.charAt(i)!='>'))&((sb.charAt(i)!='"')))
-                    {
-                        file.append(sb.charAt(i));
-                        riga.append(sb.charAt(i));
-                        i++;
-                    }
-                file.append("\n");
-                immagini.add(riga.toString() + "\n");
-                au.set_origin(file);
-                au.scrivi_su_file();
-                file.delete(0, file.length());
-                //System.out.printf("Trovata l'occorrenza n° %d di 'src=' in posizione: %d\t%s%n",c,i,file.toString());
-                i++;
-            }
-        /**righe di debug, commentabili 07/12/2023***********************/
-                System.out.printf("%n%nElenco delle immagini presenti nel sito%n%n");
-                for(String g : immagini)
-                    {
-                        System.out.printf("%s", g);
-                    }
-                /****************************************************************/
+
         /**
          * Il codice seguente valuta le directory presenti nella lista LISTA_URLS_LIST
          * e crea l'albero delle directory nel file system locale.
          */
-        //prima ripuliamo i files dai duplicati
-        /*System.out.printf("%nControllo passato a PuliziaFiles%n");
-        PuliziaFiles pf = new PuliziaFiles();
-        pf.del_URLS_doppi();*/
-        //commentate le seguenti tre righe a scopo di debug
-        System.out.printf("%nControllo passato a TrovaDirs%n");
+        //System.out.printf("%nControllo passato a TrovaDirs%n");
+/*        EstraiLinks el = new EstraiLinks(nome);
         TrovaDirs td = new TrovaDirs();
-        td.cerca_dire();
+        td.cerca_dire();*/
        }
       catch (IOException ex) 
        {
             System.err.println(ex);
        }
+    finally
+        {
+            //System.out.printf("Clausola finally del try di TestGet.OttieniPagina()");
+        }
 }
 }

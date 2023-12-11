@@ -16,11 +16,19 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.net.URL;
 import java.net.URLConnection;
+/**
+ * 
+ * @author luca
+ * Questa classe salva la pagina corrente nel file locale di destinazione
+ * la chiamata a monte di questa classe dovrà aver creato le directory di 
+ * destinazione.
+ */
 public class SalvaPagine 
 {
 private final String DESTINAZIONE;
 private static String NOME_PAGINA;
 private final VariabiliGlobali VG = new VariabiliGlobali();
+
 
 public SalvaPagine(String nome_pagina)
 {

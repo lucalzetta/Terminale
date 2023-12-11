@@ -30,7 +30,7 @@ private final File FILE_IN;
 
 public TrovaDirs()throws IOException
 {
-VG.set_files();//Questo garantisce anche la creazione dei file se non 
+//VG.set_files();//Questo garantisce anche la creazione dei file se non 
                //dovessero esistere
 ROOT = VG.get_root();
 FILE_OUT = VG.get_file_DIRS();
@@ -56,14 +56,15 @@ try
         ArchivioDIRS ad = new ArchivioDIRS();
         int c = 0;
         int limit = 0;//limitatore di esecuzioni per il debug
-        while((c != -1) & (limit < 50))//fino alla fine del file
+        while((c != -1))// & (limit < 50))//fino alla fine del file
             {
                 //System.out.printf("%n****************************************************%n");                
-                System.out.printf("Ciclo N° %d %s%n", limit,(char)c); 
+                //System.out.printf("Ciclo N° %d %s%n", limit,(char)c); 
                 while ((c != 10) & (c != -1))//fino alla fine della riga
                     {
                         c = fis.read();
                         riga = riga + (char)c;
+                        c++;
                     }
                 
                 perc = esame_directory(riga);
@@ -109,7 +110,7 @@ try
            * 05/11/2023
            */  
             /********************************************************************/
-                ts.add(riga + "\n");
+                ts.add(riga);
                 System.out.printf("Valore di 'riga' in TrovaDirs.cerca_dire(): %s%n", riga);
                 tmp = tmp + riga;
                 riga = "";
@@ -163,7 +164,7 @@ n_elementi = riga.getNameCount();
 switch (n_elementi)
         {
             case 0:
-//                System.out.printf("%s",testo);
+                System.out.printf("%s",testo);
                 contatore_file = false;
             break;
             case 1://se ha un elemento supponiamo che si tratti di un file
