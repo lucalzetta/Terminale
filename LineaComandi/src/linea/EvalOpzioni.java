@@ -161,13 +161,16 @@ String saluto;
         //impostiamo le variabili globali
                 
         VG.set_sito(sito(VG.get_args()));
+        System.out.printf("Valore della variabile sito in EvalOpzioni.EvalOpz() %s%n", sito(VG.get_args()));
         VG.set_root(directory(VG.get_args()));
+        VG.set_files();
+        System.out.printf("Valore della variabile root directory in EvalOpzioni.EvalOpz() %s%n", directory(VG.get_args()));
         System.out.printf("É stata scelta l'opzione 's', verrà scaricato il "
                 + "sito:%n%s%nNella directory:%n"
                 + "%s%ne scritti i "
                 + "file:%n%s%n%s%n",VG.get_sito().toString(),VG.get_root(), VG.get_file_URLS().toString(), VG.get_file_DIRS().toString());
         //a questo punto inizia la successione di comandi per l'esecuzione del programma
-        TestGET tg = new TestGET(true);
+        Loopper l = new Loopper();
         break;
      
     }

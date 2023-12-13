@@ -81,10 +81,12 @@ try
         if(!URLS.exists())
             {
                 URLS.createNewFile();
+                System.out.printf("Creato il file %s%n", URLS.toString());
             }
         DIRS = new File (ROOT_D, ARCHIVIO_DIRS);
         if(!DIRS.exists())
             {
+                System.out.printf("Creato il file %s%n", DIRS.toString());
                 DIRS.createNewFile();
             }
     }

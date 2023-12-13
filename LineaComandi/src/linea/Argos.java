@@ -79,7 +79,8 @@ for (int i = 0; i < l; i ++)
 VG.set_args(testo);
 VG.set_int_args(CARATTERI);
 VG.set_opzioni(ARGOMENTI[0]);
-VG.set_files();//Crea i files di supporto o li imposta come riferimento se esistono già
+//VG.set_files();//Crea i files di supporto o li imposta come riferimento.
+                //commentato perché in questa fase le informazioni non sono sufficienti
     /*for(int b = 0; b < caratteri; b++)
         {
             System.out.printf("Carattere N° %d dell'array, valore numerico: %d rappresentazione del carattere: '%c'%n",b, CARATTERI[b],CARATTERI[b]);

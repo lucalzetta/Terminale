@@ -42,7 +42,7 @@ public String cerca_dire()throws IOException
 {
 String tmp = "";
 String riga = "";
-String u_perc = "";
+String u_perc;
 Set <String> ts = VG.get_set_collegamenti();
 /**
  * Questo metodo esplora il contenuto del file in cui vengono

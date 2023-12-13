@@ -24,6 +24,8 @@ public TestGET()throws IOException
 {
     ROOT_DIR = VG.get_root();
     SITO = VG.get_sito().toString();
+    System.out.printf("Siamo nel costruttore di default della classe TestGET, sono state raccolte le "
+            + "varibili ROO_DIR e SITO che valgono: %n%s%n%s", ROOT_DIR, SITO);
     //riga di test per provare le nuove classi, decommentare le classi interessate
     //TrovaDirs td = new TrovaDirs();
     //td.cerca_dire();
@@ -64,18 +66,18 @@ else
 {
     try 
       {
-        URL u = VG.get_sito();
+        /*URL u = VG.get_sito();
         URLConnection uc = u.openConnection();
       
         java.io.InputStream in = uc.getInputStream();
         java.io.InputStream theHTML = new BufferedInputStream(in);
-        Reader reader = new InputStreamReader(theHTML);
+        Reader reader = new InputStreamReader(theHTML);*/
        
         OttieniPagina();
        }
       catch (IOException ex) 
        {
-            System.err.println(ex);
+            System.err.printf("%s dovuto a un errore della classe TestGet.",ex);
        }
 } 
 }
@@ -117,11 +119,8 @@ private void OttieniPagina()throws IOException
             break;    
             }
         System.out.printf("Nome della pagina da salvare (dopo l'if): %s%n", nome);
-        /**
-         * 11/12/2023 Il codice seguente è sospeso perché inefficace prima della creazione 
-         * delle directory di destinazione della pagine.
-         */
-       SalvaPagine sp = new SalvaPagine(dir, nome);//Questa riga salva la pagina richiesta nel file locale
+        
+        SalvaPagine sp = new SalvaPagine(dir, nome);//Questa riga salva la pagina richiesta nel file locale
                                                              //corrispondente
         System.out.printf("La pagina: %s, verrà salvata in %s%n",nome, dir);
         sp.scrivi();

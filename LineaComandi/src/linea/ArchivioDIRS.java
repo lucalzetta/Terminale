@@ -13,14 +13,14 @@ import java.io.IOException;
 public class ArchivioDIRS 
 {
 private final String ROOTD;
-private String FILE_ORI;
+//private String FILE_ORI;
 private String DATI_ORIGINE;
  
 public ArchivioDIRS()
 {
 //ATTENZIONE! Prima di chiamare questo inizializzatore devono essere istanziate
 //le variabili globali dalla classe VariabiliGlobali()
-VariabiliGlobali vg = new linea.VariabiliGlobali();
+VariabiliGlobali vg = new VariabiliGlobali();
 ROOTD = vg.get_root();
 }
 

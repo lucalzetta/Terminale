@@ -31,7 +31,9 @@ public void links ()
          */
         int i = 0;
         int c = 0;
-        int f = PAGINA.lastIndexOf("href=\"");
+        int old_ref = 0;
+        //int f = PAGINA.lastIndexOf("href=\"");
+                int f = PAGINA.length();
         String riga;
         Set <String> global_links = VG.get_set_collegamenti();
         Set <String> global_img = VG.get_set_immagini();
@@ -42,23 +44,42 @@ public void links ()
         while (i < f)
             {
                 c++;
-                i = PAGINA.indexOf("href=\"", i );
-                i = i + 6;
-                riga = "";
-                while(PAGINA.charAt(i)!='\"')
+                i = PAGINA.indexOf("href=", i );
+                //System.out.printf("Trovata l'occorrenza n° %d di 'href=' in posizione: %d\t%s%n",c,i,"Primo conrtrollo di TEST");
+                if(i <= old_ref)
                     {
-                        riga = riga + (char)i;
-                        i++;
+                        break;
                     }
-                set_page.add(riga);
-                //System.out.printf("Trovata l'occorrenza n° %d di <href=\" in posizione: %d\t%s",c,i,file.toString());
-                i++;
+                else
+                    {   
+                        i = i + 5;
+                        riga = "";
+                        /**
+                         * 13/12/2023 È necessario estendere i caratteri di fine espressione per comprendere
+                         * tutti i casi possibili. 
+                         */
+                        while(PAGINA.charAt(i)!='>')
+                            {
+                                riga = riga + PAGINA.charAt(i);
+                                i++;
+                            }
+                        set_page.add(riga);
+                        System.out.printf("Trovata l'occorrenza n° %d di 'href=' in posizione: %d\t%s%n",c,i,riga);
+                        i++;
+                        old_ref = PAGINA.indexOf("href=", 0 );//segna la prima occorrenza della 
+                                                                      //stringa ricercata per bloccare
+                                                                      //la ripetizione della ricerca dopo
+                                                                      //la fine del file
+
+                    }
             }
         /**righe di debug, commentabili 07/12/2023***********************/
                 System.out.printf("%n%nElenco delle pagine presenti nel sito%n%n");
                 for(String g : set_page)
                     {
-                        System.out.printf("%s", g);
+                        System.out.printf("%s%n", g);
+                        i++;
+                        System.out.printf(" %n%d ", i);
                     }
                 /****************************************************************/
 global_links.addAll(set_page);   
@@ -74,18 +95,31 @@ set_page.clear();
          */
         i = 0;
         c = 0;
-        f = PAGINA.lastIndexOf("src=\"");
-        
-        while ((i <= f) & (f != -1))
+        //f = PAGINA.lastIndexOf("src=\"");
+        f=PAGINA.length();
+        System.out.println("Controllo passato al loop sulla stringa 'src='");
+        while ((i < f))
             {
                 c++;
-                i = PAGINA.indexOf("src=\"", i );
-                i = i + 5;
-                riga = "";
-                while((PAGINA.charAt(i)!=';')&((PAGINA.charAt(i)!='?'))&((PAGINA.charAt(i)!='>'))&((PAGINA.charAt(i)!='"')))
+                i = PAGINA.indexOf("src=", i );
+                //System.out.printf("Trovata l'occorrenza n° %d di 'src=' in posizione: %d\t%s%n",c,i,"Primo conrtrollo di TEST");
+                if(i <= old_ref)
                     {
-                        riga = riga + (PAGINA.charAt(i));
-                        i++;
+                        break;
+                    }
+                else
+                    {   
+                        i = i + 5;
+                        riga = "";
+                        /**
+                         * 13/12/2023 È necessario estendere i caratteri di fine espressione per comprendere
+                         * tutti i casi possibili. 
+                         */
+                        while((PAGINA.charAt(i)!=';')&((PAGINA.charAt(i)!='?'))&((PAGINA.charAt(i)!='>'))&((PAGINA.charAt(i)!='"')))
+                            {
+                                riga = riga + (PAGINA.charAt(i));
+                                i++;
+                            }
                     }
                 set_page.add(riga);
                 //System.out.printf("Trovata l'occorrenza n° %d di 'src=' in posizione: %d\t%s%n",c,i,file.toString());
