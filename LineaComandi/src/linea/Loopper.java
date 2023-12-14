@@ -14,11 +14,12 @@ import java.io.IOException;
 
 public class Loopper
 {
-private VariabiliGlobali VG = new VariabiliGlobali();
+private final VariabiliGlobali VG;
 
 public Loopper()throws IOException
 {
 TestGET TG = new TestGET(true);
+VG = new VariabiliGlobali();
 System.out.printf("Costruttore della classe Loopper. Passaggio a EstraiLinks.");
 EstraiLinks el = new EstraiLinks(VG.get_page());
 el.links();
