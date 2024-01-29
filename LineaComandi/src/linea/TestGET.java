@@ -116,6 +116,18 @@ private void OttieniPagina()throws IOException
                         nome="pagina_nominata_default(" + VG.get_conter() + ").html";
                         VG.set_conter();
                     }
+            break;
+            case "":
+                if (VG.get_conter() == 0)
+                    {
+                        nome = "index.html";
+                        VG.set_conter();
+                    }
+                else
+                    {
+                        nome="pagina_nominata_default(" + VG.get_conter() + ").html";
+                        VG.set_conter();
+                    }
             break;    
             }
         System.out.printf("Nome della pagina da salvare (dopo l'if): %s%n", nome);

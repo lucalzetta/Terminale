@@ -6,7 +6,7 @@ package linea;
  * Si prefigge di essere il vero entry point del programma, dopo il controllo dele 
  * opzioni si procede alla chiamata delle varie classi necessarie alle operazioni richieste.
  * Offre anche gli argomenti sotto forma di array di interi, stringa di testo alla 
- * classe delle variabili globali. PPuò essere sfruttata anche all'interno di altri 
+ * classe delle variabili globali. Può essere sfruttata anche all'interno di altri 
  * programmi che si vogliono eseguire dalla shell
  * @author Luca Alzetta
  */

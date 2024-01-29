@@ -64,34 +64,74 @@ return sito_da_lavorare;
  private String directory(String dir)
  {
  /**
-  * Anche questo è un metodo di servizio che estrae una directory dai parametry
+  * Anche questo è un metodo di servizio che estrae una directory dai parametri
   * passati come argomento.
   * Sarà utile per l'impostazione delle variabili globali.
   */
      String tmp = "";
-     String root_directory;
-     int i;
+     String root_directory = "";
+     int i = 0;
     i = dir.indexOf("http");
-    //ripetiamo il ciclo del metodo sito per escludere, questa volta,
-    //il primo parametro contenente il sito da analizzare ed estrappolare il 
-    //secondoparametro contenente la root directory da cui iniziare 
-    //l'archiviazione dei dati
-while((dir.charAt(i) != ' ') & (dir.charAt(i) != '\n'))
+    if (i == -1)
+        {
+            //se fallisce la ricerca di http impostiamo la root directory ad un valore
+            //predefinito
+            root_directory = "httpdocs";
+        }
+    else
+        {
+            //SE la ricerca di http dà esito positivo dobbiamo raggiungere
+            //la fine della stringa del protocollo ed estrarre la cartella 
+            //radice se presente, altrimenti la root assumerà il nome della
+            //pagina principale.
+            boolean check = false;
+            while( !check)
+                {
+                    //valutiamo una serie di possibilità 
+                    //di composizione dell'URL
+                    if (dir.indexOf("http://www.")!= -1)
+                        {
+                            i = i + 11;
+                            check = true;
+                            break;
+                        }
+                    else if(dir.indexOf("https://www.")!= -1)
+                        {
+                            i = i + 12;
+                            check = true;
+                            break;
+                        }
+                    else if(dir.indexOf("https://")!= -1)
+                        {
+                            i = i + 8;
+                            check = true;
+                            break;
+                        }
+                    else if(dir.indexOf("http://")!= -1)
+                        {
+                            i = i + 7;
+                            check = true;
+                            break;
+                        }
+                    else if(dir.indexOf("www.")!= -1)
+                        {
+                            i = i + 4;
+                            check = true;
+                            break;
+                        }
+                    else
+                        {
+                            i = 0;
+                            check = true;
+                            break;
+                        }                   
+                }
+        }
+    while((dir.charAt(i) != ' ') & (dir.charAt(i) != '/')& (dir.charAt(i) != '.')& (dir.charAt(i) != '\n'))
     {
+        root_directory = root_directory + dir.charAt(i);
         i++;
     }
-
-i++;//ci spostiamo di una posizione per saltare il primo carattere di spazio
-
-//A questo punto ci troviamo sullo spazio tra il primo parametro e il secondo
-//Iniziamo a scrivere il valore della root nella variabile tmp e lo passiamo 
-//poi a root_directory
-while((dir.charAt(i) != ' ') & (dir.charAt(i) != '\n'))
-    {
-        tmp = tmp + dir.charAt(i);
-        i++;
-    }
-root_directory = tmp;
 
 return root_directory;
  }

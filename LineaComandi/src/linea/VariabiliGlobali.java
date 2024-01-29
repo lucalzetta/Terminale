@@ -19,10 +19,14 @@ public class VariabiliGlobali
  * sito fino alla loro trascrizione sul file ListaURLS.txt senza il rischio di 
  * memorizzare duplicati o valori nulli, stesso discorso vale, per scopi diversi, 
  * per le variabili:
- * @param LISTA_URLS
  * @param LISTA_PAGINE
  * @param LISTA_IMMAGINI
  * @param LISTA_LINKS
+ * Discorso simile ma a scopo di riscontro e verifica per la lista di tipo TreeSet
+ * @param LISTA_SCARICATI
+ * che riceve gli URLS il cui download è andato a buon fine, quando il confronto
+ * fra questa e la lista dei links dà esito di uguaglianza il processo è 
+ * completato
  */
 private final String ARCHIVIO_DIRS ="ArchivioDIRS.txt";
 private final String LISTA_URLS ="ListaURLS.txt";
@@ -44,7 +48,11 @@ private final static Set <String> LISTA_PAGINE = new TreeSet<>();//lo scopo di q
 
 private final static Set <String> LISTA_IMMAGINI = new TreeSet<>();//lo scopo di questa lista è quello di memorizzare 
                                                                 //i collegamenti a tutte le immagini del sito
-private final static Set <String> LISTA_LINKS = new TreeSet<>();
+private final static Set <String> LISTA_LINKS = new TreeSet<>();//lo scopo di questa lista è quello di memorizzare 
+                                                                //i collegamenti a tutti i siti esterni al sito
+private final static Set <String> LISTA_SCARICATI = new TreeSet<>();//lo scopo di questa lista è quello di memorizzare 
+                                                                //l'elenco di tutte le pagine il cui download è 
+                                                                //andato a buon fine
 
 public VariabiliGlobali()
 {
@@ -59,6 +67,7 @@ SITO = sito;
 public void set_root(String root_d)throws IOException
 {
 ROOT_D = root_d;
+System.out.printf("Root directory del progetto: %s%n", root_d);
 CARTELLA_SITO = ROOT_D;
 boolean dir = (new File(CARTELLA_SITO)).mkdirs();//crea la cartella, resta false 
                                                        //se l'operazione fallisce
@@ -159,6 +168,7 @@ return DIRS;
 
 public String get_args()
 {
+//System.out.printf("Valore degli argomenti in VariabiliGlobali.get_args: %s%n", ARGOMENTI_STRING);
 return ARGOMENTI_STRING;
 }
 
@@ -191,6 +201,11 @@ public Set<String> get_set_sitiext()
 {
 return LISTA_LINKS;
 }
+public Set<String> get_set_scaricati()
+{
+return LISTA_SCARICATI;
+}
+
 
 public String get_page()
 {

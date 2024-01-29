@@ -1,14 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package linea;
 
 /**
  *
  * @author luca
  * Questa classe estrae tutti i collegamenti a cui fa riferimento la pagina e li
- * archivia in u TreeSet<>.
+ * archivia in u TreeSet.
  */
 import java.util.Set;
 import java.util.TreeSet;
@@ -17,11 +13,12 @@ public class EstraiLinks
 {
 private final String PAGINA;
 private final VariabiliGlobali VG = new VariabiliGlobali();
-private final Set<String> SET_LINKS = new TreeSet();
-    
+private Set<String> SET_LINKS;
+
 public EstraiLinks(String pagina)
 {
 PAGINA = pagina;
+SET_LINKS = new TreeSet<>();
 }
 
 public void links ()
@@ -32,6 +29,8 @@ public void links ()
      */
     ciclo("href=");
     ciclo("src=");
+    ciclo("http:");
+    ciclo("https:");
 }
 
 private void ciclo(String par)
