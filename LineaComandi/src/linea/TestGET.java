@@ -101,6 +101,7 @@ private void OttieniPagina()throws IOException
                 start++;
             }
         System.out.printf("Nome della pagina da salvare: %s%n", nome);
+        VG.set_name_page(nome);
        //Ci si può trovare nella situazione in cui il nome della pagina da scaricare 
         //non sia ammesso come nome valido, in questo caso verrà convertito in index.html
         switch(nome)

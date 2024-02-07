@@ -48,6 +48,11 @@ Set <String> ts = VG.get_set_collegamenti();
  * Questo metodo esplora il contenuto del file in cui vengono
  * archiviati i collegamenti del sito e trasforma il loro percorso
  * in directory locali
+ * 07/02/2024
+ * Invece dei file useremo le liste in cui vengono archiviati 
+ * i links, in questo modo si semplifica il codice e si velocizza
+ * l'esecuzione, la scrittura dei file viene rimandata alla 
+ * conclusione del programma
  */
 try
     {

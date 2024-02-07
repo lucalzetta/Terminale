@@ -55,7 +55,7 @@ try
 catch(MalformedURLException mux)
     {
         sito_da_lavorare=null;
-        System.err.printf("Eccezione nel metodo 'sito' della classe Argos: %s%n ", mux);
+        System.err.printf("Eccezione nel metodo 'sito' della classe EvalOpzioni: %s%n ", mux);
     }
 
 return sito_da_lavorare;

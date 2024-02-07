@@ -30,7 +30,8 @@ public class VariabiliGlobali
  */
 private final String ARCHIVIO_DIRS ="ArchivioDIRS.txt";
 private final String LISTA_URLS ="ListaURLS.txt";
-private static String PAGINA;
+private static String PAGINA;//questa variabile conterrà il testo della pagina da scaricare
+private static String NOME_PAGINA;//questa variabile conterrà il nome della pagina da scaricare
 private static String CARTELLA_SITO = "httpdocs";
 private static String ROOT_D;
 private static StringBuilder PAGINA_BUILDER;
@@ -129,6 +130,11 @@ public void set_page(String pagina)
 PAGINA = pagina;    
 }
 
+public void set_name_page(String nome_pagina)
+{
+NOME_PAGINA = nome_pagina;
+}
+
 public void set_page_builder(StringBuilder builder)
 {
 PAGINA_BUILDER = builder;
@@ -147,7 +153,10 @@ public URL get_sito()
 {
 return SITO;
 }
-
+public String get_name_page()
+{
+return NOME_PAGINA;
+}
 public String get_destinazione_files_sito()
 {
     /**

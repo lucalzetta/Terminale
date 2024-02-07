@@ -13,20 +13,40 @@ package linea;
  * e offrire la possibilità di scaricare più siti simultaneamente.
  */
 import java.io.IOException;
+import java.util.Set;
+import java.util.Iterator;
 
 public class Loopper
 {
 private final VariabiliGlobali VG;
+private Set<String> SET_LINKS_VISITATI;
+private Set<String> SET_LINKS;
+private static String STRINGA = "";
+private static int INT = 0;
 //private final PrimoStep PS;
 
 public Loopper()throws IOException
 {
 //PS = new PrimoStep();    
-TestGET TG = new TestGET(true);
+
 VG = new VariabiliGlobali();
-System.out.printf("Costruttore della classe Loopper. Passaggio a EstraiLinks.");
+SET_LINKS_VISITATI = VG.get_set_scaricati();
+SET_LINKS = VG.get_set_collegamenti();
+
+TestGET TG = new TestGET(true);
+
+System.out.printf("%nCostruttore della classe Loopper.%nPassaggio a EstraiLinks.%n");
+
 EstraiLinks el = new EstraiLinks(VG.get_page());
 el.links();
+STRINGA = VG.get_root() + "/" + VG.get_name_page();
+
+System.out.printf("%nCostruttore della classe Loopper.%nAggiunta "
+        + "della pagina visitata: %s.%n" , STRINGA);
+
+SET_LINKS_VISITATI.add(STRINGA);
+SET_LINKS.add(STRINGA);
+//cicloSito();
 /**
  * A questo punto la pagina è salvata, la lista dei collegamenti è aggiornata
  * resta da caricare il link tra quelli scaricati, fare il confronto con quelli 
@@ -34,5 +54,48 @@ el.links();
  * Quando il confronto fra la lista degli urls e quella degli urls scaricati
  * dà esito di eguaglianza il ciclo è finito.
  */
+
+//stampiamo un test dei set<> globali contenenti i link da visualizzare a console
+System.out.printf("%n========================================================%n"
+        + "Lista dei collegamenti presenti nel sito\tLista dei collegamenti visitati%n");
+STRINGA = "";
+String spazi = "";
+//Iterator it = SET_LINKS_VISITATI.iterator();
+Iterator it = VG.get_set_scaricati().iterator();
+//for (String st : SET_LINKS)
+for (String st : VG.get_set_collegamenti())
+    {
+        INT = 40 - st.length();
+        if (40 > 0)
+            {
+                while (INT > 0)
+                    {
+                    spazi = spazi + " ";
+                    INT--;
+                    }
+            }
+        STRINGA = STRINGA + st + spazi + "\t";
+        spazi = "";
+        if(it.hasNext())
+            {
+                STRINGA = STRINGA + it.next() + "\n";
+            }
+        else
+            {
+                STRINGA = STRINGA + "\n";
+            }
+    }
+System.out.printf("%s", STRINGA);
+}
+
+private void cicloSito()
+{
+boolean interr = false;
+while(! interr)
+    {
+        
+        if(VG.get_set_collegamenti().equals(VG.get_set_scaricati()))interr = true;
+    }
+
 }
 }

@@ -27,10 +27,31 @@ public void links ()
      * È possibile passare stringhe diverse per implementare i possibili
      * link presenti nelle pagie html, xml, xhtml e così via
      */
+    int i = 0;
+    Set <String> global_links = VG.get_set_collegamenti();
+    
     ciclo("href=");
     ciclo("src=");
     ciclo("http:");
     ciclo("https:");
+    System.out.printf("%n%nElenco dei link presenti nel sito%n%n");
+        for(String g : SET_LINKS)
+            {
+                System.out.printf("%s%n", g);
+                i++;
+                //System.out.printf(" %n%d ", i);
+            }
+        
+    global_links.addAll(SET_LINKS);
+    
+    System.out.printf("%n%nElenco dei link presenti nel set LISTA_URLS_SET delle variabiliGlobali "
+            + "dopo il passaggio in EstraiLinks%n%n");
+        for(String g : VG.get_set_collegamenti())
+            {
+                System.out.printf("%s%n", g);
+                i++;
+                //System.out.printf(" %n%d ", i);
+            }
 }
 
 private void ciclo(String par)
@@ -48,7 +69,6 @@ private void ciclo(String par)
         //int f = PAGINA.lastIndexOf("href=\"");
                 int f = PAGINA.length();
         String riga;
-        Set <String> global_links = VG.get_set_collegamenti();
         /**
          * Con un primo ciclo estraiamo i riferimenti degli attributi 'href'
          */
@@ -94,13 +114,6 @@ private void ciclo(String par)
                     }
             }
         /**righe di debug, commentabili 07/12/2023***********************/
-                System.out.printf("%n%nElenco dei link presenti nel sito%n%n");
-                for(String g : SET_LINKS)
-                    {
-                        System.out.printf("%s%n", g);
-                        i++;
-                        //System.out.printf(" %n%d ", i);
-                    }
-                global_links.addAll(SET_LINKS);
+ 
 }
 }
