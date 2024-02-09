@@ -27,26 +27,14 @@ private static int INT = 0;
 
 public Loopper()throws IOException
 {
-//PS = new PrimoStep();    
-
 VG = new VariabiliGlobali();
 SET_LINKS_VISITATI = VG.get_set_scaricati();
 SET_LINKS = VG.get_set_collegamenti();
 
-TestGET TG = new TestGET(true);
-
-System.out.printf("%nCostruttore della classe Loopper.%nPassaggio a EstraiLinks.%n");
-
-EstraiLinks el = new EstraiLinks(VG.get_page());
-el.links();
-STRINGA = VG.get_root() + "/" + VG.get_name_page();
-
-System.out.printf("%nCostruttore della classe Loopper.%nAggiunta "
-        + "della pagina visitata: %s.%n" , STRINGA);
-
-SET_LINKS_VISITATI.add(STRINGA);
-SET_LINKS.add(STRINGA);
-//cicloSito();
+passo();
+risultati();//linea di debug per la visualizzazione a console dei collegamenti
+cicloSito();
+risultati();
 /**
  * A questo punto la pagina è salvata, la lista dei collegamenti è aggiornata
  * resta da caricare il link tra quelli scaricati, fare il confronto con quelli 
@@ -55,6 +43,55 @@ SET_LINKS.add(STRINGA);
  * dà esito di eguaglianza il ciclo è finito.
  */
 
+}
+
+private void cicloSito()
+{
+boolean interr = false;
+while(! interr)
+    {
+        passo();
+        if(VG.get_set_collegamenti().equals(VG.get_set_scaricati()))interr = true;
+    }
+
+risultati();//linea di debug per la visualizzazione a console dei collegamenti
+
+}
+
+private void passo()
+{
+TestGET TG = new TestGET(true);
+EstraiLinks el = new EstraiLinks(VG.get_page());
+el.links();
+STRINGA = VG.get_root() + "/" + VG.get_name_page();
+
+System.out.printf("%nClasse Loopper metodo passo().%nAggiunta "
+        + "della pagina visitata: %s.%n" , STRINGA);
+
+SET_LINKS_VISITATI.add(STRINGA);
+SET_LINKS.add(STRINGA);
+
+
+//cicloSito();
+/**
+ * A questo punto la pagina è salvata, la lista dei collegamenti è aggiornata
+ * resta da caricare il link tra quelli scaricati, fare il confronto con quelli 
+ * da scaricare, impostare le variabili per il file successivo e ricominciare.
+ * Quando il confronto fra la lista degli urls e quella degli urls scaricati
+ * dà esito di eguaglianza il ciclo è finito.
+ */
+//impostazione nuova pagina
+
+}
+
+private void risultati()
+{
+/**
+ * Questo è un metodo di debug che visualizza il contenuto dei set<>
+ * di archiviazione dei link che verranno salvati sucessivamente nei 
+ * file di log del programma
+ */
+    
 //stampiamo un test dei set<> globali contenenti i link da visualizzare a console
 System.out.printf("%n========================================================%n"
         + "Lista dei collegamenti presenti nel sito\tLista dei collegamenti visitati%n");
@@ -86,16 +123,5 @@ for (String st : VG.get_set_collegamenti())
             }
     }
 System.out.printf("%s", STRINGA);
-}
-
-private void cicloSito()
-{
-boolean interr = false;
-while(! interr)
-    {
-        
-        if(VG.get_set_collegamenti().equals(VG.get_set_scaricati()))interr = true;
-    }
-
 }
 }

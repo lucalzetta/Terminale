@@ -8,24 +8,32 @@ import java.net.*;
  * @author luca
  * Questa classe si occupa di scaricare le pagine di un sito indicato nella riga di comando
  * dalla sua pagina principale, tipicamente index.html.
- * la pagina viene poi salvata nella directory radice passata come argomento e da lì
+ * la pagina viene poi salvata nella directory passata come argomento e da lì
  * analizzata alla ricerca dei suoi collegamenti interni per scaricare tutti gli elementi del sito.
  * 08/12/2023 finita una prima fase di crescita complessa e disordinata della classe,
  * ho deciso di limitarla all'ottenimento della pagina richiesta che viene memorizzata
  * in una variabile globale di tipo stringa 'PAGINA'
+ * 09/02/2024 ulteriore modifica: oltre al salvataggio della pagina come stream di byte
+ * la classe si occuperà anche di decidere se analizzare il testo, nel caso di file
+ * riconducibili a un flusso testuale o salvare la pagina così com'è nell'eventualità
+ * che si tratti di immagini, pdf, o altri tipi di file multimediali.
  */
 public class TestGET 
 {
 private String SITO;
 private String ROOT_DIR;
+private String SUBDIR;
+private String NOME_FILE;
 private VariabiliGlobali VG = new VariabiliGlobali();
 
 public TestGET()throws IOException
 {
     ROOT_DIR = VG.get_root();
     SITO = VG.get_sito().toString();
+    SUBDIR = VG.get_subdir();
+    NOME_FILE = VG.get_name_page();
     System.out.printf("Siamo nel costruttore di default della classe TestGET, sono state raccolte le "
-            + "varibili ROO_DIR e SITO che valgono: %n%s%n%s", ROOT_DIR, SITO);
+            + "varibili ROO_DIR, SITO, SUBDIR e NOME_FILE che valgono: %n%s%n%s%n%s%n%s", ROOT_DIR, SITO, SUBDIR, NOME_FILE);
     //riga di test per provare le nuove classi, decommentare le classi interessate
     //TrovaDirs td = new TrovaDirs();
     //td.cerca_dire();
@@ -49,6 +57,8 @@ if(! scarica_dati)
      */
     ROOT_DIR = VG.get_root();
     SITO = VG.get_sito().toString();
+    SUBDIR = VG.get_subdir();
+    NOME_FILE = VG.get_name_page();
     //riga di test per provare le nuove classi, decommentare le classi interessate
     try
         {

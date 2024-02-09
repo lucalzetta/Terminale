@@ -34,6 +34,7 @@ private static String PAGINA;//questa variabile conterrà il testo della pagina 
 private static String NOME_PAGINA;//questa variabile conterrà il nome della pagina da scaricare
 private static String CARTELLA_SITO = "httpdocs";
 private static String ROOT_D;
+private static String SUBDIR;//questa variabile conterrà i percorsi relativi in cui salvare i file
 private static StringBuilder PAGINA_BUILDER;
 private static URL SITO;
 private static File URLS;
@@ -82,7 +83,23 @@ else
                 + " NON è stata creata, VERIFICARE l'errore!");*/
     }
 }
+public void set_subdir(String subdir)throws IOException
+{
+SUBDIR = subdir;
+System.out.printf("Percorso di salvataggio del file corrente: %s%n", subdir);
 
+boolean dir = (new File(SUBDIR)).mkdirs();//crea la cartella, resta false 
+                                                       //se l'operazione fallisce
+if(dir)
+    {
+        System.out.println("Cartella di destinazione del file: " + SUBDIR);
+    }
+else
+    {
+        System.out.println("La cartella di destinazione del FILE: " + SUBDIR + ""
+                + " NON è stata creata, VERIFICARE l'errore!");
+    }
+}
 public void set_files()throws IOException
 {
 try
@@ -152,6 +169,10 @@ return ROOT_D;
 public URL get_sito()
 {
 return SITO;
+}
+public String get_subdir()
+{
+return SUBDIR;
 }
 public String get_name_page()
 {

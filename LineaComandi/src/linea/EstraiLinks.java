@@ -4,7 +4,7 @@ package linea;
  *
  * @author luca
  * Questa classe estrae tutti i collegamenti a cui fa riferimento la pagina e li
- * archivia in u TreeSet.
+ * archivia in un TreeSet.
  */
 import java.util.Set;
 import java.util.TreeSet;
@@ -32,8 +32,11 @@ public void links ()
     
     ciclo("href=");
     ciclo("src=");
+    //i cicli seguenti i n realtà sono eliminabili ma temporaneamente li
+    //lasciamo funzionare a scopo di test
     ciclo("http:");
     ciclo("https:");
+    ciclo("www.");
     System.out.printf("%n%nElenco dei link presenti nel sito%n%n");
         for(String g : SET_LINKS)
             {
@@ -52,6 +55,7 @@ public void links ()
                 i++;
                 //System.out.printf(" %n%d ", i);
             }
+        System.out.printf("%40s%n", "£");
 }
 
 private void ciclo(String par)

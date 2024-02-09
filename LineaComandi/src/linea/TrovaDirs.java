@@ -18,6 +18,7 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Iterator;
 
 public class TrovaDirs 
 {
@@ -44,8 +45,11 @@ String tmp = "";
 String riga = "";
 String u_perc;
 Set <String> ts = VG.get_set_collegamenti();
+Set <String> visitati = VG.get_set_scaricati();
+Iterator collegamenti = ts.iterator();
+Iterator coll_visitati = visitati.iterator();
 /**
- * Questo metodo esplora il contenuto del file in cui vengono
+ * Questo metodo esplora il contenuto del Set in cui vengono
  * archiviati i collegamenti del sito e trasforma il loro percorso
  * in directory locali
  * 07/02/2024
@@ -54,10 +58,11 @@ Set <String> ts = VG.get_set_collegamenti();
  * l'esecuzione, la scrittura dei file viene rimandata alla 
  * conclusione del programma
  */
-try
-    {
-        FileInputStream fis = new FileInputStream(FILE_IN);
+//try
+//    {
         boolean perc;
+        
+        /*FileInputStream fis = new FileInputStream(FILE_IN);
         ArchivioDIRS ad = new ArchivioDIRS();
         int c = 0;
         int limit = 0;//limitatore di esecuzioni per il debug
@@ -71,15 +76,27 @@ try
                         riga = riga + (char)c;
                         c++;
                     }
-                
-                perc = esame_directory(riga);
+          */
+        while(coll_visitati.hasNext())
+            {
+            if (collegamenti.next() == coll_visitati.next())
+                {
+                    perc = false;
+                }
+            else
+                {
+                    perc = true;
+                }
+            }
+        riga = collegamenti.next().toString();
+        perc = esame_directory(riga);
                 if(perc)
                     {
                         /*System.out.printf("????????????????????????????????????????????????\n"
                                 + "Il percorso %s potrebbe contenere una directory\n"
                                 + "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n", riga);*/
-                    try
-                        {
+//                    try
+  //                      {
                             //URL u_perc = new URL(CARTELLA_SITO + riga);
                             u_perc = CARTELLA_SITO + riga;
                             File f_perc = new File(u_perc);
@@ -99,17 +116,18 @@ try
                                 }
                             else
                                 {
-                                    /*System.out.println("La cartella : " + u_perc + ""
-                                                + " NON è stata creata, VERIFICARE l'errore!");*/
+                                    System.out.println("La cartella : " + u_perc + ""
+                                                + " NON è stata creata, potrebbe esistere"
+                                            + " già. VERIFICARE l'errore!");
                                 }
-                            ad.set_origin(percorso.getParent().toString());
-                            ad.scrivi_su_file();
-                        }
-                    catch(MalformedURLException mue)
-                        {
-                            System.err.printf("Errore nel metodo cerca_dire della classe TrovaDirs: ", mue);
-                        }
-                    }
+    //                        ad.set_origin(percorso.getParent().toString());
+      //                      ad.scrivi_su_file();
+        //                }
+          //          catch(MalformedURLException mue)
+            //            {
+                //            System.err.printf("Errore nel metodo cerca_dire della classe TrovaDirs: ", mue);
+              //          }
+//                    }
            /** Tratto di codice di test per la scrittura dei dati in una variabile 
            * di tipo List, in seguito questo ottimizzerà anche la scrittura dei file.
            * 05/11/2023
@@ -119,8 +137,8 @@ try
                 System.out.printf("Valore di 'riga' in TrovaDirs.cerca_dire(): %s%n", riga);
                 tmp = tmp + riga;
                 riga = "";
-                limit ++;
-                c ++;
+                //limit ++;
+                //c ++;
             }
          /** Tratto di codice di test per la scrittura dei dati in una variabile 
            * di tipo List, in seguito questo ottimizzerà anche la scrittura dei file.
@@ -137,11 +155,11 @@ try
         System.out.printf("%n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++%n"
                 + "Classe TrovaDirs, metodo cerca_dire(), fine lettura della lista dei link%n");
         /***********************************************************************/
-    }
-catch(IOException ioe)
-    {
-        System.err.printf("Il file %s non è stato trovato.", FILE_IN.getName());
-    }
+//    }
+//catch(IOException ioe)
+    //{
+      //  System.err.printf("Il file %s non è stato trovato.", FILE_IN.getName());
+    //}
 return tmp;
 }
 
@@ -161,9 +179,9 @@ String nome_file = "";
 String testo = "Nome di file o percorso non valido.";
 
 Path riga = Paths.get(dir);
-/*System.out.printf("Elaborazione di %s:\tNome: %s\tNumero di elementi: %d%n"
+System.out.printf("Elaborazione di %s:\tNome: %s\tNumero di elementi: %d%n"
         + "\tPercorso: %s%n\tRadice: %s%n",riga.toString(), riga.getFileName(), riga.getNameCount()
-        , riga.getParent(), riga.getRoot());*/
+        , riga.getParent(), riga.getRoot());
 n_elementi = riga.getNameCount();
 
 switch (n_elementi)

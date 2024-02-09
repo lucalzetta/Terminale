@@ -65,6 +65,20 @@ try
         }
         VG.set_page(str_pagina);
         VG.set_page_builder(build_pagina);
+        /**
+         * tratto  di codice di debug per una prima valutazione dei metadati
+         * del file tentiamo una lettura dei primi 200 caratteri
+         */
+        System.out.printf("%nCLasse SalvaPagine, metodo scrivi(), risultato "
+                + "della lettura dei primi caratteri del file:%n%n");
+        for (int i = 0; i < 300; i++)
+            {
+                System.out.printf("%s", build_pagina.charAt(i));
+            }
+        System.out.printf("%n%n%n");
+        /**
+         * Fine del codice di debug
+         */
     }
 catch(FileNotFoundException fnf)
     {
