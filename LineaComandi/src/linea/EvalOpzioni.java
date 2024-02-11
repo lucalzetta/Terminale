@@ -135,6 +135,23 @@ return sito_da_lavorare;
 
 return root_directory;
  }
+ 
+ private String file(String fl)
+ {
+ String f = fl;
+ String tmp = "";
+ int i = 0;
+ int fine = f.length();
+ i = f.lastIndexOf("/");
+ i++;
+ while (i < fine)
+    {
+        tmp = tmp + f.charAt(i);
+        i ++;
+    }
+ f = tmp;
+ return f;
+ }
 
  public void evalOpz(int opzioni)throws IOException
  {
@@ -199,16 +216,21 @@ String saluto;
          //Per l'opzione '-s' deve venire fornito un sito valido e una root directory
         //che andrà validata anch'essa
         //impostiamo le variabili globali
-                
+         System.out.printf("%n&&&&&&&&&&&&&&&&&&&&&& EvalOpzioni &&&&&&&&&&&&&&&&&&&&&&%n");
+        System.out.printf("Valore della variabile VG.get_args() in EvalOpzioni.EvalOpz() %s%n", VG.get_args());
         VG.set_sito(sito(VG.get_args()));
         System.out.printf("Valore della variabile sito in EvalOpzioni.EvalOpz() %s%n", sito(VG.get_args()));
         VG.set_root(directory(VG.get_args()));
         VG.set_files();
+        VG.set_name_page(file(VG.get_args()));
         System.out.printf("Valore della variabile root directory in EvalOpzioni.EvalOpz() %s%n", directory(VG.get_args()));
         System.out.printf("É stata scelta l'opzione 's', verrà scaricato il "
                 + "sito:%n%s%nNella directory:%n"
                 + "%s%ne scritti i "
-                + "file:%n%s%n%s%n",VG.get_sito().toString(),VG.get_root(), VG.get_file_URLS().toString(), VG.get_file_DIRS().toString());
+                + "file:%n%s%n%s%n"
+                + "scaricata la pagina: %s%n",VG.get_sito().toString(),VG.get_root(), 
+                VG.get_file_URLS().toString(), VG.get_file_DIRS().toString(),
+                VG.get_name_page());
         //a questo punto inizia la successione di comandi per l'esecuzione del programma
         Loopper l = new Loopper();
         break;

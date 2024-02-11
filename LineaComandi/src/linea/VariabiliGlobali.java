@@ -37,6 +37,7 @@ private static String ROOT_D;
 private static String SUBDIR;//questa variabile conterrà i percorsi relativi in cui salvare i file
 private static StringBuilder PAGINA_BUILDER;
 private static URL SITO;
+private static URL SITO_RIDOTTO;
 private static File URLS;
 private static File DIRS;
 private static String ARGOMENTI_STRING;
@@ -65,6 +66,10 @@ public void set_sito(URL sito)
 SITO = sito;
 }
 
+public void set_sito_ridotto(URL sito)
+{
+SITO_RIDOTTO = sito;
+}
 
 public void set_root(String root_d)throws IOException
 {
@@ -169,6 +174,10 @@ return ROOT_D;
 public URL get_sito()
 {
 return SITO;
+}
+public URL get_sito_ridotto()
+{
+return SITO_RIDOTTO;
 }
 public String get_subdir()
 {

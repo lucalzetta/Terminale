@@ -13,8 +13,11 @@ package linea;
  * e offrire la possibilità di scaricare più siti simultaneamente.
  */
 import java.io.IOException;
+import java.io.File;
 import java.util.Set;
 import java.util.Iterator;
+import java.net.URL;
+import java.net.MalformedURLException;
 
 public class Loopper
 {
@@ -34,7 +37,7 @@ SET_LINKS = VG.get_set_collegamenti();
 passo();
 risultati();//linea di debug per la visualizzazione a console dei collegamenti
 cicloSito();
-risultati();
+risultati();//linea di debug per la visualizzazione a console dei collegamenti
 /**
  * A questo punto la pagina è salvata, la lista dei collegamenti è aggiornata
  * resta da caricare il link tra quelli scaricati, fare il confronto con quelli 
@@ -48,10 +51,13 @@ risultati();
 private void cicloSito()
 {
 boolean interr = false;
-while(! interr)
+int control = 0;
+while(! interr)//riga per l'uso normale del programma
+//while (control < 10)//a scopo di debug limitiamo il numero di cicli
     {
         passo();
         if(VG.get_set_collegamenti().equals(VG.get_set_scaricati()))interr = true;
+        control ++;
     }
 
 risultati();//linea di debug per la visualizzazione a console dei collegamenti
@@ -81,7 +87,92 @@ SET_LINKS.add(STRINGA);
  * dà esito di eguaglianza il ciclo è finito.
  */
 //impostazione nuova pagina
+nuova_pagina();
+}
 
+private void nuova_pagina()
+{
+/**
+ * Questo metodo trova una nuova pagina da visitare tra i link presenti nel sito 
+ * per ripetere a ciclo le operazioni fatte con la precedente
+ */
+Iterator i_links = VG.get_set_collegamenti().iterator();
+Iterator i_scaricati = VG.get_set_scaricati().iterator();
+boolean t = false;
+boolean u = false;
+String to_visit = "";
+String visitato = "";
+String tmp = "";
+String n_file = "";
+String sub_dir = "/";
+int contatore_e = 0;
+int contatore_i = 0;
+URL perc;
+URL nuovo_perc;
+File page;
+
+while ((! t) & (i_scaricati.hasNext()))
+    {
+        visitato = i_scaricati.next().toString();
+        while((! u) & (i_links.hasNext()))
+            {
+                to_visit = i_links.next().toString();
+                if(visitato == to_visit)
+                    {
+                        
+                    }
+                else
+                    {
+                        u = true;
+                    }
+                contatore_i ++;
+                System.out.printf("Ciclo %d interno, classe Loopper metodo nuova_pagina. "
+                        + "Valore di pagina %s%n", contatore_i, to_visit);
+            }
+        contatore_e ++;
+        System.out.printf("\tCiclo %d esterno, classe Loopper metodo nuova_pagina."
+                + " Valore di pagina %s%n", contatore_e, visitato);
+    }
+
+
+try
+    {
+        perc = new URL(VG.get_sito_ridotto().toString());
+        tmp = perc.getProtocol() + "://" + perc.getAuthority() + "/" + to_visit;
+        nuovo_perc = new URL(tmp);
+        contatore_e = to_visit.lastIndexOf("/");
+        contatore_i = 0;
+        
+        while(contatore_i < contatore_e)
+            {
+                sub_dir = sub_dir + to_visit.charAt(contatore_i);
+                contatore_i ++;
+            }
+        sub_dir = sub_dir +"/";
+        contatore_i = to_visit.length();
+        contatore_e ++;
+        
+        while(contatore_e < contatore_i)
+            {
+                n_file = n_file + to_visit.charAt(contatore_e);
+                contatore_e ++;
+            }
+       
+        VG.set_subdir(VG.get_root() + sub_dir);
+        VG.set_name_page(n_file);
+        VG.set_sito(nuovo_perc);
+        
+        System.out.printf("Prossima pagina da visitare: %s%nclasse Loopper metodo nuova_pagina.", tmp);
+        System.out.printf("Scaricheremo il file %s%nNella directory %s%n", n_file, VG.get_subdir());
+    }
+catch(MalformedURLException mue)
+    {
+        System.err.printf("Il percorso %s non è valido, si è verificato un errore: %s%n", to_visit, mue);
+    }
+catch( IOException IOE)
+    {
+        System.err.printf("Il file %s non è valido, si è verificato un errore: %s%n", to_visit, IOE);
+    }
 }
 
 private void risultati()
@@ -93,8 +184,8 @@ private void risultati()
  */
     
 //stampiamo un test dei set<> globali contenenti i link da visualizzare a console
-System.out.printf("%n========================================================%n"
-        + "Lista dei collegamenti presenti nel sito\tLista dei collegamenti visitati%n");
+System.out.printf("%n=============================================================================================%n"
+                  + "Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati%n");
 STRINGA = "";
 String spazi = "";
 //Iterator it = SET_LINKS_VISITATI.iterator();
@@ -102,8 +193,8 @@ Iterator it = VG.get_set_scaricati().iterator();
 //for (String st : SET_LINKS)
 for (String st : VG.get_set_collegamenti())
     {
-        INT = 40 - st.length();
-        if (40 > 0)
+        INT = 60 - st.length();
+        if (INT > 0)
             {
                 while (INT > 0)
                     {

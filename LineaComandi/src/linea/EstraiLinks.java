@@ -29,7 +29,6 @@ public void links ()
      */
     int i = 0;
     Set <String> global_links = VG.get_set_collegamenti();
-    
     ciclo("href=");
     ciclo("src=");
     //i cicli seguenti i n realtà sono eliminabili ma temporaneamente li
@@ -108,7 +107,10 @@ private void ciclo(String par)
                                 riga = riga + PAGINA.charAt(i);
                                 i++;
                             }
+                        //riga = VG.get_root() + "/" + riga;
+                        
                         SET_LINKS.add(riga);
+                        
                         System.out.printf("Trovata l'occorrenza n° %d di '%s' in posizione: %d\t%s%n",c,par, i,riga);
                         i++;
                         old_ref = PAGINA.indexOf(par, 0 );//segna la prima occorrenza della 

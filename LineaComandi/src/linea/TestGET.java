@@ -49,17 +49,38 @@ public TestGET()throws IOException
 
 public TestGET(boolean scarica_dati)
 {
+System.out.println();
+    for (int i = 0; i < 50; i++)
+        System.out.printf("&#$");
+
+    ROOT_DIR = VG.get_root();
+    System.out.printf("%nTestGet, valore delle variabili iniziali della classe.%nROOT_DIR: %s", ROOT_DIR);
+    
+    SITO = VG.get_sito().toString();
+        System.out.printf("%nTestGet, valore delle variabili iniziali della classe.%nSITO: %s", SITO);
+    
+    SUBDIR = VG.get_subdir();
+        System.out.printf("%nTestGet, valore delle variabili iniziali della classe.%nSUBDIR: %s", SUBDIR);
+
+    NOME_FILE = VG.get_name_page();
+        System.out.printf("%nTestGet, valore delle variabili iniziali della classe.%nNOME_FILE: %s", NOME_FILE);
+
+    System.out.println();
+    for (int i = 0; i < 50; i++)
+        System.out.printf("&8$");
+    System.out.println();
+
+    
 if(! scarica_dati)
 {
     /**
      * Questo if, valuta la richiesta di scaricare i dati e se non è impostata
      * replica il comportamento di default usato come test.
      */
-    ROOT_DIR = VG.get_root();
-    SITO = VG.get_sito().toString();
-    SUBDIR = VG.get_subdir();
-    NOME_FILE = VG.get_name_page();
-    //riga di test per provare le nuove classi, decommentare le classi interessate
+    //Seguono alcuni output di debug per il controllo delle variabili
+    
+    
+//riga di test per provare le nuove classi, decommentare le classi interessate
     try
         {
             TrovaDirs td = new TrovaDirs();
@@ -98,10 +119,12 @@ private void OttieniPagina()throws IOException
       {
         String dir = VG.get_destinazione_files_sito();
         URL u = VG.get_sito();
+        URL sito_base;
         //il metodo get_file dell'oggetto URL non si rivela sempre affidabile
         //perciò ricorriamo ad un ciclo sulla stringa che lo compone
         String page = u.toString();
         String nome = "";
+        String nome_base = "";
         int stop = page.length();
         int start = page.lastIndexOf("/");
         start = start +1;
@@ -112,6 +135,19 @@ private void OttieniPagina()throws IOException
             }
         System.out.printf("Nome della pagina da salvare: %s%n", nome);
         VG.set_name_page(nome);
+        
+        stop = page.lastIndexOf("/");
+        start = 0;
+               while(start < stop)
+            {
+                nome_base = nome_base + page.charAt(start);
+                start++;
+            }
+        System.out.printf("Nome del sito da esplorare: %s%n", nome);
+        //Si rende necessario depurare il nome del sito dal nome della 
+        //pagina per la gestione delle pagine successive
+        sito_base = new URL(nome_base);
+        VG.set_sito_ridotto(sito_base);
        //Ci si può trovare nella situazione in cui il nome della pagina da scaricare 
         //non sia ammesso come nome valido, in questo caso verrà convertito in index.html
         switch(nome)

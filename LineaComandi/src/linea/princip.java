@@ -6,6 +6,9 @@ public class princip
 {
     public static void main(String[] args)throws IOException, UnknownHostException
     {
+        String[] argomenti = new String[2];
+        argomenti[0] = "-s";
+        argomenti[1] = "http://www.scuoladipoliticamaniago.it/index.html";
             /**
              * Codice di test per il debug dell'applicazione
              */
@@ -35,6 +38,12 @@ public class princip
         //che, in seguito alla verifica imposta le variabili globali necessarie 
         //al funzionamento del programma
         Argos as = new Argos(args);
+     System.out.println("Elaborazione completata.");
+    }
+    else
+    {
+    //inseriamo un else di test per il debug fuori dalla linea di comando
+     Argos as = new Argos(argomenti);
      System.out.println("Elaborazione completata.");
     }
     
