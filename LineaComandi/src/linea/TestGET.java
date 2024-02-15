@@ -143,7 +143,7 @@ private void OttieniPagina()throws IOException
                 nome_base = nome_base + page.charAt(start);
                 start++;
             }
-        System.out.printf("Nome del sito da esplorare: %s%n", nome);
+        System.out.printf("Nome del sito da esplorare: %s%n", nome_base);
         //Si rende necessario depurare il nome del sito dal nome della 
         //pagina per la gestione delle pagine successive
         sito_base = new URL(nome_base);
@@ -173,7 +173,8 @@ private void OttieniPagina()throws IOException
                 else
                     {
                         nome="pagina_nominata_default(" + VG.get_conter() + ").html";
-                        VG.set_conter();
+                        int cont = VG.get_conter();
+                        VG.set_conter();//Il metodo incrementa da sè il valore del contatore
                     }
             break;    
             }

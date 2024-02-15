@@ -14,6 +14,10 @@ import java.util.TreeSet;
 public class VariabiliGlobali 
 {
 /**
+ * @param TESTO
+ * Memorizza un valore booleano che indica se il file che stiamo valutando 
+ * è esplorabile da programma come file di testo oppure può essere solo 
+ * scaricato e salvato in una directory.
  * @param LISTA_URLS_LIST
  * questa variabile di tipo TreeSet ci permetterà di memorizzare tutti gli URL del 
  * sito fino alla loro trascrizione sul file ListaURLS.txt senza il rischio di 
@@ -44,6 +48,7 @@ private static String ARGOMENTI_STRING;
 private static int[] ARGOMENTI_INT;
 private static int CONTATORE;
 private static String OPZIONI;
+private static boolean TESTO;
 private final static Set <String> LISTA_URLS_LIST = new TreeSet<>();//lo scopo di questa lista è quello di memorizzare 
                                                                 //tutti i link della pagina scaricata
 private final static Set <String> LISTA_PAGINE = new TreeSet<>();//lo scopo di questa lista è quello di memorizzare 
@@ -166,6 +171,15 @@ public void set_conter()
 {
 CONTATORE = CONTATORE + 1;
 }
+
+public void set_testo(boolean testo)
+{
+TESTO = testo;
+}
+/**
+ * Fine delle istruzioni set e inizio dlle istruzioni get
+ * @return 
+ */
 
 public String get_root()
 {
