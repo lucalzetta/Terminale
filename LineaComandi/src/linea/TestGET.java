@@ -127,6 +127,7 @@ private void OttieniPagina()throws IOException
         String nome_base = "";
         int stop = page.length();
         int start = page.lastIndexOf("/");
+        ValutaFile VF;
         start = start +1;
         while(start < stop)
             {
@@ -180,10 +181,14 @@ private void OttieniPagina()throws IOException
             }
         System.out.printf("Nome della pagina da salvare (dopo l'if): %s%n", nome);
         
+        VF = new ValutaFile(nome);
+        VG.set_testo(VF.visitabile());
+        
         SalvaPagine sp = new SalvaPagine(dir, nome);//Questa riga salva la pagina richiesta nel file locale
                                                              //corrispondente
-        System.out.printf("La pagina: %s, verrà salvata in %s%n",nome, dir);
-        sp.scrivi();
+        System.out.printf("La pagina: %s, verrà salvata in %s%n"
+                + "con l'opzione testo = %b%n",nome, dir, VG.get_testo());
+        sp.scrivi(VG.get_testo());
 /*********************************************************************************/        
 
         /**

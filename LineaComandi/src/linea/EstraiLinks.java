@@ -21,40 +21,48 @@ PAGINA = pagina;
 SET_LINKS = new TreeSet<>();
 }
 
-public void links ()
+public void links (boolean testo)
 {
     /**
      * È possibile passare stringhe diverse per implementare i possibili
      * link presenti nelle pagie html, xml, xhtml e così via
      */
-    int i = 0;
-    Set <String> global_links = VG.get_set_collegamenti();
-    ciclo("href=");
-    ciclo("src=");
-    //i cicli seguenti i n realtà sono eliminabili ma temporaneamente li
-    //lasciamo funzionare a scopo di test
-    ciclo("http:");
-    ciclo("https:");
-    ciclo("www.");
-    System.out.printf("%n%nElenco dei link presenti nel sito%n%n");
-        for(String g : SET_LINKS)
-            {
-                System.out.printf("%s%n", g);
-                i++;
-                //System.out.printf(" %n%d ", i);
-            }
+    if( ! testo)
+        {
+            System.out.printf("%nIl file %s non è un file di testo, verrà salvato"
+                    + " senza ulteriori analisi%n", VG.get_name_page());
+        }
+    else
+        {
+            int i = 0;
+            Set <String> global_links = VG.get_set_collegamenti();
+            ciclo("href=");
+            ciclo("src=");
+            //i cicli seguenti i n realtà sono eliminabili ma temporaneamente li
+            //lasciamo funzionare a scopo di test
+            ciclo("http:");
+            ciclo("https:");
+            ciclo("www.");
+            System.out.printf("%n%nElenco dei link presenti nel sito%n%n");
+                for(String g : SET_LINKS)
+                    {
+                        System.out.printf("%s%n", g);
+                        i++;
+                        //System.out.printf(" %n%d ", i);
+                    }
         
-    global_links.addAll(SET_LINKS);
+            global_links.addAll(SET_LINKS);
     
-    System.out.printf("%n%nElenco dei link presenti nel set LISTA_URLS_SET delle variabiliGlobali "
-            + "dopo il passaggio in EstraiLinks%n%n");
-        for(String g : VG.get_set_collegamenti())
-            {
-                System.out.printf("%s%n", g);
-                i++;
-                //System.out.printf(" %n%d ", i);
-            }
-        System.out.printf("%40s%n", "£");
+            System.out.printf("%n%nElenco dei link presenti nel set LISTA_URLS_SET delle variabiliGlobali "
+                            + "dopo il passaggio in EstraiLinks%n%n");
+                for(String g : VG.get_set_collegamenti())
+                    {
+                        System.out.printf("%s%n", g);
+                        i++;
+                        //System.out.printf(" %n%d ", i);
+                    }
+                System.out.printf("%40s%n", "£");
+        }
 }
 
 private void ciclo(String par)

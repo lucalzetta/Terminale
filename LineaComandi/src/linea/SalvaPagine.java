@@ -41,7 +41,7 @@ DESTINAZIONE = dir;
 NOME_PAGINA = nome_pagina;
 }
 
-public void scrivi()throws IOException
+public void scrivi(boolean testo)throws IOException
 {
 try
     {
@@ -69,13 +69,21 @@ try
          * tratto  di codice di debug per una prima valutazione dei metadati
          * del file tentiamo una lettura dei primi 200 caratteri
          */
-        System.out.printf("%nCLasse SalvaPagine, metodo scrivi(), risultato "
-                + "della lettura dei primi caratteri del file:%n%n");
-        for (int i = 0; i < 300; i++)
+        if (! VG.get_testo())
             {
-                System.out.printf("%s", build_pagina.charAt(i));
+                System.out.printf("%nClasse SalvaPagine, metodo scrivi(), il file "
+                        + "%s non è un fie di testo.%n", NOME_PAGINA);
             }
-        System.out.printf("%n%n%n");
+        else
+            {
+                System.out.printf("%nCLasse SalvaPagine, metodo scrivi(), risultato "
+                                + "della lettura dei primi caratteri del file:%n%n");
+                for (int i = 0; i < 300; i++)
+                    {
+                        System.out.printf("%s", build_pagina.charAt(i));
+                    }
+                System.out.printf("%n%n%n");
+            }
         /**
          * Fine del codice di debug
          */

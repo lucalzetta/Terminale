@@ -177,8 +177,10 @@ public void set_testo(boolean testo)
 TESTO = testo;
 }
 /**
- * Fine delle istruzioni set e inizio dlle istruzioni get
+ * XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+ * Fine delle istruzioni set e inizio delle istruzioni get
  * @return 
+ * YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
  */
 
 public String get_root()
@@ -233,6 +235,11 @@ return ARGOMENTI_INT;
 public String get_opzioni()
 {
 return OPZIONI;
+}
+
+public boolean get_testo()
+{
+return TESTO;
 }
 
 public Set<String> get_set_collegamenti()

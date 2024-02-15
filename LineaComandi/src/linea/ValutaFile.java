@@ -29,12 +29,13 @@ String ext = "";
 int start = pagina.lastIndexOf(".");
 if (start != -1)
     {
-        int lunghezza = pagina.length()-start;
-        for (int i = 0; i < lunghezza; i++)
+        int lunghezza = pagina.length();
+        for (int i = start; i < lunghezza; i++)
             {
                 ext = ext + pagina.charAt(i);
             }
         text(ext);
+        System.out.printf("%nEstensione del file: %s %s%n", pagina, ext );
     }
 else
     {
@@ -59,8 +60,7 @@ switch(estensione)
            t = true;
     case ".php":
            t = true;           
-    default:
-            t = false;
+    
 }
 TESTO = t;
 return TESTO;

@@ -68,8 +68,14 @@ private void passo()
 {
 TestGET TG = new TestGET(true);
 EstraiLinks el = new EstraiLinks(VG.get_page());
-el.links();
-STRINGA = VG.get_root() + "/" + VG.get_name_page();
+el.links(VG.get_testo());
+
+System.out.printf("%nClasse Loopper metodo passo().%nTesto "
+        + "della pagina visitata:%n%s%n" , VG.get_page());
+
+STRINGA = STRINGA + VG.get_root();
+STRINGA = STRINGA + "/";
+STRINGA = STRINGA + VG.get_name_page();
 
 System.out.printf("%nClasse Loopper metodo passo().%nAggiunta "
         + "della pagina visitata: %s.%n" , STRINGA);
@@ -126,11 +132,11 @@ while ((! t) & (i_scaricati.hasNext()))
                         u = true;
                     }
                 contatore_i ++;
-                System.out.printf("Ciclo %d interno, classe Loopper metodo nuova_pagina. "
+                System.out.printf("%nCiclo %d interno, classe Loopper metodo nuova_pagina. "
                         + "Valore di pagina %s%n", contatore_i, to_visit);
             }
         contatore_e ++;
-        System.out.printf("\tCiclo %d esterno, classe Loopper metodo nuova_pagina."
+        System.out.printf("%n%tCiclo %d esterno, classe Loopper metodo nuova_pagina."
                 + " Valore di pagina %s%n", contatore_e, visitato);
     }
 
