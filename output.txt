@@ -27,6 +27,17 @@ SUBDIR: null
 TestGet, valore delle variabili iniziali della classe.
 NOME_FILE: index.html 
 &8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$
+Elaborazione di :	Nome: 	Numero di elementi: 1
+	Percorso: null
+	Radice: null
+####################################
+2f
+
+----------------------------------------------------------------------
+Classe TrovaDirs, metodo cerca_dire(), lettura della lista dei link
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Classe TrovaDirs, metodo cerca_dire(), fine lettura della lista dei link
 Nome della pagina da salvare: index.html
 Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 Nome della pagina da salvare (dopo l'if): index.html
@@ -34,6 +45,10 @@ Nome della pagina da salvare (dopo l'if): index.html
 Estensione del file: index.html .html
 La pagina: index.html, verrà salvata in scuoladipoliticamaniago
 con l'opzione testo = true
+
+Classe SalvaPagine, metodo scrivi(), destinazione del file: scuoladipoliticamaniago
+Nome del file: index.html
+
 
 CLasse SalvaPagine, metodo scrivi(), risultato della lettura dei primi caratteri del file:
 
@@ -75,7 +90,8 @@ stili/GeneralTest.css
                                        £
 
 Classe Loopper metodo passo().
-Testo della pagina visitata: <!DOCTYPE html>
+Testo della pagina visitata:
+<!DOCTYPE html>
 <html>
     <head>
         <title>Scuola di politica Maniago</title>
@@ -98,11 +114,13 @@ Testo della pagina visitata: <!DOCTYPE html>
 <a href=pagine/documentazione.html>Documentazione...</a><br />
 <a href=pagine/FlowChart.xhtml>Diagramma di flusso...</a><br />
 </html>
-.
+
 
 Classe Loopper metodo passo().
 Aggiunta della pagina visitata: scuoladipoliticamaniago/index.html.
+
 Ciclo 1 interno, classe Loopper metodo nuova_pagina. Valore di pagina immagini/Colors.jpg
+
 	Ciclo 1 esterno, classe Loopper metodo nuova_pagina. Valore di pagina scuoladipoliticamaniago/index.html
 Percorso di salvataggio del file corrente: scuoladipoliticamaniago/immagini/
 La cartella di destinazione del FILE: scuoladipoliticamaniago/immagini/ NON è stata creata, VERIFICARE l'errore!
@@ -129,6 +147,27 @@ SUBDIR: scuoladipoliticamaniago/immagini/
 TestGet, valore delle variabili iniziali della classe.
 NOME_FILE: Colors.jpg
 &8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$
+Elaborazione di pagine/FlowChart.xhtml:	Nome: FlowChart.xhtml	Numero di elementi: 2
+	Percorso: pagine
+	Radice: null
+
+Percorso da creare: scuoladipoliticamaniagopagine/FlowChart.xhtml
+La cartella : scuoladipoliticamaniagopagine/FlowChart.xhtml NON è stata creata, potrebbe esistere già. VERIFICARE l'errore!
+Valore di 'riga' in TrovaDirs.cerca_dire(): pagine/FlowChart.xhtml
+####################################
+2f
+
+----------------------------------------------------------------------
+Classe TrovaDirs, metodo cerca_dire(), lettura della lista dei link
+immagini/Colors.jpg
+pagine/FlowChart.xhtml
+pagine/ILibriDelMenocchio.xhtml
+pagine/documentazione.html
+scuoladipoliticamaniago/index.html
+stili/GeneralTest.css
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Classe TrovaDirs, metodo cerca_dire(), fine lettura della lista dei link
 Nome della pagina da salvare: Colors.jpg
 Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it/immagini
 Nome della pagina da salvare (dopo l'if): Colors.jpg
@@ -136,3 +175,7 @@ Nome della pagina da salvare (dopo l'if): Colors.jpg
 Estensione del file: Colors.jpg .jpg
 La pagina: Colors.jpg, verrà salvata in scuoladipoliticamaniago
 con l'opzione testo = false
+
+Classe SalvaPagine, metodo scrivi(), destinazione del file: scuoladipoliticamaniago
+Nome del file: Colors.jpg
+

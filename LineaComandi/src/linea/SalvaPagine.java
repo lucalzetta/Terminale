@@ -45,6 +45,8 @@ public void scrivi(boolean testo)throws IOException
 {
 try
     {
+        System.out.printf("%nClasse SalvaPagine, metodo scrivi(),"
+                + " destinazione del file: %s%nNome del file: %s%n%n", DESTINAZIONE, NOME_PAGINA);
         URL u = VG.get_sito();
         URLConnection uc = u.openConnection();
         java.io.InputStream in = uc.getInputStream();
@@ -63,8 +65,7 @@ try
           build_pagina.append((char)c);
           //System.out.print((char) c);
         }
-        VG.set_page(str_pagina);
-        VG.set_page_builder(build_pagina);
+        
         /**
          * tratto  di codice di debug per una prima valutazione dei metadati
          * del file tentiamo una lettura dei primi 200 caratteri
@@ -76,6 +77,8 @@ try
             }
         else
             {
+                VG.set_page(str_pagina);
+                VG.set_page_builder(build_pagina);
                 System.out.printf("%nCLasse SalvaPagine, metodo scrivi(), risultato "
                                 + "della lettura dei primi caratteri del file:%n%n");
                 for (int i = 0; i < 300; i++)

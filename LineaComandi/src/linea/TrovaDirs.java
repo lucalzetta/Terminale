@@ -26,16 +26,17 @@ private static String TESTO;
 private final VariabiliGlobali VG = new VariabiliGlobali();
 private final String ROOT;
 private final String CARTELLA_SITO;
-private final File FILE_OUT;
-private final File FILE_IN;
+//L'uso dei file viene sostituito dall'uso dei Set<> 15/02/2024
+//private final File FILE_OUT;
+//private final File FILE_IN;
 
 public TrovaDirs()throws IOException
 {
 //VG.set_files();//Questo garantisce anche la creazione dei file se non 
                //dovessero esistere
 ROOT = VG.get_root();
-FILE_OUT = VG.get_file_DIRS();
-FILE_IN = VG.get_file_URLS();
+//FILE_OUT = VG.get_file_DIRS();
+//FILE_IN = VG.get_file_URLS();
 CARTELLA_SITO = VG.get_destinazione_files_sito();
 }
 
@@ -88,7 +89,10 @@ Iterator coll_visitati = visitati.iterator();
                     perc = true;
                 }
             }
-        riga = collegamenti.next().toString();
+        if(collegamenti.hasNext())
+            {
+                riga = collegamenti.next().toString();
+            }
         perc = esame_directory(riga);
                 if(perc)
                     {
@@ -100,7 +104,7 @@ Iterator coll_visitati = visitati.iterator();
                             //URL u_perc = new URL(CARTELLA_SITO + riga);
                             u_perc = CARTELLA_SITO + riga;
                             File f_perc = new File(u_perc);
-                            //System.out.printf("%nPercorso da creare: %s%n",u_perc);
+                            System.out.printf("%nPercorso da creare: %s%n",u_perc);
                             Path percorso = Paths.get(u_perc);
 /**************************************************************************************************
  * Verificare la presenza di caratteri vietati prima di procedere alla creazione delle directory. *
@@ -108,8 +112,11 @@ Iterator coll_visitati = visitati.iterator();
  *Aggiungere il carattere di fine linea prima della scrittura sul file ArchivioDIRS.txt           *
  **************************************************************************************************/                            
                             //percorso = percorso.getParent();
-                            boolean dir = (new File(u_perc).mkdirs());//crea la cartella, resta false 
+                            
+                            
+                            boolean dir = (f_perc.mkdirs());//crea la cartella, resta false 
                                                        //se l'operazione fallisce
+                            
                             if(dir)
                                 {
                                     System.out.println("Cartella creata: " + u_perc);
@@ -150,7 +157,7 @@ Iterator coll_visitati = visitati.iterator();
                 + "Classe TrovaDirs, metodo cerca_dire(), lettura della lista dei link%n");
         for (String t : ts)
             {
-                System.out.printf("%s", t);
+                System.out.printf("%s%n", t);
             }
         System.out.printf("%n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++%n"
                 + "Classe TrovaDirs, metodo cerca_dire(), fine lettura della lista dei link%n");

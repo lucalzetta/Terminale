@@ -102,7 +102,7 @@ boolean dir = (new File(SUBDIR)).mkdirs();//crea la cartella, resta false
                                                        //se l'operazione fallisce
 if(dir)
     {
-        System.out.println("Cartella di destinazione del file: " + SUBDIR);
+        System.out.println("Cartella di destinazione del file: " + SUBDIR + " CREATA CON SUCCESSO!");
     }
 else
     {

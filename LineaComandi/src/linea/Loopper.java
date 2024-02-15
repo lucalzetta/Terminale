@@ -70,8 +70,11 @@ TestGET TG = new TestGET(true);
 EstraiLinks el = new EstraiLinks(VG.get_page());
 el.links(VG.get_testo());
 
-System.out.printf("%nClasse Loopper metodo passo().%nTesto "
+if(VG.get_testo())
+    {
+        System.out.printf("%nClasse Loopper metodo passo().%nTesto "
         + "della pagina visitata:%n%s%n" , VG.get_page());
+    }
 
 STRINGA = STRINGA + VG.get_root();
 STRINGA = STRINGA + "/";
@@ -136,7 +139,7 @@ while ((! t) & (i_scaricati.hasNext()))
                         + "Valore di pagina %s%n", contatore_i, to_visit);
             }
         contatore_e ++;
-        System.out.printf("%n%tCiclo %d esterno, classe Loopper metodo nuova_pagina."
+        System.out.printf("%n\tCiclo %d esterno, classe Loopper metodo nuova_pagina."
                 + " Valore di pagina %s%n", contatore_e, visitato);
     }
 
@@ -144,7 +147,11 @@ while ((! t) & (i_scaricati.hasNext()))
 try
     {
         perc = new URL(VG.get_sito_ridotto().toString());
-        tmp = perc.getProtocol() + "://" + perc.getAuthority() + "/" + to_visit;
+        tmp = tmp + perc.getProtocol();
+        tmp = tmp + "://";
+        tmp = tmp + perc.getAuthority();
+        tmp = tmp + "/";
+        tmp = tmp + to_visit;
         nuovo_perc = new URL(tmp);
         contatore_e = to_visit.lastIndexOf("/");
         contatore_i = 0;

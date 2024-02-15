@@ -103,7 +103,8 @@ else
         java.io.InputStream in = uc.getInputStream();
         java.io.InputStream theHTML = new BufferedInputStream(in);
         Reader reader = new InputStreamReader(theHTML);*/
-       
+        TrovaDirs td = new TrovaDirs();
+            td.cerca_dire();
         OttieniPagina();
        }
       catch (IOException ex) 
