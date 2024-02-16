@@ -57,14 +57,24 @@ try
         String str_pagina = "";
         StringBuilder build_pagina = new StringBuilder();
         int c;
-        while ((c = reader.read()) != -1) 
-        {
+        if(testo)
+            {
+                while ((c = reader.read()) != -1) 
+                    {
           
-          fos.write(c);
-          str_pagina = str_pagina + (char)c;
-          build_pagina.append((char)c);
-          //System.out.print((char) c);
-        }
+                        fos.write(c);
+                        str_pagina = str_pagina + (char)c;
+                        build_pagina.append((char)c);
+                        //System.out.print((char) c);
+                    }
+            }
+        else
+            {
+                while ((c = reader.read()) != -1) 
+                    {          
+                        fos.write(c);
+                    }
+            }
         
         /**
          * tratto  di codice di debug per una prima valutazione dei metadati

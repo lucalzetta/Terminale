@@ -53,15 +53,7 @@ public void links (boolean testo)
         
             global_links.addAll(SET_LINKS);
     
-            System.out.printf("%n%nElenco dei link presenti nel set LISTA_URLS_SET delle variabiliGlobali "
-                            + "dopo il passaggio in EstraiLinks%n%n");
-                for(String g : VG.get_set_collegamenti())
-                    {
-                        System.out.printf("%s%n", g);
-                        i++;
-                        //System.out.printf(" %n%d ", i);
-                    }
-                System.out.printf("%40s%n", "£");
+            System.out.printf("%n%40s%n", "£");
         }
 }
 

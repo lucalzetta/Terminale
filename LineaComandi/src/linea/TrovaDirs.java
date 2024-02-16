@@ -18,6 +18,7 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.Files;
+import java.nio.file.LinkOption;
 import java.util.Iterator;
 import java.net.MalformedURLException;
 import java.nio.file.FileAlreadyExistsException;
@@ -82,20 +83,34 @@ Iterator coll_visitati = visitati.iterator();
             {
                 riga = collegamenti.next().toString();
             }
-        perc = esame_directory(riga);
-                if(perc)
-                    {
-                        /*System.out.printf("????????????????????????????????????????????????\n"
+        
+        if((riga!="") & (riga!=null))
+            {
+                perc = esame_directory(riga);
+                    if(perc)
+                        {
+                                /*System.out.printf("????????????????????????????????????????????????\n"
                                 + "Il percorso %s potrebbe contenere una directory\n"
                                 + "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n", riga);*/
-//                    try
+        //                    try
   //                      {
                             //URL u_perc = new URL(CARTELLA_SITO + riga);
-                            u_perc = CARTELLA_SITO + riga;
+                            if(CARTELLA_SITO.lastIndexOf("/") == CARTELLA_SITO.length())
+                                {
+                                    u_perc = CARTELLA_SITO + riga;
+                                }
+                            else
+                                {
+                                u_perc = CARTELLA_SITO + "/" + riga;
+                                }
+                            
                             File f_perc = new File(u_perc);
                             System.out.printf("%nPercorso da creare: %s%n",u_perc);
                             Path percorso = Paths.get(u_perc);
-                            Files.createDirectories(percorso);
+                            if(Files.notExists(percorso, LinkOption.NOFOLLOW_LINKS))
+                                {
+                                    Files.createDirectories(percorso);
+                                }
 /**************************************************************************************************
  * Verificare la presenza di caratteri vietati prima di procedere alla creazione delle directory. *
  *Eliminare i possibili nomi di file dalla stringa del percorso.                                  *
@@ -108,33 +123,29 @@ Iterator coll_visitati = visitati.iterator();
            * 05/11/2023
            */  
             /********************************************************************/
-                ts.add(riga);
-                System.out.printf("Valore di 'riga' in TrovaDirs.cerca_dire(): %s%n", riga);
-                tmp = tmp + riga;
-                riga = "";
-                //limit ++;
-                //c ++;
-            }
+                            //ts.add(riga);
+                            System.out.printf("Valore di 'riga' in TrovaDirs.cerca_dire(): %s%n", riga);
+                            tmp = tmp + riga;
+                            riga = "";
+                            //limit ++;
+                            //c ++;
+                        }
          /** Tratto di codice di test per la scrittura dei dati in una variabile 
            * di tipo List, in seguito questo ottimizzerà anche la scrittura dei file.
            * 05/11/2023
            */  
             /********************************************************************/
-        System.out.printf("####################################%n%h%n", '/'); //47 
-        System.out.printf("%n----------------------------------------------------------------------%n"
-                + "Classe TrovaDirs, metodo cerca_dire(), lettura della lista dei link%n");
-        for (String t : ts)
-            {
-                System.out.printf("%s%n", t);
-            }
-        System.out.printf("%n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++%n"
-                + "Classe TrovaDirs, metodo cerca_dire(), fine lettura della lista dei link%n");
+                System.out.printf("####################################%n%h%n", '/'); //47 
+                System.out.printf("%n----------------------------------------------------------------------%n"
+                                + "Classe TrovaDirs, metodo cerca_dire(), lettura della lista dei link%n");
+                for (String t : ts)
+                    {
+                        System.out.printf("%s%n", t);
+                    }
+                System.out.printf("%n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++%n"
+                                + "Classe TrovaDirs, metodo cerca_dire(), fine lettura della lista dei link%n");
         /***********************************************************************/
-//    }
-//catch(IOException ioe)
-    //{
-      //  System.err.printf("Il file %s non è stato trovato.", FILE_IN.getName());
-    //}
+            }
 return tmp;
 }
 

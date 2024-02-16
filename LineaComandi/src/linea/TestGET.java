@@ -97,13 +97,7 @@ else
 {
     try 
       {
-        /*URL u = VG.get_sito();
-        URLConnection uc = u.openConnection();
-      
-        java.io.InputStream in = uc.getInputStream();
-        java.io.InputStream theHTML = new BufferedInputStream(in);
-        Reader reader = new InputStreamReader(theHTML);*/
-        TrovaDirs td = new TrovaDirs();
+       TrovaDirs td = new TrovaDirs();
             td.cerca_dire();
         OttieniPagina();
        }

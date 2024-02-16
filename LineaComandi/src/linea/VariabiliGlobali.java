@@ -10,6 +10,10 @@ import java.io .File;
 import java.io.IOException;
 import java.util.Set;
 import java.util.TreeSet;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.Files;
+import java.nio.file.LinkOption;
 
 public class VariabiliGlobali 
 {
@@ -37,7 +41,7 @@ private final String LISTA_URLS ="ListaURLS.txt";
 private static String PAGINA;//questa variabile conterrà il testo della pagina da scaricare
 private static String NOME_PAGINA;//questa variabile conterrà il nome della pagina da scaricare
 private static String CARTELLA_SITO = "httpdocs";
-private final String ROOT_DEST = "/home/lucaamministratore/GDrive/Luca/Programmazione/tMP/";
+private final String ROOT_DEST = "/home/lucaamministratore/tmp/";
 private static String ROOT_D;
 private static String SUBDIR;//questa variabile conterrà i percorsi relativi in cui salvare i file
 private static StringBuilder PAGINA_BUILDER;
@@ -79,31 +83,43 @@ SITO_RIDOTTO = sito;
 
 public void set_root(String root_d)throws IOException
 {
-ROOT_D = ROOT_DEST + root_d;
-System.out.printf("Root directory del progetto: %s%n", root_d);
-CARTELLA_SITO = ROOT_D;
-/**
- * Sospendiamo temporaneamente il seguente tratto di codice perché fuori posto.
- * UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU
- */
-
-boolean dir = (new File(CARTELLA_SITO)).mkdirs();//crea la cartella, resta false 
-                                                       //se l'operazione fallisce
-if(dir)
+if ((root_d != null))
     {
-        System.out.println("Cartella di destinazione del sito: " + CARTELLA_SITO);
+        if(ROOT_DEST.lastIndexOf("/") == (ROOT_DEST.length() - 1))
+            {
+                ROOT_D = ROOT_DEST + root_d;
+                System.out.printf("%nPercorso da creare: %s%n"
+                        + " con carattere slash finale +++++++++++++++++++%n"
+                        ,ROOT_D);
+            }
+        else
+            {
+                ROOT_D = ROOT_DEST + "/" + root_d;
+                System.out.printf("%nPercorso da creare: %s%n"
+                        + " senza carattere slash finale ----------------%n"
+                        ,ROOT_D);
+            }
+
+        System.out.printf("Root directory del progetto: %s%n", root_d);
+        CARTELLA_SITO = ROOT_D;
+
+        Path percorso = Paths.get(CARTELLA_SITO);
+
+        if(Files.notExists(percorso, LinkOption.NOFOLLOW_LINKS))
+            {
+                Files.createDirectories(percorso);
+                System.out.println("Cartella di destinazione del sito: " + CARTELLA_SITO
+                            + " CREATA CORRETTAMENTE!");
+            }
     }
 else
     {
-        System.out.println("La cartella di destinazione del sito: " + CARTELLA_SITO + ""
-                + " NON è stata creata, VERIFICARE l'errore!");
+                System.out.printf("%nPercorso impossibile da creare: %s%n"
+                        + " xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                        ,ROOT_D);
     }
-
-/**
- * Fine del tratto sospeso. 16/02/2024
- * OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
- */
 }
+
 public void set_subdir(String subdir)throws IOException
 {
 SUBDIR = subdir;
@@ -112,7 +128,7 @@ System.out.printf("Percorso di salvataggio del file corrente: %s%n", ROOT_D + su
  * Sospendiamo temporaneamente il seguente tratto di codice perché fuori posto.
  * UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU
  */
-
+/*
 boolean dir = (new File(SUBDIR)).mkdirs();//crea la cartella, resta false 
                                                        //se l'operazione fallisce
 if(dir)

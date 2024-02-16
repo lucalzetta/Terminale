@@ -35,7 +35,7 @@ SET_LINKS_VISITATI = VG.get_set_scaricati();
 SET_LINKS = VG.get_set_collegamenti();
 
 passo();
-risultati();//linea di debug per la visualizzazione a console dei collegamenti
+//risultati();//linea di debug per la visualizzazione a console dei collegamenti
 cicloSito();
 risultati();//linea di debug per la visualizzazione a console dei collegamenti
 /**
@@ -48,7 +48,7 @@ risultati();//linea di debug per la visualizzazione a console dei collegamenti
 
 }
 
-private void cicloSito()
+private void cicloSito()throws IOException
 {
 boolean interr = false;
 int control = 0;
@@ -64,8 +64,9 @@ risultati();//linea di debug per la visualizzazione a console dei collegamenti
 
 }
 
-private void passo()
+private void passo()throws IOException
 {
+VG.set_root(VG.get_subdir());
 TestGET TG = new TestGET(true);
 EstraiLinks el = new EstraiLinks(VG.get_page());
 el.links(VG.get_testo());
@@ -76,8 +77,8 @@ if(VG.get_testo())
         + "della pagina visitata:%n%s%n" , VG.get_page());
     }
 
-STRINGA = STRINGA + VG.get_root();
-STRINGA = STRINGA + "/";
+//STRINGA = STRINGA + VG.get_root();
+//STRINGA = STRINGA + "/";
 STRINGA = STRINGA + VG.get_name_page();
 
 System.out.printf("%nClasse Loopper metodo passo().%nAggiunta "
