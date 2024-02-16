@@ -67,6 +67,7 @@ risultati();//linea di debug per la visualizzazione a console dei collegamenti
 private void passo()throws IOException
 {
 VG.set_root(VG.get_subdir());
+System.out.printf("%nClasse Loopper, metodo passo, valore della root passato a TestGet: %s%n", VG.get_root());
 TestGET TG = new TestGET(true);
 EstraiLinks el = new EstraiLinks(VG.get_page());
 el.links(VG.get_testo());
@@ -124,6 +125,8 @@ File page;
 while ((! t) & (i_scaricati.hasNext()))
     {
         visitato = i_scaricati.next().toString();
+        System.out.printf("%n\tCiclo %d esterno, classe Loopper metodo nuova_pagina."
+                + " Valore di pagina %s%n", contatore_e, visitato);
         while((! u) & (i_links.hasNext()))
             {
                 to_visit = i_links.next().toString();
@@ -140,8 +143,6 @@ while ((! t) & (i_scaricati.hasNext()))
                         + "Valore di pagina %s%n", contatore_i, to_visit);
             }
         contatore_e ++;
-        System.out.printf("%n\tCiclo %d esterno, classe Loopper metodo nuova_pagina."
-                + " Valore di pagina %s%n", contatore_e, visitato);
     }
 
 
@@ -176,7 +177,7 @@ try
         VG.set_name_page(n_file);
         VG.set_sito(nuovo_perc);
         
-        System.out.printf("Prossima pagina da visitare: %s%nclasse Loopper metodo nuova_pagina.", tmp);
+        System.out.printf("%nProssima pagina da visitare: %s%nclasse Loopper metodo nuova_pagina.%n", tmp);
         System.out.printf("Scaricheremo il file %s%nNella directory %s%n", n_file, VG.get_subdir());
     }
 catch(MalformedURLException mue)

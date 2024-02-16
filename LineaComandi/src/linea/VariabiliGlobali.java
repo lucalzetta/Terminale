@@ -85,6 +85,11 @@ public void set_root(String root_d)throws IOException
 {
 if ((root_d != null))
     {
+        if (root_d.substring(0, 1) == "/")
+            {
+                root_d = root_d.substring(1);
+            }
+
         if(ROOT_DEST.lastIndexOf("/") == (ROOT_DEST.length() - 1))
             {
                 ROOT_D = ROOT_DEST + root_d;
@@ -217,25 +222,18 @@ TESTO = testo;
  * @return 
  * YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
  */
-public String get_root_dest()
+public String get_archivio_dirs()
 {
-return ROOT_DEST;
+return this.ARCHIVIO_DIRS;
+
 }
-public String get_root()
+public String get_lista_urls()
 {
-return ROOT_D;
+return this.LISTA_URLS;
 }
-public URL get_sito()
+public String get_page()
 {
-return SITO;
-}
-public URL get_sito_ridotto()
-{
-return SITO_RIDOTTO;
-}
-public String get_subdir()
-{
-return SUBDIR;
+return PAGINA;
 }
 public String get_name_page()
 {
@@ -249,52 +247,71 @@ public String get_destinazione_files_sito()
      */
 return CARTELLA_SITO;
 }
+public String get_root_dest()
+{
+return ROOT_DEST;
+}
+public String get_root()
+{
+return ROOT_D;
+}
+public String get_subdir()
+{
+return SUBDIR;
+}
+public StringBuilder get_pagina_builder()
+{
+return PAGINA_BUILDER;
+}
+public URL get_sito()
+{
+return SITO;
+}
+public URL get_sito_ridotto()
+{
+return SITO_RIDOTTO;
+}
 public File get_file_URLS()
 {
 return URLS;
 }
-
 public File get_file_DIRS()
 {
 return DIRS;
 }
-
 public String get_args()
 {
 //System.out.printf("Valore degli argomenti in VariabiliGlobali.get_args: %s%n", ARGOMENTI_STRING);
 return ARGOMENTI_STRING;
 }
-
 public int[] get_int_args()
 {
 return ARGOMENTI_INT;
 }
-
+public int get_conter()
+{
+return CONTATORE;
+}
 public String get_opzioni()
 {
 return OPZIONI;
 }
-
 public boolean get_testo()
 {
 return TESTO;
 }
-
 public Set<String> get_set_collegamenti()
 {
 return LISTA_URLS_LIST;
 }
-
 public Set<String> get_set_pagina()
 {
 return LISTA_PAGINE;
 }
-
 public Set<String> get_set_immagini()
 {
 return LISTA_IMMAGINI;
 }
-
 public Set<String> get_set_sitiext()
 {
 return LISTA_LINKS;
@@ -302,21 +319,5 @@ return LISTA_LINKS;
 public Set<String> get_set_scaricati()
 {
 return LISTA_SCARICATI;
-}
-
-
-public String get_page()
-{
-    return PAGINA;
-}
-
-public StringBuilder get_pagina_builder()
-{
-return PAGINA_BUILDER;
-}
-
-public int get_conter()
-{
-return CONTATORE;
 }
 }
