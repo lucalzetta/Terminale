@@ -52,8 +52,8 @@ private void cicloSito()
 {
 boolean interr = false;
 int control = 0;
-while(! interr)//riga per l'uso normale del programma
-//while (control < 10)//a scopo di debug limitiamo il numero di cicli
+//while(! interr)//riga per l'uso normale del programma
+while (control < 2)//a scopo di debug limitiamo il numero di cicli
     {
         passo();
         if(VG.get_set_collegamenti().equals(VG.get_set_scaricati()))interr = true;
@@ -201,6 +201,7 @@ System.out.printf("%n===========================================================
                   + "Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati%n");
 STRINGA = "";
 String spazi = "";
+String sub = "";
 //Iterator it = SET_LINKS_VISITATI.iterator();
 Iterator it = VG.get_set_scaricati().iterator();
 //for (String st : SET_LINKS)
@@ -215,7 +216,9 @@ for (String st : VG.get_set_collegamenti())
                     INT--;
                     }
             }
-        STRINGA = STRINGA + st + spazi + "\t";
+        STRINGA = STRINGA + st;
+        STRINGA = STRINGA + spazi;
+        STRINGA = STRINGA + "\t";
         spazi = "";
         if(it.hasNext())
             {

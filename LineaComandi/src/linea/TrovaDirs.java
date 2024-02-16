@@ -15,10 +15,12 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.util.Set;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.Files;
 import java.util.Iterator;
+import java.net.MalformedURLException;
+import java.nio.file.FileAlreadyExistsException;
 
 public class TrovaDirs 
 {
@@ -63,21 +65,7 @@ Iterator coll_visitati = visitati.iterator();
 //    {
         boolean perc;
         
-        /*FileInputStream fis = new FileInputStream(FILE_IN);
-        ArchivioDIRS ad = new ArchivioDIRS();
-        int c = 0;
-        int limit = 0;//limitatore di esecuzioni per il debug
-        while((c != -1))// & (limit < 50))//fino alla fine del file
-            {
-                //System.out.printf("%n****************************************************%n");                
-                //System.out.printf("Ciclo N° %d %s%n", limit,(char)c); 
-                while ((c != 10) & (c != -1))//fino alla fine della riga
-                    {
-                        c = fis.read();
-                        riga = riga + (char)c;
-                        c++;
-                    }
-          */
+        
         while(coll_visitati.hasNext())
             {
             if (collegamenti.next() == coll_visitati.next())
@@ -89,6 +77,7 @@ Iterator coll_visitati = visitati.iterator();
                     perc = true;
                 }
             }
+        
         if(collegamenti.hasNext())
             {
                 riga = collegamenti.next().toString();
@@ -106,35 +95,14 @@ Iterator coll_visitati = visitati.iterator();
                             File f_perc = new File(u_perc);
                             System.out.printf("%nPercorso da creare: %s%n",u_perc);
                             Path percorso = Paths.get(u_perc);
+                            Files.createDirectories(percorso);
 /**************************************************************************************************
  * Verificare la presenza di caratteri vietati prima di procedere alla creazione delle directory. *
  *Eliminare i possibili nomi di file dalla stringa del percorso.                                  *
  *Aggiungere il carattere di fine linea prima della scrittura sul file ArchivioDIRS.txt           *
  **************************************************************************************************/                            
-                            //percorso = percorso.getParent();
-                            
-                            
-                            boolean dir = (f_perc.mkdirs());//crea la cartella, resta false 
-                                                       //se l'operazione fallisce
-                            
-                            if(dir)
-                                {
-                                    System.out.println("Cartella creata: " + u_perc);
-                                }
-                            else
-                                {
-                                    System.out.println("La cartella : " + u_perc + ""
-                                                + " NON è stata creata, potrebbe esistere"
-                                            + " già. VERIFICARE l'errore!");
-                                }
-    //                        ad.set_origin(percorso.getParent().toString());
-      //                      ad.scrivi_su_file();
-        //                }
-          //          catch(MalformedURLException mue)
-            //            {
-                //            System.err.printf("Errore nel metodo cerca_dire della classe TrovaDirs: ", mue);
-              //          }
-//                    }
+
+
            /** Tratto di codice di test per la scrittura dei dati in una variabile 
            * di tipo List, in seguito questo ottimizzerà anche la scrittura dei file.
            * 05/11/2023

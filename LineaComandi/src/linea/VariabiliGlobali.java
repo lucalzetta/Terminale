@@ -37,6 +37,7 @@ private final String LISTA_URLS ="ListaURLS.txt";
 private static String PAGINA;//questa variabile conterrà il testo della pagina da scaricare
 private static String NOME_PAGINA;//questa variabile conterrà il nome della pagina da scaricare
 private static String CARTELLA_SITO = "httpdocs";
+private final String ROOT_DEST = "/home/lucaamministratore/GDrive/Luca/Programmazione/tMP/";
 private static String ROOT_D;
 private static String SUBDIR;//questa variabile conterrà i percorsi relativi in cui salvare i file
 private static StringBuilder PAGINA_BUILDER;
@@ -78,9 +79,14 @@ SITO_RIDOTTO = sito;
 
 public void set_root(String root_d)throws IOException
 {
-ROOT_D = root_d;
+ROOT_D = ROOT_DEST + root_d;
 System.out.printf("Root directory del progetto: %s%n", root_d);
 CARTELLA_SITO = ROOT_D;
+/**
+ * Sospendiamo temporaneamente il seguente tratto di codice perché fuori posto.
+ * UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU
+ */
+
 boolean dir = (new File(CARTELLA_SITO)).mkdirs();//crea la cartella, resta false 
                                                        //se l'operazione fallisce
 if(dir)
@@ -89,14 +95,23 @@ if(dir)
     }
 else
     {
-        /*System.out.println("La cartella di destinazione del sito: " + CARTELLA_SITO + ""
-                + " NON è stata creata, VERIFICARE l'errore!");*/
+        System.out.println("La cartella di destinazione del sito: " + CARTELLA_SITO + ""
+                + " NON è stata creata, VERIFICARE l'errore!");
     }
+
+/**
+ * Fine del tratto sospeso. 16/02/2024
+ * OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+ */
 }
 public void set_subdir(String subdir)throws IOException
 {
 SUBDIR = subdir;
-System.out.printf("Percorso di salvataggio del file corrente: %s%n", subdir);
+System.out.printf("Percorso di salvataggio del file corrente: %s%n", ROOT_D + subdir);
+/**
+ * Sospendiamo temporaneamente il seguente tratto di codice perché fuori posto.
+ * UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU
+ */
 
 boolean dir = (new File(SUBDIR)).mkdirs();//crea la cartella, resta false 
                                                        //se l'operazione fallisce
@@ -109,6 +124,10 @@ else
         System.out.println("La cartella di destinazione del FILE: " + SUBDIR + ""
                 + " NON è stata creata, VERIFICARE l'errore!");
     }
+/**
+ * Fine del tratto sospeso. 16/02/2024
+ * OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+ */
 }
 public void set_files()throws IOException
 {
@@ -182,7 +201,10 @@ TESTO = testo;
  * @return 
  * YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
  */
-
+public String get_root_dest()
+{
+return ROOT_DEST;
+}
 public String get_root()
 {
 return ROOT_D;
