@@ -18,6 +18,7 @@ private final String nomeFile;
 
 public TermInputStream(String nomeFile)throws IOException
 {
+System.out.printf("%nCLASSE TermInputStraem, costruttore di default.%n");
     this.nomeFile = nomeFile;
     in = new FileInputStream(nomeFile);
 }
@@ -29,6 +30,7 @@ public int getLength()
          * di byte da utilizzare nel programma.
          */
 {
+System.out.printf("%nCLASSE TermInputStraem, metodo getLength().%n");
 int lunghezzaFile = 0;
 boolean b = true;
 
@@ -51,6 +53,7 @@ return lunghezzaFile;
 
 public void mostraFile()
 {
+System.out.printf("%nCLASSE TermInputStraem, metodo mostraFile().%n");
 /**
 *Questo metodo mostra tutti i caratteri del fileInputStream.
 *Va a capo in corrispondenza di un carattere di ritorno a capo.

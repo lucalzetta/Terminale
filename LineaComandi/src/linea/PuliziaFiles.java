@@ -19,11 +19,12 @@ private final VariabiliGlobali VG = new VariabiliGlobali();
 
 public PuliziaFiles()
 {
-
+System.out.printf("%nCLASSE PulziaFiles, costruttore di default.%n");
 }
 
 public void del_URLS_doppi()
 {
+System.out.printf("%nCLASSE PuliziaFiles, metodo del_URLS_doppi().%n");
 /**
  * Questo è il metodo che opera la pulizia nel file degli URLS
  */

@@ -32,17 +32,20 @@ private final VariabiliGlobali VG = new VariabiliGlobali();
 
 public SalvaPagine(String nome_pagina)
 {
+System.out.printf("%nCLASSE SalvaPagine, costruttore di default.%n");
 DESTINAZIONE = VG.get_destinazione_files_sito();
 NOME_PAGINA = nome_pagina;
 }
 public SalvaPagine(String dir, String nome_pagina)
 {
+System.out.printf("%nCLASSE SalvaPagine, costruttore con parametri.%n");
 DESTINAZIONE = dir;
 NOME_PAGINA = nome_pagina;
 }
 
 public void scrivi(boolean testo)throws IOException
 {
+System.out.printf("%nCLASSE SalvaPagine, metodo scrivi().%n");
 try
     {
         System.out.printf("%nClasse SalvaPagine, metodo scrivi(),"

@@ -26,6 +26,7 @@ private final VariabiliGlobali VG = new VariabiliGlobali();
 
 public Argos()throws IOException
 {
+System.out.printf("%nCLASSE Argos, costruttore di default.%n");        
     /**
      * Costruttore di default nel caso in cui non vengano inserite opzioni di esecuzione
      * ovvero si esegua il codice in modalità diversa dalla riga di comando
@@ -39,6 +40,7 @@ System.out.printf("Nessun argomento ottenuto dalla riga di comando. Si forniscon
 
 public Argos(String[] argomenti)throws IOException
 {
+System.out.printf("%nCLASSE Argos, costruttore per la riga di comando con argomenti String[].%n");    
     /**
      * Costruttore per la riga di comando, si dovrà porre molta attenzione al trattamento 
      * dei caratteri apice di apostrofazione che dalla bash vengono interpretati come 
@@ -92,6 +94,7 @@ VG.set_opzioni(ARGOMENTI[0]);
 
 private void options(int[] argomenti)throws IOException
 {
+System.out.printf("%nCLASSE Argos, metodo options().%n");            
 /**
  * Questo metodo riceve l'array sotto forma di numeri interi degli argomenti passati 
  * al costruttore e ne estrae le opzioni per l'esecuzione del codice, ricorreremo alle

@@ -23,6 +23,7 @@ private static boolean TESTO;
 
 public ValutaFile(String pagina)
 {
+System.out.printf("%nCLASSE ValutaFile, costruttore di default.%n");
 //Prendiamo l'estensione del file e decidiamo se si tratta di un tipo di testo
 //o meno.
 String ext = "";
@@ -45,6 +46,7 @@ else
 
 private boolean text(String estensione)
 {
+System.out.printf("%nCLASSE ValutaFile, metodo text().%n");
 boolean t = false;
 switch(estensione)
 {
@@ -68,6 +70,7 @@ return TESTO;
 
 public boolean visitabile()
 {
+System.out.printf("%nCLASSE ValutaFile, metodo visitabile().%n");
 return TESTO;
 }
 }

@@ -17,12 +17,14 @@ private Set<String> SET_LINKS;
 
 public EstraiLinks(String pagina)
 {
+System.out.printf("%nCLASSE EstriLinks, costruttore di default.%n");
 PAGINA = pagina;
 SET_LINKS = new TreeSet<>();
 }
 
 public void links (boolean testo)
 {
+System.out.printf("%nCLASSE EstriLinks, metodo links().%n");    
     /**
      * È possibile passare stringhe diverse per implementare i possibili
      * link presenti nelle pagie html, xml, xhtml e così via
@@ -59,6 +61,7 @@ public void links (boolean testo)
 
 private void ciclo(String par)
 {
+System.out.printf("%nCLASSE EstriLinks, metodo ciclo().%n");    
 /**
  * 14/12/2023
  * Questo ciclo generalizza la ricerca delle righe contenenti i parametri indicati

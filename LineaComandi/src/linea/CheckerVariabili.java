@@ -164,14 +164,14 @@ private void MostraRisultati(Set<String> InSet)
 {
    
 System.out.printf("%n=============================================================================================%n"
-                  + "Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati%n");
+                  + "Lista dei collegamenti presenti nel sito%n");
 String STRINGA = "";
 String spazi = "";
 String sub = "";
 int INT = 0;
-//Iterator it = SET_LINKS_VISITATI.iterator();
+
 Iterator it = InSet.iterator();
-//for (String st : SET_LINKS)
+
 for (String st : InSet)
     {
         INT = 60 - st.length();
@@ -185,17 +185,9 @@ for (String st : InSet)
             }
         STRINGA = STRINGA + st;
         STRINGA = STRINGA + spazi;
-        STRINGA = STRINGA + "\t";
+        STRINGA = STRINGA + "*";
         spazi = "";
-        if(it.hasNext())
-            {
-                STRINGA = STRINGA + it.next() + "\n";
-            }
-        else
-            {
-                STRINGA = STRINGA + "\n";
-            }
-    }
+}
 System.out.printf("%s", STRINGA);
 }
 }

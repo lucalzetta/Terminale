@@ -15,27 +15,33 @@ public class ArchivioDIRS
 private final String ROOTD;
 //private String FILE_ORI;
 private String DATI_ORIGINE;
+private static CheckerVariabili CV = new CheckerVariabili();
  
 public ArchivioDIRS()
 {
+System.out.printf("%nCLASSE ArchivioDirs, costruttore di default%n");
 //ATTENZIONE! Prima di chiamare questo inizializzatore devono essere istanziate
 //le variabili globali dalla classe VariabiliGlobali()
 VariabiliGlobali vg = new VariabiliGlobali();
 ROOTD = vg.get_root();
+CV.get_ROOT_D();
 }
 
 public String get_root()
 {
+System.out.printf("%nCLASSE ArchivioDirs, metodo get_root()%n");    
 return ROOTD;
 }
 
 public void set_origin (String dati)
 {
+System.out.printf("%nCLASSE ArchivioDirs, metodo set_origin()%n");        
 DATI_ORIGINE = dati;
 }
 
 public void scrivi_su_file()throws IOException
 {
+System.out.printf("%nCLASSE ArchivioDirs, metodo scrivi_su_file()%n");        
 VariabiliGlobali vg = new VariabiliGlobali();    
 File file = vg.get_file_DIRS();
 FileOutputStream fw = new FileOutputStream(file, true);

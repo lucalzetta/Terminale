@@ -18,24 +18,28 @@ private final String IPDOMINIO;
 
 public InfoNet()
 {
+System.out.printf("%nCLASSE InfoNet, costruttore di default.%n");
 this.NOMEDOMINIO = "";
 this.IPDOMINIO = "";
 }
 
 public InfoNet(String nomeDominio)
 {
+System.out.printf("%nCLASSE InfoNet, costruttore con parametri 1.%n");
 this.NOMEDOMINIO = nomeDominio;
 this.IPDOMINIO = "";
 }
 
 public InfoNet(String nomeDominio, String IPDominio)
 {
+System.out.printf("%nCLASSE InfoNet, costruttore con parametri 2.%n");
 this.NOMEDOMINIO = nomeDominio;
 this.IPDOMINIO = IPDominio;
 }
 
 public String genericInfos()
 {
+System.out.printf("%nCLASSE InfoNet, metodo genericInfos().%n");
 String inf = "";
 try 
     {
@@ -51,6 +55,7 @@ return inf;
 
 public String localInfos()throws SocketException
 {
+System.out.printf("%nCLASSE InfoNet, metodo localInfos().%n");
 String inf="";
 Enumeration<NetworkInterface> interfaces = NetworkInterface.getNetworkInterfaces();
 while(interfaces.hasMoreElements())
@@ -66,6 +71,7 @@ return inf;
 
 public String mieInfos()
 {
+System.out.printf("%nCLASSE InfoNet, metodo mieInfos().%n");
 String inf = "";
 
     try 

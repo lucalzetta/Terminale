@@ -41,7 +41,7 @@ private final String LISTA_URLS ="ListaURLS.txt";
 private static String PAGINA;//questa variabile conterrà il testo della pagina da scaricare
 private static String NOME_PAGINA;//questa variabile conterrà il nome della pagina da scaricare
 private static String CARTELLA_SITO = "httpdocs";
-private final String ROOT_DEST = "/home/lucaamministratore/tmp/";
+private static String ROOT_DEST = "/home/lucaamministratore/tmp/";
 private static String ROOT_D;
 private static String SUBDIR;//questa variabile conterrà i percorsi relativi in cui salvare i file
 private static StringBuilder PAGINA_BUILDER;
@@ -69,6 +69,7 @@ private final static Set <String> LISTA_SCARICATI = new TreeSet<>();//lo scopo d
 
 public VariabiliGlobali()
 {
+System.out.printf("%nCLASSE VariabiliGlobali, costruttore di default.%n");
 }
 
 public void set_sito(URL sito)
@@ -123,6 +124,10 @@ else
                         + " xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
                         ,ROOT_D);
     }
+}
+public void set_root_dest(String root_dest)
+{
+this.ROOT_DEST = root_dest;
 }
 
 public void set_subdir(String subdir)throws IOException

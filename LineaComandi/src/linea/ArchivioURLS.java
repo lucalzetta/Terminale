@@ -22,6 +22,7 @@ private final VariabiliGlobali VG = new VariabiliGlobali();
 
 public ArchivioURLS()
 {
+System.out.printf("%nCLASSE ArchivioURLS, costruttore di default.%n");            
 //ATTENZIONE! Prima di chiamare questo inizializzatore devono essere istanziate
 //le variabili globali dalla classe VariabiliGlobali()
 ROOTD = VG.get_root();
@@ -29,16 +30,19 @@ ROOTD = VG.get_root();
 
 public String get_root()
 {
+System.out.printf("%nCLASSE ArchivioDirs, metodo get_root().%n");
 return ROOTD;
 }
 
 public void set_origin (StringBuilder dati)
 {
+System.out.printf("%nCLASSE ArchivioDirs, metodo set_origin().%n");    
 this.DATI_ORIGINE=dati;
 }
 
 public void scrivi_su_file()throws IOException
 {
+System.out.printf("%nCLASSE ArchivioDirs, metodo scrivi_su_file().%n");        
 File file = VG.get_file_URLS();
 StringBuilder riga = new StringBuilder();
 Set <String> ts = VG.get_set_collegamenti();

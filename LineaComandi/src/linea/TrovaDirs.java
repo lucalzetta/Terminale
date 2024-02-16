@@ -35,6 +35,7 @@ private final String CARTELLA_SITO;
 
 public TrovaDirs()throws IOException
 {
+System.out.printf("%nCLASSE TrovaDirs, costruttore di default.%n");
 //VG.set_files();//Questo garantisce anche la creazione dei file se non 
                //dovessero esistere
 ROOT = VG.get_root();
@@ -45,6 +46,7 @@ CARTELLA_SITO = VG.get_destinazione_files_sito();
 
 public String cerca_dire()throws IOException
 {
+System.out.printf("%nCLASSE TrovaDirs, metodo cerca_dire().%n");
 String tmp = "";
 String riga = "";
 String u_perc;
@@ -86,6 +88,7 @@ Iterator coll_visitati = visitati.iterator();
         
         if((riga!="") & (riga!=null))
             {
+                System.out.printf("%nValore di riga da elaborare: %s%n",riga);
                 perc = esame_directory(riga);
                     if(perc)
                         {
@@ -95,6 +98,7 @@ Iterator coll_visitati = visitati.iterator();
         //                    try
   //                      {
                             //URL u_perc = new URL(CARTELLA_SITO + riga);
+                            System.out.printf("%nValore di CARTELLA_SITO da elaborare: %s%n",CARTELLA_SITO);
                             if(CARTELLA_SITO.lastIndexOf("/") == CARTELLA_SITO.length())
                                 {
                                     u_perc = CARTELLA_SITO + riga;
@@ -151,6 +155,7 @@ return tmp;
 
 private boolean esame_directory(String dir)
 {
+System.out.printf("%nCLASSE TrovaDirs, metodo esame_directory().%n");
 /**
  * Questo metodo riceve una stringa e valuta se si tratta di una 
  * directory, a scopo di test valuteremo alcune caratteristiche
@@ -193,6 +198,7 @@ return contatore_file;
 
 private boolean caratteri_vietati(String nome)
 {
+System.out.printf("%nCLASSE TrovaDirs, metodo caratteri_vietati().%n");
 String nome_file = nome;    
 int index = -2;
 boolean abeam_strada;

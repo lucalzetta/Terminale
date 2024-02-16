@@ -26,14 +26,16 @@ private Set<String> SET_LINKS_VISITATI;
 private Set<String> SET_LINKS;
 private static String STRINGA = "";
 private static int INT = 0;
+private static CheckerVariabili CV = new CheckerVariabili();
 //private final PrimoStep PS;
 
 public Loopper()throws IOException
 {
+System.out.printf("%nCLASSE Loopper, costruttore di default.%n");
 VG = new VariabiliGlobali();
 SET_LINKS_VISITATI = VG.get_set_scaricati();
 SET_LINKS = VG.get_set_collegamenti();
-
+ 
 passo();
 //risultati();//linea di debug per la visualizzazione a console dei collegamenti
 cicloSito();
@@ -50,6 +52,7 @@ risultati();//linea di debug per la visualizzazione a console dei collegamenti
 
 private void cicloSito()throws IOException
 {
+System.out.printf("%nCLASSE Loopper, metodo cicloSito().%n");
 boolean interr = false;
 int control = 0;
 //while(! interr)//riga per l'uso normale del programma
@@ -66,6 +69,7 @@ risultati();//linea di debug per la visualizzazione a console dei collegamenti
 
 private void passo()throws IOException
 {
+System.out.printf("%nCLASSE Loopper, metodo passo().%n");
 VG.set_root(VG.get_subdir());
 System.out.printf("%nClasse Loopper, metodo passo, valore della root passato a TestGet: %s%n", VG.get_root());
 TestGET TG = new TestGET(true);
@@ -83,7 +87,7 @@ if(VG.get_testo())
 STRINGA = STRINGA + VG.get_name_page();
 
 System.out.printf("%nClasse Loopper metodo passo().%nAggiunta "
-        + "della pagina visitata: %s.%n" , STRINGA);
+        + "della pagina visitata alla lista links: %s.%n" , STRINGA);
 
 SET_LINKS_VISITATI.add(STRINGA);
 SET_LINKS.add(STRINGA);
@@ -103,6 +107,7 @@ nuova_pagina();
 
 private void nuova_pagina()
 {
+System.out.printf("%nCLASSE Loopper, metodo nuova_pagina().%n");
 /**
  * Questo metodo trova una nuova pagina da visitare tra i link presenti nel sito 
  * per ripetere a ciclo le operazioni fatte con la precedente
@@ -139,10 +144,11 @@ while ((! t) & (i_scaricati.hasNext()))
                         u = true;
                     }
                 contatore_i ++;
-                System.out.printf("%nCiclo %d interno, classe Loopper metodo nuova_pagina. "
+                System.out.printf("%n\t\tCiclo %d interno, classe Loopper metodo nuova_pagina. "
                         + "Valore di pagina %s%n", contatore_i, to_visit);
             }
         contatore_e ++;
+        System.out.printf("%n%n");
     }
 
 
@@ -173,9 +179,14 @@ try
                 contatore_e ++;
             }
        
-        VG.set_subdir(VG.get_root() + sub_dir);
+        VG.set_subdir(sub_dir);
+        CV.get_SUBDIR();
+        VG.set_root(VG.get_root() + sub_dir);
+        CV.get_ROOT_D();
         VG.set_name_page(n_file);
+        CV.get_NOME_PAGINA();
         VG.set_sito(nuovo_perc);
+        CV.get_URL_SITO();
         
         System.out.printf("%nProssima pagina da visitare: %s%nclasse Loopper metodo nuova_pagina.%n", tmp);
         System.out.printf("Scaricheremo il file %s%nNella directory %s%n", n_file, VG.get_subdir());
@@ -192,6 +203,7 @@ catch( IOException IOE)
 
 private void risultati()
 {
+System.out.printf("%nCLASSE Loopper, metodo risultati().%n");
 /**
  * Questo è un metodo di debug che visualizza il contenuto dei set<>
  * di archiviazione dei link che verranno salvati sucessivamente nei 

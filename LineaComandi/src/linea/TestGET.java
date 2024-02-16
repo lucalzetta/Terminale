@@ -28,6 +28,7 @@ private VariabiliGlobali VG = new VariabiliGlobali();
 
 public TestGET()throws IOException
 {
+System.out.printf("%nCLASSE TestGet, costruttore di default.%n");
     ROOT_DIR = VG.get_root();
     SITO = VG.get_sito().toString();
     SUBDIR = VG.get_subdir();
@@ -49,6 +50,7 @@ public TestGET()throws IOException
 
 public TestGET(boolean scarica_dati)
 {
+System.out.printf("%nCLASSE TestGet, costruttore con parametri.%n");
 System.out.println();
     for (int i = 0; i < 50; i++)
         System.out.printf("&#$");
@@ -110,6 +112,7 @@ else
 
 private void OttieniPagina()throws IOException
 {
+System.out.printf("%nCLASSE TestGet, metodo OttieniPagina().%n");
     try 
       {
         String dir = VG.get_destinazione_files_sito();

@@ -24,12 +24,13 @@ private final VariabiliGlobali VG = new VariabiliGlobali();
 
 public EvalOpzioni()
 {
-
+System.out.printf("%nCLASSE EvalOpzioni, costruttore di default.%n");
 }
     
      
  private URL sito(String sito)
  {
+System.out.printf("%nCLASSE EvalOpzioni, metodo sito().%n");     
  /**
   * Questo metodo è al servizio di evalOpzioni e serve ad estrarre un URL dagli 
   * argomenti specificati nella riga di comando; l'URL del sito di cui si vogliono 
@@ -63,6 +64,7 @@ return sito_da_lavorare;
  
  private String directory(String dir)
  {
+System.out.printf("%nCLASSE EvalOpzioni, metodo directory().%n");     
  /**
   * Anche questo è un metodo di servizio che estrae una directory dai parametri
   * passati come argomento.
@@ -138,6 +140,7 @@ return root_directory;
  
  private String file(String fl)
  {
+System.out.printf("%nCLASSE EvalOpzioni, metodo file().%n");
  String f = fl;
  String tmp = "";
  int i = 0;
@@ -155,6 +158,7 @@ return root_directory;
 
  public void evalOpz(int opzioni)throws IOException
  {
+System.out.printf("%nCLASSE EvalOpzioni, metodo evalOpz().%n");
 String saluto;     
  switch (opzioni)
     {
@@ -237,6 +241,5 @@ String saluto;
         break;
      
     }
- }
-    
+ }   
 }
