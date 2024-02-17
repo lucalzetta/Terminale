@@ -86,19 +86,39 @@ SITO_RIDOTTO = sito;
 
 public void set_root(String root_d)throws IOException
 {
-if ((root_d != null))
+System.out.printf("%nCLASSE VariabiliGlobali, metodo set_root().%n");    
+
+if ((root_d != null) & (root_d != ""))
     {
+        System.out.printf("%nCLASSE VariabiliGlobali, metodo set_root().%n"
+                        + "Valore della variabile locale root_d"
+                + " fuori dall'if: %s%n", root_d );
+        //Una serie di controlli verificano l'identità dell'argomento con il
+        //valore già impostato di ROOT_D
+        if (root_d.equalsIgnoreCase(ROOT_D))
+            {
+                ROOT_D = "";
+            }
+        
+/*        if ((root_d.compareTo(ROOT_D)) >= 0)
+            {
+                ROOT_D = "";
+            }
+*/        
         if (root_d.substring(0, 1) == "/")
             {
                 root_d = root_d.substring(1);
+                System.out.printf("%nCLASSE VariabiliGlobali, metodo set_root().%n"
+                        + "Valore della variabile locale root_d: %s%n", root_d );
             }
-        CV.get_ROOT_DEST();
+        //CV.get_ROOT_DEST();
         if(ROOT_DEST.lastIndexOf("/") == (ROOT_DEST.length() - 1))
             {
                 ROOT_D = ROOT_DEST + root_d;
                 System.out.printf("%nPercorso da creare: %s%n"
                         + " con carattere slash finale +++++++++++++++++++%n"
                         ,ROOT_D);
+                ROOT_DEST = ROOT_D;
             }
         else
             {
@@ -106,18 +126,19 @@ if ((root_d != null))
                 System.out.printf("%nPercorso da creare: %s%n"
                         + " senza carattere slash finale ----------------%n"
                         ,ROOT_D);
+                ROOT_DEST = ROOT_D;
             }
 
-        System.out.printf("Root directory del progetto: %s%n", root_d);
-        CARTELLA_SITO = ROOT_D;
+        System.out.printf("Root directory del progetto: %s%n", ROOT_D);
 
-        Path percorso = Paths.get(CARTELLA_SITO);
+        Path percorso = Paths.get(ROOT_D);
         CV.get_ROOT_D();
-
+        CV.get_ROOT_DEST();
+        
         if(Files.notExists(percorso, LinkOption.NOFOLLOW_LINKS))
             {
                 Files.createDirectories(percorso);
-                System.out.println("Cartella di destinazione del sito: " + CARTELLA_SITO
+                System.out.println("Cartella di destinazione del sito: " + ROOT_D
                             + " CREATA CORRETTAMENTE!");
             }
     }
@@ -135,8 +156,13 @@ this.ROOT_DEST = root_dest;
 
 public void set_subdir(String subdir)throws IOException
 {
+if(subdir.startsWith("/"))
+    {
+        subdir = subdir.substring(1);
+    }    
+CV.get_SUBDIR();
 SUBDIR = subdir;
-System.out.printf("Percorso di salvataggio del file corrente: %s%n", ROOT_D + subdir);
+//System.out.printf("Percorso di salvataggio del file corrente: %s%n", ROOT_D + subdir);
 /**
  * Sospendiamo temporaneamente il seguente tratto di codice perché fuori posto.
  * UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU
@@ -223,6 +249,11 @@ CONTATORE = CONTATORE + 1;
 public void set_testo(boolean testo)
 {
 TESTO = testo;
+}
+
+public void set_cartella_sito(String cartella_sito)
+{
+CARTELLA_SITO = cartella_sito;
 }
 /**
  * XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX

@@ -41,7 +41,7 @@ System.out.printf("%nCLASSE TrovaDirs, costruttore di default.%n");
 ROOT = VG.get_root();
 //FILE_OUT = VG.get_file_DIRS();
 //FILE_IN = VG.get_file_URLS();
-CARTELLA_SITO = VG.get_root_dest();
+CARTELLA_SITO = VG.get_destinazione_files_sito();
 }
 
 public String cerca_dire()throws IOException
@@ -86,21 +86,34 @@ Iterator coll_visitati = visitati.iterator();
                 riga = collegamenti.next().toString();
             }
         
-        if((riga!="") & (riga!=null))
+        System.out.printf("%nValore di riga da elaborare: %s%n",riga);
+        System.out.printf("%nValore di CARTELLA_SITO da elaborare: %s%n",CARTELLA_SITO);
+        
+        if((riga != "") & (riga != null))
             {
-                System.out.printf("%nValore di riga da elaborare: %s%n",riga);
+
                 perc = esame_directory(riga);
                     if(perc)
                         {
-                            System.out.printf("%nValore di CARTELLA_SITO da elaborare: %s%n",CARTELLA_SITO);
+
                             
-                            if(CARTELLA_SITO.lastIndexOf("/") == CARTELLA_SITO.length())
+                            if(CARTELLA_SITO.lastIndexOf("/") == (CARTELLA_SITO.length() - 1))
                                 {
                                     u_perc = CARTELLA_SITO + riga;
                                 }
                             else
                                 {
-                                u_perc = CARTELLA_SITO + "/" + riga;
+                                    u_perc = CARTELLA_SITO + "/" + riga;
+                                }
+                            /**
+                             * Aggiungiamo un ulteriore controllo per superare 
+                             * malformazioni della sotto directory che si sono 
+                             * verificate e per normalizzare la struttura delle
+                             * sottodirectory
+                             */
+                            if(u_perc.startsWith("/"))
+                                {
+                                    u_perc = u_perc.substring(1);
                                 }
                             
                             File f_perc = new File(u_perc);
@@ -134,8 +147,7 @@ Iterator coll_visitati = visitati.iterator();
            * 05/11/2023
            */  
             /********************************************************************/
-                System.out.printf("####################################%n%h%n", '/'); //47 
-                System.out.printf("%n----------------------------------------------------------------------%n"
+                    System.out.printf("%n----------------------------------------------------------------------%n"
                                 + "Classe TrovaDirs, metodo cerca_dire(), lettura della lista dei link%n");
                 for (String t : ts)
                     {
@@ -195,7 +207,7 @@ private boolean caratteri_vietati(String nome)
 {
 System.out.printf("%nCLASSE TrovaDirs, metodo caratteri_vietati().%n");
 String nome_file = nome;    
-int index = -2;
+//int index = -2;
 boolean abeam_strada;
             if(nome_file.contains("https:"))
                 {
@@ -233,12 +245,12 @@ boolean abeam_strada;
                     index= nome_file.indexOf("#");*/
                     abeam_strada = false;
                 }
-            else if (index > -1)
-                {
+//            else if (index > -1)
+  //              {
                     //nome_file = riga.getFileName().toString();
                     //System.out.printf("Questo non è un nome difile valido: %s", nome_file);
-                    abeam_strada = false;
-                }
+    //                abeam_strada = false;
+      //          }
             else
                 {
                     abeam_strada = true;

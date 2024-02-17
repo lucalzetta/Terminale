@@ -165,29 +165,11 @@ private void MostraRisultati(Set<String> InSet)
    
 System.out.printf("%n=============================================================================================%n"
                   + "Lista dei collegamenti presenti nel sito%n");
-String STRINGA = "";
-String spazi = "";
-String sub = "";
-int INT = 0;
-
-Iterator it = InSet.iterator();
 
 for (String st : InSet)
     {
-        INT = 60 - st.length();
-        if (INT > 0)
-            {
-                while (INT > 0)
-                    {
-                    spazi = spazi + " ";
-                    INT--;
-                    }
-            }
-        STRINGA = STRINGA + st;
-        STRINGA = STRINGA + spazi;
-        STRINGA = STRINGA + "*";
-        spazi = "";
-}
-System.out.printf("%s", STRINGA);
+        System.out.printf("%s%n", st);
+    }
+System.out.println();
 }
 }

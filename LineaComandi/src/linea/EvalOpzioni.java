@@ -231,7 +231,8 @@ String saluto;
         VG.set_root(VG.get_destinazione_files_sito() + directory(VG.get_args()));
         CV.get_ROOT_D();
         CV.get_ROOT_DEST();
-        VG.set_files();
+        VG.set_cartella_sito(VG.get_root());
+        VG.set_files();//aL MOMENTO INUTILE 17/02/2024
         VG.set_name_page(file(VG.get_args()));
         CV.get_NOME_PAGINA();
         System.out.printf("Valore della variabile root directory in EvalOpzioni.EvalOpz() %s%n", directory(VG.get_args()));

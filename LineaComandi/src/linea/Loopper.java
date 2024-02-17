@@ -60,7 +60,7 @@ System.out.printf("%nCLASSE Loopper, metodo cicloSito().%n");
 boolean interr = false;
 int control = 0;
 //while(! interr)//riga per l'uso normale del programma
-while (control < 2)//a scopo di debug limitiamo il numero di cicli
+while (control < 10)//a scopo di debug limitiamo il numero di cicli
     {   
         /**
          * Area di azzeramento delle variabili, finito il primo passo,
@@ -73,15 +73,18 @@ while (control < 2)//a scopo di debug limitiamo il numero di cicli
 //IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
         System.out.printf("%nArea di azzeramento delle variabili.%n%n");
 
-        for (int i = 0; i < 50; i++)
+        for (int i = 0; i < 90; i++)
             {
                 System.out.printf("I");
             }
         System.out.println();
-
+        STRINGA = "";
         VG.set_page("");
         VG.set_page_builder(VG.get_pagina_builder().delete(0, VG.get_pagina_builder().length()));
         //VG.set_root_dest("");
+        VG.set_name_page("");
+        //VG.set_cartella_sito("");
+        CV.get_NOME_PAGINA();
         CV.get_ROOT_DEST();
         CV.get_CARTELLA_SITO();
         CV.get_CONTATORE();
@@ -90,7 +93,7 @@ while (control < 2)//a scopo di debug limitiamo il numero di cicli
         if(VG.get_set_collegamenti().equals(VG.get_set_scaricati()))interr = true;
         System.out.printf("%nClasse Loopper, metodo ciclo, "
                 + "variabile di interruzione del loop: "
-                + "%s%nContatore di cicli: %d%n", interr);
+                + "%s%nContatore di cicli: %d%n", interr, control);
         control ++;
     }
 
@@ -101,7 +104,7 @@ risultati();//linea di debug per la visualizzazione a console dei collegamenti
 private void passo()throws IOException
 {
 System.out.printf("%nCLASSE Loopper, metodo passo().%n");
-VG.set_root(VG.get_subdir());
+//VG.set_root(VG.get_subdir());
 System.out.printf("%nClasse Loopper, metodo passo, valore della root passato a TestGet: %s%n", VG.get_root());
 TestGET TG = new TestGET(true);
 EstraiLinks el = new EstraiLinks(VG.get_page());
@@ -115,13 +118,22 @@ if(VG.get_testo())
 
 //STRINGA = STRINGA + VG.get_root();
 //STRINGA = STRINGA + "/";
-STRINGA = STRINGA + VG.get_name_page();
+if(VG.get_subdir() != null)
+    {
+        STRINGA = VG.get_subdir() + VG.get_name_page();
+    }
+else
+    {
+        STRINGA = VG.get_name_page();
+    }
+
 
 System.out.printf("%nClasse Loopper metodo passo().%nAggiunta "
         + "della pagina visitata alla lista links: %s.%n" , STRINGA);
 
 SET_LINKS_VISITATI.add(STRINGA);
 SET_LINKS.add(STRINGA);
+CV.get_Set_LISTA_LINKS();
 
 
 //cicloSito();
@@ -209,15 +221,33 @@ try
                 n_file = n_file + to_visit.charAt(contatore_e);
                 contatore_e ++;
             }
-       
-        VG.set_subdir(sub_dir);
-        CV.get_SUBDIR();
-        VG.set_root(VG.get_root() + sub_dir);
-        CV.get_ROOT_D();
+        if(sub_dir.startsWith("/"))
+            {
+                sub_dir = sub_dir.substring(1);
+            }
+        //Se la nuova subdirectory è uguale alla vecchia lasciamo la root
+        //e le altre variabili come sono
+        
+        System.out.printf("%nClasse Loopper, metodo nuova_pagina() valore di subdirectory: %s%n", sub_dir);
+        
+        if(sub_dir.equalsIgnoreCase(VG.get_subdir()))
+            {
+                System.out.printf("%nClasse Loopper, metodo nuova_pagina() La vecchia subdirectory e la nuova corrispondono%n");
+                        
+            }
+        else
+            {
+                VG.set_subdir(sub_dir);
+                CV.get_SUBDIR();
+                VG.set_root(sub_dir);
+                CV.get_ROOT_D();
+            }
+        
         VG.set_name_page(n_file);
         CV.get_NOME_PAGINA();
         VG.set_sito(nuovo_perc);
         CV.get_URL_SITO();
+        CV.get_CARTELLA_SITO();
         
         System.out.printf("%nProssima pagina da visitare: %s%nclasse Loopper metodo nuova_pagina.%n", tmp);
         System.out.printf("Scaricheremo il file %s%nNella directory %s%n", n_file, VG.get_subdir());
