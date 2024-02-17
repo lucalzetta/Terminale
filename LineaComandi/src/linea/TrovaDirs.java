@@ -41,7 +41,7 @@ System.out.printf("%nCLASSE TrovaDirs, costruttore di default.%n");
 ROOT = VG.get_root();
 //FILE_OUT = VG.get_file_DIRS();
 //FILE_IN = VG.get_file_URLS();
-CARTELLA_SITO = VG.get_destinazione_files_sito();
+CARTELLA_SITO = VG.get_root_dest();
 }
 
 public String cerca_dire()throws IOException
@@ -92,13 +92,8 @@ Iterator coll_visitati = visitati.iterator();
                 perc = esame_directory(riga);
                     if(perc)
                         {
-                                /*System.out.printf("????????????????????????????????????????????????\n"
-                                + "Il percorso %s potrebbe contenere una directory\n"
-                                + "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n", riga);*/
-        //                    try
-  //                      {
-                            //URL u_perc = new URL(CARTELLA_SITO + riga);
                             System.out.printf("%nValore di CARTELLA_SITO da elaborare: %s%n",CARTELLA_SITO);
+                            
                             if(CARTELLA_SITO.lastIndexOf("/") == CARTELLA_SITO.length())
                                 {
                                     u_perc = CARTELLA_SITO + riga;

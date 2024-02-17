@@ -1,10 +1,14 @@
 
 CLASSE VariabiliGlobali, costruttore di default.
 
+CLASSE VariabiliGlobali, costruttore di default.
+
 CLASSE Argos, costruttore per la riga di comando con argomenti String[].
 
 CLASSE Argos, metodo options().
 Valore della variabile opzioni: 160
+
+CLASSE VariabiliGlobali, costruttore di default.
 
 CLASSE VariabiliGlobali, costruttore di default.
 
@@ -23,13 +27,25 @@ CLASSE EvalOpzioni, metodo sito().
 Valore di i 3
 Valore della variabile sito in EvalOpzioni.EvalOpz() http://www.scuoladipoliticamaniago.it/index.html
 
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/index.html
+
 CLASSE EvalOpzioni, metodo directory().
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/
 
 Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago
  con carattere slash finale +++++++++++++++++++
 Root directory del progetto: scuoladipoliticamaniago
 
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/
+
 CLASSE EvalOpzioni, metodo file().
+
+Nome della pagina che si sta elaborando:index.html 
 
 CLASSE EvalOpzioni, metodo directory().
 Valore della variabile root directory in EvalOpzioni.EvalOpz() scuoladipoliticamaniago
@@ -175,7 +191,7 @@ Testo della pagina visitata:
 
 
 Classe Loopper metodo passo().
-Aggiunta della pagina visitata: index.html.
+Aggiunta della pagina visitata alla lista links: index.html.
 
 CLASSE Loopper, metodo nuova_pagina().
 
@@ -188,15 +204,19 @@ Percorso di salvataggio del file corrente: /home/lucaamministratore/tmp/scuoladi
 
 Sotto directory in cui verrà salvata la pagina:/immagini/
 
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/
+
 Percorso da creare: /home/lucaamministratore/tmp//home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
  con carattere slash finale +++++++++++++++++++
 Root directory del progetto: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
 Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp//home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp//home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+
 Nome della pagina che si sta elaborando:Colors.jpg
 
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: /home/lucaamministratore/tmp/scuoladipoliticamaniago/ListaURLS.txt
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
 Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 classe Loopper metodo nuova_pagina.
@@ -205,11 +225,25 @@ Nella directory /immagini/
 
 CLASSE Loopper, metodo cicloSito().
 
+Area di azzeramento delle variabili.
+
+IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/
+
+Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp//home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+
+Valore del contatore globale: 0
+
 CLASSE Loopper, metodo passo().
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/
 
 Percorso da creare: /home/lucaamministratore/tmp//immagini/
  con carattere slash finale +++++++++++++++++++
 Root directory del progetto: /immagini/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp//immagini/
 
 Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp//immagini/
 
@@ -293,7 +327,7 @@ CLASSE EstriLinks, metodo links().
 Il file Colors.jpg non è un file di testo, verrà salvato senza ulteriori analisi
 
 Classe Loopper metodo passo().
-Aggiunta della pagina visitata: index.htmlColors.jpg.
+Aggiunta della pagina visitata alla lista links: index.htmlColors.jpg.
 
 CLASSE Loopper, metodo nuova_pagina().
 
@@ -310,130 +344,7 @@ Percorso di salvataggio del file corrente: /home/lucaamministratore/tmp//immagin
 
 Sotto directory in cui verrà salvata la pagina:/immagini/
 
-Percorso da creare: /home/lucaamministratore/tmp//home/lucaamministratore/tmp//immagini//immagini/
- con carattere slash finale +++++++++++++++++++
-Root directory del progetto: /home/lucaamministratore/tmp//immagini//immagini/
-
-Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp//home/lucaamministratore/tmp//immagini//immagini/
-
-Nome della pagina che si sta elaborando:Colors.jpg
-
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: /home/lucaamministratore/tmp/scuoladipoliticamaniago/ListaURLS.txt
-
-Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
-classe Loopper metodo nuova_pagina.
-Scaricheremo il file Colors.jpg
-Nella directory /immagini/
-
-CLASSE Loopper, metodo passo().
-
-Percorso da creare: /home/lucaamministratore/tmp//immagini/
- con carattere slash finale +++++++++++++++++++
-Root directory del progetto: /immagini/
-
-Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp//immagini/
-
-CLASSE VariabiliGlobali, costruttore di default.
-
-CLASSE TestGet, costruttore con parametri.
-
-&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$
-TestGet, valore delle variabili iniziali della classe.
-ROOT_DIR: /home/lucaamministratore/tmp//immagini/
-TestGet, valore delle variabili iniziali della classe.
-SITO: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
-TestGet, valore delle variabili iniziali della classe.
-SUBDIR: /immagini/
-TestGet, valore delle variabili iniziali della classe.
-NOME_FILE: Colors.jpg
-&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$
-
-CLASSE VariabiliGlobali, costruttore di default.
-
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo cerca_dire().
-
-Valore di riga da elaborare: index.htmlColors.jpg
-
-CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di index.htmlColors.jpg:	Nome: index.htmlColors.jpg	Numero di elementi: 1
-	Percorso: null
-	Radice: null
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-####################################
-2f
-
-----------------------------------------------------------------------
-Classe TrovaDirs, metodo cerca_dire(), lettura della lista dei link
-immagini/Colors.jpg
-index.html
-index.htmlColors.jpg
-pagine/FlowChart.xhtml
-pagine/ILibriDelMenocchio.xhtml
-pagine/documentazione.html
-stili/GeneralTest.css
-
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Classe TrovaDirs, metodo cerca_dire(), fine lettura della lista dei link
-
-CLASSE TestGet, metodo OttieniPagina().
-Nome della pagina da salvare: Colors.jpg
-Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it/immagini
-Nome della pagina da salvare (dopo l'if): Colors.jpg
-
-CLASSE ValutaFile, costruttore di default.
-
-CLASSE ValutaFile, metodo text().
-
-Estensione del file: Colors.jpg .jpg
-
-CLASSE ValutaFile, metodo visitabile().
-
-CLASSE VariabiliGlobali, costruttore di default.
-
-CLASSE SalvaPagine, costruttore con parametri.
-La pagina: Colors.jpg, verrà salvata in /home/lucaamministratore/tmp//immagini/
-con l'opzione testo = false
-
-CLASSE SalvaPagine, metodo scrivi().
-
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp//immagini/
-Nome del file: Colors.jpg
-
-
-Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
-
-CLASSE VariabiliGlobali, costruttore di default.
-
-CLASSE EstriLinks, costruttore di default.
-
-CLASSE EstriLinks, metodo links().
-
-Il file Colors.jpg non è un file di testo, verrà salvato senza ulteriori analisi
-
-Classe Loopper metodo passo().
-Aggiunta della pagina visitata: index.htmlColors.jpgColors.jpg.
-
-CLASSE Loopper, metodo nuova_pagina().
-
-	Ciclo 0 esterno, classe Loopper metodo nuova_pagina. Valore di pagina index.html
-
-		Ciclo 1 interno, classe Loopper metodo nuova_pagina. Valore di pagina immagini/Colors.jpg
-
-
-
-	Ciclo 1 esterno, classe Loopper metodo nuova_pagina. Valore di pagina index.htmlColors.jpg
-
-
-
-	Ciclo 2 esterno, classe Loopper metodo nuova_pagina. Valore di pagina index.htmlColors.jpgColors.jpg
-
-
-Percorso di salvataggio del file corrente: /home/lucaamministratore/tmp//immagini//immagini/
-
-Sotto directory in cui verrà salvata la pagina:/immagini/
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/
 
 Percorso da creare: /home/lucaamministratore/tmp//home/lucaamministratore/tmp//immagini//immagini/
  con carattere slash finale +++++++++++++++++++
@@ -441,38 +352,16 @@ Root directory del progetto: /home/lucaamministratore/tmp//immagini//immagini/
 
 Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp//home/lucaamministratore/tmp//immagini//immagini/
 
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp//home/lucaamministratore/tmp//immagini//immagini/
+
 Nome della pagina che si sta elaborando:Colors.jpg
 
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: /home/lucaamministratore/tmp/scuoladipoliticamaniago/ListaURLS.txt
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
 Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 classe Loopper metodo nuova_pagina.
 Scaricheremo il file Colors.jpg
 Nella directory /immagini/
 
-CLASSE Loopper, metodo risultati().
-
-=============================================================================================
-Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
-immagini/Colors.jpg                                         	index.html
-index.html                                                  	index.htmlColors.jpg
-index.htmlColors.jpg                                        	index.htmlColors.jpgColors.jpg
-index.htmlColors.jpgColors.jpg                              	
-pagine/FlowChart.xhtml                                      	
-pagine/ILibriDelMenocchio.xhtml                             	
-pagine/documentazione.html                                  	
-stili/GeneralTest.css                                       	
-
-CLASSE Loopper, metodo risultati().
-
-=============================================================================================
-Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
-immagini/Colors.jpg                                         	index.html
-index.html                                                  	index.htmlColors.jpg
-index.htmlColors.jpg                                        	index.htmlColors.jpgColors.jpg
-index.htmlColors.jpgColors.jpg                              	
-pagine/FlowChart.xhtml                                      	
-pagine/ILibriDelMenocchio.xhtml                             	
-pagine/documentazione.html                                  	
-stili/GeneralTest.css                                       	
-Elaborazione completata.
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 

@@ -35,6 +35,8 @@ System.out.printf("%nCLASSE Loopper, costruttore di default.%n");
 VG = new VariabiliGlobali();
 SET_LINKS_VISITATI = VG.get_set_scaricati();
 SET_LINKS = VG.get_set_collegamenti();
+
+
  
 passo();
 //risultati();//linea di debug per la visualizzazione a console dei collegamenti
@@ -47,6 +49,8 @@ risultati();//linea di debug per la visualizzazione a console dei collegamenti
  * Quando il confronto fra la lista degli urls e quella degli urls scaricati
  * dà esito di eguaglianza il ciclo è finito.
  */
+/**
+ */
 
 }
 
@@ -57,9 +61,36 @@ boolean interr = false;
 int control = 0;
 //while(! interr)//riga per l'uso normale del programma
 while (control < 2)//a scopo di debug limitiamo il numero di cicli
-    {
+    {   
+        /**
+         * Area di azzeramento delle variabili, finito il primo passo,
+         * invocato dal costruttore, è necessario resettare alcune variabili
+         * globali per reimpostarle a valori coerenti con il ciclo
+         * successivo. 17/02/2024
+         * 
+         */
+        
+//IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+        System.out.printf("%nArea di azzeramento delle variabili.%n%n");
+
+        for (int i = 0; i < 50; i++)
+            {
+                System.out.printf("I");
+            }
+        System.out.println();
+
+        VG.set_page("");
+        VG.set_page_builder(VG.get_pagina_builder().delete(0, VG.get_pagina_builder().length()));
+        //VG.set_root_dest("");
+        CV.get_ROOT_DEST();
+        CV.get_CARTELLA_SITO();
+        CV.get_CONTATORE();
+//IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII        
         passo();
         if(VG.get_set_collegamenti().equals(VG.get_set_scaricati()))interr = true;
+        System.out.printf("%nClasse Loopper, metodo ciclo, "
+                + "variabile di interruzione del loop: "
+                + "%s%nContatore di cicli: %d%n", interr);
         control ++;
     }
 

@@ -40,7 +40,7 @@ private final String ARCHIVIO_DIRS ="ArchivioDIRS.txt";
 private final String LISTA_URLS ="ListaURLS.txt";
 private static String PAGINA;//questa variabile conterrà il testo della pagina da scaricare
 private static String NOME_PAGINA;//questa variabile conterrà il nome della pagina da scaricare
-private static String CARTELLA_SITO = "httpdocs";
+private static String CARTELLA_SITO = "";
 private static String ROOT_DEST = "/home/lucaamministratore/tmp/";
 private static String ROOT_D;
 private static String SUBDIR;//questa variabile conterrà i percorsi relativi in cui salvare i file
@@ -66,10 +66,12 @@ private final static Set <String> LISTA_LINKS = new TreeSet<>();//lo scopo di qu
 private final static Set <String> LISTA_SCARICATI = new TreeSet<>();//lo scopo di questa lista è quello di memorizzare 
                                                                 //l'elenco di tutte le pagine il cui download è 
                                                                 //andato a buon fine
+private static CheckerVariabili CV = new CheckerVariabili();
 
 public VariabiliGlobali()
 {
 System.out.printf("%nCLASSE VariabiliGlobali, costruttore di default.%n");
+
 }
 
 public void set_sito(URL sito)
@@ -90,7 +92,7 @@ if ((root_d != null))
             {
                 root_d = root_d.substring(1);
             }
-
+        CV.get_ROOT_DEST();
         if(ROOT_DEST.lastIndexOf("/") == (ROOT_DEST.length() - 1))
             {
                 ROOT_D = ROOT_DEST + root_d;
@@ -110,6 +112,7 @@ if ((root_d != null))
         CARTELLA_SITO = ROOT_D;
 
         Path percorso = Paths.get(CARTELLA_SITO);
+        CV.get_ROOT_D();
 
         if(Files.notExists(percorso, LinkOption.NOFOLLOW_LINKS))
             {

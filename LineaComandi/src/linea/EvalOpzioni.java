@@ -21,6 +21,7 @@ public class EvalOpzioni
 * @param PARAMETRI è destinata a contenere gli argomenti elaborati di volta in volta    
 */
 private final VariabiliGlobali VG = new VariabiliGlobali();
+private static CheckerVariabili CV = new CheckerVariabili();
 
 public EvalOpzioni()
 {
@@ -223,11 +224,16 @@ String saluto;
          String root = VG.get_root_dest();
          System.out.printf("%n&&&&&&&&&&&&&&&&&&&&&& EvalOpzioni &&&&&&&&&&&&&&&&&&&&&&%n");
         System.out.printf("Valore della variabile VG.get_args() in EvalOpzioni.EvalOpz() %s%n", VG.get_args());
+        
         VG.set_sito(sito(VG.get_args()));
         System.out.printf("Valore della variabile sito in EvalOpzioni.EvalOpz() %s%n", sito(VG.get_args()));
-        VG.set_root(directory(VG.get_args()));
+        CV.get_URL_SITO();
+        VG.set_root(VG.get_destinazione_files_sito() + directory(VG.get_args()));
+        CV.get_ROOT_D();
+        CV.get_ROOT_DEST();
         VG.set_files();
         VG.set_name_page(file(VG.get_args()));
+        CV.get_NOME_PAGINA();
         System.out.printf("Valore della variabile root directory in EvalOpzioni.EvalOpz() %s%n", directory(VG.get_args()));
         System.out.printf("É stata scelta l'opzione 's', verrà scaricato il "
                 + "sito:%n%s%nNella directory:%n"

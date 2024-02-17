@@ -89,7 +89,7 @@ System.out.printf("%nTesto della pagina che si sta elaborando contenuto in uno S
 public void get_URL_SITO()
 {
 System.out.printf("%nURL della pagina che si sta elaborando contenuto in una"
-        + " variabile di tipo URL: %s%n", VG.get_file_URLS().toString());
+        + " variabile di tipo URL: %s%n", VG.get_sito().toString());
 }
 public void get_URL_SITO_RIDOTTO()
 {
