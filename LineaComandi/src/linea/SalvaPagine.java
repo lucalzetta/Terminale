@@ -33,7 +33,7 @@ private final VariabiliGlobali VG = new VariabiliGlobali();
 public SalvaPagine(String nome_pagina)
 {
 System.out.printf("%nCLASSE SalvaPagine, costruttore di default.%n");
-DESTINAZIONE = VG.get_destinazione_files_sito();
+DESTINAZIONE = VG.get_root();
 NOME_PAGINA = nome_pagina;
 }
 public SalvaPagine(String dir, String nome_pagina)
@@ -53,7 +53,7 @@ try
         URL u = VG.get_sito();
         URLConnection uc = u.openConnection();
         java.io.InputStream in = uc.getInputStream();
-        java.io.InputStream orig = new BufferedInputStream(in);
+        java.io.BufferedInputStream orig = new BufferedInputStream(in);
         Reader reader = new InputStreamReader(orig);
         File pagina = new File(DESTINAZIONE, NOME_PAGINA); 
         FileOutputStream fos = new FileOutputStream(pagina);

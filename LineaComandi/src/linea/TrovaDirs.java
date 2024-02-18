@@ -35,12 +35,8 @@ private final String CARTELLA_SITO;
 
 public TrovaDirs()throws IOException
 {
-System.out.printf("%nCLASSE TrovaDirs, costruttore di default.%n");
-//VG.set_files();//Questo garantisce anche la creazione dei file se non 
-               //dovessero esistere
+//System.out.printf("%nCLASSE TrovaDirs, costruttore di default.%n");
 ROOT = VG.get_root();
-//FILE_OUT = VG.get_file_DIRS();
-//FILE_IN = VG.get_file_URLS();
 CARTELLA_SITO = VG.get_destinazione_files_sito();
 }
 
@@ -64,13 +60,13 @@ Iterator coll_visitati = visitati.iterator();
  * l'esecuzione, la scrittura dei file viene rimandata alla 
  * conclusione del programma
  */
-//try
-//    {
-        boolean perc;
+if(collegamenti.hasNext())
+{    
+boolean perc = false;
         
         
-        while(coll_visitati.hasNext())
-            {
+    while(! perc)//coll_visitati.hasNext()
+        {
             if (collegamenti.next() == coll_visitati.next())
                 {
                     perc = false;
@@ -79,85 +75,76 @@ Iterator coll_visitati = visitati.iterator();
                 {
                     perc = true;
                 }
-            }
+        }
         
-        if(collegamenti.hasNext())
-            {
-                riga = collegamenti.next().toString();
-            }
-        
-        System.out.printf("%nValore di riga da elaborare: %s%n",riga);
-        System.out.printf("%nValore di CARTELLA_SITO da elaborare: %s%n",CARTELLA_SITO);
-        
-        if((riga != "") & (riga != null))
-            {
+    if(collegamenti.hasNext())
+        {
+            riga = collegamenti.next().toString();
+            System.out.printf("%nValore di riga da elaborare: %s%n",riga);
+            //System.out.printf("%nValore di CARTELLA_SITO da elaborare: %s%n",CARTELLA_SITO);
+        }
+    else
+        {
+            System.out.printf("%nAl momento non ci sono collegamenti ad altre pagine da visitare%n");            }
+            perc = false;
 
-                perc = esame_directory(riga);
-                    if(perc)
+    if((riga != "") & (riga != null))
+        {
+            perc = esame_directory(riga);
+            if(perc)
+                {
+                    if(CARTELLA_SITO.lastIndexOf("/") == (CARTELLA_SITO.length() - 1))
                         {
-
-                            
-                            if(CARTELLA_SITO.lastIndexOf("/") == (CARTELLA_SITO.length() - 1))
-                                {
-                                    u_perc = CARTELLA_SITO + riga;
-                                }
-                            else
-                                {
-                                    u_perc = CARTELLA_SITO + "/" + riga;
-                                }
+                            u_perc = CARTELLA_SITO + riga;
+                        }
+                    else
+                        {
+                            u_perc = CARTELLA_SITO + "/" + riga;
+                        }
                             /**
                              * Aggiungiamo un ulteriore controllo per superare 
                              * malformazioni della sotto directory che si sono 
                              * verificate e per normalizzare la struttura delle
                              * sottodirectory
                              */
-                            if(u_perc.startsWith("/"))
-                                {
-                                    u_perc = u_perc.substring(1);
-                                }
-                            
-                            File f_perc = new File(u_perc);
-                            System.out.printf("%nPercorso da creare: %s%n",u_perc);
-                            Path percorso = Paths.get(u_perc);
-                            if(Files.notExists(percorso, LinkOption.NOFOLLOW_LINKS))
-                                {
-                                    Files.createDirectories(percorso);
-                                }
-/**************************************************************************************************
- * Verificare la presenza di caratteri vietati prima di procedere alla creazione delle directory. *
- *Eliminare i possibili nomi di file dalla stringa del percorso.                                  *
- *Aggiungere il carattere di fine linea prima della scrittura sul file ArchivioDIRS.txt           *
- **************************************************************************************************/                            
-
-
-           /** Tratto di codice di test per la scrittura dei dati in una variabile 
-           * di tipo List, in seguito questo ottimizzerà anche la scrittura dei file.
-           * 05/11/2023
-           */  
-            /********************************************************************/
-                            //ts.add(riga);
-                            System.out.printf("Valore di 'riga' in TrovaDirs.cerca_dire(): %s%n", riga);
-                            tmp = tmp + riga;
-                            riga = "";
-                            //limit ++;
-                            //c ++;
+                    if(u_perc.startsWith("/"))
+                        {
+                            u_perc = u_perc.substring(1);
                         }
-         /** Tratto di codice di test per la scrittura dei dati in una variabile 
-           * di tipo List, in seguito questo ottimizzerà anche la scrittura dei file.
-           * 05/11/2023
-           */  
-            /********************************************************************/
-                    System.out.printf("%n----------------------------------------------------------------------%n"
+                           
+                    File f_perc = new File(u_perc);
+                    System.out.printf("%nPercorso da creare: %s%n",u_perc);
+                    Path percorso = Paths.get(u_perc);
+
+                    if(Files.notExists(percorso, LinkOption.NOFOLLOW_LINKS))
+                        {
+                            Files.createDirectories(percorso);
+                        }
+
+                    tmp = tmp + riga;
+                    riga = "";
+                }
+            System.out.printf("%n----------------------------------------------------------------------%n"
                                 + "Classe TrovaDirs, metodo cerca_dire(), lettura della lista dei link%n");
-                for (String t : ts)
-                    {
-                        System.out.printf("%s%n", t);
-                    }
-                System.out.printf("%n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++%n"
+            for (String t : ts)
+                {
+                    System.out.printf("%s%n", t);
+                }
+            System.out.printf("%n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++%n"
                                 + "Classe TrovaDirs, metodo cerca_dire(), fine lettura della lista dei link%n");
-        /***********************************************************************/
-            }
+        }
 return tmp;
+}
+else
+{
+    System.out.println();
+    for(int i = 0; i < 12; i++)
+        {
+            System.out.printf("%s", "TOP ");
+        }
+    System.out.printf("%nAl momento i treeSet sono vuoti%n");
+    return tmp;
+}
 }
 
 private boolean esame_directory(String dir)

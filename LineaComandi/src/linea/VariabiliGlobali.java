@@ -70,8 +70,7 @@ private static CheckerVariabili CV = new CheckerVariabili();
 
 public VariabiliGlobali()
 {
-System.out.printf("%nCLASSE VariabiliGlobali, costruttore di default.%n");
-
+//System.out.printf("%nCLASSE VariabiliGlobali, costruttore di default.%n");
 }
 
 public void set_sito(URL sito)

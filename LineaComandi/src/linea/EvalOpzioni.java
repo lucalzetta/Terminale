@@ -227,14 +227,14 @@ String saluto;
         
         VG.set_sito(sito(VG.get_args()));
         System.out.printf("Valore della variabile sito in EvalOpzioni.EvalOpz() %s%n", sito(VG.get_args()));
-        CV.get_URL_SITO();
+        ////CV.get_URL_SITO();
         VG.set_root(VG.get_destinazione_files_sito() + directory(VG.get_args()));
-        CV.get_ROOT_D();
-        CV.get_ROOT_DEST();
+        //CV.get_ROOT_D();
+        //CV.get_ROOT_DEST();
         VG.set_cartella_sito(VG.get_root());
         VG.set_files();//aL MOMENTO INUTILE 17/02/2024
         VG.set_name_page(file(VG.get_args()));
-        CV.get_NOME_PAGINA();
+        //CV.get_NOME_PAGINA();
         System.out.printf("Valore della variabile root directory in EvalOpzioni.EvalOpz() %s%n", directory(VG.get_args()));
         System.out.printf("É stata scelta l'opzione 's', verrà scaricato il "
                 + "sito:%n%s%nNella directory:%n"

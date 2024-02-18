@@ -1,16 +1,8 @@
 
-CLASSE VariabiliGlobali, costruttore di default.
-
-CLASSE VariabiliGlobali, costruttore di default.
-
 CLASSE Argos, costruttore per la riga di comando con argomenti String[].
 
 CLASSE Argos, metodo options().
 Valore della variabile opzioni: 160
-
-CLASSE VariabiliGlobali, costruttore di default.
-
-CLASSE VariabiliGlobali, costruttore di default.
 
 CLASSE EvalOpzioni, costruttore di default.
 Valore di 'argomenti[0]: -s
@@ -27,8 +19,6 @@ CLASSE EvalOpzioni, metodo sito().
 Valore di i 3
 Valore della variabile sito in EvalOpzioni.EvalOpz() http://www.scuoladipoliticamaniago.it/index.html
 
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/index.html
-
 CLASSE EvalOpzioni, metodo directory().
 
 CLASSE VariabiliGlobali, metodo set_root().
@@ -43,14 +33,11 @@ Root directory del progetto: /home/lucaamministratore/tmp/scuoladipoliticamaniag
 Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago
 
 Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago
-
-Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago
-
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago
+Cartella di destinazione del sito: /home/lucaamministratore/tmp/scuoladipoliticamaniago CREATA CORRETTAMENTE!
+Creato il file /home/lucaamministratore/tmp/scuoladipoliticamaniago/ListaURLS.txt
+Creato il file /home/lucaamministratore/tmp/scuoladipoliticamaniago/ArchivioDIRS.txt
 
 CLASSE EvalOpzioni, metodo file().
-
-Nome della pagina che si sta elaborando:index.html 
 
 CLASSE EvalOpzioni, metodo directory().
 Valore della variabile root directory in EvalOpzioni.EvalOpz() scuoladipoliticamaniago
@@ -63,17 +50,11 @@ e scritti i file:
 /home/lucaamministratore/tmp/scuoladipoliticamaniago/ArchivioDIRS.txt
 scaricata la pagina: index.html 
 
-CLASSE VariabiliGlobali, costruttore di default.
-
 CLASSE Loopper, costruttore di default.
-
-CLASSE VariabiliGlobali, costruttore di default.
 
 CLASSE Loopper, metodo passo().
 
 Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago
-
-CLASSE VariabiliGlobali, costruttore di default.
 
 CLASSE TestGet, costruttore con parametri.
 
@@ -88,15 +69,10 @@ TestGet, valore delle variabili iniziali della classe.
 NOME_FILE: index.html 
 &8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$
 
-CLASSE VariabiliGlobali, costruttore di default.
-
-CLASSE TrovaDirs, costruttore di default.
-
 CLASSE TrovaDirs, metodo cerca_dire().
 
-Valore di riga da elaborare: 
-
-Valore di CARTELLA_SITO da elaborare: /home/lucaamministratore/tmp/scuoladipoliticamaniago
+TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP 
+Al momento i treeSet sono vuoti
 
 CLASSE TestGet, metodo OttieniPagina().
 Nome della pagina da salvare: index.html
@@ -110,8 +86,6 @@ CLASSE ValutaFile, metodo text().
 Estensione del file: index.html .html
 
 CLASSE ValutaFile, metodo visitabile().
-
-CLASSE VariabiliGlobali, costruttore di default.
 
 CLASSE SalvaPagine, costruttore con parametri.
 La pagina: index.html, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago
@@ -137,8 +111,6 @@ CLasse SalvaPagine, metodo scrivi(), risultato della lettura dei primi caratteri
     
 
 
-
-CLASSE VariabiliGlobali, costruttore di default.
 
 CLASSE EstriLinks, costruttore di default.
 
@@ -212,6 +184,13 @@ pagine/documentazione.html
 stili/GeneralTest.css
 
 
+Elenco delle pagine scaricate dal sito
+
+=============================================================================================
+Lista dei collegamenti presenti nel sito
+index.html
+
+
 CLASSE Loopper, metodo nuova_pagina().
 
 	Ciclo 0 esterno, classe Loopper metodo nuova_pagina. Valore di pagina index.html
@@ -238,8 +217,11 @@ Root directory del progetto: /home/lucaamministratore/tmp/scuoladipoliticamaniag
 Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
 Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+Cartella di destinazione del sito: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/ CREATA CORRETTAMENTE!
 
 Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+
+Root directory in cui verrà salvato il sito:immagini/
 
 Nome della pagina che si sta elaborando:Colors.jpg
 
@@ -260,7 +242,7 @@ IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
 Nome della pagina che si sta elaborando:
 
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+Root directory in cui verrà salvato il sito:immagini/
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago
 
@@ -269,8 +251,6 @@ Valore del contatore globale: 0
 CLASSE Loopper, metodo passo().
 
 Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-
-CLASSE VariabiliGlobali, costruttore di default.
 
 CLASSE TestGet, costruttore con parametri.
 
@@ -285,15 +265,9 @@ TestGet, valore delle variabili iniziali della classe.
 NOME_FILE: 
 &8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$
 
-CLASSE VariabiliGlobali, costruttore di default.
-
-CLASSE TrovaDirs, costruttore di default.
-
 CLASSE TrovaDirs, metodo cerca_dire().
 
 Valore di riga da elaborare: index.html
-
-Valore di CARTELLA_SITO da elaborare: /home/lucaamministratore/tmp/scuoladipoliticamaniago
 
 CLASSE TrovaDirs, metodo esame_directory().
 Elaborazione di index.html:	Nome: index.html	Numero di elementi: 1
@@ -327,8 +301,6 @@ Estensione del file: Colors.jpg .jpg
 
 CLASSE ValutaFile, metodo visitabile().
 
-CLASSE VariabiliGlobali, costruttore di default.
-
 CLASSE SalvaPagine, costruttore con parametri.
 La pagina: Colors.jpg, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago
 con l'opzione testo = false
@@ -340,8 +312,6 @@ Nome del file: Colors.jpg
 
 
 Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
-
-CLASSE VariabiliGlobali, costruttore di default.
 
 CLASSE EstriLinks, costruttore di default.
 
@@ -362,6 +332,14 @@ pagine/FlowChart.xhtml
 pagine/ILibriDelMenocchio.xhtml
 pagine/documentazione.html
 stili/GeneralTest.css
+
+
+Elenco delle pagine scaricate dal sito
+
+=============================================================================================
+Lista dei collegamenti presenti nel sito
+immagini/Colors.jpg
+index.html
 
 
 CLASSE Loopper, metodo nuova_pagina().
@@ -400,7 +378,7 @@ IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
 Nome della pagina che si sta elaborando:
 
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+Root directory in cui verrà salvato il sito:immagini/
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago
 
@@ -409,8 +387,6 @@ Valore del contatore globale: 0
 CLASSE Loopper, metodo passo().
 
 Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-
-CLASSE VariabiliGlobali, costruttore di default.
 
 CLASSE TestGet, costruttore con parametri.
 
@@ -425,25 +401,16 @@ TestGet, valore delle variabili iniziali della classe.
 NOME_FILE: 
 &8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$
 
-CLASSE VariabiliGlobali, costruttore di default.
-
-CLASSE TrovaDirs, costruttore di default.
-
 CLASSE TrovaDirs, metodo cerca_dire().
 
-Valore di riga da elaborare: pagine/FlowChart.xhtml
-
-Valore di CARTELLA_SITO da elaborare: /home/lucaamministratore/tmp/scuoladipoliticamaniago
+Valore di riga da elaborare: index.html
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di pagine/FlowChart.xhtml:	Nome: FlowChart.xhtml	Numero di elementi: 2
-	Percorso: pagine
+Elaborazione di index.html:	Nome: index.html	Numero di elementi: 1
+	Percorso: null
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
-
-Percorso da creare: home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/FlowChart.xhtml
-Valore di 'riga' in TrovaDirs.cerca_dire(): pagine/FlowChart.xhtml
 
 ----------------------------------------------------------------------
 Classe TrovaDirs, metodo cerca_dire(), lettura della lista dei link
@@ -470,8 +437,6 @@ Estensione del file: Colors.jpg .jpg
 
 CLASSE ValutaFile, metodo visitabile().
 
-CLASSE VariabiliGlobali, costruttore di default.
-
 CLASSE SalvaPagine, costruttore con parametri.
 La pagina: Colors.jpg, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago
 con l'opzione testo = false
@@ -483,8 +448,6 @@ Nome del file: Colors.jpg
 
 
 Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
-
-CLASSE VariabiliGlobali, costruttore di default.
 
 CLASSE EstriLinks, costruttore di default.
 
@@ -505,6 +468,14 @@ pagine/FlowChart.xhtml
 pagine/ILibriDelMenocchio.xhtml
 pagine/documentazione.html
 stili/GeneralTest.css
+
+
+Elenco delle pagine scaricate dal sito
+
+=============================================================================================
+Lista dei collegamenti presenti nel sito
+immagini/Colors.jpg
+index.html
 
 
 CLASSE Loopper, metodo nuova_pagina().
@@ -543,7 +514,7 @@ IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
 Nome della pagina che si sta elaborando:
 
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+Root directory in cui verrà salvato il sito:immagini/
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago
 
@@ -552,8 +523,6 @@ Valore del contatore globale: 0
 CLASSE Loopper, metodo passo().
 
 Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-
-CLASSE VariabiliGlobali, costruttore di default.
 
 CLASSE TestGet, costruttore con parametri.
 
@@ -568,25 +537,16 @@ TestGet, valore delle variabili iniziali della classe.
 NOME_FILE: 
 &8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$
 
-CLASSE VariabiliGlobali, costruttore di default.
-
-CLASSE TrovaDirs, costruttore di default.
-
 CLASSE TrovaDirs, metodo cerca_dire().
 
-Valore di riga da elaborare: pagine/FlowChart.xhtml
-
-Valore di CARTELLA_SITO da elaborare: /home/lucaamministratore/tmp/scuoladipoliticamaniago
+Valore di riga da elaborare: index.html
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di pagine/FlowChart.xhtml:	Nome: FlowChart.xhtml	Numero di elementi: 2
-	Percorso: pagine
+Elaborazione di index.html:	Nome: index.html	Numero di elementi: 1
+	Percorso: null
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
-
-Percorso da creare: home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/FlowChart.xhtml
-Valore di 'riga' in TrovaDirs.cerca_dire(): pagine/FlowChart.xhtml
 
 ----------------------------------------------------------------------
 Classe TrovaDirs, metodo cerca_dire(), lettura della lista dei link
@@ -613,8 +573,6 @@ Estensione del file: Colors.jpg .jpg
 
 CLASSE ValutaFile, metodo visitabile().
 
-CLASSE VariabiliGlobali, costruttore di default.
-
 CLASSE SalvaPagine, costruttore con parametri.
 La pagina: Colors.jpg, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago
 con l'opzione testo = false
@@ -626,8 +584,6 @@ Nome del file: Colors.jpg
 
 
 Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
-
-CLASSE VariabiliGlobali, costruttore di default.
 
 CLASSE EstriLinks, costruttore di default.
 
@@ -648,6 +604,14 @@ pagine/FlowChart.xhtml
 pagine/ILibriDelMenocchio.xhtml
 pagine/documentazione.html
 stili/GeneralTest.css
+
+
+Elenco delle pagine scaricate dal sito
+
+=============================================================================================
+Lista dei collegamenti presenti nel sito
+immagini/Colors.jpg
+index.html
 
 
 CLASSE Loopper, metodo nuova_pagina().
@@ -686,7 +650,7 @@ IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
 Nome della pagina che si sta elaborando:
 
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+Root directory in cui verrà salvato il sito:immagini/
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago
 
@@ -695,8 +659,6 @@ Valore del contatore globale: 0
 CLASSE Loopper, metodo passo().
 
 Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-
-CLASSE VariabiliGlobali, costruttore di default.
 
 CLASSE TestGet, costruttore con parametri.
 
@@ -711,25 +673,16 @@ TestGet, valore delle variabili iniziali della classe.
 NOME_FILE: 
 &8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$
 
-CLASSE VariabiliGlobali, costruttore di default.
-
-CLASSE TrovaDirs, costruttore di default.
-
 CLASSE TrovaDirs, metodo cerca_dire().
 
-Valore di riga da elaborare: pagine/FlowChart.xhtml
-
-Valore di CARTELLA_SITO da elaborare: /home/lucaamministratore/tmp/scuoladipoliticamaniago
+Valore di riga da elaborare: index.html
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di pagine/FlowChart.xhtml:	Nome: FlowChart.xhtml	Numero di elementi: 2
-	Percorso: pagine
+Elaborazione di index.html:	Nome: index.html	Numero di elementi: 1
+	Percorso: null
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
-
-Percorso da creare: home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/FlowChart.xhtml
-Valore di 'riga' in TrovaDirs.cerca_dire(): pagine/FlowChart.xhtml
 
 ----------------------------------------------------------------------
 Classe TrovaDirs, metodo cerca_dire(), lettura della lista dei link
@@ -756,8 +709,6 @@ Estensione del file: Colors.jpg .jpg
 
 CLASSE ValutaFile, metodo visitabile().
 
-CLASSE VariabiliGlobali, costruttore di default.
-
 CLASSE SalvaPagine, costruttore con parametri.
 La pagina: Colors.jpg, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago
 con l'opzione testo = false
@@ -769,8 +720,6 @@ Nome del file: Colors.jpg
 
 
 Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
-
-CLASSE VariabiliGlobali, costruttore di default.
 
 CLASSE EstriLinks, costruttore di default.
 
@@ -791,6 +740,14 @@ pagine/FlowChart.xhtml
 pagine/ILibriDelMenocchio.xhtml
 pagine/documentazione.html
 stili/GeneralTest.css
+
+
+Elenco delle pagine scaricate dal sito
+
+=============================================================================================
+Lista dei collegamenti presenti nel sito
+immagini/Colors.jpg
+index.html
 
 
 CLASSE Loopper, metodo nuova_pagina().
@@ -829,7 +786,7 @@ IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
 Nome della pagina che si sta elaborando:
 
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+Root directory in cui verrà salvato il sito:immagini/
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago
 
@@ -838,8 +795,6 @@ Valore del contatore globale: 0
 CLASSE Loopper, metodo passo().
 
 Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-
-CLASSE VariabiliGlobali, costruttore di default.
 
 CLASSE TestGet, costruttore con parametri.
 
@@ -854,25 +809,16 @@ TestGet, valore delle variabili iniziali della classe.
 NOME_FILE: 
 &8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$
 
-CLASSE VariabiliGlobali, costruttore di default.
-
-CLASSE TrovaDirs, costruttore di default.
-
 CLASSE TrovaDirs, metodo cerca_dire().
 
-Valore di riga da elaborare: pagine/FlowChart.xhtml
-
-Valore di CARTELLA_SITO da elaborare: /home/lucaamministratore/tmp/scuoladipoliticamaniago
+Valore di riga da elaborare: index.html
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di pagine/FlowChart.xhtml:	Nome: FlowChart.xhtml	Numero di elementi: 2
-	Percorso: pagine
+Elaborazione di index.html:	Nome: index.html	Numero di elementi: 1
+	Percorso: null
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
-
-Percorso da creare: home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/FlowChart.xhtml
-Valore di 'riga' in TrovaDirs.cerca_dire(): pagine/FlowChart.xhtml
 
 ----------------------------------------------------------------------
 Classe TrovaDirs, metodo cerca_dire(), lettura della lista dei link
@@ -899,8 +845,6 @@ Estensione del file: Colors.jpg .jpg
 
 CLASSE ValutaFile, metodo visitabile().
 
-CLASSE VariabiliGlobali, costruttore di default.
-
 CLASSE SalvaPagine, costruttore con parametri.
 La pagina: Colors.jpg, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago
 con l'opzione testo = false
@@ -912,8 +856,6 @@ Nome del file: Colors.jpg
 
 
 Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
-
-CLASSE VariabiliGlobali, costruttore di default.
 
 CLASSE EstriLinks, costruttore di default.
 
@@ -934,6 +876,14 @@ pagine/FlowChart.xhtml
 pagine/ILibriDelMenocchio.xhtml
 pagine/documentazione.html
 stili/GeneralTest.css
+
+
+Elenco delle pagine scaricate dal sito
+
+=============================================================================================
+Lista dei collegamenti presenti nel sito
+immagini/Colors.jpg
+index.html
 
 
 CLASSE Loopper, metodo nuova_pagina().
@@ -972,7 +922,7 @@ IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
 Nome della pagina che si sta elaborando:
 
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+Root directory in cui verrà salvato il sito:immagini/
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago
 
@@ -981,8 +931,6 @@ Valore del contatore globale: 0
 CLASSE Loopper, metodo passo().
 
 Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-
-CLASSE VariabiliGlobali, costruttore di default.
 
 CLASSE TestGet, costruttore con parametri.
 
@@ -997,25 +945,16 @@ TestGet, valore delle variabili iniziali della classe.
 NOME_FILE: 
 &8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$
 
-CLASSE VariabiliGlobali, costruttore di default.
-
-CLASSE TrovaDirs, costruttore di default.
-
 CLASSE TrovaDirs, metodo cerca_dire().
 
-Valore di riga da elaborare: pagine/FlowChart.xhtml
-
-Valore di CARTELLA_SITO da elaborare: /home/lucaamministratore/tmp/scuoladipoliticamaniago
+Valore di riga da elaborare: index.html
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di pagine/FlowChart.xhtml:	Nome: FlowChart.xhtml	Numero di elementi: 2
-	Percorso: pagine
+Elaborazione di index.html:	Nome: index.html	Numero di elementi: 1
+	Percorso: null
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
-
-Percorso da creare: home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/FlowChart.xhtml
-Valore di 'riga' in TrovaDirs.cerca_dire(): pagine/FlowChart.xhtml
 
 ----------------------------------------------------------------------
 Classe TrovaDirs, metodo cerca_dire(), lettura della lista dei link
@@ -1042,8 +981,6 @@ Estensione del file: Colors.jpg .jpg
 
 CLASSE ValutaFile, metodo visitabile().
 
-CLASSE VariabiliGlobali, costruttore di default.
-
 CLASSE SalvaPagine, costruttore con parametri.
 La pagina: Colors.jpg, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago
 con l'opzione testo = false
@@ -1055,8 +992,6 @@ Nome del file: Colors.jpg
 
 
 Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
-
-CLASSE VariabiliGlobali, costruttore di default.
 
 CLASSE EstriLinks, costruttore di default.
 
@@ -1077,6 +1012,14 @@ pagine/FlowChart.xhtml
 pagine/ILibriDelMenocchio.xhtml
 pagine/documentazione.html
 stili/GeneralTest.css
+
+
+Elenco delle pagine scaricate dal sito
+
+=============================================================================================
+Lista dei collegamenti presenti nel sito
+immagini/Colors.jpg
+index.html
 
 
 CLASSE Loopper, metodo nuova_pagina().
@@ -1115,7 +1058,7 @@ IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
 Nome della pagina che si sta elaborando:
 
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+Root directory in cui verrà salvato il sito:immagini/
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago
 
@@ -1124,8 +1067,6 @@ Valore del contatore globale: 0
 CLASSE Loopper, metodo passo().
 
 Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-
-CLASSE VariabiliGlobali, costruttore di default.
 
 CLASSE TestGet, costruttore con parametri.
 
@@ -1140,25 +1081,16 @@ TestGet, valore delle variabili iniziali della classe.
 NOME_FILE: 
 &8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$
 
-CLASSE VariabiliGlobali, costruttore di default.
-
-CLASSE TrovaDirs, costruttore di default.
-
 CLASSE TrovaDirs, metodo cerca_dire().
 
-Valore di riga da elaborare: pagine/FlowChart.xhtml
-
-Valore di CARTELLA_SITO da elaborare: /home/lucaamministratore/tmp/scuoladipoliticamaniago
+Valore di riga da elaborare: index.html
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di pagine/FlowChart.xhtml:	Nome: FlowChart.xhtml	Numero di elementi: 2
-	Percorso: pagine
+Elaborazione di index.html:	Nome: index.html	Numero di elementi: 1
+	Percorso: null
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
-
-Percorso da creare: home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/FlowChart.xhtml
-Valore di 'riga' in TrovaDirs.cerca_dire(): pagine/FlowChart.xhtml
 
 ----------------------------------------------------------------------
 Classe TrovaDirs, metodo cerca_dire(), lettura della lista dei link
@@ -1185,8 +1117,6 @@ Estensione del file: Colors.jpg .jpg
 
 CLASSE ValutaFile, metodo visitabile().
 
-CLASSE VariabiliGlobali, costruttore di default.
-
 CLASSE SalvaPagine, costruttore con parametri.
 La pagina: Colors.jpg, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago
 con l'opzione testo = false
@@ -1198,8 +1128,6 @@ Nome del file: Colors.jpg
 
 
 Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
-
-CLASSE VariabiliGlobali, costruttore di default.
 
 CLASSE EstriLinks, costruttore di default.
 
@@ -1220,6 +1148,14 @@ pagine/FlowChart.xhtml
 pagine/ILibriDelMenocchio.xhtml
 pagine/documentazione.html
 stili/GeneralTest.css
+
+
+Elenco delle pagine scaricate dal sito
+
+=============================================================================================
+Lista dei collegamenti presenti nel sito
+immagini/Colors.jpg
+index.html
 
 
 CLASSE Loopper, metodo nuova_pagina().
@@ -1258,7 +1194,7 @@ IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
 Nome della pagina che si sta elaborando:
 
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+Root directory in cui verrà salvato il sito:immagini/
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago
 
@@ -1267,8 +1203,6 @@ Valore del contatore globale: 0
 CLASSE Loopper, metodo passo().
 
 Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-
-CLASSE VariabiliGlobali, costruttore di default.
 
 CLASSE TestGet, costruttore con parametri.
 
@@ -1283,25 +1217,16 @@ TestGet, valore delle variabili iniziali della classe.
 NOME_FILE: 
 &8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$
 
-CLASSE VariabiliGlobali, costruttore di default.
-
-CLASSE TrovaDirs, costruttore di default.
-
 CLASSE TrovaDirs, metodo cerca_dire().
 
-Valore di riga da elaborare: pagine/FlowChart.xhtml
-
-Valore di CARTELLA_SITO da elaborare: /home/lucaamministratore/tmp/scuoladipoliticamaniago
+Valore di riga da elaborare: index.html
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di pagine/FlowChart.xhtml:	Nome: FlowChart.xhtml	Numero di elementi: 2
-	Percorso: pagine
+Elaborazione di index.html:	Nome: index.html	Numero di elementi: 1
+	Percorso: null
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
-
-Percorso da creare: home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/FlowChart.xhtml
-Valore di 'riga' in TrovaDirs.cerca_dire(): pagine/FlowChart.xhtml
 
 ----------------------------------------------------------------------
 Classe TrovaDirs, metodo cerca_dire(), lettura della lista dei link
@@ -1328,8 +1253,6 @@ Estensione del file: Colors.jpg .jpg
 
 CLASSE ValutaFile, metodo visitabile().
 
-CLASSE VariabiliGlobali, costruttore di default.
-
 CLASSE SalvaPagine, costruttore con parametri.
 La pagina: Colors.jpg, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago
 con l'opzione testo = false
@@ -1341,8 +1264,6 @@ Nome del file: Colors.jpg
 
 
 Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
-
-CLASSE VariabiliGlobali, costruttore di default.
 
 CLASSE EstriLinks, costruttore di default.
 
@@ -1363,6 +1284,14 @@ pagine/FlowChart.xhtml
 pagine/ILibriDelMenocchio.xhtml
 pagine/documentazione.html
 stili/GeneralTest.css
+
+
+Elenco delle pagine scaricate dal sito
+
+=============================================================================================
+Lista dei collegamenti presenti nel sito
+immagini/Colors.jpg
+index.html
 
 
 CLASSE Loopper, metodo nuova_pagina().
@@ -1401,7 +1330,7 @@ IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
 Nome della pagina che si sta elaborando:
 
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+Root directory in cui verrà salvato il sito:immagini/
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago
 
@@ -1410,8 +1339,6 @@ Valore del contatore globale: 0
 CLASSE Loopper, metodo passo().
 
 Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-
-CLASSE VariabiliGlobali, costruttore di default.
 
 CLASSE TestGet, costruttore con parametri.
 
@@ -1426,25 +1353,16 @@ TestGet, valore delle variabili iniziali della classe.
 NOME_FILE: 
 &8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$
 
-CLASSE VariabiliGlobali, costruttore di default.
-
-CLASSE TrovaDirs, costruttore di default.
-
 CLASSE TrovaDirs, metodo cerca_dire().
 
-Valore di riga da elaborare: pagine/FlowChart.xhtml
-
-Valore di CARTELLA_SITO da elaborare: /home/lucaamministratore/tmp/scuoladipoliticamaniago
+Valore di riga da elaborare: index.html
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di pagine/FlowChart.xhtml:	Nome: FlowChart.xhtml	Numero di elementi: 2
-	Percorso: pagine
+Elaborazione di index.html:	Nome: index.html	Numero di elementi: 1
+	Percorso: null
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
-
-Percorso da creare: home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/FlowChart.xhtml
-Valore di 'riga' in TrovaDirs.cerca_dire(): pagine/FlowChart.xhtml
 
 ----------------------------------------------------------------------
 Classe TrovaDirs, metodo cerca_dire(), lettura della lista dei link
@@ -1471,8 +1389,6 @@ Estensione del file: Colors.jpg .jpg
 
 CLASSE ValutaFile, metodo visitabile().
 
-CLASSE VariabiliGlobali, costruttore di default.
-
 CLASSE SalvaPagine, costruttore con parametri.
 La pagina: Colors.jpg, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago
 con l'opzione testo = false
@@ -1484,8 +1400,6 @@ Nome del file: Colors.jpg
 
 
 Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
-
-CLASSE VariabiliGlobali, costruttore di default.
 
 CLASSE EstriLinks, costruttore di default.
 
@@ -1506,6 +1420,14 @@ pagine/FlowChart.xhtml
 pagine/ILibriDelMenocchio.xhtml
 pagine/documentazione.html
 stili/GeneralTest.css
+
+
+Elenco delle pagine scaricate dal sito
+
+=============================================================================================
+Lista dei collegamenti presenti nel sito
+immagini/Colors.jpg
+index.html
 
 
 CLASSE Loopper, metodo nuova_pagina().
@@ -1544,7 +1466,7 @@ IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
 Nome della pagina che si sta elaborando:
 
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+Root directory in cui verrà salvato il sito:immagini/
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago
 
@@ -1553,8 +1475,6 @@ Valore del contatore globale: 0
 CLASSE Loopper, metodo passo().
 
 Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-
-CLASSE VariabiliGlobali, costruttore di default.
 
 CLASSE TestGet, costruttore con parametri.
 
@@ -1569,25 +1489,16 @@ TestGet, valore delle variabili iniziali della classe.
 NOME_FILE: 
 &8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$
 
-CLASSE VariabiliGlobali, costruttore di default.
-
-CLASSE TrovaDirs, costruttore di default.
-
 CLASSE TrovaDirs, metodo cerca_dire().
 
-Valore di riga da elaborare: pagine/FlowChart.xhtml
-
-Valore di CARTELLA_SITO da elaborare: /home/lucaamministratore/tmp/scuoladipoliticamaniago
+Valore di riga da elaborare: index.html
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di pagine/FlowChart.xhtml:	Nome: FlowChart.xhtml	Numero di elementi: 2
-	Percorso: pagine
+Elaborazione di index.html:	Nome: index.html	Numero di elementi: 1
+	Percorso: null
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
-
-Percorso da creare: home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/FlowChart.xhtml
-Valore di 'riga' in TrovaDirs.cerca_dire(): pagine/FlowChart.xhtml
 
 ----------------------------------------------------------------------
 Classe TrovaDirs, metodo cerca_dire(), lettura della lista dei link
@@ -1614,8 +1525,6 @@ Estensione del file: Colors.jpg .jpg
 
 CLASSE ValutaFile, metodo visitabile().
 
-CLASSE VariabiliGlobali, costruttore di default.
-
 CLASSE SalvaPagine, costruttore con parametri.
 La pagina: Colors.jpg, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago
 con l'opzione testo = false
@@ -1627,8 +1536,6 @@ Nome del file: Colors.jpg
 
 
 Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
-
-CLASSE VariabiliGlobali, costruttore di default.
 
 CLASSE EstriLinks, costruttore di default.
 
@@ -1649,6 +1556,14 @@ pagine/FlowChart.xhtml
 pagine/ILibriDelMenocchio.xhtml
 pagine/documentazione.html
 stili/GeneralTest.css
+
+
+Elenco delle pagine scaricate dal sito
+
+=============================================================================================
+Lista dei collegamenti presenti nel sito
+immagini/Colors.jpg
+index.html
 
 
 CLASSE Loopper, metodo nuova_pagina().
@@ -1680,17 +1595,6 @@ Nella directory immagini/
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 9
-
-CLASSE Loopper, metodo risultati().
-
-=============================================================================================
-Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
-immagini/Colors.jpg                                         	immagini/Colors.jpg
-index.html                                                  	index.html
-pagine/FlowChart.xhtml                                      	
-pagine/ILibriDelMenocchio.xhtml                             	
-pagine/documentazione.html                                  	
-stili/GeneralTest.css                                       	
 
 CLASSE Loopper, metodo risultati().
 

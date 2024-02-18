@@ -99,9 +99,9 @@ else
 {
     try 
       {
-       TrovaDirs td = new TrovaDirs();
+            TrovaDirs td = new TrovaDirs();
             td.cerca_dire();
-        OttieniPagina();
+            OttieniPagina();
        }
       catch (IOException ex) 
        {

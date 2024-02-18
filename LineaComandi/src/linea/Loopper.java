@@ -41,7 +41,7 @@ SET_LINKS = VG.get_set_collegamenti();
 passo();
 //risultati();//linea di debug per la visualizzazione a console dei collegamenti
 cicloSito();
-risultati();//linea di debug per la visualizzazione a console dei collegamenti
+//risultati();//linea di debug per la visualizzazione a console dei collegamenti
 /**
  * A questo punto la pagina è salvata, la lista dei collegamenti è aggiornata
  * resta da caricare il link tra quelli scaricati, fare il confronto con quelli 
@@ -90,7 +90,13 @@ while (control < 10)//a scopo di debug limitiamo il numero di cicli
         CV.get_CONTATORE();
 //IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII        
         passo();
-        if(VG.get_set_collegamenti().equals(VG.get_set_scaricati()))interr = true;
+        
+        if(VG.get_set_collegamenti().equals(VG.get_set_scaricati()))
+            {
+                System.out.printf("Lavoro ultimato! Tutti i links sono stati visitati e scaricati.");
+                interr = true;
+            }
+        
         System.out.printf("%nClasse Loopper, metodo ciclo, "
                 + "variabile di interruzione del loop: "
                 + "%s%nContatore di cicli: %d%n", interr, control);
@@ -134,7 +140,7 @@ System.out.printf("%nClasse Loopper metodo passo().%nAggiunta "
 SET_LINKS_VISITATI.add(STRINGA);
 SET_LINKS.add(STRINGA);
 CV.get_Set_LISTA_LINKS();
-
+CV.get_Set_LISTA_SCARICATI();
 
 //cicloSito();
 /**
@@ -241,6 +247,8 @@ try
                 CV.get_SUBDIR();
                 VG.set_root(sub_dir);
                 CV.get_ROOT_D();
+                VG.set_root_dest(sub_dir);
+                CV.get_ROOT_DEST();
             }
         
         VG.set_name_page(n_file);
