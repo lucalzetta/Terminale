@@ -25,7 +25,7 @@ private static CheckerVariabili CV = new CheckerVariabili();
 
 public EvalOpzioni()
 {
-System.out.printf("%nCLASSE EvalOpzioni, costruttore di default.%n");
+//System.out.printf("%nCLASSE EvalOpzioni, costruttore di default.%n");
 }
     
      
@@ -42,7 +42,7 @@ System.out.printf("%nCLASSE EvalOpzioni, metodo sito().%n");
 int i;
 String tmp = "";
 i = sito.indexOf("http");
-System.out.println("Valore di i " + i);
+System.out.println("Valore di indice per http " + i);
 while((sito.charAt(i) != ' ') & (sito.charAt(i) != '\n'))
     {
         tmp = tmp + sito.charAt(i);

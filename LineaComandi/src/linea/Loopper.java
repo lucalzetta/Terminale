@@ -81,9 +81,7 @@ while (control < 10)//a scopo di debug limitiamo il numero di cicli
         STRINGA = "";
         VG.set_page("");
         VG.set_page_builder(VG.get_pagina_builder().delete(0, VG.get_pagina_builder().length()));
-        //VG.set_root_dest("");
-        VG.set_name_page("");
-        //VG.set_cartella_sito("");
+        //VG.set_name_page("");
         CV.get_NOME_PAGINA();
         CV.get_ROOT_DEST();
         CV.get_CARTELLA_SITO();
@@ -109,7 +107,7 @@ risultati();//linea di debug per la visualizzazione a console dei collegamenti
 
 private void passo()throws IOException
 {
-System.out.printf("%nCLASSE Loopper, metodo passo().%n");
+//System.out.printf("%nCLASSE Loopper, metodo passo().%n");
 //VG.set_root(VG.get_subdir());
 System.out.printf("%nClasse Loopper, metodo passo, valore della root passato a TestGet: %s%n", VG.get_root());
 TestGET TG = new TestGET(true);
@@ -175,7 +173,7 @@ int contatore_i = 0;
 URL perc;
 URL nuovo_perc;
 File page;
-
+/*
 while ((! t) & (i_scaricati.hasNext()))
     {
         visitato = i_scaricati.next().toString();
@@ -200,7 +198,7 @@ while ((! t) & (i_scaricati.hasNext()))
         System.out.printf("%n%n");
     }
 
-
+*/
 try
     {
         perc = new URL(VG.get_sito_ridotto().toString());
@@ -243,22 +241,24 @@ try
             }
         else
             {
+                /*
                 VG.set_subdir(sub_dir);
                 CV.get_SUBDIR();
                 VG.set_root(sub_dir);
                 CV.get_ROOT_D();
                 VG.set_root_dest(sub_dir);
                 CV.get_ROOT_DEST();
+                */
             }
-        
+/*        
         VG.set_name_page(n_file);
         CV.get_NOME_PAGINA();
         VG.set_sito(nuovo_perc);
         CV.get_URL_SITO();
         CV.get_CARTELLA_SITO();
-        
+*/        
         System.out.printf("%nProssima pagina da visitare: %s%nclasse Loopper metodo nuova_pagina.%n", tmp);
-        System.out.printf("Scaricheremo il file %s%nNella directory %s%n", n_file, VG.get_subdir());
+        System.out.printf("Scaricheremo il file %s%nNella directory %s%n", VG.get_name_page(), VG.get_subdir());
     }
 catch(MalformedURLException mue)
     {

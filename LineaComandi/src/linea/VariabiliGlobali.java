@@ -89,6 +89,15 @@ System.out.printf("%nCLASSE VariabiliGlobali, metodo set_root().%n");
 
 if ((root_d != null) & (root_d != ""))
     {
+        //aggiungiamo sempre la barra all'ultima directory
+        if(root_d.endsWith("/"))
+            {
+            
+            }
+        else
+            {
+                root_d = root_d +"/";
+            }
         System.out.printf("%nCLASSE VariabiliGlobali, metodo set_root().%n"
                         + "Valore della variabile locale root_d"
                 + " fuori dall'if: %s%n", root_d );

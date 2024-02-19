@@ -46,10 +46,13 @@ System.out.printf("%nCLASSE TrovaDirs, metodo cerca_dire().%n");
 String tmp = "";
 String riga = "";
 String u_perc;
+boolean perc = false;
+boolean find = true;
 Set <String> ts = VG.get_set_collegamenti();
 Set <String> visitati = VG.get_set_scaricati();
 Iterator collegamenti = ts.iterator();
 Iterator coll_visitati = visitati.iterator();
+CheckerVariabili CV = new CheckerVariabili();
 /**
  * Questo metodo esplora il contenuto del Set in cui vengono
  * archiviati i collegamenti del sito e trasforma il loro percorso
@@ -62,30 +65,27 @@ Iterator coll_visitati = visitati.iterator();
  */
 if(collegamenti.hasNext())
 {    
-boolean perc = false;
-        
-        
-    while(! perc)//coll_visitati.hasNext()
+    while((! perc) & (collegamenti.hasNext()))//coll_visitati.hasNext()
         {
-            if (collegamenti.next() == coll_visitati.next())
+            riga = collegamenti.next().toString();
+            while ((find) & (coll_visitati.hasNext()))
                 {
-                    perc = false;
+                    tmp = coll_visitati.next().toString();
+                    find = riga.equalsIgnoreCase(tmp);
                 }
-            else
+            
+            if(!find)
                 {
                     perc = true;
                 }
+            if (! coll_visitati.hasNext())
+                {
+                    perc = true;
+                }
+            
         }
         
-    if(collegamenti.hasNext())
-        {
-            riga = collegamenti.next().toString();
             System.out.printf("%nValore di riga da elaborare: %s%n",riga);
-            //System.out.printf("%nValore di CARTELLA_SITO da elaborare: %s%n",CARTELLA_SITO);
-        }
-    else
-        {
-            System.out.printf("%nAl momento non ci sono collegamenti ad altre pagine da visitare%n");            }
             perc = false;
 
     if((riga != "") & (riga != null))
@@ -107,43 +107,58 @@ boolean perc = false;
                              * verificate e per normalizzare la struttura delle
                              * sottodirectory
                              */
-                    if(u_perc.startsWith("/"))
-                        {
-                            u_perc = u_perc.substring(1);
-                        }
                            
                     File f_perc = new File(u_perc);
-                    System.out.printf("%nPercorso da creare: %s%n",u_perc);
                     Path percorso = Paths.get(u_perc);
+                    riga = percorso.getFileName().toString();
+                    percorso = percorso.getParent();
+                    tmp = percorso.toString();
 
-                    if(Files.notExists(percorso, LinkOption.NOFOLLOW_LINKS))
+                    if ((percorso != null) & (percorso.toString() != ""))
                         {
-                            Files.createDirectories(percorso);
-                        }
+                            if(tmp.equalsIgnoreCase(VG.get_subdir()))
+                                {
+                                    System.out.printf("%nClasse TrovaDIrs, "
+                                            + "metodo cerca_dire() La vecchia "
+                                            + "subdirectory e la nuova corrispondono%n");
+                                }
+                            else
+                                {
+                                    VG.set_subdir(tmp);
+                                    CV.get_SUBDIR();
+                                    VG.set_root(tmp);
+                                    CV.get_ROOT_D();
+                                    VG.set_root_dest(tmp);
+                                    CV.get_ROOT_DEST();
+                                }
 
-                    tmp = tmp + riga;
+                            VG.set_name_page(riga);
+                            CV.get_NOME_PAGINA();
+                            //VG.set_sito(nuovo_perc);
+                            CV.get_URL_SITO();
+                            CV.get_CARTELLA_SITO();
+                            System.out.printf("%nPercorso da creare: %s%n",percorso.toString());
+                            
+                            if(Files.notExists(percorso, LinkOption.NOFOLLOW_LINKS))
+                                {
+                                    Files.createDirectories(percorso);
+                                }
+                        }
+                    tmp = u_perc;
                     riga = "";
                 }
-            System.out.printf("%n----------------------------------------------------------------------%n"
-                                + "Classe TrovaDirs, metodo cerca_dire(), lettura della lista dei link%n");
-            for (String t : ts)
-                {
-                    System.out.printf("%s%n", t);
-                }
-            System.out.printf("%n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++%n"
-                                + "Classe TrovaDirs, metodo cerca_dire(), fine lettura della lista dei link%n");
         }
 return tmp;
 }
 else
 {
     System.out.println();
-    for(int i = 0; i < 12; i++)
-        {
-            System.out.printf("%s", "TOP ");
-        }
+        for(int i = 0; i < 12; i++)
+            {
+                System.out.printf("%s", "TOP ");
+            }
     System.out.printf("%nAl momento i treeSet sono vuoti%n");
-    return tmp;
+return tmp;
 }
 }
 
@@ -167,6 +182,7 @@ Path riga = Paths.get(dir);
 System.out.printf("Elaborazione di %s:\tNome: %s\tNumero di elementi: %d%n"
         + "\tPercorso: %s%n\tRadice: %s%n",riga.toString(), riga.getFileName(), riga.getNameCount()
         , riga.getParent(), riga.getRoot());
+
 n_elementi = riga.getNameCount();
 
 switch (n_elementi)
