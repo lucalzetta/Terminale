@@ -26,6 +26,9 @@ Root directory del progetto: /home/lucaamministratore/tmp/scuoladipoliticamaniag
 Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
 Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
+Cartella di destinazione del sito: /home/lucaamministratore/tmp/scuoladipoliticamaniago/ CREATA CORRETTAMENTE!
+Creato il file /home/lucaamministratore/tmp/scuoladipoliticamaniago/ListaURLS.txt
+Creato il file /home/lucaamministratore/tmp/scuoladipoliticamaniago/ArchivioDIRS.txt
 
 CLASSE EvalOpzioni, metodo file().
 
@@ -44,6 +47,8 @@ CLASSE Loopper, costruttore di default.
 
 Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
+CLASSE TrovaDirs, costruttore di default.
+
 CLASSE TestGet, costruttore con parametri.
 
 &#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$
@@ -56,6 +61,8 @@ SUBDIR: null
 TestGet, valore delle variabili iniziali della classe.
 NOME_FILE: index.html 
 &8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$
+
+CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TrovaDirs, metodo cerca_dire().
 
@@ -130,63 +137,62 @@ stili/GeneralTest.css
 
                                        £
 
-Classe Loopper metodo passo().
-Testo della pagina visitata:
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Scuola di politica Maniago</title>
-        <meta name="keywords" content="web, html5, javascript, css" charset="utf-8">
-        <link rel="stylesheet" href="stili/GeneralTest.css" type="text/css" media="all" />
-    </head>
-    <body>
-    <header>
-        <img src="immagini/Colors.jpg" heigt=400px width=300px />
-    </header>
-        <hgroup id="top">
-            <h1>Scuola di politica Maniago</h1>
-            <h2>Istruzioni per una partecipazione attiva alla vita sociale</h2>
-        </hgroup>
-        <p>
-            Questo sito temporaneamente testa le funzionalità della tecnologia open per il web per lo sviluppo del sito del circolo culturale Menocchio di Montereale Valcellina.
-        </p>
-    </body>
-<a href="pagine/ILibriDelMenocchio.xhtml">I libri del Circolo</a><br />    
-<a href=pagine/documentazione.html>Documentazione...</a><br />
-<a href=pagine/FlowChart.xhtml>Diagramma di flusso...</a><br />
-</html>
+CLASSE TrovaDirs, metodo cerca_dire().
 
+Valore di riga da elaborare: immagini/Colors.jpg
 
-Classe Loopper metodo passo().
-Aggiunta della pagina visitata alla lista links: index.html.
+CLASSE TrovaDirs, metodo esame_directory().
+Elaborazione di immagini/Colors.jpg:	Nome: Colors.jpg	Numero di elementi: 2
+	Percorso: immagini
+	Radice: null
 
-Elenco dei collegamenti interni presenti nel sito
+CLASSE TrovaDirs, metodo caratteri_vietati().
 
-=============================================================================================
-Lista dei collegamenti presenti nel sito
-immagini/Colors.jpg
-index.html
-pagine/FlowChart.xhtml
-pagine/ILibriDelMenocchio.xhtml
-pagine/documentazione.html
-stili/GeneralTest.css
+Classe TrovaDIrs, metodo cerca_dire(),
+ VALORE DI file_name: Colors.jpg
+VALORE DI sub_dir: immagini/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
+Sotto directory in cui verrà salvata la pagina:null
 
-Elenco delle pagine scaricate dal sito
+Sotto directory in cui verrà salvata la pagina:immagini/
 
-=============================================================================================
-Lista dei collegamenti presenti nel sito
-index.html
+CLASSE VariabiliGlobali, metodo set_root().
 
+CLASSE VariabiliGlobali, metodo set_root().
+Valore della variabile locale root_d fuori dall'if: immagini/
 
-CLASSE Loopper, metodo nuova_pagina().
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+ con carattere slash finale +++++++++++++++++++
+Root directory del progetto: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Classe Loopper, metodo nuova_pagina() valore di subdirectory: /
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+Cartella di destinazione del sito: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/ CREATA CORRETTAMENTE!
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+
+Nome della pagina che si sta elaborando:Colors.jpg
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/index.html
+
+Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
+
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+
+CLASSE TrovaDirs, metodo imposta_sito().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
+
+Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
+
+Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 classe Loopper metodo nuova_pagina.
-Scaricheremo il file index.html
-Nella directory null
+Scaricheremo il file Colors.jpg
+Nella directory immagini/
 
 CLASSE Loopper, metodo cicloSito().
 
@@ -194,28 +200,32 @@ Area di azzeramento delle variabili.
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
-Nome della pagina che si sta elaborando:index.html
+Nome della pagina che si sta elaborando:Colors.jpg
 
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
 Valore del contatore globale: 0
 
-Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
+Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+
+CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TestGet, costruttore con parametri.
 
 &#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$
 TestGet, valore delle variabili iniziali della classe.
-ROOT_DIR: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
+ROOT_DIR: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 TestGet, valore delle variabili iniziali della classe.
-SITO: http://www.scuoladipoliticamaniago.it/index.html
+SITO: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 TestGet, valore delle variabili iniziali della classe.
-SUBDIR: null
+SUBDIR: immagini/
 TestGet, valore delle variabili iniziali della classe.
-NOME_FILE: index.html
+NOME_FILE: Colors.jpg
 &8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$
+
+CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TrovaDirs, metodo cerca_dire().
 
@@ -228,163 +238,88 @@ Elaborazione di immagini/Colors.jpg:	Nome: Colors.jpg	Numero di elementi: 2
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
 
-Sotto directory in cui verrà salvata la pagina:null
+Classe TrovaDIrs, metodo cerca_dire(),
+ VALORE DI file_name: Colors.jpg
+VALORE DI sub_dir: immagini/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Sotto directory in cui verrà salvata la pagina:home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini
-
-CLASSE VariabiliGlobali, metodo set_root().
-
-CLASSE VariabiliGlobali, metodo set_root().
-Valore della variabile locale root_d fuori dall'if: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-
-Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago//home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
- con carattere slash finale +++++++++++++++++++
-Root directory del progetto: /home/lucaamministratore/tmp/scuoladipoliticamaniago//home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-
-Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago//home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago//home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-Cartella di destinazione del sito: /home/lucaamministratore/tmp/scuoladipoliticamaniago//home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/ CREATA CORRETTAMENTE!
-
-Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago//home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini
+Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
 
 Nome della pagina che si sta elaborando:Colors.jpg
 
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/index.html
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
-Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
 CLASSE TestGet, metodo OttieniPagina().
-Nome della pagina da salvare: index.html
-Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
-Nome della pagina da salvare (dopo l'if): index.html
+Nome della pagina da salvare: Colors.jpg
+Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it/immagini
+Nome della pagina da salvare (dopo l'if): Colors.jpg
 
 CLASSE ValutaFile, costruttore di default.
 
 CLASSE ValutaFile, metodo text().
 
-Estensione del file: index.html .html
+Estensione del file: Colors.jpg .jpg
 
 CLASSE ValutaFile, metodo visitabile().
 
 CLASSE SalvaPagine, costruttore con parametri.
-La pagina: index.html, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-con l'opzione testo = true
+La pagina: Colors.jpg, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago/
+con l'opzione testo = false
 
 CLASSE SalvaPagine, metodo scrivi().
 
 Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-Nome del file: index.html
+Nome del file: Colors.jpg
 
 
-CLasse SalvaPagine, metodo scrivi(), risultato della lettura dei primi caratteri del file:
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Scuola di politica Maniago</title>
-        <meta name="keywords" content="web, html5, javascript, css" charset="utf-8">
-        <link rel="stylesheet" href="stili/GeneralTest.css" type="text/css" media="all" />
-    </head>
-    <body>
-    <header>
-    
-
-
+Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
 
 CLASSE EstriLinks, costruttore di default.
 
 CLASSE EstriLinks, metodo links().
 
-CLASSE EstriLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'href=' in posizione: 227	stili/GeneralTest.css
-Trovata l'occorrenza n° 2 di 'href=' in posizione: 803	pagine/ILibriDelMenocchio.xhtml
-Trovata l'occorrenza n° 3 di 'href=' in posizione: 873	pagine/documentazione.html
-Trovata l'occorrenza n° 4 di 'href=' in posizione: 932	pagine/FlowChart.xhtml
+Il file Colors.jpg non è un file di testo, verrà salvato senza ulteriori analisi
 
-CLASSE EstriLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'src=' in posizione: 333	immagini/Colors.jpg
+CLASSE TrovaDirs, metodo cerca_dire().
 
-CLASSE EstriLinks, metodo ciclo().
+Valore di riga da elaborare: immagini/Colors.jpg
 
-CLASSE EstriLinks, metodo ciclo().
+CLASSE TrovaDirs, metodo esame_directory().
+Elaborazione di immagini/Colors.jpg:	Nome: Colors.jpg	Numero di elementi: 2
+	Percorso: immagini
+	Radice: null
 
-CLASSE EstriLinks, metodo ciclo().
+CLASSE TrovaDirs, metodo caratteri_vietati().
 
+Classe TrovaDIrs, metodo cerca_dire(),
+ VALORE DI file_name: Colors.jpg
+VALORE DI sub_dir: immagini/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Elenco dei link presenti nel sito
+Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
 
-immagini/Colors.jpg
-pagine/FlowChart.xhtml
-pagine/ILibriDelMenocchio.xhtml
-pagine/documentazione.html
-stili/GeneralTest.css
+Nome della pagina che si sta elaborando:Colors.jpg
 
-                                       £
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
-Classe Loopper metodo passo().
-Testo della pagina visitata:
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Scuola di politica Maniago</title>
-        <meta name="keywords" content="web, html5, javascript, css" charset="utf-8">
-        <link rel="stylesheet" href="stili/GeneralTest.css" type="text/css" media="all" />
-    </head>
-    <body>
-    <header>
-        <img src="immagini/Colors.jpg" heigt=400px width=300px />
-    </header>
-        <hgroup id="top">
-            <h1>Scuola di politica Maniago</h1>
-            <h2>Istruzioni per una partecipazione attiva alla vita sociale</h2>
-        </hgroup>
-        <p>
-            Questo sito temporaneamente testa le funzionalità della tecnologia open per il web per lo sviluppo del sito del circolo culturale Menocchio di Montereale Valcellina.
-        </p>
-    </body>
-<a href="pagine/ILibriDelMenocchio.xhtml">I libri del Circolo</a><br />    
-<a href=pagine/documentazione.html>Documentazione...</a><br />
-<a href=pagine/FlowChart.xhtml>Diagramma di flusso...</a><br />
-</html>
+Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Classe Loopper metodo passo().
-Aggiunta della pagina visitata alla lista links: home/lucaamministratore/tmp/scuoladipoliticamaniago/immaginiindex.html.
+CLASSE TrovaDirs, metodo imposta_sito().
 
-Elenco dei collegamenti interni presenti nel sito
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
-=============================================================================================
-Lista dei collegamenti presenti nel sito
-home/lucaamministratore/tmp/scuoladipoliticamaniago/immaginiindex.html
-immagini/Colors.jpg
-index.html
-pagine/FlowChart.xhtml
-pagine/ILibriDelMenocchio.xhtml
-pagine/documentazione.html
-stili/GeneralTest.css
+Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
-
-Elenco delle pagine scaricate dal sito
-
-=============================================================================================
-Lista dei collegamenti presenti nel sito
-home/lucaamministratore/tmp/scuoladipoliticamaniago/immaginiindex.html
-index.html
-
-
-CLASSE Loopper, metodo nuova_pagina().
-
-Classe Loopper, metodo nuova_pagina() valore di subdirectory: /
-
-Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/
+Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 classe Loopper metodo nuova_pagina.
-Scaricheremo il file index.html
-Nella directory home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini
+Scaricheremo il file Colors.jpg
+Nella directory immagini/
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 0
@@ -393,199 +328,126 @@ Area di azzeramento delle variabili.
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
-Nome della pagina che si sta elaborando:index.html
+Nome della pagina che si sta elaborando:Colors.jpg
 
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
 Valore del contatore globale: 0
 
-Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago//home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+
+CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TestGet, costruttore con parametri.
 
 &#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$
 TestGet, valore delle variabili iniziali della classe.
-ROOT_DIR: /home/lucaamministratore/tmp/scuoladipoliticamaniago//home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+ROOT_DIR: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 TestGet, valore delle variabili iniziali della classe.
-SITO: http://www.scuoladipoliticamaniago.it/index.html
+SITO: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 TestGet, valore delle variabili iniziali della classe.
-SUBDIR: home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini
+SUBDIR: immagini/
 TestGet, valore delle variabili iniziali della classe.
-NOME_FILE: index.html
+NOME_FILE: Colors.jpg
 &8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$
+
+CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TrovaDirs, metodo cerca_dire().
 
-Valore di riga da elaborare: home/lucaamministratore/tmp/scuoladipoliticamaniago/immaginiindex.html
+Valore di riga da elaborare: immagini/Colors.jpg
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di home/lucaamministratore/tmp/scuoladipoliticamaniago/immaginiindex.html:	Nome: immaginiindex.html	Numero di elementi: 5
-	Percorso: home/lucaamministratore/tmp/scuoladipoliticamaniago
+Elaborazione di immagini/Colors.jpg:	Nome: Colors.jpg	Numero di elementi: 2
+	Percorso: immagini
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
 
-Sotto directory in cui verrà salvata la pagina:home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini
+Classe TrovaDIrs, metodo cerca_dire(),
+ VALORE DI file_name: Colors.jpg
+VALORE DI sub_dir: immagini/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Sotto directory in cui verrà salvata la pagina:home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago
+Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
 
-CLASSE VariabiliGlobali, metodo set_root().
+Nome della pagina che si sta elaborando:Colors.jpg
 
-CLASSE VariabiliGlobali, metodo set_root().
-Valore della variabile locale root_d fuori dall'if: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/
- senza carattere slash finale ----------------
-Root directory del progetto: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-Cartella di destinazione del sito: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/ CREATA CORRETTAMENTE!
-
-Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago
-
-Nome della pagina che si sta elaborando:immaginiindex.html
-
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/index.html
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
-Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
 CLASSE TestGet, metodo OttieniPagina().
-Nome della pagina da salvare: index.html
-Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
-Nome della pagina da salvare (dopo l'if): index.html
+Nome della pagina da salvare: Colors.jpg
+Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it/immagini
+Nome della pagina da salvare (dopo l'if): Colors.jpg
 
 CLASSE ValutaFile, costruttore di default.
 
 CLASSE ValutaFile, metodo text().
 
-Estensione del file: index.html .html
+Estensione del file: Colors.jpg .jpg
 
 CLASSE ValutaFile, metodo visitabile().
 
 CLASSE SalvaPagine, costruttore con parametri.
-La pagina: index.html, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-con l'opzione testo = true
+La pagina: Colors.jpg, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago/
+con l'opzione testo = false
 
 CLASSE SalvaPagine, metodo scrivi().
 
 Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-Nome del file: index.html
+Nome del file: Colors.jpg
 
 
-CLasse SalvaPagine, metodo scrivi(), risultato della lettura dei primi caratteri del file:
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Scuola di politica Maniago</title>
-        <meta name="keywords" content="web, html5, javascript, css" charset="utf-8">
-        <link rel="stylesheet" href="stili/GeneralTest.css" type="text/css" media="all" />
-    </head>
-    <body>
-    <header>
-    
-
-
+Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
 
 CLASSE EstriLinks, costruttore di default.
 
 CLASSE EstriLinks, metodo links().
 
-CLASSE EstriLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'href=' in posizione: 227	stili/GeneralTest.css
-Trovata l'occorrenza n° 2 di 'href=' in posizione: 803	pagine/ILibriDelMenocchio.xhtml
-Trovata l'occorrenza n° 3 di 'href=' in posizione: 873	pagine/documentazione.html
-Trovata l'occorrenza n° 4 di 'href=' in posizione: 932	pagine/FlowChart.xhtml
+Il file Colors.jpg non è un file di testo, verrà salvato senza ulteriori analisi
 
-CLASSE EstriLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'src=' in posizione: 333	immagini/Colors.jpg
+CLASSE TrovaDirs, metodo cerca_dire().
 
-CLASSE EstriLinks, metodo ciclo().
+Valore di riga da elaborare: immagini/Colors.jpg
 
-CLASSE EstriLinks, metodo ciclo().
+CLASSE TrovaDirs, metodo esame_directory().
+Elaborazione di immagini/Colors.jpg:	Nome: Colors.jpg	Numero di elementi: 2
+	Percorso: immagini
+	Radice: null
 
-CLASSE EstriLinks, metodo ciclo().
+CLASSE TrovaDirs, metodo caratteri_vietati().
 
+Classe TrovaDIrs, metodo cerca_dire(),
+ VALORE DI file_name: Colors.jpg
+VALORE DI sub_dir: immagini/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Elenco dei link presenti nel sito
+Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
 
-immagini/Colors.jpg
-pagine/FlowChart.xhtml
-pagine/ILibriDelMenocchio.xhtml
-pagine/documentazione.html
-stili/GeneralTest.css
+Nome della pagina che si sta elaborando:Colors.jpg
 
-                                       £
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
-Classe Loopper metodo passo().
-Testo della pagina visitata:
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Scuola di politica Maniago</title>
-        <meta name="keywords" content="web, html5, javascript, css" charset="utf-8">
-        <link rel="stylesheet" href="stili/GeneralTest.css" type="text/css" media="all" />
-    </head>
-    <body>
-    <header>
-        <img src="immagini/Colors.jpg" heigt=400px width=300px />
-    </header>
-        <hgroup id="top">
-            <h1>Scuola di politica Maniago</h1>
-            <h2>Istruzioni per una partecipazione attiva alla vita sociale</h2>
-        </hgroup>
-        <p>
-            Questo sito temporaneamente testa le funzionalità della tecnologia open per il web per lo sviluppo del sito del circolo culturale Menocchio di Montereale Valcellina.
-        </p>
-    </body>
-<a href="pagine/ILibriDelMenocchio.xhtml">I libri del Circolo</a><br />    
-<a href=pagine/documentazione.html>Documentazione...</a><br />
-<a href=pagine/FlowChart.xhtml>Diagramma di flusso...</a><br />
-</html>
+Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Classe Loopper metodo passo().
-Aggiunta della pagina visitata alla lista links: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html.
+CLASSE TrovaDirs, metodo imposta_sito().
 
-Elenco dei collegamenti interni presenti nel sito
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
-=============================================================================================
-Lista dei collegamenti presenti nel sito
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/immaginiindex.html
-immagini/Colors.jpg
-index.html
-pagine/FlowChart.xhtml
-pagine/ILibriDelMenocchio.xhtml
-pagine/documentazione.html
-stili/GeneralTest.css
+Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
-
-Elenco delle pagine scaricate dal sito
-
-=============================================================================================
-Lista dei collegamenti presenti nel sito
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/immaginiindex.html
-index.html
-
-
-CLASSE Loopper, metodo nuova_pagina().
-
-Classe Loopper, metodo nuova_pagina() valore di subdirectory: /
-
-Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/
+Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 classe Loopper metodo nuova_pagina.
-Scaricheremo il file index.html
-Nella directory home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago
+Scaricheremo il file Colors.jpg
+Nella directory immagini/
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 1
@@ -594,200 +456,126 @@ Area di azzeramento delle variabili.
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
-Nome della pagina che si sta elaborando:index.html
+Nome della pagina che si sta elaborando:Colors.jpg
 
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
 Valore del contatore globale: 0
 
-Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/
+Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+
+CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TestGet, costruttore con parametri.
 
 &#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$
 TestGet, valore delle variabili iniziali della classe.
-ROOT_DIR: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/
+ROOT_DIR: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 TestGet, valore delle variabili iniziali della classe.
-SITO: http://www.scuoladipoliticamaniago.it/index.html
+SITO: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 TestGet, valore delle variabili iniziali della classe.
-SUBDIR: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago
+SUBDIR: immagini/
 TestGet, valore delle variabili iniziali della classe.
-NOME_FILE: index.html
+NOME_FILE: Colors.jpg
 &8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$
+
+CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TrovaDirs, metodo cerca_dire().
 
-Valore di riga da elaborare: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
+Valore di riga da elaborare: immagini/Colors.jpg
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html:	Nome: scuoladipoliticamaniagoindex.html	Numero di elementi: 8
-	Percorso: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp
+Elaborazione di immagini/Colors.jpg:	Nome: Colors.jpg	Numero di elementi: 2
+	Percorso: immagini
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
 
-Sotto directory in cui verrà salvata la pagina:home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago
+Classe TrovaDIrs, metodo cerca_dire(),
+ VALORE DI file_name: Colors.jpg
+VALORE DI sub_dir: immagini/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Sotto directory in cui verrà salvata la pagina:home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp
+Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
 
-CLASSE VariabiliGlobali, metodo set_root().
+Nome della pagina che si sta elaborando:Colors.jpg
 
-CLASSE VariabiliGlobali, metodo set_root().
-Valore della variabile locale root_d fuori dall'if: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/
-
-Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/
- senza carattere slash finale ----------------
-Root directory del progetto: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/
-
-Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/
-
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/
-
-Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/
-
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp
-
-Nome della pagina che si sta elaborando:scuoladipoliticamaniagoindex.html
-
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/index.html
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
-Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
 CLASSE TestGet, metodo OttieniPagina().
-Nome della pagina da salvare: index.html
-Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
-Nome della pagina da salvare (dopo l'if): index.html
+Nome della pagina da salvare: Colors.jpg
+Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it/immagini
+Nome della pagina da salvare (dopo l'if): Colors.jpg
 
 CLASSE ValutaFile, costruttore di default.
 
 CLASSE ValutaFile, metodo text().
 
-Estensione del file: index.html .html
+Estensione del file: Colors.jpg .jpg
 
 CLASSE ValutaFile, metodo visitabile().
 
 CLASSE SalvaPagine, costruttore con parametri.
-La pagina: index.html, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-con l'opzione testo = true
+La pagina: Colors.jpg, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago/
+con l'opzione testo = false
 
 CLASSE SalvaPagine, metodo scrivi().
 
 Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-Nome del file: index.html
+Nome del file: Colors.jpg
 
 
-CLasse SalvaPagine, metodo scrivi(), risultato della lettura dei primi caratteri del file:
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Scuola di politica Maniago</title>
-        <meta name="keywords" content="web, html5, javascript, css" charset="utf-8">
-        <link rel="stylesheet" href="stili/GeneralTest.css" type="text/css" media="all" />
-    </head>
-    <body>
-    <header>
-    
-
-
+Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
 
 CLASSE EstriLinks, costruttore di default.
 
 CLASSE EstriLinks, metodo links().
 
-CLASSE EstriLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'href=' in posizione: 227	stili/GeneralTest.css
-Trovata l'occorrenza n° 2 di 'href=' in posizione: 803	pagine/ILibriDelMenocchio.xhtml
-Trovata l'occorrenza n° 3 di 'href=' in posizione: 873	pagine/documentazione.html
-Trovata l'occorrenza n° 4 di 'href=' in posizione: 932	pagine/FlowChart.xhtml
+Il file Colors.jpg non è un file di testo, verrà salvato senza ulteriori analisi
 
-CLASSE EstriLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'src=' in posizione: 333	immagini/Colors.jpg
+CLASSE TrovaDirs, metodo cerca_dire().
 
-CLASSE EstriLinks, metodo ciclo().
+Valore di riga da elaborare: immagini/Colors.jpg
 
-CLASSE EstriLinks, metodo ciclo().
+CLASSE TrovaDirs, metodo esame_directory().
+Elaborazione di immagini/Colors.jpg:	Nome: Colors.jpg	Numero di elementi: 2
+	Percorso: immagini
+	Radice: null
 
-CLASSE EstriLinks, metodo ciclo().
+CLASSE TrovaDirs, metodo caratteri_vietati().
 
+Classe TrovaDIrs, metodo cerca_dire(),
+ VALORE DI file_name: Colors.jpg
+VALORE DI sub_dir: immagini/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Elenco dei link presenti nel sito
+Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
 
-immagini/Colors.jpg
-pagine/FlowChart.xhtml
-pagine/ILibriDelMenocchio.xhtml
-pagine/documentazione.html
-stili/GeneralTest.css
+Nome della pagina che si sta elaborando:Colors.jpg
 
-                                       £
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
-Classe Loopper metodo passo().
-Testo della pagina visitata:
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Scuola di politica Maniago</title>
-        <meta name="keywords" content="web, html5, javascript, css" charset="utf-8">
-        <link rel="stylesheet" href="stili/GeneralTest.css" type="text/css" media="all" />
-    </head>
-    <body>
-    <header>
-        <img src="immagini/Colors.jpg" heigt=400px width=300px />
-    </header>
-        <hgroup id="top">
-            <h1>Scuola di politica Maniago</h1>
-            <h2>Istruzioni per una partecipazione attiva alla vita sociale</h2>
-        </hgroup>
-        <p>
-            Questo sito temporaneamente testa le funzionalità della tecnologia open per il web per lo sviluppo del sito del circolo culturale Menocchio di Montereale Valcellina.
-        </p>
-    </body>
-<a href="pagine/ILibriDelMenocchio.xhtml">I libri del Circolo</a><br />    
-<a href=pagine/documentazione.html>Documentazione...</a><br />
-<a href=pagine/FlowChart.xhtml>Diagramma di flusso...</a><br />
-</html>
+Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Classe Loopper metodo passo().
-Aggiunta della pagina visitata alla lista links: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html.
+CLASSE TrovaDirs, metodo imposta_sito().
 
-Elenco dei collegamenti interni presenti nel sito
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
-=============================================================================================
-Lista dei collegamenti presenti nel sito
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/immaginiindex.html
-immagini/Colors.jpg
-index.html
-pagine/FlowChart.xhtml
-pagine/ILibriDelMenocchio.xhtml
-pagine/documentazione.html
-stili/GeneralTest.css
+Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
-
-Elenco delle pagine scaricate dal sito
-
-=============================================================================================
-Lista dei collegamenti presenti nel sito
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/immaginiindex.html
-index.html
-
-
-CLASSE Loopper, metodo nuova_pagina().
-
-Classe Loopper, metodo nuova_pagina() valore di subdirectory: /
-
-Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/
+Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 classe Loopper metodo nuova_pagina.
-Scaricheremo il file index.html
-Nella directory home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp
+Scaricheremo il file Colors.jpg
+Nella directory immagini/
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 2
@@ -796,203 +584,126 @@ Area di azzeramento delle variabili.
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
-Nome della pagina che si sta elaborando:index.html
+Nome della pagina che si sta elaborando:Colors.jpg
 
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
 Valore del contatore globale: 0
 
-Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/
+Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+
+CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TestGet, costruttore con parametri.
 
 &#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$
 TestGet, valore delle variabili iniziali della classe.
-ROOT_DIR: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/
+ROOT_DIR: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 TestGet, valore delle variabili iniziali della classe.
-SITO: http://www.scuoladipoliticamaniago.it/index.html
+SITO: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 TestGet, valore delle variabili iniziali della classe.
-SUBDIR: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp
+SUBDIR: immagini/
 TestGet, valore delle variabili iniziali della classe.
-NOME_FILE: index.html
+NOME_FILE: Colors.jpg
 &8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$
+
+CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TrovaDirs, metodo cerca_dire().
 
-Valore di riga da elaborare: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html
+Valore di riga da elaborare: immagini/Colors.jpg
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html:	Nome: tmpindex.html	Numero di elementi: 11
-	Percorso: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore
+Elaborazione di immagini/Colors.jpg:	Nome: Colors.jpg	Numero di elementi: 2
+	Percorso: immagini
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
 
-Sotto directory in cui verrà salvata la pagina:home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp
+Classe TrovaDIrs, metodo cerca_dire(),
+ VALORE DI file_name: Colors.jpg
+VALORE DI sub_dir: immagini/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Sotto directory in cui verrà salvata la pagina:home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore
+Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
 
-CLASSE VariabiliGlobali, metodo set_root().
+Nome della pagina che si sta elaborando:Colors.jpg
 
-CLASSE VariabiliGlobali, metodo set_root().
-Valore della variabile locale root_d fuori dall'if: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/
-
-Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/
- senza carattere slash finale ----------------
-Root directory del progetto: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/
-
-Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/
-
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/
-Cartella di destinazione del sito: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/ CREATA CORRETTAMENTE!
-
-Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/
-
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore
-
-Nome della pagina che si sta elaborando:tmpindex.html
-
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/index.html
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
-Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
 CLASSE TestGet, metodo OttieniPagina().
-Nome della pagina da salvare: index.html
-Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
-Nome della pagina da salvare (dopo l'if): index.html
+Nome della pagina da salvare: Colors.jpg
+Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it/immagini
+Nome della pagina da salvare (dopo l'if): Colors.jpg
 
 CLASSE ValutaFile, costruttore di default.
 
 CLASSE ValutaFile, metodo text().
 
-Estensione del file: index.html .html
+Estensione del file: Colors.jpg .jpg
 
 CLASSE ValutaFile, metodo visitabile().
 
 CLASSE SalvaPagine, costruttore con parametri.
-La pagina: index.html, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-con l'opzione testo = true
+La pagina: Colors.jpg, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago/
+con l'opzione testo = false
 
 CLASSE SalvaPagine, metodo scrivi().
 
 Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-Nome del file: index.html
+Nome del file: Colors.jpg
 
 
-CLasse SalvaPagine, metodo scrivi(), risultato della lettura dei primi caratteri del file:
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Scuola di politica Maniago</title>
-        <meta name="keywords" content="web, html5, javascript, css" charset="utf-8">
-        <link rel="stylesheet" href="stili/GeneralTest.css" type="text/css" media="all" />
-    </head>
-    <body>
-    <header>
-    
-
-
+Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
 
 CLASSE EstriLinks, costruttore di default.
 
 CLASSE EstriLinks, metodo links().
 
-CLASSE EstriLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'href=' in posizione: 227	stili/GeneralTest.css
-Trovata l'occorrenza n° 2 di 'href=' in posizione: 803	pagine/ILibriDelMenocchio.xhtml
-Trovata l'occorrenza n° 3 di 'href=' in posizione: 873	pagine/documentazione.html
-Trovata l'occorrenza n° 4 di 'href=' in posizione: 932	pagine/FlowChart.xhtml
+Il file Colors.jpg non è un file di testo, verrà salvato senza ulteriori analisi
 
-CLASSE EstriLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'src=' in posizione: 333	immagini/Colors.jpg
+CLASSE TrovaDirs, metodo cerca_dire().
 
-CLASSE EstriLinks, metodo ciclo().
+Valore di riga da elaborare: immagini/Colors.jpg
 
-CLASSE EstriLinks, metodo ciclo().
+CLASSE TrovaDirs, metodo esame_directory().
+Elaborazione di immagini/Colors.jpg:	Nome: Colors.jpg	Numero di elementi: 2
+	Percorso: immagini
+	Radice: null
 
-CLASSE EstriLinks, metodo ciclo().
+CLASSE TrovaDirs, metodo caratteri_vietati().
 
+Classe TrovaDIrs, metodo cerca_dire(),
+ VALORE DI file_name: Colors.jpg
+VALORE DI sub_dir: immagini/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Elenco dei link presenti nel sito
+Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
 
-immagini/Colors.jpg
-pagine/FlowChart.xhtml
-pagine/ILibriDelMenocchio.xhtml
-pagine/documentazione.html
-stili/GeneralTest.css
+Nome della pagina che si sta elaborando:Colors.jpg
 
-                                       £
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
-Classe Loopper metodo passo().
-Testo della pagina visitata:
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Scuola di politica Maniago</title>
-        <meta name="keywords" content="web, html5, javascript, css" charset="utf-8">
-        <link rel="stylesheet" href="stili/GeneralTest.css" type="text/css" media="all" />
-    </head>
-    <body>
-    <header>
-        <img src="immagini/Colors.jpg" heigt=400px width=300px />
-    </header>
-        <hgroup id="top">
-            <h1>Scuola di politica Maniago</h1>
-            <h2>Istruzioni per una partecipazione attiva alla vita sociale</h2>
-        </hgroup>
-        <p>
-            Questo sito temporaneamente testa le funzionalità della tecnologia open per il web per lo sviluppo del sito del circolo culturale Menocchio di Montereale Valcellina.
-        </p>
-    </body>
-<a href="pagine/ILibriDelMenocchio.xhtml">I libri del Circolo</a><br />    
-<a href=pagine/documentazione.html>Documentazione...</a><br />
-<a href=pagine/FlowChart.xhtml>Diagramma di flusso...</a><br />
-</html>
+Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Classe Loopper metodo passo().
-Aggiunta della pagina visitata alla lista links: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratoreindex.html.
+CLASSE TrovaDirs, metodo imposta_sito().
 
-Elenco dei collegamenti interni presenti nel sito
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
-=============================================================================================
-Lista dei collegamenti presenti nel sito
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratoreindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/immaginiindex.html
-immagini/Colors.jpg
-index.html
-pagine/FlowChart.xhtml
-pagine/ILibriDelMenocchio.xhtml
-pagine/documentazione.html
-stili/GeneralTest.css
+Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
-
-Elenco delle pagine scaricate dal sito
-
-=============================================================================================
-Lista dei collegamenti presenti nel sito
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratoreindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/immaginiindex.html
-index.html
-
-
-CLASSE Loopper, metodo nuova_pagina().
-
-Classe Loopper, metodo nuova_pagina() valore di subdirectory: /
-
-Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/
+Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 classe Loopper metodo nuova_pagina.
-Scaricheremo il file index.html
-Nella directory home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore
+Scaricheremo il file Colors.jpg
+Nella directory immagini/
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 3
@@ -1001,205 +712,126 @@ Area di azzeramento delle variabili.
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
-Nome della pagina che si sta elaborando:index.html
+Nome della pagina che si sta elaborando:Colors.jpg
 
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
 Valore del contatore globale: 0
 
-Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/
+Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+
+CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TestGet, costruttore con parametri.
 
 &#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$
 TestGet, valore delle variabili iniziali della classe.
-ROOT_DIR: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/
+ROOT_DIR: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 TestGet, valore delle variabili iniziali della classe.
-SITO: http://www.scuoladipoliticamaniago.it/index.html
+SITO: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 TestGet, valore delle variabili iniziali della classe.
-SUBDIR: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore
+SUBDIR: immagini/
 TestGet, valore delle variabili iniziali della classe.
-NOME_FILE: index.html
+NOME_FILE: Colors.jpg
 &8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$
+
+CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TrovaDirs, metodo cerca_dire().
 
-Valore di riga da elaborare: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratoreindex.html
+Valore di riga da elaborare: immagini/Colors.jpg
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratoreindex.html:	Nome: lucaamministratoreindex.html	Numero di elementi: 14
-	Percorso: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home
+Elaborazione di immagini/Colors.jpg:	Nome: Colors.jpg	Numero di elementi: 2
+	Percorso: immagini
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
 
-Sotto directory in cui verrà salvata la pagina:home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore
+Classe TrovaDIrs, metodo cerca_dire(),
+ VALORE DI file_name: Colors.jpg
+VALORE DI sub_dir: immagini/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Sotto directory in cui verrà salvata la pagina:home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home
+Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
 
-CLASSE VariabiliGlobali, metodo set_root().
+Nome della pagina che si sta elaborando:Colors.jpg
 
-CLASSE VariabiliGlobali, metodo set_root().
-Valore della variabile locale root_d fuori dall'if: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/
-
-Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/
- senza carattere slash finale ----------------
-Root directory del progetto: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/
-
-Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/
-
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/
-Cartella di destinazione del sito: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/ CREATA CORRETTAMENTE!
-
-Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/
-
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home
-
-Nome della pagina che si sta elaborando:lucaamministratoreindex.html
-
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/index.html
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
-Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
 CLASSE TestGet, metodo OttieniPagina().
-Nome della pagina da salvare: index.html
-Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
-Nome della pagina da salvare (dopo l'if): index.html
+Nome della pagina da salvare: Colors.jpg
+Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it/immagini
+Nome della pagina da salvare (dopo l'if): Colors.jpg
 
 CLASSE ValutaFile, costruttore di default.
 
 CLASSE ValutaFile, metodo text().
 
-Estensione del file: index.html .html
+Estensione del file: Colors.jpg .jpg
 
 CLASSE ValutaFile, metodo visitabile().
 
 CLASSE SalvaPagine, costruttore con parametri.
-La pagina: index.html, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-con l'opzione testo = true
+La pagina: Colors.jpg, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago/
+con l'opzione testo = false
 
 CLASSE SalvaPagine, metodo scrivi().
 
 Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-Nome del file: index.html
+Nome del file: Colors.jpg
 
 
-CLasse SalvaPagine, metodo scrivi(), risultato della lettura dei primi caratteri del file:
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Scuola di politica Maniago</title>
-        <meta name="keywords" content="web, html5, javascript, css" charset="utf-8">
-        <link rel="stylesheet" href="stili/GeneralTest.css" type="text/css" media="all" />
-    </head>
-    <body>
-    <header>
-    
-
-
+Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
 
 CLASSE EstriLinks, costruttore di default.
 
 CLASSE EstriLinks, metodo links().
 
-CLASSE EstriLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'href=' in posizione: 227	stili/GeneralTest.css
-Trovata l'occorrenza n° 2 di 'href=' in posizione: 803	pagine/ILibriDelMenocchio.xhtml
-Trovata l'occorrenza n° 3 di 'href=' in posizione: 873	pagine/documentazione.html
-Trovata l'occorrenza n° 4 di 'href=' in posizione: 932	pagine/FlowChart.xhtml
+Il file Colors.jpg non è un file di testo, verrà salvato senza ulteriori analisi
 
-CLASSE EstriLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'src=' in posizione: 333	immagini/Colors.jpg
+CLASSE TrovaDirs, metodo cerca_dire().
 
-CLASSE EstriLinks, metodo ciclo().
+Valore di riga da elaborare: immagini/Colors.jpg
 
-CLASSE EstriLinks, metodo ciclo().
+CLASSE TrovaDirs, metodo esame_directory().
+Elaborazione di immagini/Colors.jpg:	Nome: Colors.jpg	Numero di elementi: 2
+	Percorso: immagini
+	Radice: null
 
-CLASSE EstriLinks, metodo ciclo().
+CLASSE TrovaDirs, metodo caratteri_vietati().
 
+Classe TrovaDIrs, metodo cerca_dire(),
+ VALORE DI file_name: Colors.jpg
+VALORE DI sub_dir: immagini/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Elenco dei link presenti nel sito
+Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
 
-immagini/Colors.jpg
-pagine/FlowChart.xhtml
-pagine/ILibriDelMenocchio.xhtml
-pagine/documentazione.html
-stili/GeneralTest.css
+Nome della pagina che si sta elaborando:Colors.jpg
 
-                                       £
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
-Classe Loopper metodo passo().
-Testo della pagina visitata:
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Scuola di politica Maniago</title>
-        <meta name="keywords" content="web, html5, javascript, css" charset="utf-8">
-        <link rel="stylesheet" href="stili/GeneralTest.css" type="text/css" media="all" />
-    </head>
-    <body>
-    <header>
-        <img src="immagini/Colors.jpg" heigt=400px width=300px />
-    </header>
-        <hgroup id="top">
-            <h1>Scuola di politica Maniago</h1>
-            <h2>Istruzioni per una partecipazione attiva alla vita sociale</h2>
-        </hgroup>
-        <p>
-            Questo sito temporaneamente testa le funzionalità della tecnologia open per il web per lo sviluppo del sito del circolo culturale Menocchio di Montereale Valcellina.
-        </p>
-    </body>
-<a href="pagine/ILibriDelMenocchio.xhtml">I libri del Circolo</a><br />    
-<a href=pagine/documentazione.html>Documentazione...</a><br />
-<a href=pagine/FlowChart.xhtml>Diagramma di flusso...</a><br />
-</html>
+Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Classe Loopper metodo passo().
-Aggiunta della pagina visitata alla lista links: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/homeindex.html.
+CLASSE TrovaDirs, metodo imposta_sito().
 
-Elenco dei collegamenti interni presenti nel sito
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
-=============================================================================================
-Lista dei collegamenti presenti nel sito
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/homeindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratoreindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/immaginiindex.html
-immagini/Colors.jpg
-index.html
-pagine/FlowChart.xhtml
-pagine/ILibriDelMenocchio.xhtml
-pagine/documentazione.html
-stili/GeneralTest.css
+Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
-
-Elenco delle pagine scaricate dal sito
-
-=============================================================================================
-Lista dei collegamenti presenti nel sito
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/homeindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratoreindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/immaginiindex.html
-index.html
-
-
-CLASSE Loopper, metodo nuova_pagina().
-
-Classe Loopper, metodo nuova_pagina() valore di subdirectory: /
-
-Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/
+Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 classe Loopper metodo nuova_pagina.
-Scaricheremo il file index.html
-Nella directory home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home
+Scaricheremo il file Colors.jpg
+Nella directory immagini/
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 4
@@ -1208,207 +840,126 @@ Area di azzeramento delle variabili.
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
-Nome della pagina che si sta elaborando:index.html
+Nome della pagina che si sta elaborando:Colors.jpg
 
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
 Valore del contatore globale: 0
 
-Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/
+Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+
+CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TestGet, costruttore con parametri.
 
 &#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$
 TestGet, valore delle variabili iniziali della classe.
-ROOT_DIR: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/
+ROOT_DIR: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 TestGet, valore delle variabili iniziali della classe.
-SITO: http://www.scuoladipoliticamaniago.it/index.html
+SITO: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 TestGet, valore delle variabili iniziali della classe.
-SUBDIR: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home
+SUBDIR: immagini/
 TestGet, valore delle variabili iniziali della classe.
-NOME_FILE: index.html
+NOME_FILE: Colors.jpg
 &8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$
+
+CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TrovaDirs, metodo cerca_dire().
 
-Valore di riga da elaborare: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/homeindex.html
+Valore di riga da elaborare: immagini/Colors.jpg
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/homeindex.html:	Nome: homeindex.html	Numero di elementi: 17
-	Percorso: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago
+Elaborazione di immagini/Colors.jpg:	Nome: Colors.jpg	Numero di elementi: 2
+	Percorso: immagini
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
 
-Sotto directory in cui verrà salvata la pagina:home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home
+Classe TrovaDIrs, metodo cerca_dire(),
+ VALORE DI file_name: Colors.jpg
+VALORE DI sub_dir: immagini/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Sotto directory in cui verrà salvata la pagina:home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago
+Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
 
-CLASSE VariabiliGlobali, metodo set_root().
+Nome della pagina che si sta elaborando:Colors.jpg
 
-CLASSE VariabiliGlobali, metodo set_root().
-Valore della variabile locale root_d fuori dall'if: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/
- senza carattere slash finale ----------------
-Root directory del progetto: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-Cartella di destinazione del sito: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/ CREATA CORRETTAMENTE!
-
-Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago
-
-Nome della pagina che si sta elaborando:homeindex.html
-
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/index.html
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
-Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
 CLASSE TestGet, metodo OttieniPagina().
-Nome della pagina da salvare: index.html
-Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
-Nome della pagina da salvare (dopo l'if): index.html
+Nome della pagina da salvare: Colors.jpg
+Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it/immagini
+Nome della pagina da salvare (dopo l'if): Colors.jpg
 
 CLASSE ValutaFile, costruttore di default.
 
 CLASSE ValutaFile, metodo text().
 
-Estensione del file: index.html .html
+Estensione del file: Colors.jpg .jpg
 
 CLASSE ValutaFile, metodo visitabile().
 
 CLASSE SalvaPagine, costruttore con parametri.
-La pagina: index.html, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-con l'opzione testo = true
+La pagina: Colors.jpg, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago/
+con l'opzione testo = false
 
 CLASSE SalvaPagine, metodo scrivi().
 
 Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-Nome del file: index.html
+Nome del file: Colors.jpg
 
 
-CLasse SalvaPagine, metodo scrivi(), risultato della lettura dei primi caratteri del file:
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Scuola di politica Maniago</title>
-        <meta name="keywords" content="web, html5, javascript, css" charset="utf-8">
-        <link rel="stylesheet" href="stili/GeneralTest.css" type="text/css" media="all" />
-    </head>
-    <body>
-    <header>
-    
-
-
+Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
 
 CLASSE EstriLinks, costruttore di default.
 
 CLASSE EstriLinks, metodo links().
 
-CLASSE EstriLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'href=' in posizione: 227	stili/GeneralTest.css
-Trovata l'occorrenza n° 2 di 'href=' in posizione: 803	pagine/ILibriDelMenocchio.xhtml
-Trovata l'occorrenza n° 3 di 'href=' in posizione: 873	pagine/documentazione.html
-Trovata l'occorrenza n° 4 di 'href=' in posizione: 932	pagine/FlowChart.xhtml
+Il file Colors.jpg non è un file di testo, verrà salvato senza ulteriori analisi
 
-CLASSE EstriLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'src=' in posizione: 333	immagini/Colors.jpg
+CLASSE TrovaDirs, metodo cerca_dire().
 
-CLASSE EstriLinks, metodo ciclo().
+Valore di riga da elaborare: immagini/Colors.jpg
 
-CLASSE EstriLinks, metodo ciclo().
+CLASSE TrovaDirs, metodo esame_directory().
+Elaborazione di immagini/Colors.jpg:	Nome: Colors.jpg	Numero di elementi: 2
+	Percorso: immagini
+	Radice: null
 
-CLASSE EstriLinks, metodo ciclo().
+CLASSE TrovaDirs, metodo caratteri_vietati().
 
+Classe TrovaDIrs, metodo cerca_dire(),
+ VALORE DI file_name: Colors.jpg
+VALORE DI sub_dir: immagini/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Elenco dei link presenti nel sito
+Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
 
-immagini/Colors.jpg
-pagine/FlowChart.xhtml
-pagine/ILibriDelMenocchio.xhtml
-pagine/documentazione.html
-stili/GeneralTest.css
+Nome della pagina che si sta elaborando:Colors.jpg
 
-                                       £
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
-Classe Loopper metodo passo().
-Testo della pagina visitata:
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Scuola di politica Maniago</title>
-        <meta name="keywords" content="web, html5, javascript, css" charset="utf-8">
-        <link rel="stylesheet" href="stili/GeneralTest.css" type="text/css" media="all" />
-    </head>
-    <body>
-    <header>
-        <img src="immagini/Colors.jpg" heigt=400px width=300px />
-    </header>
-        <hgroup id="top">
-            <h1>Scuola di politica Maniago</h1>
-            <h2>Istruzioni per una partecipazione attiva alla vita sociale</h2>
-        </hgroup>
-        <p>
-            Questo sito temporaneamente testa le funzionalità della tecnologia open per il web per lo sviluppo del sito del circolo culturale Menocchio di Montereale Valcellina.
-        </p>
-    </body>
-<a href="pagine/ILibriDelMenocchio.xhtml">I libri del Circolo</a><br />    
-<a href=pagine/documentazione.html>Documentazione...</a><br />
-<a href=pagine/FlowChart.xhtml>Diagramma di flusso...</a><br />
-</html>
+Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Classe Loopper metodo passo().
-Aggiunta della pagina visitata alla lista links: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html.
+CLASSE TrovaDirs, metodo imposta_sito().
 
-Elenco dei collegamenti interni presenti nel sito
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
-=============================================================================================
-Lista dei collegamenti presenti nel sito
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/homeindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratoreindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/immaginiindex.html
-immagini/Colors.jpg
-index.html
-pagine/FlowChart.xhtml
-pagine/ILibriDelMenocchio.xhtml
-pagine/documentazione.html
-stili/GeneralTest.css
+Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
-
-Elenco delle pagine scaricate dal sito
-
-=============================================================================================
-Lista dei collegamenti presenti nel sito
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/homeindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratoreindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/immaginiindex.html
-index.html
-
-
-CLASSE Loopper, metodo nuova_pagina().
-
-Classe Loopper, metodo nuova_pagina() valore di subdirectory: /
-
-Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/
+Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 classe Loopper metodo nuova_pagina.
-Scaricheremo il file index.html
-Nella directory home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago
+Scaricheremo il file Colors.jpg
+Nella directory immagini/
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 5
@@ -1417,208 +968,126 @@ Area di azzeramento delle variabili.
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
-Nome della pagina che si sta elaborando:index.html
+Nome della pagina che si sta elaborando:Colors.jpg
 
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
 Valore del contatore globale: 0
 
-Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/
+Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+
+CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TestGet, costruttore con parametri.
 
 &#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$
 TestGet, valore delle variabili iniziali della classe.
-ROOT_DIR: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/
+ROOT_DIR: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 TestGet, valore delle variabili iniziali della classe.
-SITO: http://www.scuoladipoliticamaniago.it/index.html
+SITO: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 TestGet, valore delle variabili iniziali della classe.
-SUBDIR: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago
+SUBDIR: immagini/
 TestGet, valore delle variabili iniziali della classe.
-NOME_FILE: index.html
+NOME_FILE: Colors.jpg
 &8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$
+
+CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TrovaDirs, metodo cerca_dire().
 
-Valore di riga da elaborare: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
+Valore di riga da elaborare: immagini/Colors.jpg
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html:	Nome: scuoladipoliticamaniagoindex.html	Numero di elementi: 20
-	Percorso: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp
+Elaborazione di immagini/Colors.jpg:	Nome: Colors.jpg	Numero di elementi: 2
+	Percorso: immagini
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
 
-Sotto directory in cui verrà salvata la pagina:home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago
+Classe TrovaDIrs, metodo cerca_dire(),
+ VALORE DI file_name: Colors.jpg
+VALORE DI sub_dir: immagini/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Sotto directory in cui verrà salvata la pagina:home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp
+Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
 
-CLASSE VariabiliGlobali, metodo set_root().
+Nome della pagina che si sta elaborando:Colors.jpg
 
-CLASSE VariabiliGlobali, metodo set_root().
-Valore della variabile locale root_d fuori dall'if: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/
-
-Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/
- senza carattere slash finale ----------------
-Root directory del progetto: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/
-
-Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/
-
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/
-
-Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/
-
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp
-
-Nome della pagina che si sta elaborando:scuoladipoliticamaniagoindex.html
-
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/index.html
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
-Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
 CLASSE TestGet, metodo OttieniPagina().
-Nome della pagina da salvare: index.html
-Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
-Nome della pagina da salvare (dopo l'if): index.html
+Nome della pagina da salvare: Colors.jpg
+Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it/immagini
+Nome della pagina da salvare (dopo l'if): Colors.jpg
 
 CLASSE ValutaFile, costruttore di default.
 
 CLASSE ValutaFile, metodo text().
 
-Estensione del file: index.html .html
+Estensione del file: Colors.jpg .jpg
 
 CLASSE ValutaFile, metodo visitabile().
 
 CLASSE SalvaPagine, costruttore con parametri.
-La pagina: index.html, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-con l'opzione testo = true
+La pagina: Colors.jpg, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago/
+con l'opzione testo = false
 
 CLASSE SalvaPagine, metodo scrivi().
 
 Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-Nome del file: index.html
+Nome del file: Colors.jpg
 
 
-CLasse SalvaPagine, metodo scrivi(), risultato della lettura dei primi caratteri del file:
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Scuola di politica Maniago</title>
-        <meta name="keywords" content="web, html5, javascript, css" charset="utf-8">
-        <link rel="stylesheet" href="stili/GeneralTest.css" type="text/css" media="all" />
-    </head>
-    <body>
-    <header>
-    
-
-
+Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
 
 CLASSE EstriLinks, costruttore di default.
 
 CLASSE EstriLinks, metodo links().
 
-CLASSE EstriLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'href=' in posizione: 227	stili/GeneralTest.css
-Trovata l'occorrenza n° 2 di 'href=' in posizione: 803	pagine/ILibriDelMenocchio.xhtml
-Trovata l'occorrenza n° 3 di 'href=' in posizione: 873	pagine/documentazione.html
-Trovata l'occorrenza n° 4 di 'href=' in posizione: 932	pagine/FlowChart.xhtml
+Il file Colors.jpg non è un file di testo, verrà salvato senza ulteriori analisi
 
-CLASSE EstriLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'src=' in posizione: 333	immagini/Colors.jpg
+CLASSE TrovaDirs, metodo cerca_dire().
 
-CLASSE EstriLinks, metodo ciclo().
+Valore di riga da elaborare: immagini/Colors.jpg
 
-CLASSE EstriLinks, metodo ciclo().
+CLASSE TrovaDirs, metodo esame_directory().
+Elaborazione di immagini/Colors.jpg:	Nome: Colors.jpg	Numero di elementi: 2
+	Percorso: immagini
+	Radice: null
 
-CLASSE EstriLinks, metodo ciclo().
+CLASSE TrovaDirs, metodo caratteri_vietati().
 
+Classe TrovaDIrs, metodo cerca_dire(),
+ VALORE DI file_name: Colors.jpg
+VALORE DI sub_dir: immagini/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Elenco dei link presenti nel sito
+Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
 
-immagini/Colors.jpg
-pagine/FlowChart.xhtml
-pagine/ILibriDelMenocchio.xhtml
-pagine/documentazione.html
-stili/GeneralTest.css
+Nome della pagina che si sta elaborando:Colors.jpg
 
-                                       £
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
-Classe Loopper metodo passo().
-Testo della pagina visitata:
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Scuola di politica Maniago</title>
-        <meta name="keywords" content="web, html5, javascript, css" charset="utf-8">
-        <link rel="stylesheet" href="stili/GeneralTest.css" type="text/css" media="all" />
-    </head>
-    <body>
-    <header>
-        <img src="immagini/Colors.jpg" heigt=400px width=300px />
-    </header>
-        <hgroup id="top">
-            <h1>Scuola di politica Maniago</h1>
-            <h2>Istruzioni per una partecipazione attiva alla vita sociale</h2>
-        </hgroup>
-        <p>
-            Questo sito temporaneamente testa le funzionalità della tecnologia open per il web per lo sviluppo del sito del circolo culturale Menocchio di Montereale Valcellina.
-        </p>
-    </body>
-<a href="pagine/ILibriDelMenocchio.xhtml">I libri del Circolo</a><br />    
-<a href=pagine/documentazione.html>Documentazione...</a><br />
-<a href=pagine/FlowChart.xhtml>Diagramma di flusso...</a><br />
-</html>
+Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Classe Loopper metodo passo().
-Aggiunta della pagina visitata alla lista links: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html.
+CLASSE TrovaDirs, metodo imposta_sito().
 
-Elenco dei collegamenti interni presenti nel sito
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
-=============================================================================================
-Lista dei collegamenti presenti nel sito
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/homeindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratoreindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/immaginiindex.html
-immagini/Colors.jpg
-index.html
-pagine/FlowChart.xhtml
-pagine/ILibriDelMenocchio.xhtml
-pagine/documentazione.html
-stili/GeneralTest.css
+Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
-
-Elenco delle pagine scaricate dal sito
-
-=============================================================================================
-Lista dei collegamenti presenti nel sito
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/homeindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratoreindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/immaginiindex.html
-index.html
-
-
-CLASSE Loopper, metodo nuova_pagina().
-
-Classe Loopper, metodo nuova_pagina() valore di subdirectory: /
-
-Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/
+Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 classe Loopper metodo nuova_pagina.
-Scaricheremo il file index.html
-Nella directory home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp
+Scaricheremo il file Colors.jpg
+Nella directory immagini/
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 6
@@ -1627,211 +1096,126 @@ Area di azzeramento delle variabili.
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
-Nome della pagina che si sta elaborando:index.html
+Nome della pagina che si sta elaborando:Colors.jpg
 
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
 Valore del contatore globale: 0
 
-Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/
+Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+
+CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TestGet, costruttore con parametri.
 
 &#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$
 TestGet, valore delle variabili iniziali della classe.
-ROOT_DIR: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/
+ROOT_DIR: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 TestGet, valore delle variabili iniziali della classe.
-SITO: http://www.scuoladipoliticamaniago.it/index.html
+SITO: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 TestGet, valore delle variabili iniziali della classe.
-SUBDIR: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp
+SUBDIR: immagini/
 TestGet, valore delle variabili iniziali della classe.
-NOME_FILE: index.html
+NOME_FILE: Colors.jpg
 &8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$
+
+CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TrovaDirs, metodo cerca_dire().
 
-Valore di riga da elaborare: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html
+Valore di riga da elaborare: immagini/Colors.jpg
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html:	Nome: tmpindex.html	Numero di elementi: 23
-	Percorso: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore
+Elaborazione di immagini/Colors.jpg:	Nome: Colors.jpg	Numero di elementi: 2
+	Percorso: immagini
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
 
-Sotto directory in cui verrà salvata la pagina:home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp
+Classe TrovaDIrs, metodo cerca_dire(),
+ VALORE DI file_name: Colors.jpg
+VALORE DI sub_dir: immagini/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Sotto directory in cui verrà salvata la pagina:home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore
+Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
 
-CLASSE VariabiliGlobali, metodo set_root().
+Nome della pagina che si sta elaborando:Colors.jpg
 
-CLASSE VariabiliGlobali, metodo set_root().
-Valore della variabile locale root_d fuori dall'if: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/
-
-Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/
- senza carattere slash finale ----------------
-Root directory del progetto: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/
-
-Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/
-
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/
-Cartella di destinazione del sito: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/ CREATA CORRETTAMENTE!
-
-Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/
-
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore
-
-Nome della pagina che si sta elaborando:tmpindex.html
-
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/index.html
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
-Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
 CLASSE TestGet, metodo OttieniPagina().
-Nome della pagina da salvare: index.html
-Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
-Nome della pagina da salvare (dopo l'if): index.html
+Nome della pagina da salvare: Colors.jpg
+Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it/immagini
+Nome della pagina da salvare (dopo l'if): Colors.jpg
 
 CLASSE ValutaFile, costruttore di default.
 
 CLASSE ValutaFile, metodo text().
 
-Estensione del file: index.html .html
+Estensione del file: Colors.jpg .jpg
 
 CLASSE ValutaFile, metodo visitabile().
 
 CLASSE SalvaPagine, costruttore con parametri.
-La pagina: index.html, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-con l'opzione testo = true
+La pagina: Colors.jpg, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago/
+con l'opzione testo = false
 
 CLASSE SalvaPagine, metodo scrivi().
 
 Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-Nome del file: index.html
+Nome del file: Colors.jpg
 
 
-CLasse SalvaPagine, metodo scrivi(), risultato della lettura dei primi caratteri del file:
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Scuola di politica Maniago</title>
-        <meta name="keywords" content="web, html5, javascript, css" charset="utf-8">
-        <link rel="stylesheet" href="stili/GeneralTest.css" type="text/css" media="all" />
-    </head>
-    <body>
-    <header>
-    
-
-
+Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
 
 CLASSE EstriLinks, costruttore di default.
 
 CLASSE EstriLinks, metodo links().
 
-CLASSE EstriLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'href=' in posizione: 227	stili/GeneralTest.css
-Trovata l'occorrenza n° 2 di 'href=' in posizione: 803	pagine/ILibriDelMenocchio.xhtml
-Trovata l'occorrenza n° 3 di 'href=' in posizione: 873	pagine/documentazione.html
-Trovata l'occorrenza n° 4 di 'href=' in posizione: 932	pagine/FlowChart.xhtml
+Il file Colors.jpg non è un file di testo, verrà salvato senza ulteriori analisi
 
-CLASSE EstriLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'src=' in posizione: 333	immagini/Colors.jpg
+CLASSE TrovaDirs, metodo cerca_dire().
 
-CLASSE EstriLinks, metodo ciclo().
+Valore di riga da elaborare: immagini/Colors.jpg
 
-CLASSE EstriLinks, metodo ciclo().
+CLASSE TrovaDirs, metodo esame_directory().
+Elaborazione di immagini/Colors.jpg:	Nome: Colors.jpg	Numero di elementi: 2
+	Percorso: immagini
+	Radice: null
 
-CLASSE EstriLinks, metodo ciclo().
+CLASSE TrovaDirs, metodo caratteri_vietati().
 
+Classe TrovaDIrs, metodo cerca_dire(),
+ VALORE DI file_name: Colors.jpg
+VALORE DI sub_dir: immagini/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Elenco dei link presenti nel sito
+Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
 
-immagini/Colors.jpg
-pagine/FlowChart.xhtml
-pagine/ILibriDelMenocchio.xhtml
-pagine/documentazione.html
-stili/GeneralTest.css
+Nome della pagina che si sta elaborando:Colors.jpg
 
-                                       £
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
-Classe Loopper metodo passo().
-Testo della pagina visitata:
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Scuola di politica Maniago</title>
-        <meta name="keywords" content="web, html5, javascript, css" charset="utf-8">
-        <link rel="stylesheet" href="stili/GeneralTest.css" type="text/css" media="all" />
-    </head>
-    <body>
-    <header>
-        <img src="immagini/Colors.jpg" heigt=400px width=300px />
-    </header>
-        <hgroup id="top">
-            <h1>Scuola di politica Maniago</h1>
-            <h2>Istruzioni per una partecipazione attiva alla vita sociale</h2>
-        </hgroup>
-        <p>
-            Questo sito temporaneamente testa le funzionalità della tecnologia open per il web per lo sviluppo del sito del circolo culturale Menocchio di Montereale Valcellina.
-        </p>
-    </body>
-<a href="pagine/ILibriDelMenocchio.xhtml">I libri del Circolo</a><br />    
-<a href=pagine/documentazione.html>Documentazione...</a><br />
-<a href=pagine/FlowChart.xhtml>Diagramma di flusso...</a><br />
-</html>
+Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Classe Loopper metodo passo().
-Aggiunta della pagina visitata alla lista links: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratoreindex.html.
+CLASSE TrovaDirs, metodo imposta_sito().
 
-Elenco dei collegamenti interni presenti nel sito
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
-=============================================================================================
-Lista dei collegamenti presenti nel sito
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratoreindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/homeindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratoreindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/immaginiindex.html
-immagini/Colors.jpg
-index.html
-pagine/FlowChart.xhtml
-pagine/ILibriDelMenocchio.xhtml
-pagine/documentazione.html
-stili/GeneralTest.css
+Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
-
-Elenco delle pagine scaricate dal sito
-
-=============================================================================================
-Lista dei collegamenti presenti nel sito
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratoreindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/homeindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratoreindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/immaginiindex.html
-index.html
-
-
-CLASSE Loopper, metodo nuova_pagina().
-
-Classe Loopper, metodo nuova_pagina() valore di subdirectory: /
-
-Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/
+Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 classe Loopper metodo nuova_pagina.
-Scaricheremo il file index.html
-Nella directory home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore
+Scaricheremo il file Colors.jpg
+Nella directory immagini/
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 7
@@ -1840,213 +1224,126 @@ Area di azzeramento delle variabili.
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
-Nome della pagina che si sta elaborando:index.html
+Nome della pagina che si sta elaborando:Colors.jpg
 
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
 Valore del contatore globale: 0
 
-Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/
+Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+
+CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TestGet, costruttore con parametri.
 
 &#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$
 TestGet, valore delle variabili iniziali della classe.
-ROOT_DIR: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/
+ROOT_DIR: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 TestGet, valore delle variabili iniziali della classe.
-SITO: http://www.scuoladipoliticamaniago.it/index.html
+SITO: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 TestGet, valore delle variabili iniziali della classe.
-SUBDIR: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore
+SUBDIR: immagini/
 TestGet, valore delle variabili iniziali della classe.
-NOME_FILE: index.html
+NOME_FILE: Colors.jpg
 &8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$
+
+CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TrovaDirs, metodo cerca_dire().
 
-Valore di riga da elaborare: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratoreindex.html
+Valore di riga da elaborare: immagini/Colors.jpg
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratoreindex.html:	Nome: lucaamministratoreindex.html	Numero di elementi: 26
-	Percorso: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home
+Elaborazione di immagini/Colors.jpg:	Nome: Colors.jpg	Numero di elementi: 2
+	Percorso: immagini
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
 
-Sotto directory in cui verrà salvata la pagina:home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore
+Classe TrovaDIrs, metodo cerca_dire(),
+ VALORE DI file_name: Colors.jpg
+VALORE DI sub_dir: immagini/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Sotto directory in cui verrà salvata la pagina:home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home
+Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
 
-CLASSE VariabiliGlobali, metodo set_root().
+Nome della pagina che si sta elaborando:Colors.jpg
 
-CLASSE VariabiliGlobali, metodo set_root().
-Valore della variabile locale root_d fuori dall'if: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/
-
-Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/
- senza carattere slash finale ----------------
-Root directory del progetto: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/
-
-Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/
-
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/
-Cartella di destinazione del sito: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/ CREATA CORRETTAMENTE!
-
-Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/
-
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home
-
-Nome della pagina che si sta elaborando:lucaamministratoreindex.html
-
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/index.html
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
-Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
 CLASSE TestGet, metodo OttieniPagina().
-Nome della pagina da salvare: index.html
-Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
-Nome della pagina da salvare (dopo l'if): index.html
+Nome della pagina da salvare: Colors.jpg
+Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it/immagini
+Nome della pagina da salvare (dopo l'if): Colors.jpg
 
 CLASSE ValutaFile, costruttore di default.
 
 CLASSE ValutaFile, metodo text().
 
-Estensione del file: index.html .html
+Estensione del file: Colors.jpg .jpg
 
 CLASSE ValutaFile, metodo visitabile().
 
 CLASSE SalvaPagine, costruttore con parametri.
-La pagina: index.html, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-con l'opzione testo = true
+La pagina: Colors.jpg, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago/
+con l'opzione testo = false
 
 CLASSE SalvaPagine, metodo scrivi().
 
 Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-Nome del file: index.html
+Nome del file: Colors.jpg
 
 
-CLasse SalvaPagine, metodo scrivi(), risultato della lettura dei primi caratteri del file:
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Scuola di politica Maniago</title>
-        <meta name="keywords" content="web, html5, javascript, css" charset="utf-8">
-        <link rel="stylesheet" href="stili/GeneralTest.css" type="text/css" media="all" />
-    </head>
-    <body>
-    <header>
-    
-
-
+Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
 
 CLASSE EstriLinks, costruttore di default.
 
 CLASSE EstriLinks, metodo links().
 
-CLASSE EstriLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'href=' in posizione: 227	stili/GeneralTest.css
-Trovata l'occorrenza n° 2 di 'href=' in posizione: 803	pagine/ILibriDelMenocchio.xhtml
-Trovata l'occorrenza n° 3 di 'href=' in posizione: 873	pagine/documentazione.html
-Trovata l'occorrenza n° 4 di 'href=' in posizione: 932	pagine/FlowChart.xhtml
+Il file Colors.jpg non è un file di testo, verrà salvato senza ulteriori analisi
 
-CLASSE EstriLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'src=' in posizione: 333	immagini/Colors.jpg
+CLASSE TrovaDirs, metodo cerca_dire().
 
-CLASSE EstriLinks, metodo ciclo().
+Valore di riga da elaborare: immagini/Colors.jpg
 
-CLASSE EstriLinks, metodo ciclo().
+CLASSE TrovaDirs, metodo esame_directory().
+Elaborazione di immagini/Colors.jpg:	Nome: Colors.jpg	Numero di elementi: 2
+	Percorso: immagini
+	Radice: null
 
-CLASSE EstriLinks, metodo ciclo().
+CLASSE TrovaDirs, metodo caratteri_vietati().
 
+Classe TrovaDIrs, metodo cerca_dire(),
+ VALORE DI file_name: Colors.jpg
+VALORE DI sub_dir: immagini/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Elenco dei link presenti nel sito
+Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
 
-immagini/Colors.jpg
-pagine/FlowChart.xhtml
-pagine/ILibriDelMenocchio.xhtml
-pagine/documentazione.html
-stili/GeneralTest.css
+Nome della pagina che si sta elaborando:Colors.jpg
 
-                                       £
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
-Classe Loopper metodo passo().
-Testo della pagina visitata:
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Scuola di politica Maniago</title>
-        <meta name="keywords" content="web, html5, javascript, css" charset="utf-8">
-        <link rel="stylesheet" href="stili/GeneralTest.css" type="text/css" media="all" />
-    </head>
-    <body>
-    <header>
-        <img src="immagini/Colors.jpg" heigt=400px width=300px />
-    </header>
-        <hgroup id="top">
-            <h1>Scuola di politica Maniago</h1>
-            <h2>Istruzioni per una partecipazione attiva alla vita sociale</h2>
-        </hgroup>
-        <p>
-            Questo sito temporaneamente testa le funzionalità della tecnologia open per il web per lo sviluppo del sito del circolo culturale Menocchio di Montereale Valcellina.
-        </p>
-    </body>
-<a href="pagine/ILibriDelMenocchio.xhtml">I libri del Circolo</a><br />    
-<a href=pagine/documentazione.html>Documentazione...</a><br />
-<a href=pagine/FlowChart.xhtml>Diagramma di flusso...</a><br />
-</html>
+Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Classe Loopper metodo passo().
-Aggiunta della pagina visitata alla lista links: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/homeindex.html.
+CLASSE TrovaDirs, metodo imposta_sito().
 
-Elenco dei collegamenti interni presenti nel sito
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
-=============================================================================================
-Lista dei collegamenti presenti nel sito
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/homeindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratoreindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/homeindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratoreindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/immaginiindex.html
-immagini/Colors.jpg
-index.html
-pagine/FlowChart.xhtml
-pagine/ILibriDelMenocchio.xhtml
-pagine/documentazione.html
-stili/GeneralTest.css
+Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
-
-Elenco delle pagine scaricate dal sito
-
-=============================================================================================
-Lista dei collegamenti presenti nel sito
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/homeindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratoreindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/homeindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratoreindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/immaginiindex.html
-index.html
-
-
-CLASSE Loopper, metodo nuova_pagina().
-
-Classe Loopper, metodo nuova_pagina() valore di subdirectory: /
-
-Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/
+Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 classe Loopper metodo nuova_pagina.
-Scaricheremo il file index.html
-Nella directory home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home
+Scaricheremo il file Colors.jpg
+Nella directory immagini/
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 8
@@ -2055,215 +1352,126 @@ Area di azzeramento delle variabili.
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
-Nome della pagina che si sta elaborando:index.html
+Nome della pagina che si sta elaborando:Colors.jpg
 
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
 Valore del contatore globale: 0
 
-Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/
+Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+
+CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TestGet, costruttore con parametri.
 
 &#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$
 TestGet, valore delle variabili iniziali della classe.
-ROOT_DIR: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/
+ROOT_DIR: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 TestGet, valore delle variabili iniziali della classe.
-SITO: http://www.scuoladipoliticamaniago.it/index.html
+SITO: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 TestGet, valore delle variabili iniziali della classe.
-SUBDIR: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home
+SUBDIR: immagini/
 TestGet, valore delle variabili iniziali della classe.
-NOME_FILE: index.html
+NOME_FILE: Colors.jpg
 &8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$
+
+CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TrovaDirs, metodo cerca_dire().
 
-Valore di riga da elaborare: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/homeindex.html
+Valore di riga da elaborare: immagini/Colors.jpg
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/homeindex.html:	Nome: homeindex.html	Numero di elementi: 29
-	Percorso: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago
+Elaborazione di immagini/Colors.jpg:	Nome: Colors.jpg	Numero di elementi: 2
+	Percorso: immagini
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
 
-Sotto directory in cui verrà salvata la pagina:home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home
+Classe TrovaDIrs, metodo cerca_dire(),
+ VALORE DI file_name: Colors.jpg
+VALORE DI sub_dir: immagini/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Sotto directory in cui verrà salvata la pagina:home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago
+Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
 
-CLASSE VariabiliGlobali, metodo set_root().
+Nome della pagina che si sta elaborando:Colors.jpg
 
-CLASSE VariabiliGlobali, metodo set_root().
-Valore della variabile locale root_d fuori dall'if: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/
- senza carattere slash finale ----------------
-Root directory del progetto: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-Cartella di destinazione del sito: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/ CREATA CORRETTAMENTE!
-
-Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home//home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago
-
-Nome della pagina che si sta elaborando:homeindex.html
-
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/index.html
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
-Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
 CLASSE TestGet, metodo OttieniPagina().
-Nome della pagina da salvare: index.html
-Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
-Nome della pagina da salvare (dopo l'if): index.html
+Nome della pagina da salvare: Colors.jpg
+Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it/immagini
+Nome della pagina da salvare (dopo l'if): Colors.jpg
 
 CLASSE ValutaFile, costruttore di default.
 
 CLASSE ValutaFile, metodo text().
 
-Estensione del file: index.html .html
+Estensione del file: Colors.jpg .jpg
 
 CLASSE ValutaFile, metodo visitabile().
 
 CLASSE SalvaPagine, costruttore con parametri.
-La pagina: index.html, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-con l'opzione testo = true
+La pagina: Colors.jpg, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago/
+con l'opzione testo = false
 
 CLASSE SalvaPagine, metodo scrivi().
 
 Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-Nome del file: index.html
+Nome del file: Colors.jpg
 
 
-CLasse SalvaPagine, metodo scrivi(), risultato della lettura dei primi caratteri del file:
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Scuola di politica Maniago</title>
-        <meta name="keywords" content="web, html5, javascript, css" charset="utf-8">
-        <link rel="stylesheet" href="stili/GeneralTest.css" type="text/css" media="all" />
-    </head>
-    <body>
-    <header>
-    
-
-
+Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
 
 CLASSE EstriLinks, costruttore di default.
 
 CLASSE EstriLinks, metodo links().
 
-CLASSE EstriLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'href=' in posizione: 227	stili/GeneralTest.css
-Trovata l'occorrenza n° 2 di 'href=' in posizione: 803	pagine/ILibriDelMenocchio.xhtml
-Trovata l'occorrenza n° 3 di 'href=' in posizione: 873	pagine/documentazione.html
-Trovata l'occorrenza n° 4 di 'href=' in posizione: 932	pagine/FlowChart.xhtml
+Il file Colors.jpg non è un file di testo, verrà salvato senza ulteriori analisi
 
-CLASSE EstriLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'src=' in posizione: 333	immagini/Colors.jpg
+CLASSE TrovaDirs, metodo cerca_dire().
 
-CLASSE EstriLinks, metodo ciclo().
+Valore di riga da elaborare: immagini/Colors.jpg
 
-CLASSE EstriLinks, metodo ciclo().
+CLASSE TrovaDirs, metodo esame_directory().
+Elaborazione di immagini/Colors.jpg:	Nome: Colors.jpg	Numero di elementi: 2
+	Percorso: immagini
+	Radice: null
 
-CLASSE EstriLinks, metodo ciclo().
+CLASSE TrovaDirs, metodo caratteri_vietati().
 
+Classe TrovaDIrs, metodo cerca_dire(),
+ VALORE DI file_name: Colors.jpg
+VALORE DI sub_dir: immagini/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Elenco dei link presenti nel sito
+Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
 
-immagini/Colors.jpg
-pagine/FlowChart.xhtml
-pagine/ILibriDelMenocchio.xhtml
-pagine/documentazione.html
-stili/GeneralTest.css
+Nome della pagina che si sta elaborando:Colors.jpg
 
-                                       £
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
-Classe Loopper metodo passo().
-Testo della pagina visitata:
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Scuola di politica Maniago</title>
-        <meta name="keywords" content="web, html5, javascript, css" charset="utf-8">
-        <link rel="stylesheet" href="stili/GeneralTest.css" type="text/css" media="all" />
-    </head>
-    <body>
-    <header>
-        <img src="immagini/Colors.jpg" heigt=400px width=300px />
-    </header>
-        <hgroup id="top">
-            <h1>Scuola di politica Maniago</h1>
-            <h2>Istruzioni per una partecipazione attiva alla vita sociale</h2>
-        </hgroup>
-        <p>
-            Questo sito temporaneamente testa le funzionalità della tecnologia open per il web per lo sviluppo del sito del circolo culturale Menocchio di Montereale Valcellina.
-        </p>
-    </body>
-<a href="pagine/ILibriDelMenocchio.xhtml">I libri del Circolo</a><br />    
-<a href=pagine/documentazione.html>Documentazione...</a><br />
-<a href=pagine/FlowChart.xhtml>Diagramma di flusso...</a><br />
-</html>
+Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Classe Loopper metodo passo().
-Aggiunta della pagina visitata alla lista links: home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html.
+CLASSE TrovaDirs, metodo imposta_sito().
 
-Elenco dei collegamenti interni presenti nel sito
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
-=============================================================================================
-Lista dei collegamenti presenti nel sito
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/homeindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratoreindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/homeindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratoreindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/immaginiindex.html
-immagini/Colors.jpg
-index.html
-pagine/FlowChart.xhtml
-pagine/ILibriDelMenocchio.xhtml
-pagine/documentazione.html
-stili/GeneralTest.css
+Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
-
-Elenco delle pagine scaricate dal sito
-
-=============================================================================================
-Lista dei collegamenti presenti nel sito
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/homeindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratoreindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/homeindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratoreindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/immaginiindex.html
-index.html
-
-
-CLASSE Loopper, metodo nuova_pagina().
-
-Classe Loopper, metodo nuova_pagina() valore di subdirectory: /
-
-Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/
+Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 classe Loopper metodo nuova_pagina.
-Scaricheremo il file index.html
-Nella directory home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago
+Scaricheremo il file Colors.jpg
+Nella directory immagini/
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 9
@@ -2272,18 +1480,7 @@ CLASSE Loopper, metodo risultati().
 
 =============================================================================================
 Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html	home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/homeindex.html	home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/homeindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratoreindex.html	home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratoreindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html	home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html	home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/homeindex.html	home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/homeindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratoreindex.html	home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratoreindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html	home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmpindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html	home/lucaamministratore/tmp/scuoladipoliticamaniago/home/lucaamministratore/tmp/scuoladipoliticamaniagoindex.html
-home/lucaamministratore/tmp/scuoladipoliticamaniago/immaginiindex.html	home/lucaamministratore/tmp/scuoladipoliticamaniago/immaginiindex.html
-immagini/Colors.jpg                                         	index.html
-index.html                                                  	
+immagini/Colors.jpg                                         	
 pagine/FlowChart.xhtml                                      	
 pagine/ILibriDelMenocchio.xhtml                             	
 pagine/documentazione.html                                  	
