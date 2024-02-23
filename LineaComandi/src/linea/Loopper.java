@@ -36,8 +36,6 @@ VG = new VariabiliGlobali();
 SET_LINKS_VISITATI = VG.get_set_scaricati();
 SET_LINKS = VG.get_set_collegamenti();
 
-
- 
 passo();
 //risultati();//linea di debug per la visualizzazione a console dei collegamenti
 cicloSito();
@@ -60,7 +58,7 @@ System.out.printf("%nCLASSE Loopper, metodo cicloSito().%n");
 boolean interr = false;
 int control = 0;
 //while(! interr)//riga per l'uso normale del programma
-while (control < 10)//a scopo di debug limitiamo il numero di cicli
+while (control < 4)//a scopo di debug limitiamo il numero di cicli
     {   
         /**
          * Area di azzeramento delle variabili, finito il primo passo,
@@ -86,6 +84,7 @@ while (control < 10)//a scopo di debug limitiamo il numero di cicli
         CV.get_ROOT_DEST();
         CV.get_CARTELLA_SITO();
         CV.get_CONTATORE();
+        CV.get_SUBDIR();
 //IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII        
         passo();
         
@@ -114,7 +113,7 @@ TrovaDirs TD = new TrovaDirs();
 TestGET TG = new TestGET(true);
 EstraiLinks el = new EstraiLinks(VG.get_page());
 el.links(VG.get_testo());
-TD.cerca_dire();
+//TD.cerca_dire();//già chiamato da TestGet
 TD.imposta_sito(VG.get_subdir() + VG.get_name_page());
 }
 

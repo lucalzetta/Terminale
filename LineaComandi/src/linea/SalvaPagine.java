@@ -16,6 +16,7 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.Set;
 /**
  * 
  * @author luca
@@ -28,19 +29,22 @@ public class SalvaPagine
 private final String DESTINAZIONE;
 private static String NOME_PAGINA;
 private final VariabiliGlobali VG = new VariabiliGlobali();
-
+private static CheckerVariabili CV = new CheckerVariabili();
+private Set<String> SET_LINKS_VISITATI = VG.get_set_scaricati();
 
 public SalvaPagine(String nome_pagina)
 {
 System.out.printf("%nCLASSE SalvaPagine, costruttore di default.%n");
 DESTINAZIONE = VG.get_root();
 NOME_PAGINA = nome_pagina;
+
 }
 public SalvaPagine(String dir, String nome_pagina)
 {
 System.out.printf("%nCLASSE SalvaPagine, costruttore con parametri.%n");
 DESTINAZIONE = dir;
 NOME_PAGINA = nome_pagina;
+
 }
 
 public void scrivi(boolean testo)throws IOException
@@ -79,6 +83,16 @@ try
                     }
             }
         
+        //Aggiorniamo il set dei links visitati
+        if(VG.get_subdir() != null)
+            {
+                this.SET_LINKS_VISITATI.add(VG.get_subdir() + NOME_PAGINA);
+            }
+        else
+            {
+                this.SET_LINKS_VISITATI.add("" + NOME_PAGINA);
+            }
+        
         /**
          * tratto  di codice di debug per una prima valutazione dei metadati
          * del file tentiamo una lettura dei primi 200 caratteri
@@ -92,13 +106,13 @@ try
             {
                 VG.set_page(str_pagina);
                 VG.set_page_builder(build_pagina);
-                System.out.printf("%nCLasse SalvaPagine, metodo scrivi(), risultato "
+                /*System.out.printf("%nCLasse SalvaPagine, metodo scrivi(), risultato "
                                 + "della lettura dei primi caratteri del file:%n%n");
                 for (int i = 0; i < 300; i++)
                     {
                         System.out.printf("%s", build_pagina.charAt(i));
                     }
-                System.out.printf("%n%n%n");
+                System.out.printf("%n%n%n");*/
             }
         /**
          * Fine del codice di debug

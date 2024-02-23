@@ -8,6 +8,7 @@ import java.io.Console;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Set;
 
 /**
  *
@@ -22,10 +23,12 @@ public class EvalOpzioni
 */
 private final VariabiliGlobali VG = new VariabiliGlobali();
 private static CheckerVariabili CV = new CheckerVariabili();
+private Set <String> HOME_LINK;
 
 public EvalOpzioni()
 {
 //System.out.printf("%nCLASSE EvalOpzioni, costruttore di default.%n");
+HOME_LINK = VG.get_set_collegamenti();    
 }
     
      
@@ -37,6 +40,9 @@ System.out.printf("%nCLASSE EvalOpzioni, metodo sito().%n");
   * argomenti specificati nella riga di comando; l'URL del sito di cui si vogliono 
   * ottenere le pagine dovrà trovarsi subito dopo le opzioni di esecuzione del 
   * programma.
+  * La home page del sito viene aggiunta qui alla lista dei collegamenti del sito
+  * perchè un sito con una sola pagina possa avere il riferimento almeno a 
+  * quella stessa pagina.
   */
 //dalla stringa passata come argomento estraiamo un URL valido, se presente
 int i;
@@ -226,6 +232,7 @@ String saluto;
         System.out.printf("Valore della variabile VG.get_args() in EvalOpzioni.EvalOpz() %s%n", VG.get_args());
         
         VG.set_sito(sito(VG.get_args()));
+        VG.set_sito_ridotto(sito(VG.get_args()));
         System.out.printf("Valore della variabile sito in EvalOpzioni.EvalOpz() %s%n", sito(VG.get_args()));
         ////CV.get_URL_SITO();
         VG.set_root(VG.get_destinazione_files_sito() + directory(VG.get_args()));
@@ -234,6 +241,15 @@ String saluto;
         VG.set_cartella_sito(VG.get_root());
         VG.set_files();//aL MOMENTO INUTILE 17/02/2024
         VG.set_name_page(file(VG.get_args()));
+        
+        if (VG.get_subdir() == null)
+            {
+                VG.set_subdir("");
+            }
+        
+        HOME_LINK.add(VG.get_name_page());
+        System.out.printf("EvalOpzioni.EvalOpz() aggiunta la pagina %s al set dei collegamenti.%n",(VG.get_name_page()));
+        
         //CV.get_NOME_PAGINA();
         System.out.printf("Valore della variabile root directory in EvalOpzioni.EvalOpz() %s%n", directory(VG.get_args()));
         System.out.printf("É stata scelta l'opzione 's', verrà scaricato il "

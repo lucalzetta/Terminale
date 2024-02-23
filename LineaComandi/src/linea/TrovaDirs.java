@@ -78,21 +78,22 @@ if(collegamenti.hasNext())
     while((! perc) & (collegamenti.hasNext()))//coll_visitati.hasNext()
         {
             riga = collegamenti.next().toString();
+            System.out.printf("%nDentro il loop esterno, Valore di riga da elaborare: %s%n",riga);
             while ((find) & (coll_visitati.hasNext()))
                 {
                     tmp = coll_visitati.next().toString();
                     find = riga.equalsIgnoreCase(tmp);
+                    if(!find)
+                        {
+                            perc = true;
+                        }
+                    if (! coll_visitati.hasNext())
+                        {
+                            perc = true;
+                        }
+                    System.out.printf("%nDentro il loop interno, Valore di riga da "
+                            + "elaborare: %s%nValore di controllo %s%n",tmp, perc);
                 }
-            
-            if(!find)
-                {
-                    perc = true;
-                }
-            if (! coll_visitati.hasNext())
-                {
-                    perc = true;
-                }
-            
         }
         
             System.out.printf("%nValore di riga da elaborare: %s%n",riga);
@@ -190,8 +191,6 @@ return tmp;
 public void imposta_sito(String pagina_da_visitare)
 {
 System.out.printf("%nCLASSE TrovaDirs, metodo imposta_sito().%n");    
-Iterator i_links = VG.get_set_collegamenti().iterator();
-Iterator i_scaricati = VG.get_set_scaricati().iterator();
 boolean t = false;
 boolean u = false;
 String to_visit = "";

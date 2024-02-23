@@ -101,6 +101,7 @@ else
       {
             TrovaDirs td = new TrovaDirs();
             td.cerca_dire();
+            td.imposta_sito(NOME_FILE);
             OttieniPagina();
        }
       catch (IOException ex) 
@@ -115,7 +116,7 @@ private void OttieniPagina()throws IOException
 System.out.printf("%nCLASSE TestGet, metodo OttieniPagina().%n");
     try 
       {
-        String dir = VG.get_destinazione_files_sito();
+        String dir = VG.get_root();
         URL u = VG.get_sito();
         URL sito_base;
         //il metodo get_file dell'oggetto URL non si rivela sempre affidabile
