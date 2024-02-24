@@ -13,3 +13,4 @@ cd /home/lucaamministratore/GDrive/Luca/Programmazione/JAVA/Terminale/LineaComan
 #un'opzione e un parametro per l'esecuzione, il test lo facciamo con l'opzione 
 #-s che permette di scaricare un sito e un indirizzo web valido come parametro.
 java linea.princip -s http://www.scuoladipoliticamaniago.it/index.html
+

@@ -85,7 +85,7 @@ SITO_RIDOTTO = sito;
 
 public void set_root(String root_d)throws IOException
 {
-System.out.printf("%nCLASSE VariabiliGlobali, metodo set_root().%n");    
+//System.out.printf("%nCLASSE VariabiliGlobali, metodo set_root().%n");    
 
 if ((root_d != null) & (root_d != ""))
     {
@@ -98,9 +98,9 @@ if ((root_d != null) & (root_d != ""))
             {
                 root_d = root_d +"/";
             }
-        System.out.printf("%nCLASSE VariabiliGlobali, metodo set_root().%n"
+        /*System.out.printf("%nCLASSE VariabiliGlobali, metodo set_root().%n"
                         + "Valore della variabile locale root_d"
-                + " fuori dall'if: %s%n", root_d );
+                + " fuori dall'if: %s%n", root_d );*/
         //Una serie di controlli verificano l'identità dell'argomento con il
         //valore già impostato di ROOT_D
         if (root_d.equalsIgnoreCase(ROOT_D))
@@ -116,28 +116,28 @@ if ((root_d != null) & (root_d != ""))
         if (root_d.substring(0, 1) == "/")
             {
                 root_d = root_d.substring(1);
-                System.out.printf("%nCLASSE VariabiliGlobali, metodo set_root().%n"
-                        + "Valore della variabile locale root_d: %s%n", root_d );
+                /*System.out.printf("%nCLASSE VariabiliGlobali, metodo set_root().%n"
+                        + "Valore della variabile locale root_d: %s%n", root_d );*/
             }
         //CV.get_ROOT_DEST();
         if(ROOT_DEST.lastIndexOf("/") == (ROOT_DEST.length() - 1))
             {
                 ROOT_D = ROOT_DEST + root_d;
-                System.out.printf("%nPercorso da creare: %s%n"
+/*                System.out.printf("%nPercorso da creare: %s%n"
                         + " con carattere slash finale +++++++++++++++++++%n"
-                        ,ROOT_D);
+                        ,ROOT_D);*/
                 ROOT_DEST = ROOT_D;
             }
         else
             {
                 ROOT_D = ROOT_DEST + "/" + root_d;
-                System.out.printf("%nPercorso da creare: %s%n"
+/*                System.out.printf("%nPercorso da creare: %s%n"
                         + " senza carattere slash finale ----------------%n"
-                        ,ROOT_D);
+                        ,ROOT_D);*/
                 ROOT_DEST = ROOT_D;
             }
 
-        System.out.printf("Root directory del progetto: %s%n", ROOT_D);
+        //System.out.printf("Root directory del progetto: %s%n", ROOT_D);
 
         Path percorso = Paths.get(ROOT_D);
         CV.get_ROOT_D();
@@ -200,12 +200,12 @@ try
         if(!URLS.exists())
             {
                 URLS.createNewFile();
-                System.out.printf("Creato il file %s%n", URLS.toString());
+                //System.out.printf("Creato il file %s%n", URLS.toString());
             }
         DIRS = new File (ROOT_D, ARCHIVIO_DIRS);
         if(!DIRS.exists())
             {
-                System.out.printf("Creato il file %s%n", DIRS.toString());
+                //System.out.printf("Creato il file %s%n", DIRS.toString());
                 DIRS.createNewFile();
             }
     }

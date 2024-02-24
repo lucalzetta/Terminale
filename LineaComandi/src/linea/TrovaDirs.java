@@ -50,8 +50,9 @@ String riga = "";
 String sub_dir= "";
 String file_name = "";
 String u_perc;
+URL nuovo_perc;
 boolean perc = false;
-boolean find = true;
+boolean find = false;
 Set <String> ts = VG.get_set_collegamenti();
 Set <String> visitati = VG.get_set_scaricati();
 Iterator collegamenti = ts.iterator();
@@ -79,7 +80,7 @@ if(collegamenti.hasNext())
         {
             riga = collegamenti.next().toString();
             System.out.printf("%nDentro il loop esterno, Valore di riga da elaborare: %s%n",riga);
-            while ((find) & (coll_visitati.hasNext()))
+            while ((!find) & (coll_visitati.hasNext()))
                 {
                     tmp = coll_visitati.next().toString();
                     find = riga.equalsIgnoreCase(tmp);
@@ -102,6 +103,7 @@ if(collegamenti.hasNext())
     if((riga != "") & (riga != null))
         {
             perc = esame_directory(riga);
+            System.out.printf("%nRiga contiene una directory? %s%n",perc);
             if(perc)
                 {
                     Path path_riga = Paths.get(riga);
@@ -155,11 +157,10 @@ if(collegamenti.hasNext())
                                     VG.set_root_dest(u_perc);
                                     CV.get_ROOT_DEST();
                                 }
-
+                            
                             VG.set_name_page(file_name);
                             CV.get_NOME_PAGINA();
-                            //VG.set_sito(nuovo_perc);
-                            CV.get_URL_SITO();
+                            //CV.get_URL_SITO();
                             CV.get_CARTELLA_SITO();
                             System.out.printf("%nPercorso da creare: %s%n",u_perc);
                             
@@ -216,7 +217,7 @@ try
         VG.set_sito(nuovo_perc);
         CV.get_URL_SITO();
         CV.get_CARTELLA_SITO();
-        System.out.printf("%nProssima pagina da visitare: %s%nclasse Loopper metodo nuova_pagina.%n", tmp);
+        System.out.printf("%nProssima pagina da visitare: %s%nclasse TrovaDirs metodo imposta_sito().%n", tmp);
         System.out.printf("Scaricheremo il file %s%nNella directory %s%n", VG.get_name_page(), VG.get_subdir());
     }
 catch(MalformedURLException mue)

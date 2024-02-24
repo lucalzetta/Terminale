@@ -28,7 +28,7 @@ private VariabiliGlobali VG = new VariabiliGlobali();
 
 public TestGET()throws IOException
 {
-System.out.printf("%nCLASSE TestGet, costruttore di default.%n");
+//System.out.printf("%nCLASSE TestGet, costruttore di default.%n");
     ROOT_DIR = VG.get_root();
     SITO = VG.get_sito().toString();
     SUBDIR = VG.get_subdir();
@@ -101,7 +101,7 @@ else
       {
             TrovaDirs td = new TrovaDirs();
             td.cerca_dire();
-            td.imposta_sito(NOME_FILE);
+            td.imposta_sito(VG.get_subdir() + NOME_FILE);
             OttieniPagina();
        }
       catch (IOException ex) 

@@ -87,6 +87,7 @@ while (control < 4)//a scopo di debug limitiamo il numero di cicli
         CV.get_SUBDIR();
 //IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII        
         passo();
+        risultati();
         
         if(VG.get_set_collegamenti().equals(VG.get_set_scaricati()))
             {
@@ -114,7 +115,7 @@ TestGET TG = new TestGET(true);
 EstraiLinks el = new EstraiLinks(VG.get_page());
 el.links(VG.get_testo());
 //TD.cerca_dire();//già chiamato da TestGet
-TD.imposta_sito(VG.get_subdir() + VG.get_name_page());
+//TD.imposta_sito(VG.get_subdir() + VG.get_name_page());
 }
 
 private void risultati()

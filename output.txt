@@ -17,15 +17,6 @@ Valore della variabile sito in EvalOpzioni.EvalOpz() http://www.scuoladipolitica
 
 CLASSE EvalOpzioni, metodo directory().
 
-CLASSE VariabiliGlobali, metodo set_root().
-
-CLASSE VariabiliGlobali, metodo set_root().
-Valore della variabile locale root_d fuori dall'if: scuoladipoliticamaniago/
-
-Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
- con carattere slash finale +++++++++++++++++++
-Root directory del progetto: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
 Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
 Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
@@ -80,6 +71,8 @@ Elaborazione di index.html :	Nome: index.html 	Numero di elementi: 1
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
 
+Riga contiene una directory? false
+
 CLASSE TrovaDirs, metodo imposta_sito().
 
 URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/index.html
@@ -87,7 +80,7 @@ URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: h
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
 Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/index.html 
-classe Loopper metodo nuova_pagina.
+classe TrovaDirs metodo imposta_sito().
 Scaricheremo il file index.html 
 Nella directory 
 
@@ -145,17 +138,6 @@ stili/GeneralTest.css
 
                                        £
 
-CLASSE TrovaDirs, metodo imposta_sito().
-
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/index.html
-
-Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/index.html
-classe Loopper metodo nuova_pagina.
-Scaricheremo il file index.html
-Nella directory 
-
 CLASSE Loopper, metodo cicloSito().
 
 Area di azzeramento delle variabili.
@@ -207,6 +189,8 @@ Elaborazione di immagini/Colors.jpg:	Nome: Colors.jpg	Numero di elementi: 2
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
 
+Riga contiene una directory? true
+
 Classe TrovaDIrs, metodo cerca_dire(),
  VALORE DI file_name: Colors.jpg
 VALORE DI sub_dir: immagini/
@@ -215,15 +199,6 @@ VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 Sotto directory in cui verrà salvata la pagina:
 
 Sotto directory in cui verrà salvata la pagina:immagini/
-
-CLASSE VariabiliGlobali, metodo set_root().
-
-CLASSE VariabiliGlobali, metodo set_root().
-Valore della variabile locale root_d fuori dall'if: immagini/
-
-Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
- con carattere slash finale +++++++++++++++++++
-Root directory del progetto: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
 Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
@@ -235,26 +210,24 @@ Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuola
 
 Nome della pagina che si sta elaborando:Colors.jpg
 
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/index.html
-
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
 Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
 CLASSE TrovaDirs, metodo imposta_sito().
 
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/index.html
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/index.html
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
-Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/index.html
-classe Loopper metodo nuova_pagina.
+Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/immagini/index.html
+classe TrovaDirs metodo imposta_sito().
 Scaricheremo il file Colors.jpg
 Nella directory immagini/
 
 CLASSE TestGet, metodo OttieniPagina().
 Nome della pagina da salvare: index.html
-Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
+Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it/immagini
 Nome della pagina da salvare (dopo l'if): index.html
 
 CLASSE ValutaFile, costruttore di default.
@@ -281,9 +254,8 @@ CLASSE EstraiLinks, metodo links().
 
 CLASSE EstraiLinks, metodo ciclo().
 Trovata l'occorrenza n° 1 di 'href=' in posizione: 227	stili/GeneralTest.css
-Trovata l'occorrenza n° 2 di 'href=' in posizione: 803	pagine/ILibriDelMenocchio.xhtml
-Trovata l'occorrenza n° 3 di 'href=' in posizione: 873	pagine/documentazione.html
-Trovata l'occorrenza n° 4 di 'href=' in posizione: 932	pagine/FlowChart.xhtml
+Trovata l'occorrenza n° 2 di 'href=' in posizione: 1356	pagine/Pagina0JAVA.html
+Trovata l'occorrenza n° 3 di 'href=' in posizione: 1441	pagine/documentazione.html
 
 CLASSE EstraiLinks, metodo ciclo().
 Trovata l'occorrenza n° 1 di 'src=' in posizione: 333	immagini/Colors.jpg
@@ -301,21 +273,23 @@ immagini/Colors.jpg
 index.html 
 pagine/FlowChart.xhtml
 pagine/ILibriDelMenocchio.xhtml
+pagine/Pagina0JAVA.html
 pagine/documentazione.html
 stili/GeneralTest.css
 
                                        £
 
-CLASSE TrovaDirs, metodo imposta_sito().
+CLASSE Loopper, metodo risultati().
 
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/index.html
-
-Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/immagini/index.html
-classe Loopper metodo nuova_pagina.
-Scaricheremo il file index.html
-Nella directory immagini/
+=============================================================================================
+Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
+immagini/Colors.jpg                                         	immagini/index.html
+index.html                                                  	index.html
+pagine/FlowChart.xhtml                                      	
+pagine/ILibriDelMenocchio.xhtml                             	
+pagine/Pagina0JAVA.html                                     	
+pagine/documentazione.html                                  	
+stili/GeneralTest.css                                       	
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 0
@@ -360,6 +334,9 @@ Dentro il loop esterno, Valore di riga da elaborare: immagini/Colors.jpg
 Dentro il loop interno, Valore di riga da elaborare: immagini/index.html
 Valore di controllo true
 
+Dentro il loop interno, Valore di riga da elaborare: index.html
+Valore di controllo true
+
 Valore di riga da elaborare: immagini/Colors.jpg
 
 CLASSE TrovaDirs, metodo esame_directory().
@@ -368,6 +345,8 @@ Elaborazione di immagini/Colors.jpg:	Nome: Colors.jpg	Numero di elementi: 2
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
+
+Riga contiene una directory? true
 
 Classe TrovaDIrs, metodo cerca_dire(),
  VALORE DI file_name: Colors.jpg
@@ -378,26 +357,24 @@ Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrisp
 
 Nome della pagina che si sta elaborando:Colors.jpg
 
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/index.html
-
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
 Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
 CLASSE TrovaDirs, metodo imposta_sito().
 
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/index.html
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/index.html
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
-Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/index.html
-classe Loopper metodo nuova_pagina.
+Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/immagini/index.html
+classe TrovaDirs metodo imposta_sito().
 Scaricheremo il file Colors.jpg
 Nella directory immagini/
 
 CLASSE TestGet, metodo OttieniPagina().
 Nome della pagina da salvare: index.html
-Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
+Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it/immagini
 Nome della pagina da salvare (dopo l'if): index.html
 
 CLASSE ValutaFile, costruttore di default.
@@ -424,9 +401,8 @@ CLASSE EstraiLinks, metodo links().
 
 CLASSE EstraiLinks, metodo ciclo().
 Trovata l'occorrenza n° 1 di 'href=' in posizione: 227	stili/GeneralTest.css
-Trovata l'occorrenza n° 2 di 'href=' in posizione: 803	pagine/ILibriDelMenocchio.xhtml
-Trovata l'occorrenza n° 3 di 'href=' in posizione: 873	pagine/documentazione.html
-Trovata l'occorrenza n° 4 di 'href=' in posizione: 932	pagine/FlowChart.xhtml
+Trovata l'occorrenza n° 2 di 'href=' in posizione: 1356	pagine/Pagina0JAVA.html
+Trovata l'occorrenza n° 3 di 'href=' in posizione: 1441	pagine/documentazione.html
 
 CLASSE EstraiLinks, metodo ciclo().
 Trovata l'occorrenza n° 1 di 'src=' in posizione: 333	immagini/Colors.jpg
@@ -444,21 +420,23 @@ immagini/Colors.jpg
 index.html 
 pagine/FlowChart.xhtml
 pagine/ILibriDelMenocchio.xhtml
+pagine/Pagina0JAVA.html
 pagine/documentazione.html
 stili/GeneralTest.css
 
                                        £
 
-CLASSE TrovaDirs, metodo imposta_sito().
+CLASSE Loopper, metodo risultati().
 
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/index.html
-
-Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/immagini/index.html
-classe Loopper metodo nuova_pagina.
-Scaricheremo il file index.html
-Nella directory immagini/
+=============================================================================================
+Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
+immagini/Colors.jpg                                         	immagini/index.html
+index.html                                                  	index.html
+pagine/FlowChart.xhtml                                      	
+pagine/ILibriDelMenocchio.xhtml                             	
+pagine/Pagina0JAVA.html                                     	
+pagine/documentazione.html                                  	
+stili/GeneralTest.css                                       	
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 1
@@ -503,6 +481,9 @@ Dentro il loop esterno, Valore di riga da elaborare: immagini/Colors.jpg
 Dentro il loop interno, Valore di riga da elaborare: immagini/index.html
 Valore di controllo true
 
+Dentro il loop interno, Valore di riga da elaborare: index.html
+Valore di controllo true
+
 Valore di riga da elaborare: immagini/Colors.jpg
 
 CLASSE TrovaDirs, metodo esame_directory().
@@ -511,6 +492,8 @@ Elaborazione di immagini/Colors.jpg:	Nome: Colors.jpg	Numero di elementi: 2
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
+
+Riga contiene una directory? true
 
 Classe TrovaDIrs, metodo cerca_dire(),
  VALORE DI file_name: Colors.jpg
@@ -521,26 +504,24 @@ Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrisp
 
 Nome della pagina che si sta elaborando:Colors.jpg
 
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/index.html
-
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
 Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
 CLASSE TrovaDirs, metodo imposta_sito().
 
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/index.html
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/index.html
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
-Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/index.html
-classe Loopper metodo nuova_pagina.
+Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/immagini/index.html
+classe TrovaDirs metodo imposta_sito().
 Scaricheremo il file Colors.jpg
 Nella directory immagini/
 
 CLASSE TestGet, metodo OttieniPagina().
 Nome della pagina da salvare: index.html
-Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
+Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it/immagini
 Nome della pagina da salvare (dopo l'if): index.html
 
 CLASSE ValutaFile, costruttore di default.
@@ -567,9 +548,8 @@ CLASSE EstraiLinks, metodo links().
 
 CLASSE EstraiLinks, metodo ciclo().
 Trovata l'occorrenza n° 1 di 'href=' in posizione: 227	stili/GeneralTest.css
-Trovata l'occorrenza n° 2 di 'href=' in posizione: 803	pagine/ILibriDelMenocchio.xhtml
-Trovata l'occorrenza n° 3 di 'href=' in posizione: 873	pagine/documentazione.html
-Trovata l'occorrenza n° 4 di 'href=' in posizione: 932	pagine/FlowChart.xhtml
+Trovata l'occorrenza n° 2 di 'href=' in posizione: 1356	pagine/Pagina0JAVA.html
+Trovata l'occorrenza n° 3 di 'href=' in posizione: 1441	pagine/documentazione.html
 
 CLASSE EstraiLinks, metodo ciclo().
 Trovata l'occorrenza n° 1 di 'src=' in posizione: 333	immagini/Colors.jpg
@@ -587,21 +567,23 @@ immagini/Colors.jpg
 index.html 
 pagine/FlowChart.xhtml
 pagine/ILibriDelMenocchio.xhtml
+pagine/Pagina0JAVA.html
 pagine/documentazione.html
 stili/GeneralTest.css
 
                                        £
 
-CLASSE TrovaDirs, metodo imposta_sito().
+CLASSE Loopper, metodo risultati().
 
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/index.html
-
-Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/immagini/index.html
-classe Loopper metodo nuova_pagina.
-Scaricheremo il file index.html
-Nella directory immagini/
+=============================================================================================
+Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
+immagini/Colors.jpg                                         	immagini/index.html
+index.html                                                  	index.html
+pagine/FlowChart.xhtml                                      	
+pagine/ILibriDelMenocchio.xhtml                             	
+pagine/Pagina0JAVA.html                                     	
+pagine/documentazione.html                                  	
+stili/GeneralTest.css                                       	
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 2
@@ -646,6 +628,9 @@ Dentro il loop esterno, Valore di riga da elaborare: immagini/Colors.jpg
 Dentro il loop interno, Valore di riga da elaborare: immagini/index.html
 Valore di controllo true
 
+Dentro il loop interno, Valore di riga da elaborare: index.html
+Valore di controllo true
+
 Valore di riga da elaborare: immagini/Colors.jpg
 
 CLASSE TrovaDirs, metodo esame_directory().
@@ -654,6 +639,8 @@ Elaborazione di immagini/Colors.jpg:	Nome: Colors.jpg	Numero di elementi: 2
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
+
+Riga contiene una directory? true
 
 Classe TrovaDIrs, metodo cerca_dire(),
  VALORE DI file_name: Colors.jpg
@@ -664,26 +651,24 @@ Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrisp
 
 Nome della pagina che si sta elaborando:Colors.jpg
 
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/index.html
-
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
 Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
 CLASSE TrovaDirs, metodo imposta_sito().
 
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/index.html
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/index.html
 
 Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
-Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/index.html
-classe Loopper metodo nuova_pagina.
+Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/immagini/index.html
+classe TrovaDirs metodo imposta_sito().
 Scaricheremo il file Colors.jpg
 Nella directory immagini/
 
 CLASSE TestGet, metodo OttieniPagina().
 Nome della pagina da salvare: index.html
-Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
+Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it/immagini
 Nome della pagina da salvare (dopo l'if): index.html
 
 CLASSE ValutaFile, costruttore di default.
@@ -710,9 +695,8 @@ CLASSE EstraiLinks, metodo links().
 
 CLASSE EstraiLinks, metodo ciclo().
 Trovata l'occorrenza n° 1 di 'href=' in posizione: 227	stili/GeneralTest.css
-Trovata l'occorrenza n° 2 di 'href=' in posizione: 803	pagine/ILibriDelMenocchio.xhtml
-Trovata l'occorrenza n° 3 di 'href=' in posizione: 873	pagine/documentazione.html
-Trovata l'occorrenza n° 4 di 'href=' in posizione: 932	pagine/FlowChart.xhtml
+Trovata l'occorrenza n° 2 di 'href=' in posizione: 1356	pagine/Pagina0JAVA.html
+Trovata l'occorrenza n° 3 di 'href=' in posizione: 1441	pagine/documentazione.html
 
 CLASSE EstraiLinks, metodo ciclo().
 Trovata l'occorrenza n° 1 di 'src=' in posizione: 333	immagini/Colors.jpg
@@ -730,21 +714,23 @@ immagini/Colors.jpg
 index.html 
 pagine/FlowChart.xhtml
 pagine/ILibriDelMenocchio.xhtml
+pagine/Pagina0JAVA.html
 pagine/documentazione.html
 stili/GeneralTest.css
 
                                        £
 
-CLASSE TrovaDirs, metodo imposta_sito().
+CLASSE Loopper, metodo risultati().
 
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/index.html
-
-Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/immagini/index.html
-classe Loopper metodo nuova_pagina.
-Scaricheremo il file index.html
-Nella directory immagini/
+=============================================================================================
+Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
+immagini/Colors.jpg                                         	immagini/index.html
+index.html                                                  	index.html
+pagine/FlowChart.xhtml                                      	
+pagine/ILibriDelMenocchio.xhtml                             	
+pagine/Pagina0JAVA.html                                     	
+pagine/documentazione.html                                  	
+stili/GeneralTest.css                                       	
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 3
@@ -757,6 +743,7 @@ immagini/Colors.jpg                                         	immagini/index.html
 index.html                                                  	index.html
 pagine/FlowChart.xhtml                                      	
 pagine/ILibriDelMenocchio.xhtml                             	
+pagine/Pagina0JAVA.html                                     	
 pagine/documentazione.html                                  	
 stili/GeneralTest.css                                       	
 Elaborazione completata.
