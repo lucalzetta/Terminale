@@ -1,33 +1,10 @@
 Valore di 'argomenti[0]: -s
 
-CLASSE EvalOpzioni, metodo evalOpz().
-
-&&&&&&&&&&&&&&&&&&&&&& EvalOpzioni &&&&&&&&&&&&&&&&&&&&&&
-Valore della variabile VG.get_args() in EvalOpzioni.EvalOpz() -s http://www.scuoladipoliticamaniago.it/index.html 
-
-CLASSE EvalOpzioni, metodo sito().
-Valore di indice per http 3
-
-CLASSE EvalOpzioni, metodo sito().
-Valore di indice per http 3
-
-CLASSE EvalOpzioni, metodo sito().
-Valore di indice per http 3
-Valore della variabile sito in EvalOpzioni.EvalOpz() http://www.scuoladipoliticamaniago.it/index.html
-
-CLASSE EvalOpzioni, metodo directory().
-
 Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
 Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
-CLASSE EvalOpzioni, metodo file().
-
 Sotto directory in cui verrà salvata la pagina:null
-EvalOpzioni.EvalOpz() aggiunta la pagina index.html  al set dei collegamenti.
-
-CLASSE EvalOpzioni, metodo directory().
-Valore della variabile root directory in EvalOpzioni.EvalOpz() scuoladipoliticamaniago
 É stata scelta l'opzione 's', verrà scaricato il sito:
 http://www.scuoladipoliticamaniago.it/index.html
 Nella directory:
@@ -37,24 +14,11 @@ e scritti i file:
 /home/lucaamministratore/tmp/scuoladipoliticamaniago/ArchivioDIRS.txt
 scaricata la pagina: index.html 
 
-CLASSE Loopper, costruttore di default.
+Classe Loopper, metodo passo,
+valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
+valore di nome pagina al momento della chiamata di TestGET: index.html 
 
-Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TestGet, costruttore con parametri.
-
-&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$
-TestGet, valore delle variabili iniziali della classe.
-ROOT_DIR: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-TestGet, valore delle variabili iniziali della classe.
-SITO: http://www.scuoladipoliticamaniago.it/index.html
-TestGet, valore delle variabili iniziali della classe.
-SUBDIR: 
-TestGet, valore delle variabili iniziali della classe.
-NOME_FILE: index.html 
-&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/index.html
 
 CLASSE TrovaDirs, costruttore di default.
 
@@ -62,6 +26,11 @@ CLASSE TrovaDirs, metodo cerca_dire().
 
 Dentro il loop esterno, Valore di riga da elaborare: index.html 
 
+	Dentro il loop interno,
+		Valore di tmp  elaborato: 
+		Valore di riga confrontato: index.html 
+		Valore di controllo false
+Abbiamo esplorato tutti i collegamenti!
 Valore di riga da elaborare: index.html 
 
 CLASSE TrovaDirs, metodo esame_directory().
@@ -72,40 +41,24 @@ Elaborazione di index.html :	Nome: index.html 	Numero di elementi: 1
 CLASSE TrovaDirs, metodo caratteri_vietati().
 
 Riga contiene una directory? false
-
-CLASSE TrovaDirs, metodo imposta_sito().
-
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/index.html
-
-Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/index.html 
-classe TrovaDirs metodo imposta_sito().
-Scaricheremo il file index.html 
-Nella directory 
-
-CLASSE TestGet, metodo OttieniPagina().
-Nome della pagina da salvare: index.html
+Nome della pagina da salvare: index.html 
 Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
-Nome della pagina da salvare (dopo l'if): index.html
 
-CLASSE ValutaFile, costruttore di default.
-
-CLASSE ValutaFile, metodo text().
-
-Estensione del file: index.html .html
-
-CLASSE ValutaFile, metodo visitabile().
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
 
 CLASSE SalvaPagine, costruttore con parametri.
-La pagina: index.html, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-con l'opzione testo = true
+
+CLASSE TrovaDirs, costruttore di default.
+
+CLASSE TrovaDirs, metodo caratteri_vietati().
 
 CLASSE SalvaPagine, metodo scrivi().
 
 Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-Nome del file: index.html
+Nome del file: index.html 
 
+
+CLASSE TrovaDirs, costruttore di default.
 
 CLASSE EstraiLinks, costruttore di default.
 
@@ -138,38 +91,15 @@ stili/GeneralTest.css
 
                                        £
 
-CLASSE Loopper, metodo cicloSito().
-
 Area di azzeramento delle variabili.
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
-Nome della pagina che si sta elaborando:index.html
+Classe Loopper, metodo passo,
+valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
+valore di nome pagina al momento della chiamata di TestGET: index.html 
 
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-Valore del contatore globale: 0
-
-Sotto directory in cui verrà salvata la pagina:
-
-Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TestGet, costruttore con parametri.
-
-&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$
-TestGet, valore delle variabili iniziali della classe.
-ROOT_DIR: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-TestGet, valore delle variabili iniziali della classe.
-SITO: http://www.scuoladipoliticamaniago.it/index.html
-TestGet, valore delle variabili iniziali della classe.
-SUBDIR: 
-TestGet, valore delle variabili iniziali della classe.
-NOME_FILE: index.html
-&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/index.html
 
 CLASSE TrovaDirs, costruttore di default.
 
@@ -177,14 +107,51 @@ CLASSE TrovaDirs, metodo cerca_dire().
 
 Dentro il loop esterno, Valore di riga da elaborare: immagini/Colors.jpg
 
-Dentro il loop interno, Valore di riga da elaborare: index.html
-Valore di controllo true
+	Dentro il loop interno,
+		Valore di tmp  elaborato: index.html 
+		Valore di riga confrontato: immagini/Colors.jpg
+		Valore di controllo true
 
-Valore di riga da elaborare: immagini/Colors.jpg
+Dentro il loop esterno, Valore di riga da elaborare: index.html 
+
+	Dentro il loop interno,
+		Valore di tmp  elaborato: index.html 
+		Valore di riga confrontato: index.html 
+		Valore di controllo true
+
+Dentro il loop esterno, Valore di riga da elaborare: pagine/FlowChart.xhtml
+
+	Dentro il loop interno,
+		Valore di tmp  elaborato: index.html 
+		Valore di riga confrontato: pagine/FlowChart.xhtml
+		Valore di controllo true
+
+Dentro il loop esterno, Valore di riga da elaborare: pagine/ILibriDelMenocchio.xhtml
+
+	Dentro il loop interno,
+		Valore di tmp  elaborato: index.html 
+		Valore di riga confrontato: pagine/ILibriDelMenocchio.xhtml
+		Valore di controllo true
+
+Dentro il loop esterno, Valore di riga da elaborare: pagine/documentazione.html
+
+	Dentro il loop interno,
+		Valore di tmp  elaborato: index.html 
+		Valore di riga confrontato: pagine/documentazione.html
+		Valore di controllo true
+
+Dentro il loop esterno, Valore di riga da elaborare: stili/GeneralTest.css
+
+	Dentro il loop interno,
+		Valore di tmp  elaborato: index.html 
+		Valore di riga confrontato: stili/GeneralTest.css
+		Valore di controllo true
+Abbiamo esplorato tutti i collegamenti!
+Valore di riga da elaborare: stili/GeneralTest.css
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di immagini/Colors.jpg:	Nome: Colors.jpg	Numero di elementi: 2
-	Percorso: immagini
+Elaborazione di stili/GeneralTest.css:	Nome: GeneralTest.css	Numero di elementi: 2
+	Percorso: stili
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
@@ -192,73 +159,45 @@ CLASSE TrovaDirs, metodo caratteri_vietati().
 Riga contiene una directory? true
 
 Classe TrovaDIrs, metodo cerca_dire(),
- VALORE DI file_name: Colors.jpg
-VALORE DI sub_dir: immagini/
-VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+VALORE DI file_name: GeneralTest.css
+VALORE DI sub_dir: stili/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
 
 Sotto directory in cui verrà salvata la pagina:
 
-Sotto directory in cui verrà salvata la pagina:immagini/
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
 
-Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
 
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/stili/GeneralTest.css
 
-Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
+Nome della pagina da salvare: GeneralTest.css
+Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-
-Nome della pagina che si sta elaborando:Colors.jpg
-
-Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-
-CLASSE TrovaDirs, metodo imposta_sito().
-
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/index.html
-
-Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/immagini/index.html
-classe TrovaDirs metodo imposta_sito().
-Scaricheremo il file Colors.jpg
-Nella directory immagini/
-
-CLASSE TestGet, metodo OttieniPagina().
-Nome della pagina da salvare: index.html
-Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it/immagini
-Nome della pagina da salvare (dopo l'if): index.html
-
-CLASSE ValutaFile, costruttore di default.
-
-CLASSE ValutaFile, metodo text().
-
-Estensione del file: index.html .html
-
-CLASSE ValutaFile, metodo visitabile().
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
 
 CLASSE SalvaPagine, costruttore con parametri.
-La pagina: index.html, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-con l'opzione testo = true
+
+CLASSE TrovaDirs, costruttore di default.
+
+CLASSE TrovaDirs, metodo caratteri_vietati().
 
 CLASSE SalvaPagine, metodo scrivi().
 
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-Nome del file: index.html
+Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
+Nome del file: GeneralTest.css
 
+
+CLASSE TrovaDirs, costruttore di default.
 
 CLASSE EstraiLinks, costruttore di default.
 
 CLASSE EstraiLinks, metodo links().
 
 CLASSE EstraiLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'href=' in posizione: 227	stili/GeneralTest.css
-Trovata l'occorrenza n° 2 di 'href=' in posizione: 1356	pagine/Pagina0JAVA.html
-Trovata l'occorrenza n° 3 di 'href=' in posizione: 1441	pagine/documentazione.html
 
 CLASSE EstraiLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'src=' in posizione: 333	immagini/Colors.jpg
 
 CLASSE EstraiLinks, metodo ciclo().
 
@@ -273,7 +212,6 @@ immagini/Colors.jpg
 index.html 
 pagine/FlowChart.xhtml
 pagine/ILibriDelMenocchio.xhtml
-pagine/Pagina0JAVA.html
 pagine/documentazione.html
 stili/GeneralTest.css
 
@@ -283,11 +221,10 @@ CLASSE Loopper, metodo risultati().
 
 =============================================================================================
 Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
-immagini/Colors.jpg                                         	immagini/index.html
-index.html                                                  	index.html
+immagini/Colors.jpg                                         	index.html 
+index.html                                                  	stili/GeneralTest.css
 pagine/FlowChart.xhtml                                      	
 pagine/ILibriDelMenocchio.xhtml                             	
-pagine/Pagina0JAVA.html                                     	
 pagine/documentazione.html                                  	
 stili/GeneralTest.css                                       	
 
@@ -298,32 +235,11 @@ Area di azzeramento delle variabili.
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
-Nome della pagina che si sta elaborando:index.html
+Classe Loopper, metodo passo,
+valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
+valore di nome pagina al momento della chiamata di TestGET: GeneralTest.css
 
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-
-Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-Valore del contatore globale: 0
-
-Sotto directory in cui verrà salvata la pagina:immagini/
-
-Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TestGet, costruttore con parametri.
-
-&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$
-TestGet, valore delle variabili iniziali della classe.
-ROOT_DIR: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-TestGet, valore delle variabili iniziali della classe.
-SITO: http://www.scuoladipoliticamaniago.it/immagini/index.html
-TestGet, valore delle variabili iniziali della classe.
-SUBDIR: immagini/
-TestGet, valore delle variabili iniziali della classe.
-NOME_FILE: index.html
-&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/stili/GeneralTest.css
 
 CLASSE TrovaDirs, costruttore di default.
 
@@ -331,17 +247,51 @@ CLASSE TrovaDirs, metodo cerca_dire().
 
 Dentro il loop esterno, Valore di riga da elaborare: immagini/Colors.jpg
 
-Dentro il loop interno, Valore di riga da elaborare: immagini/index.html
-Valore di controllo true
+	Dentro il loop interno,
+		Valore di tmp  elaborato: stili/GeneralTest.css
+		Valore di riga confrontato: immagini/Colors.jpg
+		Valore di controllo true
 
-Dentro il loop interno, Valore di riga da elaborare: index.html
-Valore di controllo true
+Dentro il loop esterno, Valore di riga da elaborare: index.html 
 
-Valore di riga da elaborare: immagini/Colors.jpg
+	Dentro il loop interno,
+		Valore di tmp  elaborato: stili/GeneralTest.css
+		Valore di riga confrontato: index.html 
+		Valore di controllo true
+
+Dentro il loop esterno, Valore di riga da elaborare: pagine/FlowChart.xhtml
+
+	Dentro il loop interno,
+		Valore di tmp  elaborato: stili/GeneralTest.css
+		Valore di riga confrontato: pagine/FlowChart.xhtml
+		Valore di controllo true
+
+Dentro il loop esterno, Valore di riga da elaborare: pagine/ILibriDelMenocchio.xhtml
+
+	Dentro il loop interno,
+		Valore di tmp  elaborato: stili/GeneralTest.css
+		Valore di riga confrontato: pagine/ILibriDelMenocchio.xhtml
+		Valore di controllo true
+
+Dentro il loop esterno, Valore di riga da elaborare: pagine/documentazione.html
+
+	Dentro il loop interno,
+		Valore di tmp  elaborato: stili/GeneralTest.css
+		Valore di riga confrontato: pagine/documentazione.html
+		Valore di controllo true
+
+Dentro il loop esterno, Valore di riga da elaborare: stili/GeneralTest.css
+
+	Dentro il loop interno,
+		Valore di tmp  elaborato: stili/GeneralTest.css
+		Valore di riga confrontato: stili/GeneralTest.css
+		Valore di controllo true
+Abbiamo esplorato tutti i collegamenti!
+Valore di riga da elaborare: stili/GeneralTest.css
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di immagini/Colors.jpg:	Nome: Colors.jpg	Numero di elementi: 2
-	Percorso: immagini
+Elaborazione di stili/GeneralTest.css:	Nome: GeneralTest.css	Numero di elementi: 2
+	Percorso: stili
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
@@ -349,63 +299,41 @@ CLASSE TrovaDirs, metodo caratteri_vietati().
 Riga contiene una directory? true
 
 Classe TrovaDIrs, metodo cerca_dire(),
- VALORE DI file_name: Colors.jpg
-VALORE DI sub_dir: immagini/
-VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+VALORE DI file_name: GeneralTest.css
+VALORE DI sub_dir: stili/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
 
 Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
 
-Nome della pagina che si sta elaborando:Colors.jpg
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/stili/GeneralTest.css
 
-Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
+Nome della pagina da salvare: GeneralTest.css
+Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
-Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-
-CLASSE TrovaDirs, metodo imposta_sito().
-
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/index.html
-
-Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/immagini/index.html
-classe TrovaDirs metodo imposta_sito().
-Scaricheremo il file Colors.jpg
-Nella directory immagini/
-
-CLASSE TestGet, metodo OttieniPagina().
-Nome della pagina da salvare: index.html
-Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it/immagini
-Nome della pagina da salvare (dopo l'if): index.html
-
-CLASSE ValutaFile, costruttore di default.
-
-CLASSE ValutaFile, metodo text().
-
-Estensione del file: index.html .html
-
-CLASSE ValutaFile, metodo visitabile().
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
 
 CLASSE SalvaPagine, costruttore con parametri.
-La pagina: index.html, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-con l'opzione testo = true
+
+CLASSE TrovaDirs, costruttore di default.
+
+CLASSE TrovaDirs, metodo caratteri_vietati().
 
 CLASSE SalvaPagine, metodo scrivi().
 
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-Nome del file: index.html
+Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
+Nome del file: GeneralTest.css
 
+
+CLASSE TrovaDirs, costruttore di default.
 
 CLASSE EstraiLinks, costruttore di default.
 
 CLASSE EstraiLinks, metodo links().
 
 CLASSE EstraiLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'href=' in posizione: 227	stili/GeneralTest.css
-Trovata l'occorrenza n° 2 di 'href=' in posizione: 1356	pagine/Pagina0JAVA.html
-Trovata l'occorrenza n° 3 di 'href=' in posizione: 1441	pagine/documentazione.html
 
 CLASSE EstraiLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'src=' in posizione: 333	immagini/Colors.jpg
 
 CLASSE EstraiLinks, metodo ciclo().
 
@@ -420,7 +348,6 @@ immagini/Colors.jpg
 index.html 
 pagine/FlowChart.xhtml
 pagine/ILibriDelMenocchio.xhtml
-pagine/Pagina0JAVA.html
 pagine/documentazione.html
 stili/GeneralTest.css
 
@@ -430,11 +357,10 @@ CLASSE Loopper, metodo risultati().
 
 =============================================================================================
 Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
-immagini/Colors.jpg                                         	immagini/index.html
-index.html                                                  	index.html
+immagini/Colors.jpg                                         	index.html 
+index.html                                                  	stili/GeneralTest.css
 pagine/FlowChart.xhtml                                      	
 pagine/ILibriDelMenocchio.xhtml                             	
-pagine/Pagina0JAVA.html                                     	
 pagine/documentazione.html                                  	
 stili/GeneralTest.css                                       	
 
@@ -445,32 +371,11 @@ Area di azzeramento delle variabili.
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
-Nome della pagina che si sta elaborando:index.html
+Classe Loopper, metodo passo,
+valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
+valore di nome pagina al momento della chiamata di TestGET: GeneralTest.css
 
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-
-Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-Valore del contatore globale: 0
-
-Sotto directory in cui verrà salvata la pagina:immagini/
-
-Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TestGet, costruttore con parametri.
-
-&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$
-TestGet, valore delle variabili iniziali della classe.
-ROOT_DIR: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-TestGet, valore delle variabili iniziali della classe.
-SITO: http://www.scuoladipoliticamaniago.it/immagini/index.html
-TestGet, valore delle variabili iniziali della classe.
-SUBDIR: immagini/
-TestGet, valore delle variabili iniziali della classe.
-NOME_FILE: index.html
-&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/stili/GeneralTest.css
 
 CLASSE TrovaDirs, costruttore di default.
 
@@ -478,17 +383,51 @@ CLASSE TrovaDirs, metodo cerca_dire().
 
 Dentro il loop esterno, Valore di riga da elaborare: immagini/Colors.jpg
 
-Dentro il loop interno, Valore di riga da elaborare: immagini/index.html
-Valore di controllo true
+	Dentro il loop interno,
+		Valore di tmp  elaborato: stili/GeneralTest.css
+		Valore di riga confrontato: immagini/Colors.jpg
+		Valore di controllo true
 
-Dentro il loop interno, Valore di riga da elaborare: index.html
-Valore di controllo true
+Dentro il loop esterno, Valore di riga da elaborare: index.html 
 
-Valore di riga da elaborare: immagini/Colors.jpg
+	Dentro il loop interno,
+		Valore di tmp  elaborato: stili/GeneralTest.css
+		Valore di riga confrontato: index.html 
+		Valore di controllo true
+
+Dentro il loop esterno, Valore di riga da elaborare: pagine/FlowChart.xhtml
+
+	Dentro il loop interno,
+		Valore di tmp  elaborato: stili/GeneralTest.css
+		Valore di riga confrontato: pagine/FlowChart.xhtml
+		Valore di controllo true
+
+Dentro il loop esterno, Valore di riga da elaborare: pagine/ILibriDelMenocchio.xhtml
+
+	Dentro il loop interno,
+		Valore di tmp  elaborato: stili/GeneralTest.css
+		Valore di riga confrontato: pagine/ILibriDelMenocchio.xhtml
+		Valore di controllo true
+
+Dentro il loop esterno, Valore di riga da elaborare: pagine/documentazione.html
+
+	Dentro il loop interno,
+		Valore di tmp  elaborato: stili/GeneralTest.css
+		Valore di riga confrontato: pagine/documentazione.html
+		Valore di controllo true
+
+Dentro il loop esterno, Valore di riga da elaborare: stili/GeneralTest.css
+
+	Dentro il loop interno,
+		Valore di tmp  elaborato: stili/GeneralTest.css
+		Valore di riga confrontato: stili/GeneralTest.css
+		Valore di controllo true
+Abbiamo esplorato tutti i collegamenti!
+Valore di riga da elaborare: stili/GeneralTest.css
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di immagini/Colors.jpg:	Nome: Colors.jpg	Numero di elementi: 2
-	Percorso: immagini
+Elaborazione di stili/GeneralTest.css:	Nome: GeneralTest.css	Numero di elementi: 2
+	Percorso: stili
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
@@ -496,63 +435,41 @@ CLASSE TrovaDirs, metodo caratteri_vietati().
 Riga contiene una directory? true
 
 Classe TrovaDIrs, metodo cerca_dire(),
- VALORE DI file_name: Colors.jpg
-VALORE DI sub_dir: immagini/
-VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+VALORE DI file_name: GeneralTest.css
+VALORE DI sub_dir: stili/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
 
 Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
 
-Nome della pagina che si sta elaborando:Colors.jpg
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/stili/GeneralTest.css
 
-Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
+Nome della pagina da salvare: GeneralTest.css
+Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
-Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-
-CLASSE TrovaDirs, metodo imposta_sito().
-
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/index.html
-
-Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/immagini/index.html
-classe TrovaDirs metodo imposta_sito().
-Scaricheremo il file Colors.jpg
-Nella directory immagini/
-
-CLASSE TestGet, metodo OttieniPagina().
-Nome della pagina da salvare: index.html
-Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it/immagini
-Nome della pagina da salvare (dopo l'if): index.html
-
-CLASSE ValutaFile, costruttore di default.
-
-CLASSE ValutaFile, metodo text().
-
-Estensione del file: index.html .html
-
-CLASSE ValutaFile, metodo visitabile().
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
 
 CLASSE SalvaPagine, costruttore con parametri.
-La pagina: index.html, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-con l'opzione testo = true
+
+CLASSE TrovaDirs, costruttore di default.
+
+CLASSE TrovaDirs, metodo caratteri_vietati().
 
 CLASSE SalvaPagine, metodo scrivi().
 
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-Nome del file: index.html
+Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
+Nome del file: GeneralTest.css
 
+
+CLASSE TrovaDirs, costruttore di default.
 
 CLASSE EstraiLinks, costruttore di default.
 
 CLASSE EstraiLinks, metodo links().
 
 CLASSE EstraiLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'href=' in posizione: 227	stili/GeneralTest.css
-Trovata l'occorrenza n° 2 di 'href=' in posizione: 1356	pagine/Pagina0JAVA.html
-Trovata l'occorrenza n° 3 di 'href=' in posizione: 1441	pagine/documentazione.html
 
 CLASSE EstraiLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'src=' in posizione: 333	immagini/Colors.jpg
 
 CLASSE EstraiLinks, metodo ciclo().
 
@@ -567,7 +484,6 @@ immagini/Colors.jpg
 index.html 
 pagine/FlowChart.xhtml
 pagine/ILibriDelMenocchio.xhtml
-pagine/Pagina0JAVA.html
 pagine/documentazione.html
 stili/GeneralTest.css
 
@@ -577,11 +493,10 @@ CLASSE Loopper, metodo risultati().
 
 =============================================================================================
 Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
-immagini/Colors.jpg                                         	immagini/index.html
-index.html                                                  	index.html
+immagini/Colors.jpg                                         	index.html 
+index.html                                                  	stili/GeneralTest.css
 pagine/FlowChart.xhtml                                      	
 pagine/ILibriDelMenocchio.xhtml                             	
-pagine/Pagina0JAVA.html                                     	
 pagine/documentazione.html                                  	
 stili/GeneralTest.css                                       	
 
@@ -592,32 +507,11 @@ Area di azzeramento delle variabili.
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
-Nome della pagina che si sta elaborando:index.html
+Classe Loopper, metodo passo,
+valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
+valore di nome pagina al momento della chiamata di TestGET: GeneralTest.css
 
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-
-Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-Valore del contatore globale: 0
-
-Sotto directory in cui verrà salvata la pagina:immagini/
-
-Classe Loopper, metodo passo, valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TestGet, costruttore con parametri.
-
-&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$&#$
-TestGet, valore delle variabili iniziali della classe.
-ROOT_DIR: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-TestGet, valore delle variabili iniziali della classe.
-SITO: http://www.scuoladipoliticamaniago.it/immagini/index.html
-TestGet, valore delle variabili iniziali della classe.
-SUBDIR: immagini/
-TestGet, valore delle variabili iniziali della classe.
-NOME_FILE: index.html
-&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$&8$
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/stili/GeneralTest.css
 
 CLASSE TrovaDirs, costruttore di default.
 
@@ -625,17 +519,51 @@ CLASSE TrovaDirs, metodo cerca_dire().
 
 Dentro il loop esterno, Valore di riga da elaborare: immagini/Colors.jpg
 
-Dentro il loop interno, Valore di riga da elaborare: immagini/index.html
-Valore di controllo true
+	Dentro il loop interno,
+		Valore di tmp  elaborato: stili/GeneralTest.css
+		Valore di riga confrontato: immagini/Colors.jpg
+		Valore di controllo true
 
-Dentro il loop interno, Valore di riga da elaborare: index.html
-Valore di controllo true
+Dentro il loop esterno, Valore di riga da elaborare: index.html 
 
-Valore di riga da elaborare: immagini/Colors.jpg
+	Dentro il loop interno,
+		Valore di tmp  elaborato: stili/GeneralTest.css
+		Valore di riga confrontato: index.html 
+		Valore di controllo true
+
+Dentro il loop esterno, Valore di riga da elaborare: pagine/FlowChart.xhtml
+
+	Dentro il loop interno,
+		Valore di tmp  elaborato: stili/GeneralTest.css
+		Valore di riga confrontato: pagine/FlowChart.xhtml
+		Valore di controllo true
+
+Dentro il loop esterno, Valore di riga da elaborare: pagine/ILibriDelMenocchio.xhtml
+
+	Dentro il loop interno,
+		Valore di tmp  elaborato: stili/GeneralTest.css
+		Valore di riga confrontato: pagine/ILibriDelMenocchio.xhtml
+		Valore di controllo true
+
+Dentro il loop esterno, Valore di riga da elaborare: pagine/documentazione.html
+
+	Dentro il loop interno,
+		Valore di tmp  elaborato: stili/GeneralTest.css
+		Valore di riga confrontato: pagine/documentazione.html
+		Valore di controllo true
+
+Dentro il loop esterno, Valore di riga da elaborare: stili/GeneralTest.css
+
+	Dentro il loop interno,
+		Valore di tmp  elaborato: stili/GeneralTest.css
+		Valore di riga confrontato: stili/GeneralTest.css
+		Valore di controllo true
+Abbiamo esplorato tutti i collegamenti!
+Valore di riga da elaborare: stili/GeneralTest.css
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di immagini/Colors.jpg:	Nome: Colors.jpg	Numero di elementi: 2
-	Percorso: immagini
+Elaborazione di stili/GeneralTest.css:	Nome: GeneralTest.css	Numero di elementi: 2
+	Percorso: stili
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
@@ -643,63 +571,41 @@ CLASSE TrovaDirs, metodo caratteri_vietati().
 Riga contiene una directory? true
 
 Classe TrovaDIrs, metodo cerca_dire(),
- VALORE DI file_name: Colors.jpg
-VALORE DI sub_dir: immagini/
-VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+VALORE DI file_name: GeneralTest.css
+VALORE DI sub_dir: stili/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
 
 Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
 
-Nome della pagina che si sta elaborando:Colors.jpg
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/stili/GeneralTest.css
 
-Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
+Nome della pagina da salvare: GeneralTest.css
+Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
-Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-
-CLASSE TrovaDirs, metodo imposta_sito().
-
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/index.html
-
-Nome della cartella in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-Prossima pagina da visitare: http://www.scuoladipoliticamaniago.it/immagini/index.html
-classe TrovaDirs metodo imposta_sito().
-Scaricheremo il file Colors.jpg
-Nella directory immagini/
-
-CLASSE TestGet, metodo OttieniPagina().
-Nome della pagina da salvare: index.html
-Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it/immagini
-Nome della pagina da salvare (dopo l'if): index.html
-
-CLASSE ValutaFile, costruttore di default.
-
-CLASSE ValutaFile, metodo text().
-
-Estensione del file: index.html .html
-
-CLASSE ValutaFile, metodo visitabile().
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
 
 CLASSE SalvaPagine, costruttore con parametri.
-La pagina: index.html, verrà salvata in /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-con l'opzione testo = true
+
+CLASSE TrovaDirs, costruttore di default.
+
+CLASSE TrovaDirs, metodo caratteri_vietati().
 
 CLASSE SalvaPagine, metodo scrivi().
 
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
-Nome del file: index.html
+Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
+Nome del file: GeneralTest.css
 
+
+CLASSE TrovaDirs, costruttore di default.
 
 CLASSE EstraiLinks, costruttore di default.
 
 CLASSE EstraiLinks, metodo links().
 
 CLASSE EstraiLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'href=' in posizione: 227	stili/GeneralTest.css
-Trovata l'occorrenza n° 2 di 'href=' in posizione: 1356	pagine/Pagina0JAVA.html
-Trovata l'occorrenza n° 3 di 'href=' in posizione: 1441	pagine/documentazione.html
 
 CLASSE EstraiLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'src=' in posizione: 333	immagini/Colors.jpg
 
 CLASSE EstraiLinks, metodo ciclo().
 
@@ -714,7 +620,6 @@ immagini/Colors.jpg
 index.html 
 pagine/FlowChart.xhtml
 pagine/ILibriDelMenocchio.xhtml
-pagine/Pagina0JAVA.html
 pagine/documentazione.html
 stili/GeneralTest.css
 
@@ -724,11 +629,10 @@ CLASSE Loopper, metodo risultati().
 
 =============================================================================================
 Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
-immagini/Colors.jpg                                         	immagini/index.html
-index.html                                                  	index.html
+immagini/Colors.jpg                                         	index.html 
+index.html                                                  	stili/GeneralTest.css
 pagine/FlowChart.xhtml                                      	
 pagine/ILibriDelMenocchio.xhtml                             	
-pagine/Pagina0JAVA.html                                     	
 pagine/documentazione.html                                  	
 stili/GeneralTest.css                                       	
 
@@ -739,11 +643,10 @@ CLASSE Loopper, metodo risultati().
 
 =============================================================================================
 Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
-immagini/Colors.jpg                                         	immagini/index.html
-index.html                                                  	index.html
+immagini/Colors.jpg                                         	index.html 
+index.html                                                  	stili/GeneralTest.css
 pagine/FlowChart.xhtml                                      	
 pagine/ILibriDelMenocchio.xhtml                             	
-pagine/Pagina0JAVA.html                                     	
 pagine/documentazione.html                                  	
 stili/GeneralTest.css                                       	
 Elaborazione completata.

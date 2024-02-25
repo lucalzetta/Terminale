@@ -25,6 +25,7 @@ private String ROOT_DIR;
 private String SUBDIR;
 private String NOME_FILE;
 private VariabiliGlobali VG = new VariabiliGlobali();
+private CheckerVariabili CV = new CheckerVariabili();
 
 public TestGET()throws IOException
 {
@@ -33,8 +34,8 @@ public TestGET()throws IOException
     SITO = VG.get_sito().toString();
     SUBDIR = VG.get_subdir();
     NOME_FILE = VG.get_name_page();
-    System.out.printf("Siamo nel costruttore di default della classe TestGET, sono state raccolte le "
-            + "varibili ROO_DIR, SITO, SUBDIR e NOME_FILE che valgono: %n%s%n%s%n%s%n%s", ROOT_DIR, SITO, SUBDIR, NOME_FILE);
+//    System.out.printf("Siamo nel costruttore di default della classe TestGET, sono state raccolte le "
+  //          + "varibili ROO_DIR, SITO, SUBDIR e NOME_FILE che valgono: %n%s%n%s%n%s%n%s", ROOT_DIR, SITO, SUBDIR, NOME_FILE);
     //riga di test per provare le nuove classi, decommentare le classi interessate
     //TrovaDirs td = new TrovaDirs();
     //td.cerca_dire();
@@ -50,27 +51,27 @@ public TestGET()throws IOException
 
 public TestGET(boolean scarica_dati)
 {
-System.out.printf("%nCLASSE TestGet, costruttore con parametri.%n");
-System.out.println();
-    for (int i = 0; i < 50; i++)
-        System.out.printf("&#$");
+//System.out.printf("%nCLASSE TestGet, costruttore con parametri.%n");
+//System.out.println();
+  /*  for (int i = 0; i < 50; i++)
+        System.out.printf("&#$");*/
 
     ROOT_DIR = VG.get_root();
-    System.out.printf("%nTestGet, valore delle variabili iniziali della classe.%nROOT_DIR: %s", ROOT_DIR);
+//    System.out.printf("%nTestGet, valore delle variabili iniziali della classe.%nROOT_DIR: %s", ROOT_DIR);
     
     SITO = VG.get_sito().toString();
-        System.out.printf("%nTestGet, valore delle variabili iniziali della classe.%nSITO: %s", SITO);
+  //      System.out.printf("%nTestGet, valore delle variabili iniziali della classe.%nSITO: %s", SITO);
     
     SUBDIR = VG.get_subdir();
-        System.out.printf("%nTestGet, valore delle variabili iniziali della classe.%nSUBDIR: %s", SUBDIR);
+    //    System.out.printf("%nTestGet, valore delle variabili iniziali della classe.%nSUBDIR: %s", SUBDIR);
 
     NOME_FILE = VG.get_name_page();
-        System.out.printf("%nTestGet, valore delle variabili iniziali della classe.%nNOME_FILE: %s", NOME_FILE);
+      //  System.out.printf("%nTestGet, valore delle variabili iniziali della classe.%nNOME_FILE: %s", NOME_FILE);
 
-    System.out.println();
-    for (int i = 0; i < 50; i++)
+    //System.out.println();
+    /*for (int i = 0; i < 50; i++)
         System.out.printf("&8$");
-    System.out.println();
+    System.out.println();*/
 
     
 if(! scarica_dati)
@@ -101,7 +102,7 @@ else
       {
             TrovaDirs td = new TrovaDirs();
             td.cerca_dire();
-            td.imposta_sito(VG.get_subdir() + NOME_FILE);
+            //td.imposta_sito(VG.get_subdir() + NOME_FILE);
             OttieniPagina();
        }
       catch (IOException ex) 
@@ -113,15 +114,14 @@ else
 
 private void OttieniPagina()throws IOException
 {
-System.out.printf("%nCLASSE TestGet, metodo OttieniPagina().%n");
+//System.out.printf("%nCLASSE TestGet, metodo OttieniPagina().%n");
     try 
       {
         String dir = VG.get_root();
-        URL u = VG.get_sito();
-        URL sito_base;
+        URL u = VG.get_sito_ridotto();
         //il metodo get_file dell'oggetto URL non si rivela sempre affidabile
         //perciò ricorriamo ad un ciclo sulla stringa che lo compone
-        String page = u.toString();
+        String page = u.toString() + "/" + VG.get_name_page();
         String nome = "";
         String nome_base = "";
         int stop = page.length();
@@ -146,8 +146,6 @@ System.out.printf("%nCLASSE TestGet, metodo OttieniPagina().%n");
         System.out.printf("Nome del sito da esplorare: %s%n", nome_base);
         //Si rende necessario depurare il nome del sito dal nome della 
         //pagina per la gestione delle pagine successive
-        sito_base = new URL(nome_base);
-        VG.set_sito_ridotto(sito_base);
        //Ci si può trovare nella situazione in cui il nome della pagina da scaricare 
         //non sia ammesso come nome valido, in questo caso verrà convertito in index.html
         switch(nome)
@@ -178,15 +176,15 @@ System.out.printf("%nCLASSE TestGet, metodo OttieniPagina().%n");
                     }
             break;    
             }
-        System.out.printf("Nome della pagina da salvare (dopo l'if): %s%n", nome);
+        //System.out.printf("Nome della pagina da salvare (dopo l'if): %s%n", nome);
         
         VF = new ValutaFile(nome);
         VG.set_testo(VF.visitabile());
-        
+        CV.get_TESTO();
         SalvaPagine sp = new SalvaPagine(dir, nome);//Questa riga salva la pagina richiesta nel file locale
                                                              //corrispondente
-        System.out.printf("La pagina: %s, verrà salvata in %s%n"
-                + "con l'opzione testo = %b%n",nome, dir, VG.get_testo());
+        //System.out.printf("La pagina: %s, verrà salvata in %s%n"
+          //      + "con l'opzione testo = %b%n",nome, dir, VG.get_testo());
         sp.scrivi(VG.get_testo());
 /*********************************************************************************/        
 

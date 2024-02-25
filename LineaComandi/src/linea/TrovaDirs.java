@@ -47,12 +47,16 @@ public String cerca_dire()throws IOException
 System.out.printf("%nCLASSE TrovaDirs, metodo cerca_dire().%n");
 String tmp = "";
 String riga = "";
+String move="";
 String sub_dir= "";
 String file_name = "";
 String u_perc;
+int diffe;
 URL nuovo_perc;
 boolean perc = false;
 boolean find = false;
+boolean find_1 = false;
+boolean find_2 = false;
 Set <String> ts = VG.get_set_collegamenti();
 Set <String> visitati = VG.get_set_scaricati();
 Iterator collegamenti = ts.iterator();
@@ -80,22 +84,50 @@ if(collegamenti.hasNext())
         {
             riga = collegamenti.next().toString();
             System.out.printf("%nDentro il loop esterno, Valore di riga da elaborare: %s%n",riga);
-            while ((!find) & (coll_visitati.hasNext()))
+            while ((coll_visitati.hasNext()) & !find)
                 {
+            
                     tmp = coll_visitati.next().toString();
-                    find = riga.equalsIgnoreCase(tmp);
-                    if(!find)
+                    diffe = riga.compareToIgnoreCase(tmp);
+                    
+                        if (diffe != 0)
+                            {
+                                find_1 = true;
+                            }
+                        else
+                            {
+                                find_1 = false;
+                            }
+                            
+                        if(coll_visitati.hasNext())
+                            {
+                                find_2 = false;
+                            }
+                        else
+                            {
+                                find_2 = true;
+                            }
+                            
+                        if (find_1 & find_2)
+                            {
+                                find = true;
+                            }
+                }
+                    System.out.printf("%n\tDentro il loop interno,%n"
+                            + "\t\tValore di tmp  "
+                            + "elaborato: %s%n"
+                            + "\t\tValore di riga confrontato: %s%n"
+                            + "\t\tValore di controllo %s%n",tmp, riga, find);
+        }
+                    if(find)
                         {
                             perc = true;
                         }
                     if (! coll_visitati.hasNext())
                         {
+                            System.out.printf("Abbiamo esplorato tutti i collegamenti!");
                             perc = true;
                         }
-                    System.out.printf("%nDentro il loop interno, Valore di riga da "
-                            + "elaborare: %s%nValore di controllo %s%n",tmp, perc);
-                }
-        }
         
             System.out.printf("%nValore di riga da elaborare: %s%n",riga);
             perc = false;
@@ -136,11 +168,12 @@ if(collegamenti.hasNext())
                              */
                            
                     System.out.printf("%nClasse TrovaDIrs, "
-                                + "metodo cerca_dire(),%n VALORE DI file_name: %s%n"
+                                + "metodo cerca_dire(),%n"
+                                + "VALORE DI file_name: %s%n"
                                 + "VALORE DI sub_dir: %s%n"
                                 + "VALORE DI root_d: %s%n",file_name, sub_dir,u_perc);
                     
-                    if ((path_riga != null) & (path_riga.toString() != ""))
+                    if ((path_riga != null))
                         {
                             if(sub_dir.equalsIgnoreCase(VG.get_subdir()))
                                 {
@@ -151,17 +184,20 @@ if(collegamenti.hasNext())
                             else
                                 {
                                     VG.set_subdir(sub_dir);
-                                    CV.get_SUBDIR();
+                                    //CV.get_SUBDIR();
                                     VG.set_root(sub_dir);
-                                    CV.get_ROOT_D();
+                                    //CV.get_ROOT_D();
                                     VG.set_root_dest(u_perc);
-                                    CV.get_ROOT_DEST();
+                                    //CV.get_ROOT_DEST();
                                 }
                             
                             VG.set_name_page(file_name);
-                            CV.get_NOME_PAGINA();
-                            //CV.get_URL_SITO();
-                            CV.get_CARTELLA_SITO();
+                            nuovo_perc = new URL(VG.get_sito_ridotto() + "/" + sub_dir + file_name);
+                            //CV.get_NOME_PAGINA();
+                            ////CV.get_URL_SITO();
+                            //CV.get_CARTELLA_SITO();
+                            VG.set_sito(nuovo_perc);
+                            CV.get_URL_SITO();
                             System.out.printf("%nPercorso da creare: %s%n",u_perc);
                             
                             path_riga = Paths.get(u_perc);
@@ -216,7 +252,9 @@ try
         
         VG.set_sito(nuovo_perc);
         CV.get_URL_SITO();
-        CV.get_CARTELLA_SITO();
+        CV.get_URL_SITO_RIDOTTO();
+        //CV.get_URL_SITO();
+        //CV.get_CARTELLA_SITO();
         System.out.printf("%nProssima pagina da visitare: %s%nclasse TrovaDirs metodo imposta_sito().%n", tmp);
         System.out.printf("Scaricheremo il file %s%nNella directory %s%n", VG.get_name_page(), VG.get_subdir());
     }
@@ -226,7 +264,7 @@ catch(MalformedURLException mue)
     }
 }
 
-private boolean esame_directory(String dir)
+public boolean esame_directory(String dir)
 {
 System.out.printf("%nCLASSE TrovaDirs, metodo esame_directory().%n");
 /**
@@ -270,9 +308,12 @@ switch (n_elementi)
 return contatore_file;
 }
 
-private boolean caratteri_vietati(String nome)
+public boolean caratteri_vietati(String nome)
 {
 System.out.printf("%nCLASSE TrovaDirs, metodo caratteri_vietati().%n");
+/**
+ * RITORNA TRUE SOLO SE IL NOME DI fILE È considerato valido.
+ */
 String nome_file = nome;    
 //int index = -2;
 boolean abeam_strada;
@@ -280,6 +321,12 @@ boolean abeam_strada;
                 {
                     /*System.out.println("Trovato la stringa \"https:\" in posizione " + nome_file.indexOf("https:"));
                     index= nome_file.indexOf("https:");*/
+                    abeam_strada = false;
+                }
+            else if(nome_file.contains("www."))
+                {
+                    /*System.out.println("Trovato la stringa \"?\" in posizione " + nome_file.indexOf("?"));
+                    index= nome_file.indexOf("?");*/
                     abeam_strada = false;
                 }
             else if(nome_file.contains("?"))

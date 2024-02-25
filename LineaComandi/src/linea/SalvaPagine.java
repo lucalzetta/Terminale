@@ -28,100 +28,106 @@ public class SalvaPagine
 {
 private final String DESTINAZIONE;
 private static String NOME_PAGINA;
+private static boolean NOME_VALIDO;
 private final VariabiliGlobali VG = new VariabiliGlobali();
 private static CheckerVariabili CV = new CheckerVariabili();
 private Set<String> SET_LINKS_VISITATI = VG.get_set_scaricati();
+private TrovaDirs TD;
 
-public SalvaPagine(String nome_pagina)
+public SalvaPagine(String nome_pagina)throws IOException
 {
 System.out.printf("%nCLASSE SalvaPagine, costruttore di default.%n");
 DESTINAZIONE = VG.get_root();
 NOME_PAGINA = nome_pagina;
-
+TD = new TrovaDirs();
+NOME_VALIDO = TD.caratteri_vietati(nome_pagina);
 }
-public SalvaPagine(String dir, String nome_pagina)
+public SalvaPagine(String dir, String nome_pagina)throws IOException
 {
 System.out.printf("%nCLASSE SalvaPagine, costruttore con parametri.%n");
 DESTINAZIONE = dir;
 NOME_PAGINA = nome_pagina;
-
+TD = new TrovaDirs();
+NOME_VALIDO = TD.caratteri_vietati(nome_pagina);
 }
 
 public void scrivi(boolean testo)throws IOException
 {
 System.out.printf("%nCLASSE SalvaPagine, metodo scrivi().%n");
-try
+if(NOME_VALIDO)
     {
-        System.out.printf("%nClasse SalvaPagine, metodo scrivi(),"
-                + " destinazione del file: %s%nNome del file: %s%n%n", DESTINAZIONE, NOME_PAGINA);
-        URL u = VG.get_sito();
-        URLConnection uc = u.openConnection();
-        java.io.InputStream in = uc.getInputStream();
-        java.io.BufferedInputStream orig = new BufferedInputStream(in);
-        Reader reader = new InputStreamReader(orig);
-        File pagina = new File(DESTINAZIONE, NOME_PAGINA); 
-        FileOutputStream fos = new FileOutputStream(pagina);
-        String str_pagina = "";
-        StringBuilder build_pagina = new StringBuilder();
-        int c;
-        if(testo)
+        try
             {
-                while ((c = reader.read()) != -1) 
+                System.out.printf("%nClasse SalvaPagine, metodo scrivi(),"
+                        + " destinazione del file: %s%nNome del file: %s%n%n", DESTINAZIONE, NOME_PAGINA);
+                URL u = VG.get_sito();
+                URLConnection uc = u.openConnection();
+                java.io.InputStream in = uc.getInputStream();
+                java.io.BufferedInputStream orig = new BufferedInputStream(in);
+                Reader reader = new InputStreamReader(orig);
+                File pagina = new File(DESTINAZIONE, NOME_PAGINA); 
+                FileOutputStream fos = new FileOutputStream(pagina);
+                String str_pagina = "";
+                StringBuilder build_pagina = new StringBuilder();
+                int c;
+                if(testo)
                     {
-          
-                        fos.write(c);
-                        str_pagina = str_pagina + (char)c;
-                        build_pagina.append((char)c);
-                        //System.out.print((char) c);
+                        while ((c = reader.read()) != -1) 
+                            {
+                                fos.write(c);
+                               str_pagina = str_pagina + (char)c;
+                                build_pagina.append((char)c);
+                                //System.out.print((char) c);
+                            }
                     }
-            }
-        else
-            {
-                while ((c = reader.read()) != -1) 
-                    {          
-                        fos.write(c);
-                    }
-            }
-        
-        //Aggiorniamo il set dei links visitati
-        if(VG.get_subdir() != null)
-            {
-                this.SET_LINKS_VISITATI.add(VG.get_subdir() + NOME_PAGINA);
-            }
-        else
-            {
-                this.SET_LINKS_VISITATI.add("" + NOME_PAGINA);
-            }
-        
-        /**
-         * tratto  di codice di debug per una prima valutazione dei metadati
-         * del file tentiamo una lettura dei primi 200 caratteri
-         */
-        if (! VG.get_testo())
-            {
-                System.out.printf("%nClasse SalvaPagine, metodo scrivi(), il file "
-                        + "%s non è un fie di testo.%n", NOME_PAGINA);
-            }
-        else
-            {
-                VG.set_page(str_pagina);
-                VG.set_page_builder(build_pagina);
-                /*System.out.printf("%nCLasse SalvaPagine, metodo scrivi(), risultato "
-                                + "della lettura dei primi caratteri del file:%n%n");
-                for (int i = 0; i < 300; i++)
+                else
                     {
-                        System.out.printf("%s", build_pagina.charAt(i));
+                        while ((c = reader.read()) != -1) 
+                            {          
+                                fos.write(c);
+                            }
                     }
-                System.out.printf("%n%n%n");*/
+                    
+                //Aggiorniamo il set dei links visitati
+                if(VG.get_subdir() != null)
+                    {
+                        this.SET_LINKS_VISITATI.add(VG.get_subdir() + NOME_PAGINA);
+                    }
+                else
+                    {
+                        this.SET_LINKS_VISITATI.add("" + NOME_PAGINA);
+                    }
+                    
+                /**
+                * tratto  di codice di debug per una prima valutazione dei metadati
+                * del file tentiamo una lettura dei primi 200 caratteri
+                */
+                if (! VG.get_testo())
+                    {
+                        System.out.printf("%nClasse SalvaPagine, metodo scrivi(), il file "
+                                + "%s non è un fie di testo.%n", NOME_PAGINA);
+                    }
+                else
+                    {
+                        VG.set_page(str_pagina);
+                        VG.set_page_builder(build_pagina);
+                        /*System.out.printf("%nCLasse SalvaPagine, metodo scrivi(), risultato "
+                                        + "della lettura dei primi caratteri del file:%n%n");
+                        for (int i = 0; i < 300; i++)
+                            {
+                                System.out.printf("%s", build_pagina.charAt(i));
+                            }
+                        System.out.printf("%n%n%n");*/
+                    }
+                /**
+                 * Fine del codice di debug
+                 */
             }
-        /**
-         * Fine del codice di debug
-         */
-    }
-catch(FileNotFoundException fnf)
-    {
-        System.err.printf("Il file %s non è stato trovato dal metodo "
-                + "scrivi della classe SalvaPagina().", fnf);
+        catch(FileNotFoundException fnf)
+            {
+                System.err.printf("Il file %s non è stato trovato dal metodo "
+                        + "scrivi della classe SalvaPagina().", fnf);
+            }
     }
 }
 }

@@ -46,7 +46,7 @@ private static String ROOT_D;
 private static String SUBDIR;//questa variabile conterrà i percorsi relativi in cui salvare i file
 private static StringBuilder PAGINA_BUILDER;
 private static URL SITO;
-private static URL SITO_RIDOTTO;
+private static URL SITO_RIDOTTO;//rappresenta la root directory del sito in esame
 private static File URLS;
 private static File DIRS;
 private static String ARGOMENTI_STRING;
@@ -87,7 +87,7 @@ public void set_root(String root_d)throws IOException
 {
 //System.out.printf("%nCLASSE VariabiliGlobali, metodo set_root().%n");    
 
-if ((root_d != null) & (root_d != ""))
+if ((root_d != null))
     {
         //aggiungiamo sempre la barra all'ultima directory
         if(root_d.endsWith("/"))

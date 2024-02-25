@@ -1,6 +1,6 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * Click nbfs://nbhost///SystemFile//System/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost///SystemFile//System/Templates/Classes/Class.java to edit this template
  */
 package linea;
 
@@ -27,14 +27,14 @@ private Set <String> HOME_LINK;
 
 public EvalOpzioni()
 {
-//System.out.printf("%nCLASSE EvalOpzioni, costruttore di default.%n");
+////System.out.printf("%nCLASSE EvalOpzioni, costruttore di default.%n");
 HOME_LINK = VG.get_set_collegamenti();    
 }
     
      
  private URL sito(String sito)
  {
-System.out.printf("%nCLASSE EvalOpzioni, metodo sito().%n");     
+//System.out.printf("%nCLASSE EvalOpzioni, metodo sito().%n");     
  /**
   * Questo metodo è al servizio di evalOpzioni e serve ad estrarre un URL dagli 
   * argomenti specificati nella riga di comando; l'URL del sito di cui si vogliono 
@@ -48,7 +48,7 @@ System.out.printf("%nCLASSE EvalOpzioni, metodo sito().%n");
 int i;
 String tmp = "";
 i = sito.indexOf("http");
-System.out.println("Valore di indice per http " + i);
+////System.out.println("Valore di indice per http " + i);
 while((sito.charAt(i) != ' ') & (sito.charAt(i) != '\n'))
     {
         tmp = tmp + sito.charAt(i);
@@ -63,7 +63,52 @@ try
 catch(MalformedURLException mux)
     {
         sito_da_lavorare=null;
-        System.err.printf("Eccezione nel metodo 'sito' della classe EvalOpzioni: %s%n ", mux);
+        //System.err.printf("Eccezione nel metodo 'sito' della classe EvalOpzioni: %s%n ", mux);
+    }
+
+return sito_da_lavorare;
+ }
+ private URL sito_ridotto(String sito)
+ {
+//System.out.printf("%nCLASSE EvalOpzioni, metodo sito_ridotto().%n");     
+ /**
+  * Questo metodo è al servizio di evalOpzioni e serve ad estrarre un URL dagli 
+  * argomenti specificati nella riga di comando.
+  * A differenza del metodo sito() restituisce solo la radice del sito senza 
+  * sottodirectory ne nomi di pagina, serve per l'impostazione della variabile
+  * globale SITO_RIDOTTO
+  */
+//dalla stringa passata come argomento estraiamo un URL valido, se presente
+int i;
+int stop;
+int start;
+String nome_base = "";
+String tmp = "";
+i = sito.indexOf("http");
+////System.out.println("Valore di indice per http " + i);
+while((sito.charAt(i) != ' ') & (sito.charAt(i) != '\n'))
+    {
+        tmp = tmp + sito.charAt(i);
+        i++;
+    }
+sito = tmp;
+stop= tmp.lastIndexOf("/");
+start = 0;
+while(start < stop)
+    {
+        nome_base = nome_base + tmp.charAt(start);
+        start++;
+    }
+URL sito_da_lavorare;
+try
+    {
+        sito_da_lavorare = new URL(nome_base);
+        
+    }
+catch(MalformedURLException mux)
+    {
+        sito_da_lavorare=null;
+        //System.err.printf("Eccezione nel metodo 'sito_ridotto()' della classe EvalOpzioni: %s%n ", mux);
     }
 
 return sito_da_lavorare;
@@ -71,7 +116,7 @@ return sito_da_lavorare;
  
  private String directory(String dir)
  {
-System.out.printf("%nCLASSE EvalOpzioni, metodo directory().%n");     
+//System.out.printf("%nCLASSE EvalOpzioni, metodo directory().%n");     
  /**
   * Anche questo è un metodo di servizio che estrae una directory dai parametri
   * passati come argomento.
@@ -147,7 +192,7 @@ return root_directory;
  
  private String file(String fl)
  {
-System.out.printf("%nCLASSE EvalOpzioni, metodo file().%n");
+//System.out.printf("%nCLASSE EvalOpzioni, metodo file().%n");
  String f = fl;
  String tmp = "";
  int i = 0;
@@ -165,8 +210,8 @@ System.out.printf("%nCLASSE EvalOpzioni, metodo file().%n");
 
  public void evalOpz(int opzioni)throws IOException
  {
-System.out.printf("%nCLASSE EvalOpzioni, metodo evalOpz().%n");
-String saluto;     
+//System.out.printf("%nCLASSE EvalOpzioni, metodo evalOpz().%n");
+String saluto = "";     
  switch (opzioni)
     {
      /**
@@ -180,20 +225,20 @@ String saluto;
       * alto 45.
       */
      case 45:
-         System.out.printf("Non è stata specificata alcuna opzione valida!%n");
+         //System.out.printf("Non è stata specificata alcuna opzione valida!%n");
          break;
          /**
           * Questo caso valuta se si è scelto di visualizzare le istruzioni del 
           * programma. Carattere 'h' 104
           */
      case 149:
-         System.out.printf("É stata scelta l'opzione '%s'%n", VG.get_opzioni());
+         //System.out.printf("É stata scelta l'opzione '%s'%n", VG.get_opzioni());
          TermInputStream is = new TermInputStream("/home/luca/GDrive/Luca/Programmazione/JAVA/Terminale/Maschera.txt");
         int lunghezzaFile = is.getLength();
-        System.out.printf("La lunghezza del file selezionato è; %d byte\n", lunghezzaFile);
+        //System.out.printf("La lunghezza del file selezionato è; %d byte\n", lunghezzaFile);
         is.mostraFile();
         Console cs = System.console();
-        saluto = cs.readLine("\n");
+        //saluto = cs.readLine("\n");
         cs.printf("Dal tuo input è stato letto: %s\n", saluto);
          break;
      /**
@@ -212,12 +257,12 @@ String saluto;
           */
 
          saluto = in.localInfos();
-         System.out.printf("%nRisultato della ricerca di interfacce locali:%n %s%n", saluto);
+         //System.out.printf("%nRisultato della ricerca di interfacce locali:%n %s%n", saluto);
          saluto = in.mieInfos();
-         System.out.printf("%nRisultato della ricerca del mio indirizzo host: %s%n", saluto);
+         //System.out.printf("%nRisultato della ricerca del mio indirizzo host: %s%n", saluto);
 
          saluto = in.genericInfos();
-         System.out.printf("Risultato dell'elaborazione %s%n", saluto);
+         //System.out.printf("Risultato dell'elaborazione %s%n", saluto);
          break;
          /**
           * Questo caso valuta se si è scelto di scaricare un sito con tutte le 
@@ -228,12 +273,12 @@ String saluto;
         //che andrà validata anch'essa
         //impostiamo le variabili globali
          String root = VG.get_root_dest();
-         System.out.printf("%n&&&&&&&&&&&&&&&&&&&&&& EvalOpzioni &&&&&&&&&&&&&&&&&&&&&&%n");
-        System.out.printf("Valore della variabile VG.get_args() in EvalOpzioni.EvalOpz() %s%n", VG.get_args());
+         //System.out.printf("%n&&&&&&&&&&&&&&&&&&&&&& EvalOpzioni &&&&&&&&&&&&&&&&&&&&&&%n");
+        //System.out.printf("Valore della variabile VG.get_args() in EvalOpzioni.EvalOpz() %s%n", VG.get_args());
         
         VG.set_sito(sito(VG.get_args()));
-        VG.set_sito_ridotto(sito(VG.get_args()));
-        System.out.printf("Valore della variabile sito in EvalOpzioni.EvalOpz() %s%n", sito(VG.get_args()));
+        VG.set_sito_ridotto(sito_ridotto(VG.get_args()));
+        //System.out.printf("Valore della variabile sito in EvalOpzioni.EvalOpz() %s%n", sito(VG.get_args()));
         ////CV.get_URL_SITO();
         VG.set_root(VG.get_destinazione_files_sito() + directory(VG.get_args()));
         //CV.get_ROOT_D();
@@ -248,10 +293,10 @@ String saluto;
             }
         
         HOME_LINK.add(VG.get_name_page());
-        System.out.printf("EvalOpzioni.EvalOpz() aggiunta la pagina %s al set dei collegamenti.%n",(VG.get_name_page()));
+        //System.out.printf("EvalOpzioni.EvalOpz() aggiunta la pagina %s al set dei collegamenti.%n",(VG.get_name_page()));
         
         //CV.get_NOME_PAGINA();
-        System.out.printf("Valore della variabile root directory in EvalOpzioni.EvalOpz() %s%n", directory(VG.get_args()));
+        //System.out.printf("Valore della variabile root directory in EvalOpzioni.EvalOpz() %s%n", directory(VG.get_args()));
         System.out.printf("É stata scelta l'opzione 's', verrà scaricato il "
                 + "sito:%n%s%nNella directory:%n"
                 + "%s%ne scritti i "

@@ -23,9 +23,12 @@ private static boolean TESTO;
 
 public ValutaFile(String pagina)
 {
-System.out.printf("%nCLASSE ValutaFile, costruttore di default.%n");
+//System.outprintf("%nCLASSE ValutaFile, costruttore di default.%n");
+pagina = pagina.strip();
+//System.outprintf("%nCLASSE ValutaFile, nome file passato come argomento: %s%n", pagina);
 //Prendiamo l'estensione del file e decidiamo se si tratta di un tipo di testo
 //o meno.
+
 String ext = "";
 int start = pagina.lastIndexOf(".");
 if (start != -1)
@@ -36,7 +39,7 @@ if (start != -1)
                 ext = ext + pagina.charAt(i);
             }
         text(ext);
-        System.out.printf("%nEstensione del file: %s %s%n", pagina, ext );
+        //System.outprintf("%nEstensione del file: %s %s%n", pagina, ext );
     }
 else
     {
@@ -46,22 +49,35 @@ else
 
 private boolean text(String estensione)
 {
-System.out.printf("%nCLASSE ValutaFile, metodo text().%n");
+//System.outprintf("%nCLASSE ValutaFile, metodo text().%n");
+
 boolean t = false;
 switch(estensione)
 {
     case ".txt":
+           //System.outprintf("%nCLASSE ValutaFile, metodo text() ESTENSIONE TROVATA: .txt%n");
            t = true;
+           break;
     case ".html":
+           //System.outprintf("%nCLASSE ValutaFile, metodo text() ESTENSIONE TROVATA: .html%n");
            t = true;
+           break;
     case ".xhtml":
+            //System.outprintf("%nCLASSE ValutaFile, metodo text() ESTENSIONE TROVATA: .xhtml%n");
            t = true;
+           break;
     case ".xml":
+           //System.outprintf("%nCLASSE ValutaFile, metodo text() ESTENSIONE TROVATA: .xml%n");
            t = true;
+           break;
     case ".css":
+           //System.outprintf("%nCLASSE ValutaFile, metodo text() ESTENSIONE TROVATA: .css%n");
            t = true;
+           break;
     case ".php":
-           t = true;           
+           //System.outprintf("%nCLASSE ValutaFile, metodo text() ESTENSIONE TROVATA: .php%n");
+           t = true;
+           break;
     
 }
 TESTO = t;
@@ -70,7 +86,7 @@ return TESTO;
 
 public boolean visitabile()
 {
-System.out.printf("%nCLASSE ValutaFile, metodo visitabile().%n");
+//System.outprintf("%nCLASSE ValutaFile, metodo visitabile(). %s%n", TESTO);
 return TESTO;
 }
 }
