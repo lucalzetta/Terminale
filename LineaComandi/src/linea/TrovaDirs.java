@@ -14,6 +14,10 @@ package linea;
 import java.io.File;
 import java.io.FileInputStream;
 import java.util.Set;
+import java.util.SortedSet;
+import java.util.TreeSet;
+import java.util.LinkedList;
+import java.util.ListIterator;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -59,8 +63,10 @@ boolean find_1 = false;
 boolean find_2 = false;
 Set <String> ts = VG.get_set_collegamenti();
 Set <String> visitati = VG.get_set_scaricati();
+LinkedList<String> l_visitati = new LinkedList<>(visitati);
+ListIterator<String> coll_visitati = l_visitati.listIterator();
 Iterator collegamenti = ts.iterator();
-Iterator coll_visitati = visitati.iterator();
+
 
 /**
  * Questo metodo esplora il contenuto del Set in cui vengono
@@ -80,45 +86,95 @@ Iterator coll_visitati = visitati.iterator();
  */
 if(collegamenti.hasNext())
 {    
-    while((! perc) & (collegamenti.hasNext()))//coll_visitati.hasNext()
+    while(! perc)//coll_visitati.hasNext()
+        {
+        if (collegamenti.hasNext())
         {
             riga = collegamenti.next().toString();
+            find = true;//impostiamo a true per entrare nel ciclo interno
             System.out.printf("%nDentro il loop esterno, Valore di riga da elaborare: %s%n",riga);
-            while ((coll_visitati.hasNext()) & !find)
+            while (find)
                 {
-            
-                    tmp = coll_visitati.next().toString();
-                    diffe = riga.compareToIgnoreCase(tmp);
-                    
-                        if (diffe != 0)
-                            {
-                                find_1 = true;
-                            }
-                        else
-                            {
-                                find_1 = false;
-                            }
-                            
                         if(coll_visitati.hasNext())
                             {
-                                find_2 = false;
+                                tmp = coll_visitati.next().toString();
+                                diffe = riga.compareToIgnoreCase(tmp);
+                    
+                                if (diffe != 0)
+                                    {
+                                        find_1 = true;
+                                        System.out.printf("%n\t\t\tDifferenza tra riga e tmp, valori e risultato (find_1):%n"
+                                        + "\t\t\t%s%n"
+                                        + "\t\t\t%s%n"
+                                        + "\t\t\t%s%n", riga, tmp, find_1);
+
+                                    }
+                                else
+                                    {
+                                        find_1 = false;
+                                        System.out.printf("%n\t\t\tDifferenza tra riga e tmp, valori e risultato (find_1):%n"
+                                        + "\t\t\t%s%n"
+                                        + "\t\t\t%s%n"
+                                        + "\t\t\t%s%n", riga, tmp, find_1);
+
+                                    }
+                            
+                                if(find_1 & coll_visitati.hasNext())
+                                    {
+                                        find = true;
+                                        perc = false;
+                                        System.out.printf("%n\t\t\tValore di find:%s%n"
+                                        + "Primoif%n", find);
+                                    }
+                                else if (find_1 & ! coll_visitati.hasNext())
+                                    {
+                                        find = false;
+                                        perc = true;
+                                        System.out.printf("%n\t\t\tValore di find:%s%n"
+                                        + "Secondo if%n", find);
+                                    }
+                                else if(!find_1)
+                                    {
+                                        find = false;
+                                        perc = false;
+                                        System.out.printf("%n\t\t\tValore di find:%s%n"
+                                        + "Terzo if%n", find);                                
+                                    }
+                                else
+                                    {
+                                        System.out.printf("%n\t\t\tSi è verificato un caso non contemplato%n"
+                                        + "Valore di find_1:%s%n"
+                                        + "Valore di find_2:%s%n"
+                                        + "Valore di find:%s%n"
+                                        + "Valore di perc:%s%n",find_1, find_2, find, perc);
+                                    }
+/*                    System.out.printf("%n\tDentro il loop interno,%n"
+                            + "\t\tValore di riga  "
+                            + "elaborato: %s%n"
+                            + "\t\tValore di tmp confrontato: %s%n"
+                            + "\t\tValore di controllo %s%n",riga, tmp, find);*/
                             }
                         else
                             {
-                                find_2 = true;
-                            }
-                            
-                        if (find_1 & find_2)
-                            {
-                                find = true;
+                                find = false;
+                                System.out.printf("%n\t\t\tValore di find:%s%n", find);                                
                             }
                 }
-                    System.out.printf("%n\tDentro il loop interno,%n"
-                            + "\t\tValore di tmp  "
-                            + "elaborato: %s%n"
-                            + "\t\tValore di riga confrontato: %s%n"
-                            + "\t\tValore di controllo %s%n",tmp, riga, find);
+
+            //riportiamo all'inizio la lista dei collegamenti
+            while(coll_visitati.hasPrevious())
+                {
+                    coll_visitati.previous();
+                }
+
         }
+        else 
+        {
+            perc = true;
+            
+        }
+        }
+    
                     if(find)
                         {
                             perc = true;

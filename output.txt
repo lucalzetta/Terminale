@@ -26,10 +26,7 @@ CLASSE TrovaDirs, metodo cerca_dire().
 
 Dentro il loop esterno, Valore di riga da elaborare: index.html 
 
-	Dentro il loop interno,
-		Valore di tmp  elaborato: 
-		Valore di riga confrontato: index.html 
-		Valore di controllo false
+			Valore di find:false
 Abbiamo esplorato tutti i collegamenti!
 Valore di riga da elaborare: index.html 
 
@@ -57,8 +54,6 @@ CLASSE SalvaPagine, metodo scrivi().
 Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
 Nome del file: index.html 
 
-
-CLASSE TrovaDirs, costruttore di default.
 
 CLASSE EstraiLinks, costruttore di default.
 
@@ -107,51 +102,19 @@ CLASSE TrovaDirs, metodo cerca_dire().
 
 Dentro il loop esterno, Valore di riga da elaborare: immagini/Colors.jpg
 
-	Dentro il loop interno,
-		Valore di tmp  elaborato: index.html 
-		Valore di riga confrontato: immagini/Colors.jpg
-		Valore di controllo true
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			immagini/Colors.jpg
+			index.html 
+			true
 
-Dentro il loop esterno, Valore di riga da elaborare: index.html 
+			Valore di find:false
+Secondo if
 
-	Dentro il loop interno,
-		Valore di tmp  elaborato: index.html 
-		Valore di riga confrontato: index.html 
-		Valore di controllo true
-
-Dentro il loop esterno, Valore di riga da elaborare: pagine/FlowChart.xhtml
-
-	Dentro il loop interno,
-		Valore di tmp  elaborato: index.html 
-		Valore di riga confrontato: pagine/FlowChart.xhtml
-		Valore di controllo true
-
-Dentro il loop esterno, Valore di riga da elaborare: pagine/ILibriDelMenocchio.xhtml
-
-	Dentro il loop interno,
-		Valore di tmp  elaborato: index.html 
-		Valore di riga confrontato: pagine/ILibriDelMenocchio.xhtml
-		Valore di controllo true
-
-Dentro il loop esterno, Valore di riga da elaborare: pagine/documentazione.html
-
-	Dentro il loop interno,
-		Valore di tmp  elaborato: index.html 
-		Valore di riga confrontato: pagine/documentazione.html
-		Valore di controllo true
-
-Dentro il loop esterno, Valore di riga da elaborare: stili/GeneralTest.css
-
-	Dentro il loop interno,
-		Valore di tmp  elaborato: index.html 
-		Valore di riga confrontato: stili/GeneralTest.css
-		Valore di controllo true
-Abbiamo esplorato tutti i collegamenti!
-Valore di riga da elaborare: stili/GeneralTest.css
+Valore di riga da elaborare: immagini/Colors.jpg
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di stili/GeneralTest.css:	Nome: GeneralTest.css	Numero di elementi: 2
-	Percorso: stili
+Elaborazione di immagini/Colors.jpg:	Nome: Colors.jpg	Numero di elementi: 2
+	Percorso: immagini
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
@@ -159,23 +122,23 @@ CLASSE TrovaDirs, metodo caratteri_vietati().
 Riga contiene una directory? true
 
 Classe TrovaDIrs, metodo cerca_dire(),
-VALORE DI file_name: GeneralTest.css
-VALORE DI sub_dir: stili/
-VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
+VALORE DI file_name: Colors.jpg
+VALORE DI sub_dir: immagini/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
 Sotto directory in cui verrà salvata la pagina:
 
-Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/stili/GeneralTest.css
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
-Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
-Nome della pagina da salvare: GeneralTest.css
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+Nome della pagina da salvare: Colors.jpg
 Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
-Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
 
 CLASSE SalvaPagine, costruttore con parametri.
 
@@ -185,44 +148,24 @@ CLASSE TrovaDirs, metodo caratteri_vietati().
 
 CLASSE SalvaPagine, metodo scrivi().
 
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
-Nome del file: GeneralTest.css
+Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+Nome del file: Colors.jpg
 
 
-CLASSE TrovaDirs, costruttore di default.
+Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
 
 CLASSE EstraiLinks, costruttore di default.
 
 CLASSE EstraiLinks, metodo links().
 
-CLASSE EstraiLinks, metodo ciclo().
-
-CLASSE EstraiLinks, metodo ciclo().
-
-CLASSE EstraiLinks, metodo ciclo().
-
-CLASSE EstraiLinks, metodo ciclo().
-
-CLASSE EstraiLinks, metodo ciclo().
-
-
-Elenco dei link presenti nel sito
-
-immagini/Colors.jpg
-index.html 
-pagine/FlowChart.xhtml
-pagine/ILibriDelMenocchio.xhtml
-pagine/documentazione.html
-stili/GeneralTest.css
-
-                                       £
+Il file Colors.jpg non è un file di testo, verrà salvato senza ulteriori analisi
 
 CLASSE Loopper, metodo risultati().
 
 =============================================================================================
 Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
-immagini/Colors.jpg                                         	index.html 
-index.html                                                  	stili/GeneralTest.css
+immagini/Colors.jpg                                         	immagini/Colors.jpg
+index.html                                                  	index.html 
 pagine/FlowChart.xhtml                                      	
 pagine/ILibriDelMenocchio.xhtml                             	
 pagine/documentazione.html                                  	
@@ -236,10 +179,10 @@ Area di azzeramento delle variabili.
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
 Classe Loopper, metodo passo,
-valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
-valore di nome pagina al momento della chiamata di TestGET: GeneralTest.css
+valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+valore di nome pagina al momento della chiamata di TestGET: Colors.jpg
 
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/stili/GeneralTest.css
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
 CLASSE TrovaDirs, costruttore di default.
 
@@ -247,51 +190,55 @@ CLASSE TrovaDirs, metodo cerca_dire().
 
 Dentro il loop esterno, Valore di riga da elaborare: immagini/Colors.jpg
 
-	Dentro il loop interno,
-		Valore di tmp  elaborato: stili/GeneralTest.css
-		Valore di riga confrontato: immagini/Colors.jpg
-		Valore di controllo true
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			immagini/Colors.jpg
+			immagini/Colors.jpg
+			false
+
+			Valore di find:false
+Terzo if
 
 Dentro il loop esterno, Valore di riga da elaborare: index.html 
 
-	Dentro il loop interno,
-		Valore di tmp  elaborato: stili/GeneralTest.css
-		Valore di riga confrontato: index.html 
-		Valore di controllo true
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			index.html 
+			immagini/Colors.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			index.html 
+			index.html 
+			false
+
+			Valore di find:false
+Terzo if
 
 Dentro il loop esterno, Valore di riga da elaborare: pagine/FlowChart.xhtml
 
-	Dentro il loop interno,
-		Valore di tmp  elaborato: stili/GeneralTest.css
-		Valore di riga confrontato: pagine/FlowChart.xhtml
-		Valore di controllo true
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/FlowChart.xhtml
+			immagini/Colors.jpg
+			true
 
-Dentro il loop esterno, Valore di riga da elaborare: pagine/ILibriDelMenocchio.xhtml
+			Valore di find:true
+Primoif
 
-	Dentro il loop interno,
-		Valore di tmp  elaborato: stili/GeneralTest.css
-		Valore di riga confrontato: pagine/ILibriDelMenocchio.xhtml
-		Valore di controllo true
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/FlowChart.xhtml
+			index.html 
+			true
 
-Dentro il loop esterno, Valore di riga da elaborare: pagine/documentazione.html
+			Valore di find:false
+Secondo if
 
-	Dentro il loop interno,
-		Valore di tmp  elaborato: stili/GeneralTest.css
-		Valore di riga confrontato: pagine/documentazione.html
-		Valore di controllo true
-
-Dentro il loop esterno, Valore di riga da elaborare: stili/GeneralTest.css
-
-	Dentro il loop interno,
-		Valore di tmp  elaborato: stili/GeneralTest.css
-		Valore di riga confrontato: stili/GeneralTest.css
-		Valore di controllo true
-Abbiamo esplorato tutti i collegamenti!
-Valore di riga da elaborare: stili/GeneralTest.css
+Valore di riga da elaborare: pagine/FlowChart.xhtml
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di stili/GeneralTest.css:	Nome: GeneralTest.css	Numero di elementi: 2
-	Percorso: stili
+Elaborazione di pagine/FlowChart.xhtml:	Nome: FlowChart.xhtml	Numero di elementi: 2
+	Percorso: pagine
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
@@ -299,16 +246,21 @@ CLASSE TrovaDirs, metodo caratteri_vietati().
 Riga contiene una directory? true
 
 Classe TrovaDIrs, metodo cerca_dire(),
-VALORE DI file_name: GeneralTest.css
-VALORE DI sub_dir: stili/
-VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
+VALORE DI file_name: FlowChart.xhtml
+VALORE DI sub_dir: pagine/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/
 
-Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
+Sotto directory in cui verrà salvata la pagina:immagini/
 
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/stili/GeneralTest.css
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/pagine/
 
-Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
-Nome della pagina da salvare: GeneralTest.css
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/pagine/
+Cartella di destinazione del sito: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/pagine/ CREATA CORRETTAMENTE!
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/pagine/FlowChart.xhtml
+
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/
+Nome della pagina da salvare: FlowChart.xhtml
 Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
 Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
@@ -321,11 +273,9 @@ CLASSE TrovaDirs, metodo caratteri_vietati().
 
 CLASSE SalvaPagine, metodo scrivi().
 
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
-Nome del file: GeneralTest.css
+Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/pagine/
+Nome del file: FlowChart.xhtml
 
-
-CLASSE TrovaDirs, costruttore di default.
 
 CLASSE EstraiLinks, costruttore di default.
 
@@ -334,22 +284,32 @@ CLASSE EstraiLinks, metodo links().
 CLASSE EstraiLinks, metodo ciclo().
 
 CLASSE EstraiLinks, metodo ciclo().
+Trovata l'occorrenza n° 1 di 'src=' in posizione: 318	../immagini/DiagrammaDiFlusso.jpg
+
+CLASSE EstraiLinks, metodo ciclo().
+Trovata l'occorrenza n° 1 di 'http:' in posizione: 134	//www.w3.org/TR/xhtml11/DTD/xhtml11.dtd
+Trovata l'occorrenza n° 2 di 'http:' in posizione: 178	//www.w3.org/1999/xhtml
 
 CLASSE EstraiLinks, metodo ciclo().
 
 CLASSE EstraiLinks, metodo ciclo().
-
-CLASSE EstraiLinks, metodo ciclo().
+Trovata l'occorrenza n° 1 di 'www.' in posizione: 134	w3.org/TR/xhtml11/DTD/xhtml11.dtd
+Trovata l'occorrenza n° 2 di 'www.' in posizione: 178	w3.org/1999/xhtml
 
 
 Elenco dei link presenti nel sito
 
+../immagini/DiagrammaDiFlusso.jpg
+//www.w3.org/1999/xhtml
+//www.w3.org/TR/xhtml11/DTD/xhtml11.dtd
 immagini/Colors.jpg
 index.html 
 pagine/FlowChart.xhtml
 pagine/ILibriDelMenocchio.xhtml
 pagine/documentazione.html
 stili/GeneralTest.css
+w3.org/1999/xhtml
+w3.org/TR/xhtml11/DTD/xhtml11.dtd
 
                                        £
 
@@ -357,12 +317,17 @@ CLASSE Loopper, metodo risultati().
 
 =============================================================================================
 Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
-immagini/Colors.jpg                                         	index.html 
-index.html                                                  	stili/GeneralTest.css
+../immagini/DiagrammaDiFlusso.jpg                           	immagini/Colors.jpg
+//www.w3.org/1999/xhtml                                     	index.html 
+//www.w3.org/TR/xhtml11/DTD/xhtml11.dtd                     	pagine/FlowChart.xhtml
+immagini/Colors.jpg                                         	
+index.html                                                  	
 pagine/FlowChart.xhtml                                      	
 pagine/ILibriDelMenocchio.xhtml                             	
 pagine/documentazione.html                                  	
 stili/GeneralTest.css                                       	
+w3.org/1999/xhtml                                           	
+w3.org/TR/xhtml11/DTD/xhtml11.dtd                           	
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 1
@@ -372,62 +337,46 @@ Area di azzeramento delle variabili.
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
 Classe Loopper, metodo passo,
-valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
-valore di nome pagina al momento della chiamata di TestGET: GeneralTest.css
+valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/pagine/
+valore di nome pagina al momento della chiamata di TestGET: FlowChart.xhtml
 
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/stili/GeneralTest.css
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/pagine/FlowChart.xhtml
 
 CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TrovaDirs, metodo cerca_dire().
 
-Dentro il loop esterno, Valore di riga da elaborare: immagini/Colors.jpg
+Dentro il loop esterno, Valore di riga da elaborare: ../immagini/DiagrammaDiFlusso.jpg
 
-	Dentro il loop interno,
-		Valore di tmp  elaborato: stili/GeneralTest.css
-		Valore di riga confrontato: immagini/Colors.jpg
-		Valore di controllo true
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			../immagini/DiagrammaDiFlusso.jpg
+			immagini/Colors.jpg
+			true
 
-Dentro il loop esterno, Valore di riga da elaborare: index.html 
+			Valore di find:true
+Primoif
 
-	Dentro il loop interno,
-		Valore di tmp  elaborato: stili/GeneralTest.css
-		Valore di riga confrontato: index.html 
-		Valore di controllo true
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			../immagini/DiagrammaDiFlusso.jpg
+			index.html 
+			true
 
-Dentro il loop esterno, Valore di riga da elaborare: pagine/FlowChart.xhtml
+			Valore di find:true
+Primoif
 
-	Dentro il loop interno,
-		Valore di tmp  elaborato: stili/GeneralTest.css
-		Valore di riga confrontato: pagine/FlowChart.xhtml
-		Valore di controllo true
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			../immagini/DiagrammaDiFlusso.jpg
+			pagine/FlowChart.xhtml
+			true
 
-Dentro il loop esterno, Valore di riga da elaborare: pagine/ILibriDelMenocchio.xhtml
+			Valore di find:false
+Secondo if
 
-	Dentro il loop interno,
-		Valore di tmp  elaborato: stili/GeneralTest.css
-		Valore di riga confrontato: pagine/ILibriDelMenocchio.xhtml
-		Valore di controllo true
-
-Dentro il loop esterno, Valore di riga da elaborare: pagine/documentazione.html
-
-	Dentro il loop interno,
-		Valore di tmp  elaborato: stili/GeneralTest.css
-		Valore di riga confrontato: pagine/documentazione.html
-		Valore di controllo true
-
-Dentro il loop esterno, Valore di riga da elaborare: stili/GeneralTest.css
-
-	Dentro il loop interno,
-		Valore di tmp  elaborato: stili/GeneralTest.css
-		Valore di riga confrontato: stili/GeneralTest.css
-		Valore di controllo true
-Abbiamo esplorato tutti i collegamenti!
-Valore di riga da elaborare: stili/GeneralTest.css
+Valore di riga da elaborare: ../immagini/DiagrammaDiFlusso.jpg
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di stili/GeneralTest.css:	Nome: GeneralTest.css	Numero di elementi: 2
-	Percorso: stili
+Elaborazione di ../immagini/DiagrammaDiFlusso.jpg:	Nome: DiagrammaDiFlusso.jpg	Numero di elementi: 3
+	Percorso: ../immagini
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
@@ -435,19 +384,23 @@ CLASSE TrovaDirs, metodo caratteri_vietati().
 Riga contiene una directory? true
 
 Classe TrovaDIrs, metodo cerca_dire(),
-VALORE DI file_name: GeneralTest.css
-VALORE DI sub_dir: stili/
-VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
+VALORE DI file_name: DiagrammaDiFlusso.jpg
+VALORE DI sub_dir: ../immagini/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/../immagini/
 
-Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
+Sotto directory in cui verrà salvata la pagina:pagine/
 
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/stili/GeneralTest.css
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/../immagini/
 
-Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
-Nome della pagina da salvare: GeneralTest.css
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/../immagini/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/../immagini/DiagrammaDiFlusso.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/../immagini/
+Nome della pagina da salvare: DiagrammaDiFlusso.jpg
 Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
-Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
 
 CLASSE SalvaPagine, costruttore con parametri.
 
@@ -457,48 +410,31 @@ CLASSE TrovaDirs, metodo caratteri_vietati().
 
 CLASSE SalvaPagine, metodo scrivi().
 
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
-Nome del file: GeneralTest.css
+Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/../immagini/
+Nome del file: DiagrammaDiFlusso.jpg
 
-
-CLASSE TrovaDirs, costruttore di default.
 
 CLASSE EstraiLinks, costruttore di default.
 
 CLASSE EstraiLinks, metodo links().
 
-CLASSE EstraiLinks, metodo ciclo().
-
-CLASSE EstraiLinks, metodo ciclo().
-
-CLASSE EstraiLinks, metodo ciclo().
-
-CLASSE EstraiLinks, metodo ciclo().
-
-CLASSE EstraiLinks, metodo ciclo().
-
-
-Elenco dei link presenti nel sito
-
-immagini/Colors.jpg
-index.html 
-pagine/FlowChart.xhtml
-pagine/ILibriDelMenocchio.xhtml
-pagine/documentazione.html
-stili/GeneralTest.css
-
-                                       £
+Il file DiagrammaDiFlusso.jpg non è un file di testo, verrà salvato senza ulteriori analisi
 
 CLASSE Loopper, metodo risultati().
 
 =============================================================================================
 Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
-immagini/Colors.jpg                                         	index.html 
-index.html                                                  	stili/GeneralTest.css
+../immagini/DiagrammaDiFlusso.jpg                           	immagini/Colors.jpg
+//www.w3.org/1999/xhtml                                     	index.html 
+//www.w3.org/TR/xhtml11/DTD/xhtml11.dtd                     	pagine/FlowChart.xhtml
+immagini/Colors.jpg                                         	
+index.html                                                  	
 pagine/FlowChart.xhtml                                      	
 pagine/ILibriDelMenocchio.xhtml                             	
 pagine/documentazione.html                                  	
 stili/GeneralTest.css                                       	
+w3.org/1999/xhtml                                           	
+w3.org/TR/xhtml11/DTD/xhtml11.dtd                           	
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 2
@@ -508,62 +444,46 @@ Area di azzeramento delle variabili.
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
 Classe Loopper, metodo passo,
-valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
-valore di nome pagina al momento della chiamata di TestGET: GeneralTest.css
+valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/../immagini/
+valore di nome pagina al momento della chiamata di TestGET: DiagrammaDiFlusso.jpg
 
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/stili/GeneralTest.css
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/../immagini/DiagrammaDiFlusso.jpg
 
 CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TrovaDirs, metodo cerca_dire().
 
-Dentro il loop esterno, Valore di riga da elaborare: immagini/Colors.jpg
+Dentro il loop esterno, Valore di riga da elaborare: ../immagini/DiagrammaDiFlusso.jpg
 
-	Dentro il loop interno,
-		Valore di tmp  elaborato: stili/GeneralTest.css
-		Valore di riga confrontato: immagini/Colors.jpg
-		Valore di controllo true
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			../immagini/DiagrammaDiFlusso.jpg
+			immagini/Colors.jpg
+			true
 
-Dentro il loop esterno, Valore di riga da elaborare: index.html 
+			Valore di find:true
+Primoif
 
-	Dentro il loop interno,
-		Valore di tmp  elaborato: stili/GeneralTest.css
-		Valore di riga confrontato: index.html 
-		Valore di controllo true
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			../immagini/DiagrammaDiFlusso.jpg
+			index.html 
+			true
 
-Dentro il loop esterno, Valore di riga da elaborare: pagine/FlowChart.xhtml
+			Valore di find:true
+Primoif
 
-	Dentro il loop interno,
-		Valore di tmp  elaborato: stili/GeneralTest.css
-		Valore di riga confrontato: pagine/FlowChart.xhtml
-		Valore di controllo true
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			../immagini/DiagrammaDiFlusso.jpg
+			pagine/FlowChart.xhtml
+			true
 
-Dentro il loop esterno, Valore di riga da elaborare: pagine/ILibriDelMenocchio.xhtml
+			Valore di find:false
+Secondo if
 
-	Dentro il loop interno,
-		Valore di tmp  elaborato: stili/GeneralTest.css
-		Valore di riga confrontato: pagine/ILibriDelMenocchio.xhtml
-		Valore di controllo true
-
-Dentro il loop esterno, Valore di riga da elaborare: pagine/documentazione.html
-
-	Dentro il loop interno,
-		Valore di tmp  elaborato: stili/GeneralTest.css
-		Valore di riga confrontato: pagine/documentazione.html
-		Valore di controllo true
-
-Dentro il loop esterno, Valore di riga da elaborare: stili/GeneralTest.css
-
-	Dentro il loop interno,
-		Valore di tmp  elaborato: stili/GeneralTest.css
-		Valore di riga confrontato: stili/GeneralTest.css
-		Valore di controllo true
-Abbiamo esplorato tutti i collegamenti!
-Valore di riga da elaborare: stili/GeneralTest.css
+Valore di riga da elaborare: ../immagini/DiagrammaDiFlusso.jpg
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di stili/GeneralTest.css:	Nome: GeneralTest.css	Numero di elementi: 2
-	Percorso: stili
+Elaborazione di ../immagini/DiagrammaDiFlusso.jpg:	Nome: DiagrammaDiFlusso.jpg	Numero di elementi: 3
+	Percorso: ../immagini
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
@@ -571,19 +491,19 @@ CLASSE TrovaDirs, metodo caratteri_vietati().
 Riga contiene una directory? true
 
 Classe TrovaDIrs, metodo cerca_dire(),
-VALORE DI file_name: GeneralTest.css
-VALORE DI sub_dir: stili/
-VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
+VALORE DI file_name: DiagrammaDiFlusso.jpg
+VALORE DI sub_dir: ../immagini/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/../immagini/
 
 Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
 
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/stili/GeneralTest.css
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/../immagini/DiagrammaDiFlusso.jpg
 
-Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
-Nome della pagina da salvare: GeneralTest.css
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/../immagini/
+Nome della pagina da salvare: DiagrammaDiFlusso.jpg
 Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
-Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
 
 CLASSE SalvaPagine, costruttore con parametri.
 
@@ -593,48 +513,31 @@ CLASSE TrovaDirs, metodo caratteri_vietati().
 
 CLASSE SalvaPagine, metodo scrivi().
 
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
-Nome del file: GeneralTest.css
+Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/../immagini/
+Nome del file: DiagrammaDiFlusso.jpg
 
-
-CLASSE TrovaDirs, costruttore di default.
 
 CLASSE EstraiLinks, costruttore di default.
 
 CLASSE EstraiLinks, metodo links().
 
-CLASSE EstraiLinks, metodo ciclo().
-
-CLASSE EstraiLinks, metodo ciclo().
-
-CLASSE EstraiLinks, metodo ciclo().
-
-CLASSE EstraiLinks, metodo ciclo().
-
-CLASSE EstraiLinks, metodo ciclo().
-
-
-Elenco dei link presenti nel sito
-
-immagini/Colors.jpg
-index.html 
-pagine/FlowChart.xhtml
-pagine/ILibriDelMenocchio.xhtml
-pagine/documentazione.html
-stili/GeneralTest.css
-
-                                       £
+Il file DiagrammaDiFlusso.jpg non è un file di testo, verrà salvato senza ulteriori analisi
 
 CLASSE Loopper, metodo risultati().
 
 =============================================================================================
 Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
-immagini/Colors.jpg                                         	index.html 
-index.html                                                  	stili/GeneralTest.css
+../immagini/DiagrammaDiFlusso.jpg                           	immagini/Colors.jpg
+//www.w3.org/1999/xhtml                                     	index.html 
+//www.w3.org/TR/xhtml11/DTD/xhtml11.dtd                     	pagine/FlowChart.xhtml
+immagini/Colors.jpg                                         	
+index.html                                                  	
 pagine/FlowChart.xhtml                                      	
 pagine/ILibriDelMenocchio.xhtml                             	
 pagine/documentazione.html                                  	
 stili/GeneralTest.css                                       	
+w3.org/1999/xhtml                                           	
+w3.org/TR/xhtml11/DTD/xhtml11.dtd                           	
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 3
@@ -643,10 +546,15 @@ CLASSE Loopper, metodo risultati().
 
 =============================================================================================
 Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
-immagini/Colors.jpg                                         	index.html 
-index.html                                                  	stili/GeneralTest.css
+../immagini/DiagrammaDiFlusso.jpg                           	immagini/Colors.jpg
+//www.w3.org/1999/xhtml                                     	index.html 
+//www.w3.org/TR/xhtml11/DTD/xhtml11.dtd                     	pagine/FlowChart.xhtml
+immagini/Colors.jpg                                         	
+index.html                                                  	
 pagine/FlowChart.xhtml                                      	
 pagine/ILibriDelMenocchio.xhtml                             	
 pagine/documentazione.html                                  	
 stili/GeneralTest.css                                       	
+w3.org/1999/xhtml                                           	
+w3.org/TR/xhtml11/DTD/xhtml11.dtd                           	
 Elaborazione completata.
