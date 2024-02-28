@@ -57,8 +57,8 @@ private void cicloSito()throws IOException
 //System.out.printf("%nCLASSE Loopper, metodo cicloSito().%n");
 boolean interr = false;
 int control = 0;
-//while(! interr)//riga per l'uso normale del programma
-while (control < 4)//a scopo di debug limitiamo il numero di cicli
+while(! interr)//riga per l'uso normale del programma
+//while (control < 4)//a scopo di debug limitiamo il numero di cicli
     {   
         /**
          * Area di azzeramento delle variabili, finito il primo passo,

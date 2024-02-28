@@ -272,7 +272,7 @@ String saluto = "";
          //Per l'opzione '-s' deve venire fornito un sito valido e una root directory
         //che andrà validata anch'essa
         //impostiamo le variabili globali
-         String root = VG.get_root_dest();
+         String root = VG.get_destinazione_files_sito();
          //System.out.printf("%n&&&&&&&&&&&&&&&&&&&&&& EvalOpzioni &&&&&&&&&&&&&&&&&&&&&&%n");
         //System.out.printf("Valore della variabile VG.get_args() in EvalOpzioni.EvalOpz() %s%n", VG.get_args());
         

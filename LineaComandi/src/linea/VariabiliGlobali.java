@@ -40,8 +40,8 @@ private final String ARCHIVIO_DIRS ="ArchivioDIRS.txt";
 private final String LISTA_URLS ="ListaURLS.txt";
 private static String PAGINA;//questa variabile conterrà il testo della pagina da scaricare
 private static String NOME_PAGINA;//questa variabile conterrà il nome della pagina da scaricare
-private static String CARTELLA_SITO = "";
-private static String ROOT_DEST = "/home/lucaamministratore/tmp/";
+private static String CARTELLA_SITO = "/home/lucaamministratore/tmp/";
+private static String ROOT_DEST = "";
 private static String ROOT_D;
 private static String SUBDIR;//questa variabile conterrà i percorsi relativi in cui salvare i file
 private static StringBuilder PAGINA_BUILDER;
@@ -100,7 +100,7 @@ if ((root_d != null))
             }
         /*System.out.printf("%nCLASSE VariabiliGlobali, metodo set_root().%n"
                         + "Valore della variabile locale root_d"
-                + " fuori dall'if: %s%n", root_d );*/
+                + " fuori dall'if: %s%n", root_d );
         //Una serie di controlli verificano l'identità dell'argomento con il
         //valore già impostato di ROOT_D
         if (root_d.equalsIgnoreCase(ROOT_D))
@@ -119,26 +119,37 @@ if ((root_d != null))
                 /*System.out.printf("%nCLASSE VariabiliGlobali, metodo set_root().%n"
                         + "Valore della variabile locale root_d: %s%n", root_d );*/
             }
+        //se root_d è contenuta nella vecchia root allora degradiamo la vecchia root
+        //per risalirla
+        System.out.printf("ROOT_D: %s%n", ROOT_D);
+        if(ROOT_D == null)
+            {
+                ROOT_D = root_d;
+            }
+        else if(ROOT_D.contains(root_d))
+            {
+                ROOT_D = root_d;
+            }
         //CV.get_ROOT_DEST();
-        if(ROOT_DEST.lastIndexOf("/") == (ROOT_DEST.length() - 1))
+        /*if(ROOT_DEST.lastIndexOf("/") == (ROOT_DEST.length() - 1))
             {
                 ROOT_D = ROOT_DEST + root_d;
-/*                System.out.printf("%nPercorso da creare: %s%n"
+                System.out.printf("%nPercorso da creare: %s%n"
                         + " con carattere slash finale +++++++++++++++++++%n"
-                        ,ROOT_D);*/
+                        ,ROOT_D);
                 ROOT_DEST = ROOT_D;
             }
         else
             {
                 ROOT_D = ROOT_DEST + "/" + root_d;
-/*                System.out.printf("%nPercorso da creare: %s%n"
+                System.out.printf("%nPercorso da creare: %s%n"
                         + " senza carattere slash finale ----------------%n"
-                        ,ROOT_D);*/
+                        ,ROOT_D);
                 ROOT_DEST = ROOT_D;
             }
-
+*/
         //System.out.printf("Root directory del progetto: %s%n", ROOT_D);
-
+        ROOT_DEST = ROOT_D;
         Path percorso = Paths.get(ROOT_D);
         CV.get_ROOT_D();
         CV.get_ROOT_DEST();
@@ -157,10 +168,7 @@ else
                         ,ROOT_D);
     }
 }
-public void set_root_dest(String root_dest)
-{
-this.ROOT_DEST = root_dest;
-}
+
 
 public void set_subdir(String subdir)throws IOException
 {
@@ -241,7 +249,7 @@ PAGINA = pagina;
 
 public void set_name_page(String nome_pagina)
 {
-NOME_PAGINA = nome_pagina;
+NOME_PAGINA = nome_pagina.strip();
 }
 
 public void set_page_builder(StringBuilder builder)

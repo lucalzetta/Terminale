@@ -38,7 +38,7 @@ public SalvaPagine(String nome_pagina)throws IOException
 {
 System.out.printf("%nCLASSE SalvaPagine, costruttore di default.%n");
 DESTINAZIONE = VG.get_root();
-NOME_PAGINA = nome_pagina;
+NOME_PAGINA = nome_pagina.strip();
 TD = new TrovaDirs();
 NOME_VALIDO = TD.caratteri_vietati(nome_pagina);
 }
@@ -46,7 +46,7 @@ public SalvaPagine(String dir, String nome_pagina)throws IOException
 {
 System.out.printf("%nCLASSE SalvaPagine, costruttore con parametri.%n");
 DESTINAZIONE = dir;
-NOME_PAGINA = nome_pagina;
+NOME_PAGINA = nome_pagina.strip();
 TD = new TrovaDirs();
 NOME_VALIDO = TD.caratteri_vietati(nome_pagina);
 }
@@ -59,7 +59,7 @@ if(NOME_VALIDO)
         try
             {
                 System.out.printf("%nClasse SalvaPagine, metodo scrivi(),"
-                        + " destinazione del file: %s%nNome del file: %s%n%n", DESTINAZIONE, NOME_PAGINA);
+                        + " destinazione del file: %s%nNome del file: %s%n%n", DESTINAZIONE, NOME_PAGINA.strip());
                 URL u = VG.get_sito();
                 URLConnection uc = u.openConnection();
                 java.io.InputStream in = uc.getInputStream();
@@ -91,11 +91,11 @@ if(NOME_VALIDO)
                 //Aggiorniamo il set dei links visitati
                 if(VG.get_subdir() != null)
                     {
-                        this.SET_LINKS_VISITATI.add(VG.get_subdir() + NOME_PAGINA);
+                        this.SET_LINKS_VISITATI.add(VG.get_subdir() + NOME_PAGINA.strip());
                     }
                 else
                     {
-                        this.SET_LINKS_VISITATI.add("" + NOME_PAGINA);
+                        this.SET_LINKS_VISITATI.add("" + NOME_PAGINA.strip());
                     }
                     
                 /**

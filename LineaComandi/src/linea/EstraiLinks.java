@@ -42,9 +42,9 @@ System.out.printf("%nCLASSE EstraiLinks, metodo links().%n");
             ciclo("src=");
             //i cicli seguenti i n realtà sono eliminabili ma temporaneamente li
             //lasciamo funzionare a scopo di test
-            ciclo("http:");
-            ciclo("https:");
-            ciclo("www.");
+            //ciclo("http:");
+            //ciclo("https:");
+            //ciclo("www.");
             global_links.addAll(SET_LINKS);
             System.out.printf("%n%nElenco dei link presenti nel sito%n%n");
                 for(String g : global_links)
@@ -108,7 +108,8 @@ System.out.printf("%nCLASSE EstraiLinks, metodo ciclo().%n");
                                 riga = riga + PAGINA.charAt(i);
                                 i++;
                             }
-                        //riga = VG.get_root() + "/" + riga;
+                        //riga A QUESTO PUNTO VA DEPURATA di alcuni caratteri non ammessi
+                        riga = pulisci_link(riga);
                         
                         SET_LINKS.add(riga);
                         
@@ -122,5 +123,35 @@ System.out.printf("%nCLASSE EstraiLinks, metodo ciclo().%n");
             }
         /**righe di debug, commentabili 07/12/2023***********************/
  
+}
+
+private String pulisci_link(String link)
+{
+String new_link = link;
+String par;
+int start;
+
+par = "../";
+
+if(link.startsWith(par))
+    {
+        new_link = link.substring(3);
+    }
+
+par = "//";
+
+if(link.startsWith(par))
+    {
+        new_link = link.substring(2);
+    }
+
+par = "/";
+
+if(link.startsWith(par))
+    {
+        new_link = link.substring(1);
+    }
+
+return new_link;
 }
 }
