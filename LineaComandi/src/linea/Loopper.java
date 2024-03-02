@@ -112,11 +112,11 @@ private void passo()throws IOException
 {
 //System.out.printf("%nCLASSE Loopper, metodo passo().%n");
 //VG.set_root(VG.get_subdir());
-System.out.printf("%nClasse Loopper, metodo passo,%n"
+/*System.out.printf("%nClasse Loopper, metodo passo,%n"
         + "valore della root passato a TestGet: %s%n"
         + "valore di nome pagina al momento della chiamata di TestGET: %s%n"
         , VG.get_root(), VG.get_name_page());
-CV.get_URL_SITO();
+CV.get_URL_SITO();*/
 TestGET TG = new TestGET(true);
 //TrovaDirs TD = new TrovaDirs();
 EstraiLinks el = new EstraiLinks(VG.get_page());

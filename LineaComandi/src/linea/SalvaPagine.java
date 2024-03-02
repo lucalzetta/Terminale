@@ -87,6 +87,8 @@ if(NOME_VALIDO)
                                 fos.write(c);
                             }
                     }
+                fos.close();
+                reader.close();
                     
                 //Aggiorniamo il set dei links visitati
                 if(VG.get_subdir() != null)

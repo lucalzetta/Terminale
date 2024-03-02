@@ -241,8 +241,7 @@ if(collegamenti.hasNext())
                                 {
                                     VG.set_subdir(sub_dir);
                                     //CV.get_SUBDIR();
-                                    VG.set_root(CARTELLA_SITO);
-                                    VG.set_root(sub_dir);
+                                    VG.set_root(CARTELLA_SITO + sub_dir);
                                     //CV.get_ROOT_D();
                                     //CV.get_ROOT_DEST();
                                 }

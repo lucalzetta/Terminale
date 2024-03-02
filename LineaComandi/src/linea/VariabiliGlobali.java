@@ -121,15 +121,21 @@ if ((root_d != null))
             }
         //se root_d è contenuta nella vecchia root allora degradiamo la vecchia root
         //per risalirla
+        ROOT_D = root_d;
         System.out.printf("ROOT_D: %s%n", ROOT_D);
-        if(ROOT_D == null)
+        
+        
+        /*if(ROOT_D == null)
             {
                 ROOT_D = root_d;
             }
         else if(ROOT_D.contains(root_d))
             {
                 ROOT_D = root_d;
-            }
+            }/*
+        
+        
+        */
         //CV.get_ROOT_DEST();
         /*if(ROOT_DEST.lastIndexOf("/") == (ROOT_DEST.length() - 1))
             {
@@ -176,8 +182,8 @@ if(subdir.startsWith("/"))
     {
         subdir = subdir.substring(1);
     }    
-CV.get_SUBDIR();
 SUBDIR = subdir;
+CV.get_SUBDIR();
 //System.out.printf("Percorso di salvataggio del file corrente: %s%n", ROOT_D + subdir);
 /**
  * Sospendiamo temporaneamente il seguente tratto di codice perché fuori posto.

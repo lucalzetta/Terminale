@@ -1,11 +1,11 @@
 Valore di 'argomenti[0]: -s
-ROOT_D: null
+ROOT_D: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
 Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
 Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
-Sotto directory in cui verrà salvata la pagina:null
+Sotto directory in cui verrà salvata la pagina:
 É stata scelta l'opzione 's', verrà scaricato il sito:
 http://www.scuoladipoliticamaniago.it/index.html
 Nella directory:
@@ -13,33 +13,27 @@ Nella directory:
 e scritti i file:
 /home/lucaamministratore/tmp/scuoladipoliticamaniago/ListaURLS.txt
 /home/lucaamministratore/tmp/scuoladipoliticamaniago/ArchivioDIRS.txt
-scaricata la pagina: index.html 
-
-Classe Loopper, metodo passo,
-valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-valore di nome pagina al momento della chiamata di TestGET: index.html 
-
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/index.html
+scaricata la pagina: index.html
 
 CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TrovaDirs, metodo cerca_dire().
 
-Dentro il loop esterno, Valore di riga da elaborare: index.html 
+Dentro il loop esterno, Valore di riga da elaborare: index.html
 
 			Valore di find:false
 Abbiamo esplorato tutti i collegamenti!
-Valore di riga da elaborare: index.html 
+Valore di riga da elaborare: index.html
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di index.html :	Nome: index.html 	Numero di elementi: 1
+Elaborazione di index.html:	Nome: index.html	Numero di elementi: 1
 	Percorso: null
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
 
 Riga contiene una directory? false
-Nome della pagina da salvare: index.html 
+Nome della pagina da salvare: index.html
 Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
 Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
@@ -73,7 +67,7 @@ Trovata l'occorrenza n° 1 di 'src=' in posizione: 333	immagini/Colors.jpg
 Elenco dei link presenti nel sito
 
 immagini/Colors.jpg
-index.html 
+index.html
 pagine/FlowChart.xhtml
 pagine/ILibriDelMenocchio.xhtml
 pagine/documentazione.html
@@ -84,12 +78,6 @@ stili/GeneralTest.css
 Area di azzeramento delle variabili.
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-
-Classe Loopper, metodo passo,
-valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-valore di nome pagina al momento della chiamata di TestGET: index.html 
-
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/index.html
 
 CLASSE TrovaDirs, costruttore di default.
 
@@ -121,17 +109,12 @@ VALORE DI file_name: Colors.jpg
 VALORE DI sub_dir: immagini/
 VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Sotto directory in cui verrà salvata la pagina:
-ROOT_D: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
+Sotto directory in cui verrà salvata la pagina:immagini/
+ROOT_D: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-ROOT_D: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
-
-Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
 URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
@@ -149,7 +132,7 @@ CLASSE TrovaDirs, metodo caratteri_vietati().
 
 CLASSE SalvaPagine, metodo scrivi().
 
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
+Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 Nome del file: Colors.jpg
 
 
@@ -179,12 +162,6 @@ Area di azzeramento delle variabili.
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
-Classe Loopper, metodo passo,
-valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-valore di nome pagina al momento della chiamata di TestGET: Colors.jpg
-
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
-
 CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TrovaDirs, metodo cerca_dire().
@@ -199,10 +176,10 @@ Dentro il loop esterno, Valore di riga da elaborare: immagini/Colors.jpg
 			Valore di find:false
 Terzo if
 
-Dentro il loop esterno, Valore di riga da elaborare: index.html 
+Dentro il loop esterno, Valore di riga da elaborare: index.html
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			index.html 
+			index.html
 			immagini/Colors.jpg
 			true
 
@@ -210,27 +187,61 @@ Dentro il loop esterno, Valore di riga da elaborare: index.html
 Primoif
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			index.html 
+			index.html
+			index.html
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: pagine/FlowChart.xhtml
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/FlowChart.xhtml
+			immagini/Colors.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/FlowChart.xhtml
 			index.html
 			true
 
 			Valore di find:false
 Secondo if
 
-Valore di riga da elaborare: index.html 
+Valore di riga da elaborare: pagine/FlowChart.xhtml
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di index.html :	Nome: index.html 	Numero di elementi: 1
-	Percorso: null
+Elaborazione di pagine/FlowChart.xhtml:	Nome: FlowChart.xhtml	Numero di elementi: 2
+	Percorso: pagine
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
 
-Riga contiene una directory? false
-Nome della pagina da salvare: Colors.jpg
+Riga contiene una directory? true
+
+Classe TrovaDIrs, metodo cerca_dire(),
+VALORE DI file_name: FlowChart.xhtml
+VALORE DI sub_dir: pagine/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/
+
+Sotto directory in cui verrà salvata la pagina:pagine/
+ROOT_D: /home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/pagine/FlowChart.xhtml
+
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/
+Nome della pagina da salvare: FlowChart.xhtml
 Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
-Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
 
 CLASSE SalvaPagine, costruttore con parametri.
 
@@ -240,24 +251,39 @@ CLASSE TrovaDirs, metodo caratteri_vietati().
 
 CLASSE SalvaPagine, metodo scrivi().
 
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-Nome del file: Colors.jpg
+Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/
+Nome del file: FlowChart.xhtml
 
-
-Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
 
 CLASSE EstraiLinks, costruttore di default.
 
 CLASSE EstraiLinks, metodo links().
 
-Il file Colors.jpg non è un file di testo, verrà salvato senza ulteriori analisi
+CLASSE EstraiLinks, metodo ciclo().
+
+CLASSE EstraiLinks, metodo ciclo().
+Trovata l'occorrenza n° 1 di 'src=' in posizione: 318	immagini/DiagrammaDiFlusso.jpg
+
+
+Elenco dei link presenti nel sito
+
+immagini/Colors.jpg
+immagini/DiagrammaDiFlusso.jpg
+index.html
+pagine/FlowChart.xhtml
+pagine/ILibriDelMenocchio.xhtml
+pagine/documentazione.html
+stili/GeneralTest.css
+
+                                       £
 
 CLASSE Loopper, metodo risultati().
 
 =============================================================================================
 Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
 immagini/Colors.jpg                                         	immagini/Colors.jpg
-index.html                                                  	index.html
+immagini/DiagrammaDiFlusso.jpg                              	index.html
+index.html                                                  	pagine/FlowChart.xhtml
 pagine/FlowChart.xhtml                                      	
 pagine/ILibriDelMenocchio.xhtml                             	
 pagine/documentazione.html                                  	
@@ -270,12 +296,6 @@ Area di azzeramento delle variabili.
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
-Classe Loopper, metodo passo,
-valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-valore di nome pagina al momento della chiamata di TestGET: Colors.jpg
-
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
-
 CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TrovaDirs, metodo cerca_dire().
@@ -290,10 +310,10 @@ Dentro il loop esterno, Valore di riga da elaborare: immagini/Colors.jpg
 			Valore di find:false
 Terzo if
 
-Dentro il loop esterno, Valore di riga da elaborare: index.html 
+Dentro il loop esterno, Valore di riga da elaborare: immagini/DiagrammaDiFlusso.jpg
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			index.html 
+			immagini/DiagrammaDiFlusso.jpg
 			immagini/Colors.jpg
 			true
 
@@ -301,24 +321,48 @@ Dentro il loop esterno, Valore di riga da elaborare: index.html
 Primoif
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			index.html 
+			immagini/DiagrammaDiFlusso.jpg
 			index.html
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			immagini/DiagrammaDiFlusso.jpg
+			pagine/FlowChart.xhtml
 			true
 
 			Valore di find:false
 Secondo if
 
-Valore di riga da elaborare: index.html 
+Valore di riga da elaborare: immagini/DiagrammaDiFlusso.jpg
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di index.html :	Nome: index.html 	Numero di elementi: 1
-	Percorso: null
+Elaborazione di immagini/DiagrammaDiFlusso.jpg:	Nome: DiagrammaDiFlusso.jpg	Numero di elementi: 2
+	Percorso: immagini
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
 
-Riga contiene una directory? false
-Nome della pagina da salvare: Colors.jpg
+Riga contiene una directory? true
+
+Classe TrovaDIrs, metodo cerca_dire(),
+VALORE DI file_name: DiagrammaDiFlusso.jpg
+VALORE DI sub_dir: immagini/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+
+Sotto directory in cui verrà salvata la pagina:immagini/
+ROOT_D: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/DiagrammaDiFlusso.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+Nome della pagina da salvare: DiagrammaDiFlusso.jpg
 Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
 Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
@@ -331,25 +375,26 @@ CLASSE TrovaDirs, metodo caratteri_vietati().
 
 CLASSE SalvaPagine, metodo scrivi().
 
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-Nome del file: Colors.jpg
+Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+Nome del file: DiagrammaDiFlusso.jpg
 
 
-Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
+Classe SalvaPagine, metodo scrivi(), il file DiagrammaDiFlusso.jpg non è un fie di testo.
 
 CLASSE EstraiLinks, costruttore di default.
 
 CLASSE EstraiLinks, metodo links().
 
-Il file Colors.jpg non è un file di testo, verrà salvato senza ulteriori analisi
+Il file DiagrammaDiFlusso.jpg non è un file di testo, verrà salvato senza ulteriori analisi
 
 CLASSE Loopper, metodo risultati().
 
 =============================================================================================
 Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
 immagini/Colors.jpg                                         	immagini/Colors.jpg
+immagini/DiagrammaDiFlusso.jpg                              	immagini/DiagrammaDiFlusso.jpg
 index.html                                                  	index.html
-pagine/FlowChart.xhtml                                      	
+pagine/FlowChart.xhtml                                      	pagine/FlowChart.xhtml
 pagine/ILibriDelMenocchio.xhtml                             	
 pagine/documentazione.html                                  	
 stili/GeneralTest.css                                       	
@@ -361,12 +406,6 @@ Area di azzeramento delle variabili.
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
-Classe Loopper, metodo passo,
-valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-valore di nome pagina al momento della chiamata di TestGET: Colors.jpg
-
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
-
 CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TrovaDirs, metodo cerca_dire().
@@ -381,10 +420,10 @@ Dentro il loop esterno, Valore di riga da elaborare: immagini/Colors.jpg
 			Valore di find:false
 Terzo if
 
-Dentro il loop esterno, Valore di riga da elaborare: index.html 
+Dentro il loop esterno, Valore di riga da elaborare: immagini/DiagrammaDiFlusso.jpg
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			index.html 
+			immagini/DiagrammaDiFlusso.jpg
 			immagini/Colors.jpg
 			true
 
@@ -392,27 +431,137 @@ Dentro il loop esterno, Valore di riga da elaborare: index.html
 Primoif
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			index.html 
+			immagini/DiagrammaDiFlusso.jpg
+			immagini/DiagrammaDiFlusso.jpg
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: index.html
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
 			index.html
+			immagini/Colors.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			index.html
+			immagini/DiagrammaDiFlusso.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			index.html
+			index.html
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: pagine/FlowChart.xhtml
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/FlowChart.xhtml
+			immagini/Colors.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/FlowChart.xhtml
+			immagini/DiagrammaDiFlusso.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/FlowChart.xhtml
+			index.html
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/FlowChart.xhtml
+			pagine/FlowChart.xhtml
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: pagine/ILibriDelMenocchio.xhtml
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/ILibriDelMenocchio.xhtml
+			immagini/Colors.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/ILibriDelMenocchio.xhtml
+			immagini/DiagrammaDiFlusso.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/ILibriDelMenocchio.xhtml
+			index.html
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/ILibriDelMenocchio.xhtml
+			pagine/FlowChart.xhtml
 			true
 
 			Valore di find:false
 Secondo if
 
-Valore di riga da elaborare: index.html 
+Valore di riga da elaborare: pagine/ILibriDelMenocchio.xhtml
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di index.html :	Nome: index.html 	Numero di elementi: 1
-	Percorso: null
+Elaborazione di pagine/ILibriDelMenocchio.xhtml:	Nome: ILibriDelMenocchio.xhtml	Numero di elementi: 2
+	Percorso: pagine
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
 
-Riga contiene una directory? false
-Nome della pagina da salvare: Colors.jpg
+Riga contiene una directory? true
+
+Classe TrovaDIrs, metodo cerca_dire(),
+VALORE DI file_name: ILibriDelMenocchio.xhtml
+VALORE DI sub_dir: pagine/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/
+
+Sotto directory in cui verrà salvata la pagina:pagine/
+ROOT_D: /home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/pagine/ILibriDelMenocchio.xhtml
+
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/
+Nome della pagina da salvare: ILibriDelMenocchio.xhtml
 Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
-Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
 
 CLASSE SalvaPagine, costruttore con parametri.
 
@@ -422,26 +571,41 @@ CLASSE TrovaDirs, metodo caratteri_vietati().
 
 CLASSE SalvaPagine, metodo scrivi().
 
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-Nome del file: Colors.jpg
+Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/
+Nome del file: ILibriDelMenocchio.xhtml
 
-
-Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
 
 CLASSE EstraiLinks, costruttore di default.
 
 CLASSE EstraiLinks, metodo links().
 
-Il file Colors.jpg non è un file di testo, verrà salvato senza ulteriori analisi
+CLASSE EstraiLinks, metodo ciclo().
+Trovata l'occorrenza n° 1 di 'href=' in posizione: 518	index.html
+
+CLASSE EstraiLinks, metodo ciclo().
+
+
+Elenco dei link presenti nel sito
+
+immagini/Colors.jpg
+immagini/DiagrammaDiFlusso.jpg
+index.html
+pagine/FlowChart.xhtml
+pagine/ILibriDelMenocchio.xhtml
+pagine/documentazione.html
+stili/GeneralTest.css
+
+                                       £
 
 CLASSE Loopper, metodo risultati().
 
 =============================================================================================
 Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
 immagini/Colors.jpg                                         	immagini/Colors.jpg
+immagini/DiagrammaDiFlusso.jpg                              	immagini/DiagrammaDiFlusso.jpg
 index.html                                                  	index.html
-pagine/FlowChart.xhtml                                      	
-pagine/ILibriDelMenocchio.xhtml                             	
+pagine/FlowChart.xhtml                                      	pagine/FlowChart.xhtml
+pagine/ILibriDelMenocchio.xhtml                             	pagine/ILibriDelMenocchio.xhtml
 pagine/documentazione.html                                  	
 stili/GeneralTest.css                                       	
 
@@ -452,12 +616,6 @@ Area di azzeramento delle variabili.
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
-Classe Loopper, metodo passo,
-valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-valore di nome pagina al momento della chiamata di TestGET: Colors.jpg
-
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
-
 CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TrovaDirs, metodo cerca_dire().
@@ -472,10 +630,10 @@ Dentro il loop esterno, Valore di riga da elaborare: immagini/Colors.jpg
 			Valore di find:false
 Terzo if
 
-Dentro il loop esterno, Valore di riga da elaborare: index.html 
+Dentro il loop esterno, Valore di riga da elaborare: immagini/DiagrammaDiFlusso.jpg
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			index.html 
+			immagini/DiagrammaDiFlusso.jpg
 			immagini/Colors.jpg
 			true
 
@@ -483,27 +641,182 @@ Dentro il loop esterno, Valore di riga da elaborare: index.html
 Primoif
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			index.html 
+			immagini/DiagrammaDiFlusso.jpg
+			immagini/DiagrammaDiFlusso.jpg
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: index.html
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
 			index.html
+			immagini/Colors.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			index.html
+			immagini/DiagrammaDiFlusso.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			index.html
+			index.html
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: pagine/FlowChart.xhtml
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/FlowChart.xhtml
+			immagini/Colors.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/FlowChart.xhtml
+			immagini/DiagrammaDiFlusso.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/FlowChart.xhtml
+			index.html
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/FlowChart.xhtml
+			pagine/FlowChart.xhtml
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: pagine/ILibriDelMenocchio.xhtml
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/ILibriDelMenocchio.xhtml
+			immagini/Colors.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/ILibriDelMenocchio.xhtml
+			immagini/DiagrammaDiFlusso.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/ILibriDelMenocchio.xhtml
+			index.html
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/ILibriDelMenocchio.xhtml
+			pagine/FlowChart.xhtml
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/ILibriDelMenocchio.xhtml
+			pagine/ILibriDelMenocchio.xhtml
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: pagine/documentazione.html
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/documentazione.html
+			immagini/Colors.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/documentazione.html
+			immagini/DiagrammaDiFlusso.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/documentazione.html
+			index.html
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/documentazione.html
+			pagine/FlowChart.xhtml
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/documentazione.html
+			pagine/ILibriDelMenocchio.xhtml
 			true
 
 			Valore di find:false
 Secondo if
 
-Valore di riga da elaborare: index.html 
+Valore di riga da elaborare: pagine/documentazione.html
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di index.html :	Nome: index.html 	Numero di elementi: 1
-	Percorso: null
+Elaborazione di pagine/documentazione.html:	Nome: documentazione.html	Numero di elementi: 2
+	Percorso: pagine
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
 
-Riga contiene una directory? false
-Nome della pagina da salvare: Colors.jpg
+Riga contiene una directory? true
+
+Classe TrovaDIrs, metodo cerca_dire(),
+VALORE DI file_name: documentazione.html
+VALORE DI sub_dir: pagine/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/
+
+Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/pagine/documentazione.html
+
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/
+Nome della pagina da salvare: documentazione.html
 Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
-Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
 
 CLASSE SalvaPagine, costruttore con parametri.
 
@@ -513,24 +826,72 @@ CLASSE TrovaDirs, metodo caratteri_vietati().
 
 CLASSE SalvaPagine, metodo scrivi().
 
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-Nome del file: Colors.jpg
+Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/
+Nome del file: documentazione.html
 
-
-Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
 
 CLASSE EstraiLinks, costruttore di default.
 
 CLASSE EstraiLinks, metodo links().
 
-Il file Colors.jpg non è un file di testo, verrà salvato senza ulteriori analisi
+CLASSE EstraiLinks, metodo ciclo().
+Trovata l'occorrenza n° 1 di 'href=' in posizione: 430	documenti/BaroniEticaCivile.pdf
+Trovata l'occorrenza n° 2 di 'href=' in posizione: 539	documenti/BaroniSchemaEticaCivile.pdf
+Trovata l'occorrenza n° 3 di 'href=' in posizione: 667	documenti/BianchinComplessitaEPolitica.pdf
+Trovata l'occorrenza n° 4 di 'href=' in posizione: 782	documenti/GoisisEticaEPolitica.pdf
+Trovata l'occorrenza n° 5 di 'href=' in posizione: 911	documenti/GoisisImpegnoDurata.pdf
+Trovata l'occorrenza n° 6 di 'href=' in posizione: 1045	documenti/ModalitaOperative.pdf
+Trovata l'occorrenza n° 7 di 'href=' in posizione: 1167	documenti/MovmentoFederalistaEuropeo.pdf
+Trovata l'occorrenza n° 8 di 'href=' in posizione: 1337	documenti/PerosinPartecipazioneEDemocrazia.pdf
+Trovata l'occorrenza n° 9 di 'href=' in posizione: 1468	documenti/SchemaAmministrazioniComunali.pdf
+Trovata l'occorrenza n° 10 di 'href=' in posizione: 1598	documenti/StatoECittadino.pdf
+Trovata l'occorrenza n° 11 di 'href=' in posizione: 1761	documenti/VolpiniPresentazioneCorso.pdf
+Trovata l'occorrenza n° 12 di 'href=' in posizione: 1864	index.html
+
+CLASSE EstraiLinks, metodo ciclo().
+
+
+Elenco dei link presenti nel sito
+
+documenti/BaroniEticaCivile.pdf
+documenti/BaroniSchemaEticaCivile.pdf
+documenti/BianchinComplessitaEPolitica.pdf
+documenti/GoisisEticaEPolitica.pdf
+documenti/GoisisImpegnoDurata.pdf
+documenti/ModalitaOperative.pdf
+documenti/MovmentoFederalistaEuropeo.pdf
+documenti/PerosinPartecipazioneEDemocrazia.pdf
+documenti/SchemaAmministrazioniComunali.pdf
+documenti/StatoECittadino.pdf
+documenti/VolpiniPresentazioneCorso.pdf
+immagini/Colors.jpg
+immagini/DiagrammaDiFlusso.jpg
+index.html
+pagine/FlowChart.xhtml
+pagine/ILibriDelMenocchio.xhtml
+pagine/documentazione.html
+stili/GeneralTest.css
+
+                                       £
 
 CLASSE Loopper, metodo risultati().
 
 =============================================================================================
 Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
-immagini/Colors.jpg                                         	immagini/Colors.jpg
-index.html                                                  	index.html
+documenti/BaroniEticaCivile.pdf                             	immagini/Colors.jpg
+documenti/BaroniSchemaEticaCivile.pdf                       	immagini/DiagrammaDiFlusso.jpg
+documenti/BianchinComplessitaEPolitica.pdf                  	index.html
+documenti/GoisisEticaEPolitica.pdf                          	pagine/FlowChart.xhtml
+documenti/GoisisImpegnoDurata.pdf                           	pagine/ILibriDelMenocchio.xhtml
+documenti/ModalitaOperative.pdf                             	pagine/documentazione.html
+documenti/MovmentoFederalistaEuropeo.pdf                    	
+documenti/PerosinPartecipazioneEDemocrazia.pdf              	
+documenti/SchemaAmministrazioniComunali.pdf                 	
+documenti/StatoECittadino.pdf                               	
+documenti/VolpiniPresentazioneCorso.pdf                     	
+immagini/Colors.jpg                                         	
+immagini/DiagrammaDiFlusso.jpg                              	
+index.html                                                  	
 pagine/FlowChart.xhtml                                      	
 pagine/ILibriDelMenocchio.xhtml                             	
 pagine/documentazione.html                                  	
@@ -543,30 +904,14 @@ Area di azzeramento delle variabili.
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
-Classe Loopper, metodo passo,
-valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-valore di nome pagina al momento della chiamata di TestGET: Colors.jpg
-
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
-
 CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TrovaDirs, metodo cerca_dire().
 
-Dentro il loop esterno, Valore di riga da elaborare: immagini/Colors.jpg
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniEticaCivile.pdf
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			immagini/Colors.jpg
-			immagini/Colors.jpg
-			false
-
-			Valore di find:false
-Terzo if
-
-Dentro il loop esterno, Valore di riga da elaborare: index.html 
-
-			Differenza tra riga e tmp, valori e risultato (find_1):
-			index.html 
+			documenti/BaroniEticaCivile.pdf
 			immagini/Colors.jpg
 			true
 
@@ -574,24 +919,72 @@ Dentro il loop esterno, Valore di riga da elaborare: index.html
 Primoif
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			index.html 
+			documenti/BaroniEticaCivile.pdf
+			immagini/DiagrammaDiFlusso.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BaroniEticaCivile.pdf
 			index.html
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BaroniEticaCivile.pdf
+			pagine/FlowChart.xhtml
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BaroniEticaCivile.pdf
+			pagine/ILibriDelMenocchio.xhtml
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BaroniEticaCivile.pdf
+			pagine/documentazione.html
 			true
 
 			Valore di find:false
 Secondo if
 
-Valore di riga da elaborare: index.html 
+Valore di riga da elaborare: documenti/BaroniEticaCivile.pdf
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di index.html :	Nome: index.html 	Numero di elementi: 1
-	Percorso: null
+Elaborazione di documenti/BaroniEticaCivile.pdf:	Nome: BaroniEticaCivile.pdf	Numero di elementi: 2
+	Percorso: documenti
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
 
-Riga contiene una directory? false
-Nome della pagina da salvare: Colors.jpg
+Riga contiene una directory? true
+
+Classe TrovaDIrs, metodo cerca_dire(),
+VALORE DI file_name: BaroniEticaCivile.pdf
+VALORE DI sub_dir: documenti/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+
+Sotto directory in cui verrà salvata la pagina:documenti/
+ROOT_D: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/documenti/BaroniEticaCivile.pdf
+
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+Nome della pagina da salvare: BaroniEticaCivile.pdf
 Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
 Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
@@ -604,24 +997,36 @@ CLASSE TrovaDirs, metodo caratteri_vietati().
 
 CLASSE SalvaPagine, metodo scrivi().
 
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-Nome del file: Colors.jpg
+Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+Nome del file: BaroniEticaCivile.pdf
 
 
-Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
+Classe SalvaPagine, metodo scrivi(), il file BaroniEticaCivile.pdf non è un fie di testo.
 
 CLASSE EstraiLinks, costruttore di default.
 
 CLASSE EstraiLinks, metodo links().
 
-Il file Colors.jpg non è un file di testo, verrà salvato senza ulteriori analisi
+Il file BaroniEticaCivile.pdf non è un file di testo, verrà salvato senza ulteriori analisi
 
 CLASSE Loopper, metodo risultati().
 
 =============================================================================================
 Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
-immagini/Colors.jpg                                         	immagini/Colors.jpg
-index.html                                                  	index.html
+documenti/BaroniEticaCivile.pdf                             	documenti/BaroniEticaCivile.pdf
+documenti/BaroniSchemaEticaCivile.pdf                       	immagini/Colors.jpg
+documenti/BianchinComplessitaEPolitica.pdf                  	immagini/DiagrammaDiFlusso.jpg
+documenti/GoisisEticaEPolitica.pdf                          	index.html
+documenti/GoisisImpegnoDurata.pdf                           	pagine/FlowChart.xhtml
+documenti/ModalitaOperative.pdf                             	pagine/ILibriDelMenocchio.xhtml
+documenti/MovmentoFederalistaEuropeo.pdf                    	pagine/documentazione.html
+documenti/PerosinPartecipazioneEDemocrazia.pdf              	
+documenti/SchemaAmministrazioniComunali.pdf                 	
+documenti/StatoECittadino.pdf                               	
+documenti/VolpiniPresentazioneCorso.pdf                     	
+immagini/Colors.jpg                                         	
+immagini/DiagrammaDiFlusso.jpg                              	
+index.html                                                  	
 pagine/FlowChart.xhtml                                      	
 pagine/ILibriDelMenocchio.xhtml                             	
 pagine/documentazione.html                                  	
@@ -634,30 +1039,32 @@ Area di azzeramento delle variabili.
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
-Classe Loopper, metodo passo,
-valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-valore di nome pagina al momento della chiamata di TestGET: Colors.jpg
-
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
-
 CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TrovaDirs, metodo cerca_dire().
 
-Dentro il loop esterno, Valore di riga da elaborare: immagini/Colors.jpg
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniEticaCivile.pdf
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			immagini/Colors.jpg
-			immagini/Colors.jpg
+			documenti/BaroniEticaCivile.pdf
+			documenti/BaroniEticaCivile.pdf
 			false
 
 			Valore di find:false
 Terzo if
 
-Dentro il loop esterno, Valore di riga da elaborare: index.html 
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniSchemaEticaCivile.pdf
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			index.html 
+			documenti/BaroniSchemaEticaCivile.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BaroniSchemaEticaCivile.pdf
 			immagini/Colors.jpg
 			true
 
@@ -665,24 +1072,67 @@ Dentro il loop esterno, Valore di riga da elaborare: index.html
 Primoif
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			index.html 
+			documenti/BaroniSchemaEticaCivile.pdf
+			immagini/DiagrammaDiFlusso.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BaroniSchemaEticaCivile.pdf
 			index.html
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BaroniSchemaEticaCivile.pdf
+			pagine/FlowChart.xhtml
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BaroniSchemaEticaCivile.pdf
+			pagine/ILibriDelMenocchio.xhtml
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BaroniSchemaEticaCivile.pdf
+			pagine/documentazione.html
 			true
 
 			Valore di find:false
 Secondo if
 
-Valore di riga da elaborare: index.html 
+Valore di riga da elaborare: documenti/BaroniSchemaEticaCivile.pdf
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di index.html :	Nome: index.html 	Numero di elementi: 1
-	Percorso: null
+Elaborazione di documenti/BaroniSchemaEticaCivile.pdf:	Nome: BaroniSchemaEticaCivile.pdf	Numero di elementi: 2
+	Percorso: documenti
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
 
-Riga contiene una directory? false
-Nome della pagina da salvare: Colors.jpg
+Riga contiene una directory? true
+
+Classe TrovaDIrs, metodo cerca_dire(),
+VALORE DI file_name: BaroniSchemaEticaCivile.pdf
+VALORE DI sub_dir: documenti/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+
+Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/documenti/BaroniSchemaEticaCivile.pdf
+
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+Nome della pagina da salvare: BaroniSchemaEticaCivile.pdf
 Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
 Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
@@ -695,24 +1145,36 @@ CLASSE TrovaDirs, metodo caratteri_vietati().
 
 CLASSE SalvaPagine, metodo scrivi().
 
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-Nome del file: Colors.jpg
+Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+Nome del file: BaroniSchemaEticaCivile.pdf
 
 
-Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
+Classe SalvaPagine, metodo scrivi(), il file BaroniSchemaEticaCivile.pdf non è un fie di testo.
 
 CLASSE EstraiLinks, costruttore di default.
 
 CLASSE EstraiLinks, metodo links().
 
-Il file Colors.jpg non è un file di testo, verrà salvato senza ulteriori analisi
+Il file BaroniSchemaEticaCivile.pdf non è un file di testo, verrà salvato senza ulteriori analisi
 
 CLASSE Loopper, metodo risultati().
 
 =============================================================================================
 Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
-immagini/Colors.jpg                                         	immagini/Colors.jpg
-index.html                                                  	index.html
+documenti/BaroniEticaCivile.pdf                             	documenti/BaroniEticaCivile.pdf
+documenti/BaroniSchemaEticaCivile.pdf                       	documenti/BaroniSchemaEticaCivile.pdf
+documenti/BianchinComplessitaEPolitica.pdf                  	immagini/Colors.jpg
+documenti/GoisisEticaEPolitica.pdf                          	immagini/DiagrammaDiFlusso.jpg
+documenti/GoisisImpegnoDurata.pdf                           	index.html
+documenti/ModalitaOperative.pdf                             	pagine/FlowChart.xhtml
+documenti/MovmentoFederalistaEuropeo.pdf                    	pagine/ILibriDelMenocchio.xhtml
+documenti/PerosinPartecipazioneEDemocrazia.pdf              	pagine/documentazione.html
+documenti/SchemaAmministrazioniComunali.pdf                 	
+documenti/StatoECittadino.pdf                               	
+documenti/VolpiniPresentazioneCorso.pdf                     	
+immagini/Colors.jpg                                         	
+immagini/DiagrammaDiFlusso.jpg                              	
+index.html                                                  	
 pagine/FlowChart.xhtml                                      	
 pagine/ILibriDelMenocchio.xhtml                             	
 pagine/documentazione.html                                  	
@@ -725,30 +1187,58 @@ Area di azzeramento delle variabili.
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
-Classe Loopper, metodo passo,
-valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-valore di nome pagina al momento della chiamata di TestGET: Colors.jpg
-
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
-
 CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TrovaDirs, metodo cerca_dire().
 
-Dentro il loop esterno, Valore di riga da elaborare: immagini/Colors.jpg
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniEticaCivile.pdf
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			immagini/Colors.jpg
-			immagini/Colors.jpg
+			documenti/BaroniEticaCivile.pdf
+			documenti/BaroniEticaCivile.pdf
 			false
 
 			Valore di find:false
 Terzo if
 
-Dentro il loop esterno, Valore di riga da elaborare: index.html 
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniSchemaEticaCivile.pdf
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			index.html 
+			documenti/BaroniSchemaEticaCivile.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BaroniSchemaEticaCivile.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BianchinComplessitaEPolitica.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
 			immagini/Colors.jpg
 			true
 
@@ -756,24 +1246,67 @@ Dentro il loop esterno, Valore di riga da elaborare: index.html
 Primoif
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			index.html 
+			documenti/BianchinComplessitaEPolitica.pdf
+			immagini/DiagrammaDiFlusso.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
 			index.html
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			pagine/FlowChart.xhtml
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			pagine/ILibriDelMenocchio.xhtml
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			pagine/documentazione.html
 			true
 
 			Valore di find:false
 Secondo if
 
-Valore di riga da elaborare: index.html 
+Valore di riga da elaborare: documenti/BianchinComplessitaEPolitica.pdf
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di index.html :	Nome: index.html 	Numero di elementi: 1
-	Percorso: null
+Elaborazione di documenti/BianchinComplessitaEPolitica.pdf:	Nome: BianchinComplessitaEPolitica.pdf	Numero di elementi: 2
+	Percorso: documenti
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
 
-Riga contiene una directory? false
-Nome della pagina da salvare: Colors.jpg
+Riga contiene una directory? true
+
+Classe TrovaDIrs, metodo cerca_dire(),
+VALORE DI file_name: BianchinComplessitaEPolitica.pdf
+VALORE DI sub_dir: documenti/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+
+Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/documenti/BianchinComplessitaEPolitica.pdf
+
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+Nome della pagina da salvare: BianchinComplessitaEPolitica.pdf
 Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
 Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
@@ -786,24 +1319,36 @@ CLASSE TrovaDirs, metodo caratteri_vietati().
 
 CLASSE SalvaPagine, metodo scrivi().
 
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-Nome del file: Colors.jpg
+Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+Nome del file: BianchinComplessitaEPolitica.pdf
 
 
-Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
+Classe SalvaPagine, metodo scrivi(), il file BianchinComplessitaEPolitica.pdf non è un fie di testo.
 
 CLASSE EstraiLinks, costruttore di default.
 
 CLASSE EstraiLinks, metodo links().
 
-Il file Colors.jpg non è un file di testo, verrà salvato senza ulteriori analisi
+Il file BianchinComplessitaEPolitica.pdf non è un file di testo, verrà salvato senza ulteriori analisi
 
 CLASSE Loopper, metodo risultati().
 
 =============================================================================================
 Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
-immagini/Colors.jpg                                         	immagini/Colors.jpg
-index.html                                                  	index.html
+documenti/BaroniEticaCivile.pdf                             	documenti/BaroniEticaCivile.pdf
+documenti/BaroniSchemaEticaCivile.pdf                       	documenti/BaroniSchemaEticaCivile.pdf
+documenti/BianchinComplessitaEPolitica.pdf                  	documenti/BianchinComplessitaEPolitica.pdf
+documenti/GoisisEticaEPolitica.pdf                          	immagini/Colors.jpg
+documenti/GoisisImpegnoDurata.pdf                           	immagini/DiagrammaDiFlusso.jpg
+documenti/ModalitaOperative.pdf                             	index.html
+documenti/MovmentoFederalistaEuropeo.pdf                    	pagine/FlowChart.xhtml
+documenti/PerosinPartecipazioneEDemocrazia.pdf              	pagine/ILibriDelMenocchio.xhtml
+documenti/SchemaAmministrazioniComunali.pdf                 	pagine/documentazione.html
+documenti/StatoECittadino.pdf                               	
+documenti/VolpiniPresentazioneCorso.pdf                     	
+immagini/Colors.jpg                                         	
+immagini/DiagrammaDiFlusso.jpg                              	
+index.html                                                  	
 pagine/FlowChart.xhtml                                      	
 pagine/ILibriDelMenocchio.xhtml                             	
 pagine/documentazione.html                                  	
@@ -816,30 +1361,92 @@ Area di azzeramento delle variabili.
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
-Classe Loopper, metodo passo,
-valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-valore di nome pagina al momento della chiamata di TestGET: Colors.jpg
-
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
-
 CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TrovaDirs, metodo cerca_dire().
 
-Dentro il loop esterno, Valore di riga da elaborare: immagini/Colors.jpg
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniEticaCivile.pdf
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			immagini/Colors.jpg
-			immagini/Colors.jpg
+			documenti/BaroniEticaCivile.pdf
+			documenti/BaroniEticaCivile.pdf
 			false
 
 			Valore di find:false
 Terzo if
 
-Dentro il loop esterno, Valore di riga da elaborare: index.html 
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniSchemaEticaCivile.pdf
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			index.html 
+			documenti/BaroniSchemaEticaCivile.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BaroniSchemaEticaCivile.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BianchinComplessitaEPolitica.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/GoisisEticaEPolitica.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
 			immagini/Colors.jpg
 			true
 
@@ -847,24 +1454,67 @@ Dentro il loop esterno, Valore di riga da elaborare: index.html
 Primoif
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			index.html 
+			documenti/GoisisEticaEPolitica.pdf
+			immagini/DiagrammaDiFlusso.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
 			index.html
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			pagine/FlowChart.xhtml
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			pagine/ILibriDelMenocchio.xhtml
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			pagine/documentazione.html
 			true
 
 			Valore di find:false
 Secondo if
 
-Valore di riga da elaborare: index.html 
+Valore di riga da elaborare: documenti/GoisisEticaEPolitica.pdf
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di index.html :	Nome: index.html 	Numero di elementi: 1
-	Percorso: null
+Elaborazione di documenti/GoisisEticaEPolitica.pdf:	Nome: GoisisEticaEPolitica.pdf	Numero di elementi: 2
+	Percorso: documenti
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
 
-Riga contiene una directory? false
-Nome della pagina da salvare: Colors.jpg
+Riga contiene una directory? true
+
+Classe TrovaDIrs, metodo cerca_dire(),
+VALORE DI file_name: GoisisEticaEPolitica.pdf
+VALORE DI sub_dir: documenti/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+
+Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/documenti/GoisisEticaEPolitica.pdf
+
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+Nome della pagina da salvare: GoisisEticaEPolitica.pdf
 Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
 Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
@@ -877,24 +1527,36 @@ CLASSE TrovaDirs, metodo caratteri_vietati().
 
 CLASSE SalvaPagine, metodo scrivi().
 
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-Nome del file: Colors.jpg
+Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+Nome del file: GoisisEticaEPolitica.pdf
 
 
-Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
+Classe SalvaPagine, metodo scrivi(), il file GoisisEticaEPolitica.pdf non è un fie di testo.
 
 CLASSE EstraiLinks, costruttore di default.
 
 CLASSE EstraiLinks, metodo links().
 
-Il file Colors.jpg non è un file di testo, verrà salvato senza ulteriori analisi
+Il file GoisisEticaEPolitica.pdf non è un file di testo, verrà salvato senza ulteriori analisi
 
 CLASSE Loopper, metodo risultati().
 
 =============================================================================================
 Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
-immagini/Colors.jpg                                         	immagini/Colors.jpg
-index.html                                                  	index.html
+documenti/BaroniEticaCivile.pdf                             	documenti/BaroniEticaCivile.pdf
+documenti/BaroniSchemaEticaCivile.pdf                       	documenti/BaroniSchemaEticaCivile.pdf
+documenti/BianchinComplessitaEPolitica.pdf                  	documenti/BianchinComplessitaEPolitica.pdf
+documenti/GoisisEticaEPolitica.pdf                          	documenti/GoisisEticaEPolitica.pdf
+documenti/GoisisImpegnoDurata.pdf                           	immagini/Colors.jpg
+documenti/ModalitaOperative.pdf                             	immagini/DiagrammaDiFlusso.jpg
+documenti/MovmentoFederalistaEuropeo.pdf                    	index.html
+documenti/PerosinPartecipazioneEDemocrazia.pdf              	pagine/FlowChart.xhtml
+documenti/SchemaAmministrazioniComunali.pdf                 	pagine/ILibriDelMenocchio.xhtml
+documenti/StatoECittadino.pdf                               	pagine/documentazione.html
+documenti/VolpiniPresentazioneCorso.pdf                     	
+immagini/Colors.jpg                                         	
+immagini/DiagrammaDiFlusso.jpg                              	
+index.html                                                  	
 pagine/FlowChart.xhtml                                      	
 pagine/ILibriDelMenocchio.xhtml                             	
 pagine/documentazione.html                                  	
@@ -907,30 +1569,134 @@ Area di azzeramento delle variabili.
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
-Classe Loopper, metodo passo,
-valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-valore di nome pagina al momento della chiamata di TestGET: Colors.jpg
-
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
-
 CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TrovaDirs, metodo cerca_dire().
 
-Dentro il loop esterno, Valore di riga da elaborare: immagini/Colors.jpg
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniEticaCivile.pdf
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			immagini/Colors.jpg
-			immagini/Colors.jpg
+			documenti/BaroniEticaCivile.pdf
+			documenti/BaroniEticaCivile.pdf
 			false
 
 			Valore di find:false
 Terzo if
 
-Dentro il loop esterno, Valore di riga da elaborare: index.html 
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniSchemaEticaCivile.pdf
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			index.html 
+			documenti/BaroniSchemaEticaCivile.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BaroniSchemaEticaCivile.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BianchinComplessitaEPolitica.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/GoisisEticaEPolitica.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/GoisisImpegnoDurata.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
 			immagini/Colors.jpg
 			true
 
@@ -938,24 +1704,67 @@ Dentro il loop esterno, Valore di riga da elaborare: index.html
 Primoif
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			index.html 
+			documenti/GoisisImpegnoDurata.pdf
+			immagini/DiagrammaDiFlusso.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
 			index.html
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			pagine/FlowChart.xhtml
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			pagine/ILibriDelMenocchio.xhtml
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			pagine/documentazione.html
 			true
 
 			Valore di find:false
 Secondo if
 
-Valore di riga da elaborare: index.html 
+Valore di riga da elaborare: documenti/GoisisImpegnoDurata.pdf
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di index.html :	Nome: index.html 	Numero di elementi: 1
-	Percorso: null
+Elaborazione di documenti/GoisisImpegnoDurata.pdf:	Nome: GoisisImpegnoDurata.pdf	Numero di elementi: 2
+	Percorso: documenti
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
 
-Riga contiene una directory? false
-Nome della pagina da salvare: Colors.jpg
+Riga contiene una directory? true
+
+Classe TrovaDIrs, metodo cerca_dire(),
+VALORE DI file_name: GoisisImpegnoDurata.pdf
+VALORE DI sub_dir: documenti/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+
+Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/documenti/GoisisImpegnoDurata.pdf
+
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+Nome della pagina da salvare: GoisisImpegnoDurata.pdf
 Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
 Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
@@ -968,24 +1777,36 @@ CLASSE TrovaDirs, metodo caratteri_vietati().
 
 CLASSE SalvaPagine, metodo scrivi().
 
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-Nome del file: Colors.jpg
+Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+Nome del file: GoisisImpegnoDurata.pdf
 
 
-Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
+Classe SalvaPagine, metodo scrivi(), il file GoisisImpegnoDurata.pdf non è un fie di testo.
 
 CLASSE EstraiLinks, costruttore di default.
 
 CLASSE EstraiLinks, metodo links().
 
-Il file Colors.jpg non è un file di testo, verrà salvato senza ulteriori analisi
+Il file GoisisImpegnoDurata.pdf non è un file di testo, verrà salvato senza ulteriori analisi
 
 CLASSE Loopper, metodo risultati().
 
 =============================================================================================
 Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
-immagini/Colors.jpg                                         	immagini/Colors.jpg
-index.html                                                  	index.html
+documenti/BaroniEticaCivile.pdf                             	documenti/BaroniEticaCivile.pdf
+documenti/BaroniSchemaEticaCivile.pdf                       	documenti/BaroniSchemaEticaCivile.pdf
+documenti/BianchinComplessitaEPolitica.pdf                  	documenti/BianchinComplessitaEPolitica.pdf
+documenti/GoisisEticaEPolitica.pdf                          	documenti/GoisisEticaEPolitica.pdf
+documenti/GoisisImpegnoDurata.pdf                           	documenti/GoisisImpegnoDurata.pdf
+documenti/ModalitaOperative.pdf                             	immagini/Colors.jpg
+documenti/MovmentoFederalistaEuropeo.pdf                    	immagini/DiagrammaDiFlusso.jpg
+documenti/PerosinPartecipazioneEDemocrazia.pdf              	index.html
+documenti/SchemaAmministrazioniComunali.pdf                 	pagine/FlowChart.xhtml
+documenti/StatoECittadino.pdf                               	pagine/ILibriDelMenocchio.xhtml
+documenti/VolpiniPresentazioneCorso.pdf                     	pagine/documentazione.html
+immagini/Colors.jpg                                         	
+immagini/DiagrammaDiFlusso.jpg                              	
+index.html                                                  	
 pagine/FlowChart.xhtml                                      	
 pagine/ILibriDelMenocchio.xhtml                             	
 pagine/documentazione.html                                  	
@@ -998,30 +1819,184 @@ Area di azzeramento delle variabili.
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
-Classe Loopper, metodo passo,
-valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-valore di nome pagina al momento della chiamata di TestGET: Colors.jpg
-
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
-
 CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TrovaDirs, metodo cerca_dire().
 
-Dentro il loop esterno, Valore di riga da elaborare: immagini/Colors.jpg
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniEticaCivile.pdf
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			immagini/Colors.jpg
-			immagini/Colors.jpg
+			documenti/BaroniEticaCivile.pdf
+			documenti/BaroniEticaCivile.pdf
 			false
 
 			Valore di find:false
 Terzo if
 
-Dentro il loop esterno, Valore di riga da elaborare: index.html 
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniSchemaEticaCivile.pdf
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			index.html 
+			documenti/BaroniSchemaEticaCivile.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BaroniSchemaEticaCivile.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BianchinComplessitaEPolitica.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/GoisisEticaEPolitica.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/GoisisImpegnoDurata.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/ModalitaOperative.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
 			immagini/Colors.jpg
 			true
 
@@ -1029,24 +2004,67 @@ Dentro il loop esterno, Valore di riga da elaborare: index.html
 Primoif
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			index.html 
+			documenti/ModalitaOperative.pdf
+			immagini/DiagrammaDiFlusso.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
 			index.html
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			pagine/FlowChart.xhtml
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			pagine/ILibriDelMenocchio.xhtml
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			pagine/documentazione.html
 			true
 
 			Valore di find:false
 Secondo if
 
-Valore di riga da elaborare: index.html 
+Valore di riga da elaborare: documenti/ModalitaOperative.pdf
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di index.html :	Nome: index.html 	Numero di elementi: 1
-	Percorso: null
+Elaborazione di documenti/ModalitaOperative.pdf:	Nome: ModalitaOperative.pdf	Numero di elementi: 2
+	Percorso: documenti
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
 
-Riga contiene una directory? false
-Nome della pagina da salvare: Colors.jpg
+Riga contiene una directory? true
+
+Classe TrovaDIrs, metodo cerca_dire(),
+VALORE DI file_name: ModalitaOperative.pdf
+VALORE DI sub_dir: documenti/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+
+Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/documenti/ModalitaOperative.pdf
+
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+Nome della pagina da salvare: ModalitaOperative.pdf
 Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
 Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
@@ -1059,24 +2077,36 @@ CLASSE TrovaDirs, metodo caratteri_vietati().
 
 CLASSE SalvaPagine, metodo scrivi().
 
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-Nome del file: Colors.jpg
+Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+Nome del file: ModalitaOperative.pdf
 
 
-Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
+Classe SalvaPagine, metodo scrivi(), il file ModalitaOperative.pdf non è un fie di testo.
 
 CLASSE EstraiLinks, costruttore di default.
 
 CLASSE EstraiLinks, metodo links().
 
-Il file Colors.jpg non è un file di testo, verrà salvato senza ulteriori analisi
+Il file ModalitaOperative.pdf non è un file di testo, verrà salvato senza ulteriori analisi
 
 CLASSE Loopper, metodo risultati().
 
 =============================================================================================
 Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
-immagini/Colors.jpg                                         	immagini/Colors.jpg
-index.html                                                  	index.html
+documenti/BaroniEticaCivile.pdf                             	documenti/BaroniEticaCivile.pdf
+documenti/BaroniSchemaEticaCivile.pdf                       	documenti/BaroniSchemaEticaCivile.pdf
+documenti/BianchinComplessitaEPolitica.pdf                  	documenti/BianchinComplessitaEPolitica.pdf
+documenti/GoisisEticaEPolitica.pdf                          	documenti/GoisisEticaEPolitica.pdf
+documenti/GoisisImpegnoDurata.pdf                           	documenti/GoisisImpegnoDurata.pdf
+documenti/ModalitaOperative.pdf                             	documenti/ModalitaOperative.pdf
+documenti/MovmentoFederalistaEuropeo.pdf                    	immagini/Colors.jpg
+documenti/PerosinPartecipazioneEDemocrazia.pdf              	immagini/DiagrammaDiFlusso.jpg
+documenti/SchemaAmministrazioniComunali.pdf                 	index.html
+documenti/StatoECittadino.pdf                               	pagine/FlowChart.xhtml
+documenti/VolpiniPresentazioneCorso.pdf                     	pagine/ILibriDelMenocchio.xhtml
+immagini/Colors.jpg                                         	pagine/documentazione.html
+immagini/DiagrammaDiFlusso.jpg                              	
+index.html                                                  	
 pagine/FlowChart.xhtml                                      	
 pagine/ILibriDelMenocchio.xhtml                             	
 pagine/documentazione.html                                  	
@@ -1089,30 +2119,242 @@ Area di azzeramento delle variabili.
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
-Classe Loopper, metodo passo,
-valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-valore di nome pagina al momento della chiamata di TestGET: Colors.jpg
-
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
-
 CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TrovaDirs, metodo cerca_dire().
 
-Dentro il loop esterno, Valore di riga da elaborare: immagini/Colors.jpg
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniEticaCivile.pdf
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			immagini/Colors.jpg
-			immagini/Colors.jpg
+			documenti/BaroniEticaCivile.pdf
+			documenti/BaroniEticaCivile.pdf
 			false
 
 			Valore di find:false
 Terzo if
 
-Dentro il loop esterno, Valore di riga da elaborare: index.html 
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniSchemaEticaCivile.pdf
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			index.html 
+			documenti/BaroniSchemaEticaCivile.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BaroniSchemaEticaCivile.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BianchinComplessitaEPolitica.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/GoisisEticaEPolitica.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/GoisisImpegnoDurata.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/ModalitaOperative.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/ModalitaOperative.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/MovmentoFederalistaEuropeo.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/ModalitaOperative.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
 			immagini/Colors.jpg
 			true
 
@@ -1120,24 +2362,67 @@ Dentro il loop esterno, Valore di riga da elaborare: index.html
 Primoif
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			index.html 
+			documenti/MovmentoFederalistaEuropeo.pdf
+			immagini/DiagrammaDiFlusso.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
 			index.html
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			pagine/FlowChart.xhtml
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			pagine/ILibriDelMenocchio.xhtml
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			pagine/documentazione.html
 			true
 
 			Valore di find:false
 Secondo if
 
-Valore di riga da elaborare: index.html 
+Valore di riga da elaborare: documenti/MovmentoFederalistaEuropeo.pdf
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di index.html :	Nome: index.html 	Numero di elementi: 1
-	Percorso: null
+Elaborazione di documenti/MovmentoFederalistaEuropeo.pdf:	Nome: MovmentoFederalistaEuropeo.pdf	Numero di elementi: 2
+	Percorso: documenti
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
 
-Riga contiene una directory? false
-Nome della pagina da salvare: Colors.jpg
+Riga contiene una directory? true
+
+Classe TrovaDIrs, metodo cerca_dire(),
+VALORE DI file_name: MovmentoFederalistaEuropeo.pdf
+VALORE DI sub_dir: documenti/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+
+Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/documenti/MovmentoFederalistaEuropeo.pdf
+
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+Nome della pagina da salvare: MovmentoFederalistaEuropeo.pdf
 Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
 Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
@@ -1150,24 +2435,36 @@ CLASSE TrovaDirs, metodo caratteri_vietati().
 
 CLASSE SalvaPagine, metodo scrivi().
 
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-Nome del file: Colors.jpg
+Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+Nome del file: MovmentoFederalistaEuropeo.pdf
 
 
-Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
+Classe SalvaPagine, metodo scrivi(), il file MovmentoFederalistaEuropeo.pdf non è un fie di testo.
 
 CLASSE EstraiLinks, costruttore di default.
 
 CLASSE EstraiLinks, metodo links().
 
-Il file Colors.jpg non è un file di testo, verrà salvato senza ulteriori analisi
+Il file MovmentoFederalistaEuropeo.pdf non è un file di testo, verrà salvato senza ulteriori analisi
 
 CLASSE Loopper, metodo risultati().
 
 =============================================================================================
 Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
-immagini/Colors.jpg                                         	immagini/Colors.jpg
-index.html                                                  	index.html
+documenti/BaroniEticaCivile.pdf                             	documenti/BaroniEticaCivile.pdf
+documenti/BaroniSchemaEticaCivile.pdf                       	documenti/BaroniSchemaEticaCivile.pdf
+documenti/BianchinComplessitaEPolitica.pdf                  	documenti/BianchinComplessitaEPolitica.pdf
+documenti/GoisisEticaEPolitica.pdf                          	documenti/GoisisEticaEPolitica.pdf
+documenti/GoisisImpegnoDurata.pdf                           	documenti/GoisisImpegnoDurata.pdf
+documenti/ModalitaOperative.pdf                             	documenti/ModalitaOperative.pdf
+documenti/MovmentoFederalistaEuropeo.pdf                    	documenti/MovmentoFederalistaEuropeo.pdf
+documenti/PerosinPartecipazioneEDemocrazia.pdf              	immagini/Colors.jpg
+documenti/SchemaAmministrazioniComunali.pdf                 	immagini/DiagrammaDiFlusso.jpg
+documenti/StatoECittadino.pdf                               	index.html
+documenti/VolpiniPresentazioneCorso.pdf                     	pagine/FlowChart.xhtml
+immagini/Colors.jpg                                         	pagine/ILibriDelMenocchio.xhtml
+immagini/DiagrammaDiFlusso.jpg                              	pagine/documentazione.html
+index.html                                                  	
 pagine/FlowChart.xhtml                                      	
 pagine/ILibriDelMenocchio.xhtml                             	
 pagine/documentazione.html                                  	
@@ -1180,30 +2477,308 @@ Area di azzeramento delle variabili.
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
-Classe Loopper, metodo passo,
-valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-valore di nome pagina al momento della chiamata di TestGET: Colors.jpg
-
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
-
 CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TrovaDirs, metodo cerca_dire().
 
-Dentro il loop esterno, Valore di riga da elaborare: immagini/Colors.jpg
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniEticaCivile.pdf
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			immagini/Colors.jpg
-			immagini/Colors.jpg
+			documenti/BaroniEticaCivile.pdf
+			documenti/BaroniEticaCivile.pdf
 			false
 
 			Valore di find:false
 Terzo if
 
-Dentro il loop esterno, Valore di riga da elaborare: index.html 
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniSchemaEticaCivile.pdf
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			index.html 
+			documenti/BaroniSchemaEticaCivile.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BaroniSchemaEticaCivile.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BianchinComplessitaEPolitica.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/GoisisEticaEPolitica.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/GoisisImpegnoDurata.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/ModalitaOperative.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/ModalitaOperative.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/MovmentoFederalistaEuropeo.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/ModalitaOperative.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/MovmentoFederalistaEuropeo.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/PerosinPartecipazioneEDemocrazia.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/ModalitaOperative.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/MovmentoFederalistaEuropeo.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
 			immagini/Colors.jpg
 			true
 
@@ -1211,24 +2786,67 @@ Dentro il loop esterno, Valore di riga da elaborare: index.html
 Primoif
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			index.html 
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			immagini/DiagrammaDiFlusso.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
 			index.html
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			pagine/FlowChart.xhtml
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			pagine/ILibriDelMenocchio.xhtml
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			pagine/documentazione.html
 			true
 
 			Valore di find:false
 Secondo if
 
-Valore di riga da elaborare: index.html 
+Valore di riga da elaborare: documenti/PerosinPartecipazioneEDemocrazia.pdf
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di index.html :	Nome: index.html 	Numero di elementi: 1
-	Percorso: null
+Elaborazione di documenti/PerosinPartecipazioneEDemocrazia.pdf:	Nome: PerosinPartecipazioneEDemocrazia.pdf	Numero di elementi: 2
+	Percorso: documenti
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
 
-Riga contiene una directory? false
-Nome della pagina da salvare: Colors.jpg
+Riga contiene una directory? true
+
+Classe TrovaDIrs, metodo cerca_dire(),
+VALORE DI file_name: PerosinPartecipazioneEDemocrazia.pdf
+VALORE DI sub_dir: documenti/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+
+Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/documenti/PerosinPartecipazioneEDemocrazia.pdf
+
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+Nome della pagina da salvare: PerosinPartecipazioneEDemocrazia.pdf
 Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
 Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
@@ -1241,24 +2859,36 @@ CLASSE TrovaDirs, metodo caratteri_vietati().
 
 CLASSE SalvaPagine, metodo scrivi().
 
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-Nome del file: Colors.jpg
+Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+Nome del file: PerosinPartecipazioneEDemocrazia.pdf
 
 
-Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
+Classe SalvaPagine, metodo scrivi(), il file PerosinPartecipazioneEDemocrazia.pdf non è un fie di testo.
 
 CLASSE EstraiLinks, costruttore di default.
 
 CLASSE EstraiLinks, metodo links().
 
-Il file Colors.jpg non è un file di testo, verrà salvato senza ulteriori analisi
+Il file PerosinPartecipazioneEDemocrazia.pdf non è un file di testo, verrà salvato senza ulteriori analisi
 
 CLASSE Loopper, metodo risultati().
 
 =============================================================================================
 Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
-immagini/Colors.jpg                                         	immagini/Colors.jpg
-index.html                                                  	index.html
+documenti/BaroniEticaCivile.pdf                             	documenti/BaroniEticaCivile.pdf
+documenti/BaroniSchemaEticaCivile.pdf                       	documenti/BaroniSchemaEticaCivile.pdf
+documenti/BianchinComplessitaEPolitica.pdf                  	documenti/BianchinComplessitaEPolitica.pdf
+documenti/GoisisEticaEPolitica.pdf                          	documenti/GoisisEticaEPolitica.pdf
+documenti/GoisisImpegnoDurata.pdf                           	documenti/GoisisImpegnoDurata.pdf
+documenti/ModalitaOperative.pdf                             	documenti/ModalitaOperative.pdf
+documenti/MovmentoFederalistaEuropeo.pdf                    	documenti/MovmentoFederalistaEuropeo.pdf
+documenti/PerosinPartecipazioneEDemocrazia.pdf              	documenti/PerosinPartecipazioneEDemocrazia.pdf
+documenti/SchemaAmministrazioniComunali.pdf                 	immagini/Colors.jpg
+documenti/StatoECittadino.pdf                               	immagini/DiagrammaDiFlusso.jpg
+documenti/VolpiniPresentazioneCorso.pdf                     	index.html
+immagini/Colors.jpg                                         	pagine/FlowChart.xhtml
+immagini/DiagrammaDiFlusso.jpg                              	pagine/ILibriDelMenocchio.xhtml
+index.html                                                  	pagine/documentazione.html
 pagine/FlowChart.xhtml                                      	
 pagine/ILibriDelMenocchio.xhtml                             	
 pagine/documentazione.html                                  	
@@ -1271,30 +2901,382 @@ Area di azzeramento delle variabili.
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
-Classe Loopper, metodo passo,
-valore della root passato a TestGet: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-valore di nome pagina al momento della chiamata di TestGET: Colors.jpg
-
-URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
-
 CLASSE TrovaDirs, costruttore di default.
 
 CLASSE TrovaDirs, metodo cerca_dire().
 
-Dentro il loop esterno, Valore di riga da elaborare: immagini/Colors.jpg
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniEticaCivile.pdf
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			immagini/Colors.jpg
-			immagini/Colors.jpg
+			documenti/BaroniEticaCivile.pdf
+			documenti/BaroniEticaCivile.pdf
 			false
 
 			Valore di find:false
 Terzo if
 
-Dentro il loop esterno, Valore di riga da elaborare: index.html 
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniSchemaEticaCivile.pdf
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			index.html 
+			documenti/BaroniSchemaEticaCivile.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BaroniSchemaEticaCivile.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BianchinComplessitaEPolitica.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/GoisisEticaEPolitica.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/GoisisImpegnoDurata.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/ModalitaOperative.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/ModalitaOperative.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/MovmentoFederalistaEuropeo.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/ModalitaOperative.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/MovmentoFederalistaEuropeo.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/PerosinPartecipazioneEDemocrazia.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/ModalitaOperative.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/MovmentoFederalistaEuropeo.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/SchemaAmministrazioniComunali.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/ModalitaOperative.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/MovmentoFederalistaEuropeo.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
 			immagini/Colors.jpg
 			true
 
@@ -1302,24 +3284,67 @@ Dentro il loop esterno, Valore di riga da elaborare: index.html
 Primoif
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
-			index.html 
+			documenti/SchemaAmministrazioniComunali.pdf
+			immagini/DiagrammaDiFlusso.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
 			index.html
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			pagine/FlowChart.xhtml
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			pagine/ILibriDelMenocchio.xhtml
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			pagine/documentazione.html
 			true
 
 			Valore di find:false
 Secondo if
 
-Valore di riga da elaborare: index.html 
+Valore di riga da elaborare: documenti/SchemaAmministrazioniComunali.pdf
 
 CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di index.html :	Nome: index.html 	Numero di elementi: 1
-	Percorso: null
+Elaborazione di documenti/SchemaAmministrazioniComunali.pdf:	Nome: SchemaAmministrazioniComunali.pdf	Numero di elementi: 2
+	Percorso: documenti
 	Radice: null
 
 CLASSE TrovaDirs, metodo caratteri_vietati().
 
-Riga contiene una directory? false
-Nome della pagina da salvare: Colors.jpg
+Riga contiene una directory? true
+
+Classe TrovaDIrs, metodo cerca_dire(),
+VALORE DI file_name: SchemaAmministrazioniComunali.pdf
+VALORE DI sub_dir: documenti/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+
+Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/documenti/SchemaAmministrazioniComunali.pdf
+
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+Nome della pagina da salvare: SchemaAmministrazioniComunali.pdf
 Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
 Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
@@ -1332,6 +3357,2820 @@ CLASSE TrovaDirs, metodo caratteri_vietati().
 
 CLASSE SalvaPagine, metodo scrivi().
 
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
-Nome del file: Colors.jpg
+Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+Nome del file: SchemaAmministrazioniComunali.pdf
 
+
+Classe SalvaPagine, metodo scrivi(), il file SchemaAmministrazioniComunali.pdf non è un fie di testo.
+
+CLASSE EstraiLinks, costruttore di default.
+
+CLASSE EstraiLinks, metodo links().
+
+Il file SchemaAmministrazioniComunali.pdf non è un file di testo, verrà salvato senza ulteriori analisi
+
+CLASSE Loopper, metodo risultati().
+
+=============================================================================================
+Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
+documenti/BaroniEticaCivile.pdf                             	documenti/BaroniEticaCivile.pdf
+documenti/BaroniSchemaEticaCivile.pdf                       	documenti/BaroniSchemaEticaCivile.pdf
+documenti/BianchinComplessitaEPolitica.pdf                  	documenti/BianchinComplessitaEPolitica.pdf
+documenti/GoisisEticaEPolitica.pdf                          	documenti/GoisisEticaEPolitica.pdf
+documenti/GoisisImpegnoDurata.pdf                           	documenti/GoisisImpegnoDurata.pdf
+documenti/ModalitaOperative.pdf                             	documenti/ModalitaOperative.pdf
+documenti/MovmentoFederalistaEuropeo.pdf                    	documenti/MovmentoFederalistaEuropeo.pdf
+documenti/PerosinPartecipazioneEDemocrazia.pdf              	documenti/PerosinPartecipazioneEDemocrazia.pdf
+documenti/SchemaAmministrazioniComunali.pdf                 	documenti/SchemaAmministrazioniComunali.pdf
+documenti/StatoECittadino.pdf                               	immagini/Colors.jpg
+documenti/VolpiniPresentazioneCorso.pdf                     	immagini/DiagrammaDiFlusso.jpg
+immagini/Colors.jpg                                         	index.html
+immagini/DiagrammaDiFlusso.jpg                              	pagine/FlowChart.xhtml
+index.html                                                  	pagine/ILibriDelMenocchio.xhtml
+pagine/FlowChart.xhtml                                      	pagine/documentazione.html
+pagine/ILibriDelMenocchio.xhtml                             	
+pagine/documentazione.html                                  	
+stili/GeneralTest.css                                       	
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 13
+
+Area di azzeramento delle variabili.
+
+IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+
+CLASSE TrovaDirs, costruttore di default.
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniEticaCivile.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BaroniEticaCivile.pdf
+			documenti/BaroniEticaCivile.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniSchemaEticaCivile.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BaroniSchemaEticaCivile.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BaroniSchemaEticaCivile.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BianchinComplessitaEPolitica.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/GoisisEticaEPolitica.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/GoisisImpegnoDurata.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/ModalitaOperative.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/ModalitaOperative.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/MovmentoFederalistaEuropeo.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/ModalitaOperative.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/MovmentoFederalistaEuropeo.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/PerosinPartecipazioneEDemocrazia.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/ModalitaOperative.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/MovmentoFederalistaEuropeo.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/SchemaAmministrazioniComunali.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/ModalitaOperative.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/MovmentoFederalistaEuropeo.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/SchemaAmministrazioniComunali.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/StatoECittadino.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			documenti/ModalitaOperative.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			documenti/MovmentoFederalistaEuropeo.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			documenti/SchemaAmministrazioniComunali.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			immagini/Colors.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			immagini/DiagrammaDiFlusso.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			index.html
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			pagine/FlowChart.xhtml
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			pagine/ILibriDelMenocchio.xhtml
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			pagine/documentazione.html
+			true
+
+			Valore di find:false
+Secondo if
+
+Valore di riga da elaborare: documenti/StatoECittadino.pdf
+
+CLASSE TrovaDirs, metodo esame_directory().
+Elaborazione di documenti/StatoECittadino.pdf:	Nome: StatoECittadino.pdf	Numero di elementi: 2
+	Percorso: documenti
+	Radice: null
+
+CLASSE TrovaDirs, metodo caratteri_vietati().
+
+Riga contiene una directory? true
+
+Classe TrovaDIrs, metodo cerca_dire(),
+VALORE DI file_name: StatoECittadino.pdf
+VALORE DI sub_dir: documenti/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+
+Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/documenti/StatoECittadino.pdf
+
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+Nome della pagina da salvare: StatoECittadino.pdf
+Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE SalvaPagine, costruttore con parametri.
+
+CLASSE TrovaDirs, costruttore di default.
+
+CLASSE TrovaDirs, metodo caratteri_vietati().
+
+CLASSE SalvaPagine, metodo scrivi().
+
+Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+Nome del file: StatoECittadino.pdf
+
+
+Classe SalvaPagine, metodo scrivi(), il file StatoECittadino.pdf non è un fie di testo.
+
+CLASSE EstraiLinks, costruttore di default.
+
+CLASSE EstraiLinks, metodo links().
+
+Il file StatoECittadino.pdf non è un file di testo, verrà salvato senza ulteriori analisi
+
+CLASSE Loopper, metodo risultati().
+
+=============================================================================================
+Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
+documenti/BaroniEticaCivile.pdf                             	documenti/BaroniEticaCivile.pdf
+documenti/BaroniSchemaEticaCivile.pdf                       	documenti/BaroniSchemaEticaCivile.pdf
+documenti/BianchinComplessitaEPolitica.pdf                  	documenti/BianchinComplessitaEPolitica.pdf
+documenti/GoisisEticaEPolitica.pdf                          	documenti/GoisisEticaEPolitica.pdf
+documenti/GoisisImpegnoDurata.pdf                           	documenti/GoisisImpegnoDurata.pdf
+documenti/ModalitaOperative.pdf                             	documenti/ModalitaOperative.pdf
+documenti/MovmentoFederalistaEuropeo.pdf                    	documenti/MovmentoFederalistaEuropeo.pdf
+documenti/PerosinPartecipazioneEDemocrazia.pdf              	documenti/PerosinPartecipazioneEDemocrazia.pdf
+documenti/SchemaAmministrazioniComunali.pdf                 	documenti/SchemaAmministrazioniComunali.pdf
+documenti/StatoECittadino.pdf                               	documenti/StatoECittadino.pdf
+documenti/VolpiniPresentazioneCorso.pdf                     	immagini/Colors.jpg
+immagini/Colors.jpg                                         	immagini/DiagrammaDiFlusso.jpg
+immagini/DiagrammaDiFlusso.jpg                              	index.html
+index.html                                                  	pagine/FlowChart.xhtml
+pagine/FlowChart.xhtml                                      	pagine/ILibriDelMenocchio.xhtml
+pagine/ILibriDelMenocchio.xhtml                             	pagine/documentazione.html
+pagine/documentazione.html                                  	
+stili/GeneralTest.css                                       	
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 14
+
+Area di azzeramento delle variabili.
+
+IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+
+CLASSE TrovaDirs, costruttore di default.
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniEticaCivile.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BaroniEticaCivile.pdf
+			documenti/BaroniEticaCivile.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniSchemaEticaCivile.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BaroniSchemaEticaCivile.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BaroniSchemaEticaCivile.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BianchinComplessitaEPolitica.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/GoisisEticaEPolitica.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/GoisisImpegnoDurata.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/ModalitaOperative.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/ModalitaOperative.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/MovmentoFederalistaEuropeo.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/ModalitaOperative.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/MovmentoFederalistaEuropeo.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/PerosinPartecipazioneEDemocrazia.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/ModalitaOperative.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/MovmentoFederalistaEuropeo.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/SchemaAmministrazioniComunali.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/ModalitaOperative.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/MovmentoFederalistaEuropeo.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/SchemaAmministrazioniComunali.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/StatoECittadino.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			documenti/ModalitaOperative.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			documenti/MovmentoFederalistaEuropeo.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			documenti/SchemaAmministrazioniComunali.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			documenti/StatoECittadino.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/VolpiniPresentazioneCorso.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/VolpiniPresentazioneCorso.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/VolpiniPresentazioneCorso.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/VolpiniPresentazioneCorso.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/VolpiniPresentazioneCorso.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/VolpiniPresentazioneCorso.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/VolpiniPresentazioneCorso.pdf
+			documenti/ModalitaOperative.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/VolpiniPresentazioneCorso.pdf
+			documenti/MovmentoFederalistaEuropeo.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/VolpiniPresentazioneCorso.pdf
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/VolpiniPresentazioneCorso.pdf
+			documenti/SchemaAmministrazioniComunali.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/VolpiniPresentazioneCorso.pdf
+			documenti/StatoECittadino.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/VolpiniPresentazioneCorso.pdf
+			immagini/Colors.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/VolpiniPresentazioneCorso.pdf
+			immagini/DiagrammaDiFlusso.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/VolpiniPresentazioneCorso.pdf
+			index.html
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/VolpiniPresentazioneCorso.pdf
+			pagine/FlowChart.xhtml
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/VolpiniPresentazioneCorso.pdf
+			pagine/ILibriDelMenocchio.xhtml
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/VolpiniPresentazioneCorso.pdf
+			pagine/documentazione.html
+			true
+
+			Valore di find:false
+Secondo if
+
+Valore di riga da elaborare: documenti/VolpiniPresentazioneCorso.pdf
+
+CLASSE TrovaDirs, metodo esame_directory().
+Elaborazione di documenti/VolpiniPresentazioneCorso.pdf:	Nome: VolpiniPresentazioneCorso.pdf	Numero di elementi: 2
+	Percorso: documenti
+	Radice: null
+
+CLASSE TrovaDirs, metodo caratteri_vietati().
+
+Riga contiene una directory? true
+
+Classe TrovaDIrs, metodo cerca_dire(),
+VALORE DI file_name: VolpiniPresentazioneCorso.pdf
+VALORE DI sub_dir: documenti/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+
+Classe TrovaDIrs, metodo cerca_dire() La vecchia subdirectory e la nuova corrispondono
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/documenti/VolpiniPresentazioneCorso.pdf
+
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+Nome della pagina da salvare: VolpiniPresentazioneCorso.pdf
+Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE SalvaPagine, costruttore con parametri.
+
+CLASSE TrovaDirs, costruttore di default.
+
+CLASSE TrovaDirs, metodo caratteri_vietati().
+
+CLASSE SalvaPagine, metodo scrivi().
+
+Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+Nome del file: VolpiniPresentazioneCorso.pdf
+
+
+Classe SalvaPagine, metodo scrivi(), il file VolpiniPresentazioneCorso.pdf non è un fie di testo.
+
+CLASSE EstraiLinks, costruttore di default.
+
+CLASSE EstraiLinks, metodo links().
+
+Il file VolpiniPresentazioneCorso.pdf non è un file di testo, verrà salvato senza ulteriori analisi
+
+CLASSE Loopper, metodo risultati().
+
+=============================================================================================
+Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
+documenti/BaroniEticaCivile.pdf                             	documenti/BaroniEticaCivile.pdf
+documenti/BaroniSchemaEticaCivile.pdf                       	documenti/BaroniSchemaEticaCivile.pdf
+documenti/BianchinComplessitaEPolitica.pdf                  	documenti/BianchinComplessitaEPolitica.pdf
+documenti/GoisisEticaEPolitica.pdf                          	documenti/GoisisEticaEPolitica.pdf
+documenti/GoisisImpegnoDurata.pdf                           	documenti/GoisisImpegnoDurata.pdf
+documenti/ModalitaOperative.pdf                             	documenti/ModalitaOperative.pdf
+documenti/MovmentoFederalistaEuropeo.pdf                    	documenti/MovmentoFederalistaEuropeo.pdf
+documenti/PerosinPartecipazioneEDemocrazia.pdf              	documenti/PerosinPartecipazioneEDemocrazia.pdf
+documenti/SchemaAmministrazioniComunali.pdf                 	documenti/SchemaAmministrazioniComunali.pdf
+documenti/StatoECittadino.pdf                               	documenti/StatoECittadino.pdf
+documenti/VolpiniPresentazioneCorso.pdf                     	documenti/VolpiniPresentazioneCorso.pdf
+immagini/Colors.jpg                                         	immagini/Colors.jpg
+immagini/DiagrammaDiFlusso.jpg                              	immagini/DiagrammaDiFlusso.jpg
+index.html                                                  	index.html
+pagine/FlowChart.xhtml                                      	pagine/FlowChart.xhtml
+pagine/ILibriDelMenocchio.xhtml                             	pagine/ILibriDelMenocchio.xhtml
+pagine/documentazione.html                                  	pagine/documentazione.html
+stili/GeneralTest.css                                       	
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 15
+
+Area di azzeramento delle variabili.
+
+IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+
+CLASSE TrovaDirs, costruttore di default.
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniEticaCivile.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BaroniEticaCivile.pdf
+			documenti/BaroniEticaCivile.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniSchemaEticaCivile.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BaroniSchemaEticaCivile.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BaroniSchemaEticaCivile.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/BianchinComplessitaEPolitica.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/BianchinComplessitaEPolitica.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/GoisisEticaEPolitica.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisEticaEPolitica.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/GoisisImpegnoDurata.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/GoisisImpegnoDurata.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/ModalitaOperative.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/ModalitaOperative.pdf
+			documenti/ModalitaOperative.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/MovmentoFederalistaEuropeo.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/ModalitaOperative.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/MovmentoFederalistaEuropeo.pdf
+			documenti/MovmentoFederalistaEuropeo.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/PerosinPartecipazioneEDemocrazia.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/ModalitaOperative.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/MovmentoFederalistaEuropeo.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/SchemaAmministrazioniComunali.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/ModalitaOperative.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/MovmentoFederalistaEuropeo.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/SchemaAmministrazioniComunali.pdf
+			documenti/SchemaAmministrazioniComunali.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/StatoECittadino.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			documenti/ModalitaOperative.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			documenti/MovmentoFederalistaEuropeo.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			documenti/SchemaAmministrazioniComunali.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/StatoECittadino.pdf
+			documenti/StatoECittadino.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: documenti/VolpiniPresentazioneCorso.pdf
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/VolpiniPresentazioneCorso.pdf
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/VolpiniPresentazioneCorso.pdf
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/VolpiniPresentazioneCorso.pdf
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/VolpiniPresentazioneCorso.pdf
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/VolpiniPresentazioneCorso.pdf
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/VolpiniPresentazioneCorso.pdf
+			documenti/ModalitaOperative.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/VolpiniPresentazioneCorso.pdf
+			documenti/MovmentoFederalistaEuropeo.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/VolpiniPresentazioneCorso.pdf
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/VolpiniPresentazioneCorso.pdf
+			documenti/SchemaAmministrazioniComunali.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/VolpiniPresentazioneCorso.pdf
+			documenti/StatoECittadino.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			documenti/VolpiniPresentazioneCorso.pdf
+			documenti/VolpiniPresentazioneCorso.pdf
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: immagini/Colors.jpg
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			immagini/Colors.jpg
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			immagini/Colors.jpg
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			immagini/Colors.jpg
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			immagini/Colors.jpg
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			immagini/Colors.jpg
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			immagini/Colors.jpg
+			documenti/ModalitaOperative.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			immagini/Colors.jpg
+			documenti/MovmentoFederalistaEuropeo.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			immagini/Colors.jpg
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			immagini/Colors.jpg
+			documenti/SchemaAmministrazioniComunali.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			immagini/Colors.jpg
+			documenti/StatoECittadino.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			immagini/Colors.jpg
+			documenti/VolpiniPresentazioneCorso.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			immagini/Colors.jpg
+			immagini/Colors.jpg
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: immagini/DiagrammaDiFlusso.jpg
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			immagini/DiagrammaDiFlusso.jpg
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			immagini/DiagrammaDiFlusso.jpg
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			immagini/DiagrammaDiFlusso.jpg
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			immagini/DiagrammaDiFlusso.jpg
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			immagini/DiagrammaDiFlusso.jpg
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			immagini/DiagrammaDiFlusso.jpg
+			documenti/ModalitaOperative.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			immagini/DiagrammaDiFlusso.jpg
+			documenti/MovmentoFederalistaEuropeo.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			immagini/DiagrammaDiFlusso.jpg
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			immagini/DiagrammaDiFlusso.jpg
+			documenti/SchemaAmministrazioniComunali.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			immagini/DiagrammaDiFlusso.jpg
+			documenti/StatoECittadino.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			immagini/DiagrammaDiFlusso.jpg
+			documenti/VolpiniPresentazioneCorso.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			immagini/DiagrammaDiFlusso.jpg
+			immagini/Colors.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			immagini/DiagrammaDiFlusso.jpg
+			immagini/DiagrammaDiFlusso.jpg
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: index.html
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			index.html
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			index.html
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			index.html
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			index.html
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			index.html
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			index.html
+			documenti/ModalitaOperative.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			index.html
+			documenti/MovmentoFederalistaEuropeo.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			index.html
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			index.html
+			documenti/SchemaAmministrazioniComunali.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			index.html
+			documenti/StatoECittadino.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			index.html
+			documenti/VolpiniPresentazioneCorso.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			index.html
+			immagini/Colors.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			index.html
+			immagini/DiagrammaDiFlusso.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			index.html
+			index.html
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: pagine/FlowChart.xhtml
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/FlowChart.xhtml
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/FlowChart.xhtml
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/FlowChart.xhtml
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/FlowChart.xhtml
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/FlowChart.xhtml
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/FlowChart.xhtml
+			documenti/ModalitaOperative.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/FlowChart.xhtml
+			documenti/MovmentoFederalistaEuropeo.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/FlowChart.xhtml
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/FlowChart.xhtml
+			documenti/SchemaAmministrazioniComunali.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/FlowChart.xhtml
+			documenti/StatoECittadino.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/FlowChart.xhtml
+			documenti/VolpiniPresentazioneCorso.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/FlowChart.xhtml
+			immagini/Colors.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/FlowChart.xhtml
+			immagini/DiagrammaDiFlusso.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/FlowChart.xhtml
+			index.html
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/FlowChart.xhtml
+			pagine/FlowChart.xhtml
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: pagine/ILibriDelMenocchio.xhtml
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/ILibriDelMenocchio.xhtml
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/ILibriDelMenocchio.xhtml
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/ILibriDelMenocchio.xhtml
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/ILibriDelMenocchio.xhtml
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/ILibriDelMenocchio.xhtml
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/ILibriDelMenocchio.xhtml
+			documenti/ModalitaOperative.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/ILibriDelMenocchio.xhtml
+			documenti/MovmentoFederalistaEuropeo.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/ILibriDelMenocchio.xhtml
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/ILibriDelMenocchio.xhtml
+			documenti/SchemaAmministrazioniComunali.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/ILibriDelMenocchio.xhtml
+			documenti/StatoECittadino.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/ILibriDelMenocchio.xhtml
+			documenti/VolpiniPresentazioneCorso.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/ILibriDelMenocchio.xhtml
+			immagini/Colors.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/ILibriDelMenocchio.xhtml
+			immagini/DiagrammaDiFlusso.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/ILibriDelMenocchio.xhtml
+			index.html
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/ILibriDelMenocchio.xhtml
+			pagine/FlowChart.xhtml
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/ILibriDelMenocchio.xhtml
+			pagine/ILibriDelMenocchio.xhtml
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: pagine/documentazione.html
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/documentazione.html
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/documentazione.html
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/documentazione.html
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/documentazione.html
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/documentazione.html
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/documentazione.html
+			documenti/ModalitaOperative.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/documentazione.html
+			documenti/MovmentoFederalistaEuropeo.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/documentazione.html
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/documentazione.html
+			documenti/SchemaAmministrazioniComunali.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/documentazione.html
+			documenti/StatoECittadino.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/documentazione.html
+			documenti/VolpiniPresentazioneCorso.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/documentazione.html
+			immagini/Colors.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/documentazione.html
+			immagini/DiagrammaDiFlusso.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/documentazione.html
+			index.html
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/documentazione.html
+			pagine/FlowChart.xhtml
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/documentazione.html
+			pagine/ILibriDelMenocchio.xhtml
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			pagine/documentazione.html
+			pagine/documentazione.html
+			false
+
+			Valore di find:false
+Terzo if
+
+Dentro il loop esterno, Valore di riga da elaborare: stili/GeneralTest.css
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			stili/GeneralTest.css
+			documenti/BaroniEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			stili/GeneralTest.css
+			documenti/BaroniSchemaEticaCivile.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			stili/GeneralTest.css
+			documenti/BianchinComplessitaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			stili/GeneralTest.css
+			documenti/GoisisEticaEPolitica.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			stili/GeneralTest.css
+			documenti/GoisisImpegnoDurata.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			stili/GeneralTest.css
+			documenti/ModalitaOperative.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			stili/GeneralTest.css
+			documenti/MovmentoFederalistaEuropeo.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			stili/GeneralTest.css
+			documenti/PerosinPartecipazioneEDemocrazia.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			stili/GeneralTest.css
+			documenti/SchemaAmministrazioniComunali.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			stili/GeneralTest.css
+			documenti/StatoECittadino.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			stili/GeneralTest.css
+			documenti/VolpiniPresentazioneCorso.pdf
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			stili/GeneralTest.css
+			immagini/Colors.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			stili/GeneralTest.css
+			immagini/DiagrammaDiFlusso.jpg
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			stili/GeneralTest.css
+			index.html
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			stili/GeneralTest.css
+			pagine/FlowChart.xhtml
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			stili/GeneralTest.css
+			pagine/ILibriDelMenocchio.xhtml
+			true
+
+			Valore di find:true
+Primoif
+
+			Differenza tra riga e tmp, valori e risultato (find_1):
+			stili/GeneralTest.css
+			pagine/documentazione.html
+			true
+
+			Valore di find:false
+Secondo if
+
+Valore di riga da elaborare: stili/GeneralTest.css
+
+CLASSE TrovaDirs, metodo esame_directory().
+Elaborazione di stili/GeneralTest.css:	Nome: GeneralTest.css	Numero di elementi: 2
+	Percorso: stili
+	Radice: null
+
+CLASSE TrovaDirs, metodo caratteri_vietati().
+
+Riga contiene una directory? true
+
+Classe TrovaDIrs, metodo cerca_dire(),
+VALORE DI file_name: GeneralTest.css
+VALORE DI sub_dir: stili/
+VALORE DI root_d: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
+
+Sotto directory in cui verrà salvata la pagina:stili/
+ROOT_D: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
+Cartella di destinazione del sito: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/ CREATA CORRETTAMENTE!
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/stili/GeneralTest.css
+
+Percorso da creare: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
+Nome della pagina da salvare: GeneralTest.css
+Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE SalvaPagine, costruttore con parametri.
+
+CLASSE TrovaDirs, costruttore di default.
+
+CLASSE TrovaDirs, metodo caratteri_vietati().
+
+CLASSE SalvaPagine, metodo scrivi().
+
+Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
+Nome del file: GeneralTest.css
+
+
+CLASSE EstraiLinks, costruttore di default.
+
+CLASSE EstraiLinks, metodo links().
+
+CLASSE EstraiLinks, metodo ciclo().
+
+CLASSE EstraiLinks, metodo ciclo().
+
+
+Elenco dei link presenti nel sito
+
+documenti/BaroniEticaCivile.pdf
+documenti/BaroniSchemaEticaCivile.pdf
+documenti/BianchinComplessitaEPolitica.pdf
+documenti/GoisisEticaEPolitica.pdf
+documenti/GoisisImpegnoDurata.pdf
+documenti/ModalitaOperative.pdf
+documenti/MovmentoFederalistaEuropeo.pdf
+documenti/PerosinPartecipazioneEDemocrazia.pdf
+documenti/SchemaAmministrazioniComunali.pdf
+documenti/StatoECittadino.pdf
+documenti/VolpiniPresentazioneCorso.pdf
+immagini/Colors.jpg
+immagini/DiagrammaDiFlusso.jpg
+index.html
+pagine/FlowChart.xhtml
+pagine/ILibriDelMenocchio.xhtml
+pagine/documentazione.html
+stili/GeneralTest.css
+
+                                       £
+
+CLASSE Loopper, metodo risultati().
+
+=============================================================================================
+Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
+documenti/BaroniEticaCivile.pdf                             	documenti/BaroniEticaCivile.pdf
+documenti/BaroniSchemaEticaCivile.pdf                       	documenti/BaroniSchemaEticaCivile.pdf
+documenti/BianchinComplessitaEPolitica.pdf                  	documenti/BianchinComplessitaEPolitica.pdf
+documenti/GoisisEticaEPolitica.pdf                          	documenti/GoisisEticaEPolitica.pdf
+documenti/GoisisImpegnoDurata.pdf                           	documenti/GoisisImpegnoDurata.pdf
+documenti/ModalitaOperative.pdf                             	documenti/ModalitaOperative.pdf
+documenti/MovmentoFederalistaEuropeo.pdf                    	documenti/MovmentoFederalistaEuropeo.pdf
+documenti/PerosinPartecipazioneEDemocrazia.pdf              	documenti/PerosinPartecipazioneEDemocrazia.pdf
+documenti/SchemaAmministrazioniComunali.pdf                 	documenti/SchemaAmministrazioniComunali.pdf
+documenti/StatoECittadino.pdf                               	documenti/StatoECittadino.pdf
+documenti/VolpiniPresentazioneCorso.pdf                     	documenti/VolpiniPresentazioneCorso.pdf
+immagini/Colors.jpg                                         	immagini/Colors.jpg
+immagini/DiagrammaDiFlusso.jpg                              	immagini/DiagrammaDiFlusso.jpg
+index.html                                                  	index.html
+pagine/FlowChart.xhtml                                      	pagine/FlowChart.xhtml
+pagine/ILibriDelMenocchio.xhtml                             	pagine/ILibriDelMenocchio.xhtml
+pagine/documentazione.html                                  	pagine/documentazione.html
+stili/GeneralTest.css                                       	stili/GeneralTest.css
+Lavoro ultimato! Tutti i links sono stati visitati e scaricati.
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: true
+Contatore di cicli: 16
+
+CLASSE Loopper, metodo risultati().
+
+=============================================================================================
+Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati
+documenti/BaroniEticaCivile.pdf                             	documenti/BaroniEticaCivile.pdf
+documenti/BaroniSchemaEticaCivile.pdf                       	documenti/BaroniSchemaEticaCivile.pdf
+documenti/BianchinComplessitaEPolitica.pdf                  	documenti/BianchinComplessitaEPolitica.pdf
+documenti/GoisisEticaEPolitica.pdf                          	documenti/GoisisEticaEPolitica.pdf
+documenti/GoisisImpegnoDurata.pdf                           	documenti/GoisisImpegnoDurata.pdf
+documenti/ModalitaOperative.pdf                             	documenti/ModalitaOperative.pdf
+documenti/MovmentoFederalistaEuropeo.pdf                    	documenti/MovmentoFederalistaEuropeo.pdf
+documenti/PerosinPartecipazioneEDemocrazia.pdf              	documenti/PerosinPartecipazioneEDemocrazia.pdf
+documenti/SchemaAmministrazioniComunali.pdf                 	documenti/SchemaAmministrazioniComunali.pdf
+documenti/StatoECittadino.pdf                               	documenti/StatoECittadino.pdf
+documenti/VolpiniPresentazioneCorso.pdf                     	documenti/VolpiniPresentazioneCorso.pdf
+immagini/Colors.jpg                                         	immagini/Colors.jpg
+immagini/DiagrammaDiFlusso.jpg                              	immagini/DiagrammaDiFlusso.jpg
+index.html                                                  	index.html
+pagine/FlowChart.xhtml                                      	pagine/FlowChart.xhtml
+pagine/ILibriDelMenocchio.xhtml                             	pagine/ILibriDelMenocchio.xhtml
+pagine/documentazione.html                                  	pagine/documentazione.html
+stili/GeneralTest.css                                       	stili/GeneralTest.css
+Elaborazione completata.
