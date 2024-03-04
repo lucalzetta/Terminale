@@ -8,7 +8,10 @@ package linea;
  * @author luca
  */
 import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.OutputStream;
 import java.io.FileOutputStream;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.FileNotFoundException;
 import java.io.File;
@@ -36,7 +39,7 @@ private TrovaDirs TD;
 
 public SalvaPagine(String nome_pagina)throws IOException
 {
-System.out.printf("%nCLASSE SalvaPagine, costruttore di default.%n");
+//System.out.printf("%nCLASSE SalvaPagine, costruttore di default.%n");
 DESTINAZIONE = VG.get_root();
 NOME_PAGINA = nome_pagina.strip();
 TD = new TrovaDirs();
@@ -44,7 +47,7 @@ NOME_VALIDO = TD.caratteri_vietati(nome_pagina);
 }
 public SalvaPagine(String dir, String nome_pagina)throws IOException
 {
-System.out.printf("%nCLASSE SalvaPagine, costruttore con parametri.%n");
+//System.out.printf("%nCLASSE SalvaPagine, costruttore con parametri.%n");
 DESTINAZIONE = dir;
 NOME_PAGINA = nome_pagina.strip();
 TD = new TrovaDirs();
@@ -53,31 +56,39 @@ NOME_VALIDO = TD.caratteri_vietati(nome_pagina);
 
 public void scrivi(boolean testo)throws IOException
 {
-System.out.printf("%nCLASSE SalvaPagine, metodo scrivi().%n");
+//System.out.printf("%nCLASSE SalvaPagine, metodo scrivi().%n");
 if(NOME_VALIDO)
     {
+        OutputStream fos = null;
+        InputStreamReader reader = null;
         try
             {
-                System.out.printf("%nClasse SalvaPagine, metodo scrivi(),"
-                        + " destinazione del file: %s%nNome del file: %s%n%n", DESTINAZIONE, NOME_PAGINA.strip());
+                System.out.printf("%nClasse SalvaPagine, metodo scrivi(),%n%n"
+                        + "destinazione del file: %s%n"
+                        + "Nome del file: %s%n"
+                        + "Origine del file: %s%n%n", DESTINAZIONE, NOME_PAGINA.strip(), VG.get_sito());
                 URL u = VG.get_sito();
                 URLConnection uc = u.openConnection();
                 java.io.InputStream in = uc.getInputStream();
-                java.io.BufferedInputStream orig = new BufferedInputStream(in);
-                Reader reader = new InputStreamReader(orig);
+                //java.io.BufferedInputStream orig = new BufferedInputStream(in);
+                reader = new InputStreamReader(in);
+                
                 File pagina = new File(DESTINAZIONE, NOME_PAGINA); 
-                FileOutputStream fos = new FileOutputStream(pagina);
+                fos = new FileOutputStream(pagina);
                 String str_pagina = "";
                 StringBuilder build_pagina = new StringBuilder();
-                int c;
+                int c = 0;
+                int contatore = 0;
+                
                 if(testo)
                     {
                         while ((c = reader.read()) != -1) 
                             {
-                                fos.write(c);
+                               fos.write(c);
                                str_pagina = str_pagina + (char)c;
-                                build_pagina.append((char)c);
+                               build_pagina.append((char)c);
                                 //System.out.print((char) c);
+                                contatore ++;
                             }
                     }
                 else
@@ -85,10 +96,12 @@ if(NOME_VALIDO)
                         while ((c = reader.read()) != -1) 
                             {          
                                 fos.write(c);
+                                contatore ++;
                             }
                     }
-                fos.close();
-                reader.close();
+                System.out.printf("%nClasse SalvaPagine, metodo scrivi(),%n%n"
+                        + "letti: %d byte dal file %s%n",contatore , NOME_PAGINA.strip());
+                
                     
                 //Aggiorniamo il set dei links visitati
                 if(VG.get_subdir() != null)
@@ -106,8 +119,8 @@ if(NOME_VALIDO)
                 */
                 if (! VG.get_testo())
                     {
-                        System.out.printf("%nClasse SalvaPagine, metodo scrivi(), il file "
-                                + "%s non è un fie di testo.%n", NOME_PAGINA);
+                        //System.out.printf("%nClasse SalvaPagine, metodo scrivi(), il file "
+                                //+ "%s non è un fie di testo.%n", NOME_PAGINA);
                     }
                 else
                     {
@@ -129,6 +142,32 @@ if(NOME_VALIDO)
             {
                 System.err.printf("Il file %s non è stato trovato dal metodo "
                         + "scrivi della classe SalvaPagina().", fnf);
+            }
+        finally
+            {
+                if(fos != null)
+                    {
+                    try
+                        {
+                            fos.close();
+                        }
+                    catch(IOException ioe)
+                        {
+                        
+                        }
+                    }
+                if(reader != null)
+                    {
+                    try
+                        {
+                            reader.close();
+                        }
+                    catch(IOException ioe)
+                        {
+                        
+                        }
+                    }
+
             }
     }
 }

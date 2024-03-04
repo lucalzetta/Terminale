@@ -17,22 +17,22 @@ private Set<String> SET_LINKS;
 
 public EstraiLinks(String pagina)
 {
-System.out.printf("%nCLASSE EstraiLinks, costruttore di default.%n");
+//System.out.printf("%nCLASSE EstraiLinks, costruttore di default.%n");
 PAGINA = pagina;
 SET_LINKS = new TreeSet<>();
 }
 
 public void links (boolean testo)
 {
-System.out.printf("%nCLASSE EstraiLinks, metodo links().%n");    
+//System.out.printf("%nCLASSE EstraiLinks, metodo links().%n");    
     /**
      * È possibile passare stringhe diverse per implementare i possibili
      * link presenti nelle pagie html, xml, xhtml e così via
      */
     if( ! testo)
         {
-            System.out.printf("%nIl file %s non è un file di testo, verrà salvato"
-                    + " senza ulteriori analisi%n", VG.get_name_page());
+            //System.out.printf("%nIl file %s non è un file di testo, verrà salvato"
+                    //+ " senza ulteriori analisi%n", VG.get_name_page());
         }
     else
         {
@@ -59,7 +59,7 @@ System.out.printf("%nCLASSE EstraiLinks, metodo links().%n");
 
 private void ciclo(String par)
 {
-System.out.printf("%nCLASSE EstraiLinks, metodo ciclo().%n");    
+//System.out.printf("%nCLASSE EstraiLinks, metodo ciclo().%n");    
 /**
  * 14/12/2023
  * Questo ciclo generalizza la ricerca delle righe contenenti i parametri indicati
@@ -113,7 +113,7 @@ System.out.printf("%nCLASSE EstraiLinks, metodo ciclo().%n");
                         
                         SET_LINKS.add(riga);
                         
-                        System.out.printf("Trovata l'occorrenza n° %d di '%s' in posizione: %d\t%s%n",c,par, i,riga);
+                        //System.out.printf("Trovata l'occorrenza n° %d di '%s' in posizione: %d\t%s%n",c,par, i,riga);
                         i++;
                         old_ref = PAGINA.indexOf(par, 0 );//segna la prima occorrenza della 
                                                                       //stringa ricercata per bloccare

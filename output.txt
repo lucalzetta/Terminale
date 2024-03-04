@@ -15,22 +15,11 @@ e scritti i file:
 /home/lucaamministratore/tmp/scuoladipoliticamaniago/ArchivioDIRS.txt
 scaricata la pagina: index.html
 
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo cerca_dire().
-
 Dentro il loop esterno, Valore di riga da elaborare: index.html
 
 			Valore di find:false
 Abbiamo esplorato tutti i collegamenti!
 Valore di riga da elaborare: index.html
-
-CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di index.html:	Nome: index.html	Numero di elementi: 1
-	Percorso: null
-	Radice: null
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
 
 Riga contiene una directory? false
 Nome della pagina da salvare: index.html
@@ -38,30 +27,16 @@ Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
 Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
 
-CLASSE SalvaPagine, costruttore con parametri.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
-CLASSE SalvaPagine, metodo scrivi().
-
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
+destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
 Nome del file: index.html
+Origine del file: http://www.scuoladipoliticamaniago.it/index.html
 
 
-CLASSE EstraiLinks, costruttore di default.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE EstraiLinks, metodo links().
-
-CLASSE EstraiLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'href=' in posizione: 227	stili/GeneralTest.css
-Trovata l'occorrenza n° 2 di 'href=' in posizione: 803	pagine/ILibriDelMenocchio.xhtml
-Trovata l'occorrenza n° 3 di 'href=' in posizione: 873	pagine/documentazione.html
-Trovata l'occorrenza n° 4 di 'href=' in posizione: 932	pagine/FlowChart.xhtml
-
-CLASSE EstraiLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'src=' in posizione: 333	immagini/Colors.jpg
+letti: 974 byte dal file index.html
 
 
 Elenco dei link presenti nel sito
@@ -75,14 +50,6 @@ stili/GeneralTest.css
 
                                        £
 
-Area di azzeramento delle variabili.
-
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo cerca_dire().
-
 Dentro il loop esterno, Valore di riga da elaborare: immagini/Colors.jpg
 
 			Differenza tra riga e tmp, valori e risultato (find_1):
@@ -94,13 +61,6 @@ Dentro il loop esterno, Valore di riga da elaborare: immagini/Colors.jpg
 Secondo if
 
 Valore di riga da elaborare: immagini/Colors.jpg
-
-CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di immagini/Colors.jpg:	Nome: Colors.jpg	Numero di elementi: 2
-	Percorso: immagini
-	Radice: null
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
 
 Riga contiene una directory? true
 
@@ -124,25 +84,16 @@ Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
 Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
 
-CLASSE SalvaPagine, costruttore con parametri.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
-CLASSE SalvaPagine, metodo scrivi().
-
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 Nome del file: Colors.jpg
+Origine del file: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
 
-Classe SalvaPagine, metodo scrivi(), il file Colors.jpg non è un fie di testo.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE EstraiLinks, costruttore di default.
-
-CLASSE EstraiLinks, metodo links().
-
-Il file Colors.jpg non è un file di testo, verrà salvato senza ulteriori analisi
+letti: 340356 byte dal file Colors.jpg
 
 CLASSE Loopper, metodo risultati().
 
@@ -157,14 +108,6 @@ stili/GeneralTest.css
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 0
-
-Area di azzeramento delle variabili.
-
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo cerca_dire().
 
 Dentro il loop esterno, Valore di riga da elaborare: immagini/Colors.jpg
 
@@ -214,13 +157,6 @@ Secondo if
 
 Valore di riga da elaborare: pagine/FlowChart.xhtml
 
-CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di pagine/FlowChart.xhtml:	Nome: FlowChart.xhtml	Numero di elementi: 2
-	Percorso: pagine
-	Radice: null
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
 Riga contiene una directory? true
 
 Classe TrovaDIrs, metodo cerca_dire(),
@@ -243,26 +179,16 @@ Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
 Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
 
-CLASSE SalvaPagine, costruttore con parametri.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
-CLASSE SalvaPagine, metodo scrivi().
-
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/
+destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/
 Nome del file: FlowChart.xhtml
+Origine del file: http://www.scuoladipoliticamaniago.it/pagine/FlowChart.xhtml
 
 
-CLASSE EstraiLinks, costruttore di default.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE EstraiLinks, metodo links().
-
-CLASSE EstraiLinks, metodo ciclo().
-
-CLASSE EstraiLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'src=' in posizione: 318	immagini/DiagrammaDiFlusso.jpg
+letti: 370 byte dal file FlowChart.xhtml
 
 
 Elenco dei link presenti nel sito
@@ -291,14 +217,6 @@ stili/GeneralTest.css
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 1
-
-Area di azzeramento delle variabili.
-
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo cerca_dire().
 
 Dentro il loop esterno, Valore di riga da elaborare: immagini/Colors.jpg
 
@@ -338,13 +256,6 @@ Secondo if
 
 Valore di riga da elaborare: immagini/DiagrammaDiFlusso.jpg
 
-CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di immagini/DiagrammaDiFlusso.jpg:	Nome: DiagrammaDiFlusso.jpg	Numero di elementi: 2
-	Percorso: immagini
-	Radice: null
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
 Riga contiene una directory? true
 
 Classe TrovaDIrs, metodo cerca_dire(),
@@ -367,25 +278,16 @@ Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
 Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
 
-CLASSE SalvaPagine, costruttore con parametri.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
-CLASSE SalvaPagine, metodo scrivi().
-
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 Nome del file: DiagrammaDiFlusso.jpg
+Origine del file: http://www.scuoladipoliticamaniago.it/immagini/DiagrammaDiFlusso.jpg
 
 
-Classe SalvaPagine, metodo scrivi(), il file DiagrammaDiFlusso.jpg non è un fie di testo.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE EstraiLinks, costruttore di default.
-
-CLASSE EstraiLinks, metodo links().
-
-Il file DiagrammaDiFlusso.jpg non è un file di testo, verrà salvato senza ulteriori analisi
+letti: 19581 byte dal file DiagrammaDiFlusso.jpg
 
 CLASSE Loopper, metodo risultati().
 
@@ -401,14 +303,6 @@ stili/GeneralTest.css
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 2
-
-Area di azzeramento delle variabili.
-
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo cerca_dire().
 
 Dentro il loop esterno, Valore di riga da elaborare: immagini/Colors.jpg
 
@@ -534,13 +428,6 @@ Secondo if
 
 Valore di riga da elaborare: pagine/ILibriDelMenocchio.xhtml
 
-CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di pagine/ILibriDelMenocchio.xhtml:	Nome: ILibriDelMenocchio.xhtml	Numero di elementi: 2
-	Percorso: pagine
-	Radice: null
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
 Riga contiene una directory? true
 
 Classe TrovaDIrs, metodo cerca_dire(),
@@ -563,26 +450,16 @@ Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
 Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
 
-CLASSE SalvaPagine, costruttore con parametri.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
-CLASSE SalvaPagine, metodo scrivi().
-
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/
+destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/
 Nome del file: ILibriDelMenocchio.xhtml
+Origine del file: http://www.scuoladipoliticamaniago.it/pagine/ILibriDelMenocchio.xhtml
 
 
-CLASSE EstraiLinks, costruttore di default.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE EstraiLinks, metodo links().
-
-CLASSE EstraiLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'href=' in posizione: 518	index.html
-
-CLASSE EstraiLinks, metodo ciclo().
+letti: 541 byte dal file ILibriDelMenocchio.xhtml
 
 
 Elenco dei link presenti nel sito
@@ -611,14 +488,6 @@ stili/GeneralTest.css
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 3
-
-Area di azzeramento delle variabili.
-
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo cerca_dire().
 
 Dentro il loop esterno, Valore di riga da elaborare: immagini/Colors.jpg
 
@@ -794,13 +663,6 @@ Secondo if
 
 Valore di riga da elaborare: pagine/documentazione.html
 
-CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di pagine/documentazione.html:	Nome: documentazione.html	Numero di elementi: 2
-	Percorso: pagine
-	Radice: null
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
 Riga contiene una directory? true
 
 Classe TrovaDIrs, metodo cerca_dire(),
@@ -818,37 +680,16 @@ Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
 Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
 
-CLASSE SalvaPagine, costruttore con parametri.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
-CLASSE SalvaPagine, metodo scrivi().
-
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/
+destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/
 Nome del file: documentazione.html
+Origine del file: http://www.scuoladipoliticamaniago.it/pagine/documentazione.html
 
 
-CLASSE EstraiLinks, costruttore di default.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE EstraiLinks, metodo links().
-
-CLASSE EstraiLinks, metodo ciclo().
-Trovata l'occorrenza n° 1 di 'href=' in posizione: 430	documenti/BaroniEticaCivile.pdf
-Trovata l'occorrenza n° 2 di 'href=' in posizione: 539	documenti/BaroniSchemaEticaCivile.pdf
-Trovata l'occorrenza n° 3 di 'href=' in posizione: 667	documenti/BianchinComplessitaEPolitica.pdf
-Trovata l'occorrenza n° 4 di 'href=' in posizione: 782	documenti/GoisisEticaEPolitica.pdf
-Trovata l'occorrenza n° 5 di 'href=' in posizione: 911	documenti/GoisisImpegnoDurata.pdf
-Trovata l'occorrenza n° 6 di 'href=' in posizione: 1045	documenti/ModalitaOperative.pdf
-Trovata l'occorrenza n° 7 di 'href=' in posizione: 1167	documenti/MovmentoFederalistaEuropeo.pdf
-Trovata l'occorrenza n° 8 di 'href=' in posizione: 1337	documenti/PerosinPartecipazioneEDemocrazia.pdf
-Trovata l'occorrenza n° 9 di 'href=' in posizione: 1468	documenti/SchemaAmministrazioniComunali.pdf
-Trovata l'occorrenza n° 10 di 'href=' in posizione: 1598	documenti/StatoECittadino.pdf
-Trovata l'occorrenza n° 11 di 'href=' in posizione: 1761	documenti/VolpiniPresentazioneCorso.pdf
-Trovata l'occorrenza n° 12 di 'href=' in posizione: 1864	index.html
-
-CLASSE EstraiLinks, metodo ciclo().
+letti: 1885 byte dal file documentazione.html
 
 
 Elenco dei link presenti nel sito
@@ -899,14 +740,6 @@ stili/GeneralTest.css
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 4
-
-Area di azzeramento delle variabili.
-
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo cerca_dire().
 
 Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniEticaCivile.pdf
 
@@ -960,13 +793,6 @@ Secondo if
 
 Valore di riga da elaborare: documenti/BaroniEticaCivile.pdf
 
-CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di documenti/BaroniEticaCivile.pdf:	Nome: BaroniEticaCivile.pdf	Numero di elementi: 2
-	Percorso: documenti
-	Radice: null
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
 Riga contiene una directory? true
 
 Classe TrovaDIrs, metodo cerca_dire(),
@@ -989,25 +815,16 @@ Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
 Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
 
-CLASSE SalvaPagine, costruttore con parametri.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
-CLASSE SalvaPagine, metodo scrivi().
-
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
 Nome del file: BaroniEticaCivile.pdf
+Origine del file: http://www.scuoladipoliticamaniago.it/documenti/BaroniEticaCivile.pdf
 
 
-Classe SalvaPagine, metodo scrivi(), il file BaroniEticaCivile.pdf non è un fie di testo.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE EstraiLinks, costruttore di default.
-
-CLASSE EstraiLinks, metodo links().
-
-Il file BaroniEticaCivile.pdf non è un file di testo, verrà salvato senza ulteriori analisi
+letti: 2876844 byte dal file BaroniEticaCivile.pdf
 
 CLASSE Loopper, metodo risultati().
 
@@ -1034,14 +851,6 @@ stili/GeneralTest.css
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 5
-
-Area di azzeramento delle variabili.
-
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo cerca_dire().
 
 Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniEticaCivile.pdf
 
@@ -1113,13 +922,6 @@ Secondo if
 
 Valore di riga da elaborare: documenti/BaroniSchemaEticaCivile.pdf
 
-CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di documenti/BaroniSchemaEticaCivile.pdf:	Nome: BaroniSchemaEticaCivile.pdf	Numero di elementi: 2
-	Percorso: documenti
-	Radice: null
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
 Riga contiene una directory? true
 
 Classe TrovaDIrs, metodo cerca_dire(),
@@ -1137,25 +939,16 @@ Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
 Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
 
-CLASSE SalvaPagine, costruttore con parametri.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
-CLASSE SalvaPagine, metodo scrivi().
-
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
 Nome del file: BaroniSchemaEticaCivile.pdf
+Origine del file: http://www.scuoladipoliticamaniago.it/documenti/BaroniSchemaEticaCivile.pdf
 
 
-Classe SalvaPagine, metodo scrivi(), il file BaroniSchemaEticaCivile.pdf non è un fie di testo.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE EstraiLinks, costruttore di default.
-
-CLASSE EstraiLinks, metodo links().
-
-Il file BaroniSchemaEticaCivile.pdf non è un file di testo, verrà salvato senza ulteriori analisi
+letti: 2232455 byte dal file BaroniSchemaEticaCivile.pdf
 
 CLASSE Loopper, metodo risultati().
 
@@ -1182,14 +975,6 @@ stili/GeneralTest.css
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 6
-
-Area di azzeramento delle variabili.
-
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo cerca_dire().
 
 Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniEticaCivile.pdf
 
@@ -1287,13 +1072,6 @@ Secondo if
 
 Valore di riga da elaborare: documenti/BianchinComplessitaEPolitica.pdf
 
-CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di documenti/BianchinComplessitaEPolitica.pdf:	Nome: BianchinComplessitaEPolitica.pdf	Numero di elementi: 2
-	Percorso: documenti
-	Radice: null
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
 Riga contiene una directory? true
 
 Classe TrovaDIrs, metodo cerca_dire(),
@@ -1311,25 +1089,16 @@ Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
 Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
 
-CLASSE SalvaPagine, costruttore con parametri.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
-CLASSE SalvaPagine, metodo scrivi().
-
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
 Nome del file: BianchinComplessitaEPolitica.pdf
+Origine del file: http://www.scuoladipoliticamaniago.it/documenti/BianchinComplessitaEPolitica.pdf
 
 
-Classe SalvaPagine, metodo scrivi(), il file BianchinComplessitaEPolitica.pdf non è un fie di testo.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE EstraiLinks, costruttore di default.
-
-CLASSE EstraiLinks, metodo links().
-
-Il file BianchinComplessitaEPolitica.pdf non è un file di testo, verrà salvato senza ulteriori analisi
+letti: 1759543 byte dal file BianchinComplessitaEPolitica.pdf
 
 CLASSE Loopper, metodo risultati().
 
@@ -1356,14 +1125,6 @@ stili/GeneralTest.css
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 7
-
-Area di azzeramento delle variabili.
-
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo cerca_dire().
 
 Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniEticaCivile.pdf
 
@@ -1495,13 +1256,6 @@ Secondo if
 
 Valore di riga da elaborare: documenti/GoisisEticaEPolitica.pdf
 
-CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di documenti/GoisisEticaEPolitica.pdf:	Nome: GoisisEticaEPolitica.pdf	Numero di elementi: 2
-	Percorso: documenti
-	Radice: null
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
 Riga contiene una directory? true
 
 Classe TrovaDIrs, metodo cerca_dire(),
@@ -1519,25 +1273,16 @@ Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
 Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
 
-CLASSE SalvaPagine, costruttore con parametri.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
-CLASSE SalvaPagine, metodo scrivi().
-
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
 Nome del file: GoisisEticaEPolitica.pdf
+Origine del file: http://www.scuoladipoliticamaniago.it/documenti/GoisisEticaEPolitica.pdf
 
 
-Classe SalvaPagine, metodo scrivi(), il file GoisisEticaEPolitica.pdf non è un fie di testo.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE EstraiLinks, costruttore di default.
-
-CLASSE EstraiLinks, metodo links().
-
-Il file GoisisEticaEPolitica.pdf non è un file di testo, verrà salvato senza ulteriori analisi
+letti: 3615593 byte dal file GoisisEticaEPolitica.pdf
 
 CLASSE Loopper, metodo risultati().
 
@@ -1564,14 +1309,6 @@ stili/GeneralTest.css
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 8
-
-Area di azzeramento delle variabili.
-
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo cerca_dire().
 
 Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniEticaCivile.pdf
 
@@ -1745,13 +1482,6 @@ Secondo if
 
 Valore di riga da elaborare: documenti/GoisisImpegnoDurata.pdf
 
-CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di documenti/GoisisImpegnoDurata.pdf:	Nome: GoisisImpegnoDurata.pdf	Numero di elementi: 2
-	Percorso: documenti
-	Radice: null
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
 Riga contiene una directory? true
 
 Classe TrovaDIrs, metodo cerca_dire(),
@@ -1769,25 +1499,16 @@ Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
 Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
 
-CLASSE SalvaPagine, costruttore con parametri.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
-CLASSE SalvaPagine, metodo scrivi().
-
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
 Nome del file: GoisisImpegnoDurata.pdf
+Origine del file: http://www.scuoladipoliticamaniago.it/documenti/GoisisImpegnoDurata.pdf
 
 
-Classe SalvaPagine, metodo scrivi(), il file GoisisImpegnoDurata.pdf non è un fie di testo.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE EstraiLinks, costruttore di default.
-
-CLASSE EstraiLinks, metodo links().
-
-Il file GoisisImpegnoDurata.pdf non è un file di testo, verrà salvato senza ulteriori analisi
+letti: 3661230 byte dal file GoisisImpegnoDurata.pdf
 
 CLASSE Loopper, metodo risultati().
 
@@ -1814,14 +1535,6 @@ stili/GeneralTest.css
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 9
-
-Area di azzeramento delle variabili.
-
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo cerca_dire().
 
 Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniEticaCivile.pdf
 
@@ -2045,13 +1758,6 @@ Secondo if
 
 Valore di riga da elaborare: documenti/ModalitaOperative.pdf
 
-CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di documenti/ModalitaOperative.pdf:	Nome: ModalitaOperative.pdf	Numero di elementi: 2
-	Percorso: documenti
-	Radice: null
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
 Riga contiene una directory? true
 
 Classe TrovaDIrs, metodo cerca_dire(),
@@ -2069,25 +1775,16 @@ Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
 Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
 
-CLASSE SalvaPagine, costruttore con parametri.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
-CLASSE SalvaPagine, metodo scrivi().
-
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
 Nome del file: ModalitaOperative.pdf
+Origine del file: http://www.scuoladipoliticamaniago.it/documenti/ModalitaOperative.pdf
 
 
-Classe SalvaPagine, metodo scrivi(), il file ModalitaOperative.pdf non è un fie di testo.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE EstraiLinks, costruttore di default.
-
-CLASSE EstraiLinks, metodo links().
-
-Il file ModalitaOperative.pdf non è un file di testo, verrà salvato senza ulteriori analisi
+letti: 967187 byte dal file ModalitaOperative.pdf
 
 CLASSE Loopper, metodo risultati().
 
@@ -2114,14 +1811,6 @@ stili/GeneralTest.css
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 10
-
-Area di azzeramento delle variabili.
-
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo cerca_dire().
 
 Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniEticaCivile.pdf
 
@@ -2403,13 +2092,6 @@ Secondo if
 
 Valore di riga da elaborare: documenti/MovmentoFederalistaEuropeo.pdf
 
-CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di documenti/MovmentoFederalistaEuropeo.pdf:	Nome: MovmentoFederalistaEuropeo.pdf	Numero di elementi: 2
-	Percorso: documenti
-	Radice: null
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
 Riga contiene una directory? true
 
 Classe TrovaDIrs, metodo cerca_dire(),
@@ -2427,25 +2109,16 @@ Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
 Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
 
-CLASSE SalvaPagine, costruttore con parametri.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
-CLASSE SalvaPagine, metodo scrivi().
-
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
 Nome del file: MovmentoFederalistaEuropeo.pdf
+Origine del file: http://www.scuoladipoliticamaniago.it/documenti/MovmentoFederalistaEuropeo.pdf
 
 
-Classe SalvaPagine, metodo scrivi(), il file MovmentoFederalistaEuropeo.pdf non è un fie di testo.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE EstraiLinks, costruttore di default.
-
-CLASSE EstraiLinks, metodo links().
-
-Il file MovmentoFederalistaEuropeo.pdf non è un file di testo, verrà salvato senza ulteriori analisi
+letti: 1586165 byte dal file MovmentoFederalistaEuropeo.pdf
 
 CLASSE Loopper, metodo risultati().
 
@@ -2472,14 +2145,6 @@ stili/GeneralTest.css
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 11
-
-Area di azzeramento delle variabili.
-
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo cerca_dire().
 
 Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniEticaCivile.pdf
 
@@ -2827,13 +2492,6 @@ Secondo if
 
 Valore di riga da elaborare: documenti/PerosinPartecipazioneEDemocrazia.pdf
 
-CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di documenti/PerosinPartecipazioneEDemocrazia.pdf:	Nome: PerosinPartecipazioneEDemocrazia.pdf	Numero di elementi: 2
-	Percorso: documenti
-	Radice: null
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
 Riga contiene una directory? true
 
 Classe TrovaDIrs, metodo cerca_dire(),
@@ -2851,25 +2509,16 @@ Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
 Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
 
-CLASSE SalvaPagine, costruttore con parametri.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
-CLASSE SalvaPagine, metodo scrivi().
-
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
 Nome del file: PerosinPartecipazioneEDemocrazia.pdf
+Origine del file: http://www.scuoladipoliticamaniago.it/documenti/PerosinPartecipazioneEDemocrazia.pdf
 
 
-Classe SalvaPagine, metodo scrivi(), il file PerosinPartecipazioneEDemocrazia.pdf non è un fie di testo.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE EstraiLinks, costruttore di default.
-
-CLASSE EstraiLinks, metodo links().
-
-Il file PerosinPartecipazioneEDemocrazia.pdf non è un file di testo, verrà salvato senza ulteriori analisi
+letti: 4634076 byte dal file PerosinPartecipazioneEDemocrazia.pdf
 
 CLASSE Loopper, metodo risultati().
 
@@ -2896,14 +2545,6 @@ stili/GeneralTest.css
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 12
-
-Area di azzeramento delle variabili.
-
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo cerca_dire().
 
 Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniEticaCivile.pdf
 
@@ -3325,13 +2966,6 @@ Secondo if
 
 Valore di riga da elaborare: documenti/SchemaAmministrazioniComunali.pdf
 
-CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di documenti/SchemaAmministrazioniComunali.pdf:	Nome: SchemaAmministrazioniComunali.pdf	Numero di elementi: 2
-	Percorso: documenti
-	Radice: null
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
 Riga contiene una directory? true
 
 Classe TrovaDIrs, metodo cerca_dire(),
@@ -3349,25 +2983,16 @@ Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
 Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
 
-CLASSE SalvaPagine, costruttore con parametri.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
-CLASSE SalvaPagine, metodo scrivi().
-
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
 Nome del file: SchemaAmministrazioniComunali.pdf
+Origine del file: http://www.scuoladipoliticamaniago.it/documenti/SchemaAmministrazioniComunali.pdf
 
 
-Classe SalvaPagine, metodo scrivi(), il file SchemaAmministrazioniComunali.pdf non è un fie di testo.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE EstraiLinks, costruttore di default.
-
-CLASSE EstraiLinks, metodo links().
-
-Il file SchemaAmministrazioniComunali.pdf non è un file di testo, verrà salvato senza ulteriori analisi
+letti: 339587 byte dal file SchemaAmministrazioniComunali.pdf
 
 CLASSE Loopper, metodo risultati().
 
@@ -3394,14 +3019,6 @@ stili/GeneralTest.css
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 13
-
-Area di azzeramento delle variabili.
-
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo cerca_dire().
 
 Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniEticaCivile.pdf
 
@@ -3905,13 +3522,6 @@ Secondo if
 
 Valore di riga da elaborare: documenti/StatoECittadino.pdf
 
-CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di documenti/StatoECittadino.pdf:	Nome: StatoECittadino.pdf	Numero di elementi: 2
-	Percorso: documenti
-	Radice: null
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
 Riga contiene una directory? true
 
 Classe TrovaDIrs, metodo cerca_dire(),
@@ -3929,25 +3539,16 @@ Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
 Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
 
-CLASSE SalvaPagine, costruttore con parametri.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
-CLASSE SalvaPagine, metodo scrivi().
-
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
 Nome del file: StatoECittadino.pdf
+Origine del file: http://www.scuoladipoliticamaniago.it/documenti/StatoECittadino.pdf
 
 
-Classe SalvaPagine, metodo scrivi(), il file StatoECittadino.pdf non è un fie di testo.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE EstraiLinks, costruttore di default.
-
-CLASSE EstraiLinks, metodo links().
-
-Il file StatoECittadino.pdf non è un file di testo, verrà salvato senza ulteriori analisi
+letti: 925245 byte dal file StatoECittadino.pdf
 
 CLASSE Loopper, metodo risultati().
 
@@ -3974,14 +3575,6 @@ stili/GeneralTest.css
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 14
-
-Area di azzeramento delle variabili.
-
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo cerca_dire().
 
 Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniEticaCivile.pdf
 
@@ -4575,13 +4168,6 @@ Secondo if
 
 Valore di riga da elaborare: documenti/VolpiniPresentazioneCorso.pdf
 
-CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di documenti/VolpiniPresentazioneCorso.pdf:	Nome: VolpiniPresentazioneCorso.pdf	Numero di elementi: 2
-	Percorso: documenti
-	Radice: null
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
 Riga contiene una directory? true
 
 Classe TrovaDIrs, metodo cerca_dire(),
@@ -4599,25 +4185,16 @@ Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
 Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
 
-CLASSE SalvaPagine, costruttore con parametri.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
-CLASSE SalvaPagine, metodo scrivi().
-
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
 Nome del file: VolpiniPresentazioneCorso.pdf
+Origine del file: http://www.scuoladipoliticamaniago.it/documenti/VolpiniPresentazioneCorso.pdf
 
 
-Classe SalvaPagine, metodo scrivi(), il file VolpiniPresentazioneCorso.pdf non è un fie di testo.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE EstraiLinks, costruttore di default.
-
-CLASSE EstraiLinks, metodo links().
-
-Il file VolpiniPresentazioneCorso.pdf non è un file di testo, verrà salvato senza ulteriori analisi
+letti: 4167557 byte dal file VolpiniPresentazioneCorso.pdf
 
 CLASSE Loopper, metodo risultati().
 
@@ -4644,14 +4221,6 @@ stili/GeneralTest.css
 
 Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
 Contatore di cicli: 15
-
-Area di azzeramento delle variabili.
-
-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo cerca_dire().
 
 Dentro il loop esterno, Valore di riga da elaborare: documenti/BaroniEticaCivile.pdf
 
@@ -6051,13 +5620,6 @@ Secondo if
 
 Valore di riga da elaborare: stili/GeneralTest.css
 
-CLASSE TrovaDirs, metodo esame_directory().
-Elaborazione di stili/GeneralTest.css:	Nome: GeneralTest.css	Numero di elementi: 2
-	Percorso: stili
-	Radice: null
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
 Riga contiene una directory? true
 
 Classe TrovaDIrs, metodo cerca_dire(),
@@ -6071,7 +5633,6 @@ ROOT_D: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
 Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
 
 Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
-Cartella di destinazione del sito: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/ CREATA CORRETTAMENTE!
 
 URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/stili/GeneralTest.css
 
@@ -6081,25 +5642,16 @@ Nome del sito da esplorare: http://www.scuoladipoliticamaniago.it
 
 Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
 
-CLASSE SalvaPagine, costruttore con parametri.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE TrovaDirs, costruttore di default.
-
-CLASSE TrovaDirs, metodo caratteri_vietati().
-
-CLASSE SalvaPagine, metodo scrivi().
-
-Classe SalvaPagine, metodo scrivi(), destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
+destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
 Nome del file: GeneralTest.css
+Origine del file: http://www.scuoladipoliticamaniago.it/stili/GeneralTest.css
 
 
-CLASSE EstraiLinks, costruttore di default.
+Classe SalvaPagine, metodo scrivi(),
 
-CLASSE EstraiLinks, metodo links().
-
-CLASSE EstraiLinks, metodo ciclo().
-
-CLASSE EstraiLinks, metodo ciclo().
+letti: 54 byte dal file GeneralTest.css
 
 
 Elenco dei link presenti nel sito

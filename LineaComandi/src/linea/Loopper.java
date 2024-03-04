@@ -69,13 +69,13 @@ while(! interr)//riga per l'uso normale del programma
          */
         
 //IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-        System.out.printf("%nArea di azzeramento delle variabili.%n%n");
+        /*System.out.printf("%nArea di azzeramento delle variabili.%n%n");
 
         for (int i = 0; i < 90; i++)
             {
                 System.out.printf("I");
             }
-        System.out.println();
+        System.out.println();*/
         STRINGA = "";
         VG.set_page("");
         if(VG.get_pagina_builder() != null)

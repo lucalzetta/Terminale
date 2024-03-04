@@ -41,14 +41,14 @@ private static CheckerVariabili CV = new CheckerVariabili();
 
 public TrovaDirs()throws IOException
 {
-System.out.printf("%nCLASSE TrovaDirs, costruttore di default.%n");
+//System.out.printf("%nCLASSE TrovaDirs, costruttore di default.%n");
 ROOT = VG.get_root();
 CARTELLA_SITO = VG.get_destinazione_files_sito();
 }
 
 public String cerca_dire()throws IOException
 {
-System.out.printf("%nCLASSE TrovaDirs, metodo cerca_dire().%n");
+//System.out.printf("%nCLASSE TrovaDirs, metodo cerca_dire().%n");
 String tmp = "";
 String riga = "";
 String move="";
@@ -270,19 +270,19 @@ return tmp;
 }
 else
 {
-    System.out.println();
+    /*System.out.println();
         for(int i = 0; i < 12; i++)
             {
                 System.out.printf("%s", "TOP ");
             }
-    System.out.printf("%nAl momento i treeSet sono vuoti%n");
+    System.out.printf("%nAl momento i treeSet sono vuoti%n");*/
 return tmp;
 }
 }
 
 public void imposta_sito(String pagina_da_visitare)
 {
-System.out.printf("%nCLASSE TrovaDirs, metodo imposta_sito().%n");    
+//System.out.printf("%nCLASSE TrovaDirs, metodo imposta_sito().%n");    
 boolean t = false;
 boolean u = false;
 String to_visit = "";
@@ -321,7 +321,7 @@ catch(MalformedURLException mue)
 
 public boolean esame_directory(String dir)
 {
-System.out.printf("%nCLASSE TrovaDirs, metodo esame_directory().%n");
+//System.out.printf("%nCLASSE TrovaDirs, metodo esame_directory().%n");
 /**
  * Questo metodo riceve una stringa e valuta se si tratta di una 
  * directory, a scopo di test valuteremo alcune caratteristiche
@@ -336,9 +336,9 @@ String nome_file = "";
 String testo = "Nome di file o percorso non valido.";
 
 Path riga = Paths.get(dir);
-System.out.printf("Elaborazione di %s:\tNome: %s\tNumero di elementi: %d%n"
-        + "\tPercorso: %s%n\tRadice: %s%n",riga.toString(), riga.getFileName(), riga.getNameCount()
-        , riga.getParent(), riga.getRoot());
+//System.out.printf("Elaborazione di %s:\tNome: %s\tNumero di elementi: %d%n"
+        //+ "\tPercorso: %s%n\tRadice: %s%n",riga.toString(), riga.getFileName(), riga.getNameCount()
+        //, riga.getParent(), riga.getRoot());
 
 n_elementi = riga.getNameCount();
 
@@ -365,7 +365,7 @@ return contatore_file;
 
 public boolean caratteri_vietati(String nome)
 {
-System.out.printf("%nCLASSE TrovaDirs, metodo caratteri_vietati().%n");
+//System.out.printf("%nCLASSE TrovaDirs, metodo caratteri_vietati().%n");
 /**
  * RITORNA TRUE SOLO SE IL NOME DI fILE È considerato valido.
  */
