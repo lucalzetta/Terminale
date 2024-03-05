@@ -4,6 +4,7 @@ ROOT_D: /home/lucaamministratore/tmp/scuoladipoliticamaniago/
 Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
 
 Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/
+Cartella di destinazione del sito: /home/lucaamministratore/tmp/scuoladipoliticamaniago/ CREATA CORRETTAMENTE!
 
 Sotto directory in cui verrà salvata la pagina:
 É stata scelta l'opzione 's', verrà scaricato il sito:
@@ -36,7 +37,11 @@ Origine del file: http://www.scuoladipoliticamaniago.it/index.html
 
 Classe SalvaPagine, metodo scrivi(),
 
-letti: 974 byte dal file index.html
+Il file index.html contiene 975 bytes
+
+Classe SalvaPagine, metodo scrivi(),
+
+letti: 975 byte dal file index.html
 
 
 Elenco dei link presenti nel sito
@@ -75,6 +80,7 @@ ROOT_D: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
 
 Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/
+Cartella di destinazione del sito: /home/lucaamministratore/tmp/scuoladipoliticamaniago/immagini/ CREATA CORRETTAMENTE!
 
 URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
@@ -93,7 +99,11 @@ Origine del file: http://www.scuoladipoliticamaniago.it/immagini/Colors.jpg
 
 Classe SalvaPagine, metodo scrivi(),
 
-letti: 340356 byte dal file Colors.jpg
+Il file Colors.jpg contiene 359746 bytes
+
+Classe SalvaPagine, metodo scrivi(),
+
+letti: 359746 byte dal file Colors.jpg
 
 CLASSE Loopper, metodo risultati().
 
@@ -170,6 +180,7 @@ ROOT_D: /home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/
 Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/
 
 Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/
+Cartella di destinazione del sito: /home/lucaamministratore/tmp/scuoladipoliticamaniago/pagine/ CREATA CORRETTAMENTE!
 
 URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/pagine/FlowChart.xhtml
 
@@ -185,6 +196,10 @@ destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/pagi
 Nome del file: FlowChart.xhtml
 Origine del file: http://www.scuoladipoliticamaniago.it/pagine/FlowChart.xhtml
 
+
+Classe SalvaPagine, metodo scrivi(),
+
+Il file FlowChart.xhtml contiene 370 bytes
 
 Classe SalvaPagine, metodo scrivi(),
 
@@ -287,7 +302,11 @@ Origine del file: http://www.scuoladipoliticamaniago.it/immagini/DiagrammaDiFlus
 
 Classe SalvaPagine, metodo scrivi(),
 
-letti: 19581 byte dal file DiagrammaDiFlusso.jpg
+Il file DiagrammaDiFlusso.jpg contiene 20310 bytes
+
+Classe SalvaPagine, metodo scrivi(),
+
+letti: 20310 byte dal file DiagrammaDiFlusso.jpg
 
 CLASSE Loopper, metodo risultati().
 
@@ -456,6 +475,10 @@ destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/pagi
 Nome del file: ILibriDelMenocchio.xhtml
 Origine del file: http://www.scuoladipoliticamaniago.it/pagine/ILibriDelMenocchio.xhtml
 
+
+Classe SalvaPagine, metodo scrivi(),
+
+Il file ILibriDelMenocchio.xhtml contiene 541 bytes
 
 Classe SalvaPagine, metodo scrivi(),
 
@@ -689,7 +712,11 @@ Origine del file: http://www.scuoladipoliticamaniago.it/pagine/documentazione.ht
 
 Classe SalvaPagine, metodo scrivi(),
 
-letti: 1885 byte dal file documentazione.html
+Il file documentazione.html contiene 1888 bytes
+
+Classe SalvaPagine, metodo scrivi(),
+
+letti: 1888 byte dal file documentazione.html
 
 
 Elenco dei link presenti nel sito
@@ -806,6 +833,7 @@ ROOT_D: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
 Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
 
 Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/
+Cartella di destinazione del sito: /home/lucaamministratore/tmp/scuoladipoliticamaniago/documenti/ CREATA CORRETTAMENTE!
 
 URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/documenti/BaroniEticaCivile.pdf
 
@@ -824,7 +852,11 @@ Origine del file: http://www.scuoladipoliticamaniago.it/documenti/BaroniEticaCiv
 
 Classe SalvaPagine, metodo scrivi(),
 
-letti: 2876844 byte dal file BaroniEticaCivile.pdf
+Il file BaroniEticaCivile.pdf contiene 3011018 bytes
+
+Classe SalvaPagine, metodo scrivi(),
+
+letti: 3011018 byte dal file BaroniEticaCivile.pdf
 
 CLASSE Loopper, metodo risultati().
 
@@ -948,7 +980,11 @@ Origine del file: http://www.scuoladipoliticamaniago.it/documenti/BaroniSchemaEt
 
 Classe SalvaPagine, metodo scrivi(),
 
-letti: 2232455 byte dal file BaroniSchemaEticaCivile.pdf
+Il file BaroniSchemaEticaCivile.pdf contiene 2336570 bytes
+
+Classe SalvaPagine, metodo scrivi(),
+
+letti: 2336570 byte dal file BaroniSchemaEticaCivile.pdf
 
 CLASSE Loopper, metodo risultati().
 
@@ -1098,7 +1134,11 @@ Origine del file: http://www.scuoladipoliticamaniago.it/documenti/BianchinComple
 
 Classe SalvaPagine, metodo scrivi(),
 
-letti: 1759543 byte dal file BianchinComplessitaEPolitica.pdf
+Il file BianchinComplessitaEPolitica.pdf contiene 1849729 bytes
+
+Classe SalvaPagine, metodo scrivi(),
+
+letti: 1849729 byte dal file BianchinComplessitaEPolitica.pdf
 
 CLASSE Loopper, metodo risultati().
 
@@ -1282,7 +1322,11 @@ Origine del file: http://www.scuoladipoliticamaniago.it/documenti/GoisisEticaEPo
 
 Classe SalvaPagine, metodo scrivi(),
 
-letti: 3615593 byte dal file GoisisEticaEPolitica.pdf
+Il file GoisisEticaEPolitica.pdf contiene 3768426 bytes
+
+Classe SalvaPagine, metodo scrivi(),
+
+letti: 3768426 byte dal file GoisisEticaEPolitica.pdf
 
 CLASSE Loopper, metodo risultati().
 
@@ -1508,7 +1552,11 @@ Origine del file: http://www.scuoladipoliticamaniago.it/documenti/GoisisImpegnoD
 
 Classe SalvaPagine, metodo scrivi(),
 
-letti: 3661230 byte dal file GoisisImpegnoDurata.pdf
+Il file GoisisImpegnoDurata.pdf contiene 3809444 bytes
+
+Classe SalvaPagine, metodo scrivi(),
+
+letti: 3809444 byte dal file GoisisImpegnoDurata.pdf
 
 CLASSE Loopper, metodo risultati().
 
@@ -1784,7 +1832,11 @@ Origine del file: http://www.scuoladipoliticamaniago.it/documenti/ModalitaOperat
 
 Classe SalvaPagine, metodo scrivi(),
 
-letti: 967187 byte dal file ModalitaOperative.pdf
+Il file ModalitaOperative.pdf contiene 1001474 bytes
+
+Classe SalvaPagine, metodo scrivi(),
+
+letti: 1001474 byte dal file ModalitaOperative.pdf
 
 CLASSE Loopper, metodo risultati().
 
@@ -2118,7 +2170,11 @@ Origine del file: http://www.scuoladipoliticamaniago.it/documenti/MovmentoFedera
 
 Classe SalvaPagine, metodo scrivi(),
 
-letti: 1586165 byte dal file MovmentoFederalistaEuropeo.pdf
+Il file MovmentoFederalistaEuropeo.pdf contiene 1667193 bytes
+
+Classe SalvaPagine, metodo scrivi(),
+
+letti: 1667193 byte dal file MovmentoFederalistaEuropeo.pdf
 
 CLASSE Loopper, metodo risultati().
 
@@ -2518,7 +2574,11 @@ Origine del file: http://www.scuoladipoliticamaniago.it/documenti/PerosinParteci
 
 Classe SalvaPagine, metodo scrivi(),
 
-letti: 4634076 byte dal file PerosinPartecipazioneEDemocrazia.pdf
+Il file PerosinPartecipazioneEDemocrazia.pdf contiene 4860723 bytes
+
+Classe SalvaPagine, metodo scrivi(),
+
+letti: 4860723 byte dal file PerosinPartecipazioneEDemocrazia.pdf
 
 CLASSE Loopper, metodo risultati().
 
@@ -2992,7 +3052,11 @@ Origine del file: http://www.scuoladipoliticamaniago.it/documenti/SchemaAmminist
 
 Classe SalvaPagine, metodo scrivi(),
 
-letti: 339587 byte dal file SchemaAmministrazioniComunali.pdf
+Il file SchemaAmministrazioniComunali.pdf contiene 351994 bytes
+
+Classe SalvaPagine, metodo scrivi(),
+
+letti: 351994 byte dal file SchemaAmministrazioniComunali.pdf
 
 CLASSE Loopper, metodo risultati().
 
@@ -3548,7 +3612,11 @@ Origine del file: http://www.scuoladipoliticamaniago.it/documenti/StatoECittadin
 
 Classe SalvaPagine, metodo scrivi(),
 
-letti: 925245 byte dal file StatoECittadino.pdf
+Il file StatoECittadino.pdf contiene 956334 bytes
+
+Classe SalvaPagine, metodo scrivi(),
+
+letti: 956334 byte dal file StatoECittadino.pdf
 
 CLASSE Loopper, metodo risultati().
 
@@ -4194,7 +4262,11 @@ Origine del file: http://www.scuoladipoliticamaniago.it/documenti/VolpiniPresent
 
 Classe SalvaPagine, metodo scrivi(),
 
-letti: 4167557 byte dal file VolpiniPresentazioneCorso.pdf
+Il file VolpiniPresentazioneCorso.pdf contiene 4355957 bytes
+
+Classe SalvaPagine, metodo scrivi(),
+
+letti: 4355957 byte dal file VolpiniPresentazioneCorso.pdf
 
 CLASSE Loopper, metodo risultati().
 
@@ -5633,6 +5705,7 @@ ROOT_D: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
 Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
 
 Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/
+Cartella di destinazione del sito: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stili/ CREATA CORRETTAMENTE!
 
 URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.scuoladipoliticamaniago.it/stili/GeneralTest.css
 
@@ -5648,6 +5721,10 @@ destinazione del file: /home/lucaamministratore/tmp/scuoladipoliticamaniago/stil
 Nome del file: GeneralTest.css
 Origine del file: http://www.scuoladipoliticamaniago.it/stili/GeneralTest.css
 
+
+Classe SalvaPagine, metodo scrivi(),
+
+Il file GeneralTest.css contiene 54 bytes
 
 Classe SalvaPagine, metodo scrivi(),
 

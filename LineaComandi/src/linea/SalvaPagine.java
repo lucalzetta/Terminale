@@ -57,10 +57,12 @@ NOME_VALIDO = TD.caratteri_vietati(nome_pagina);
 public void scrivi(boolean testo)throws IOException
 {
 //System.out.printf("%nCLASSE SalvaPagine, metodo scrivi().%n");
+int stop = 0;    
 if(NOME_VALIDO)
     {
         OutputStream fos = null;
         InputStreamReader reader = null;
+        java.io.InputStream in = null;
         try
             {
                 System.out.printf("%nClasse SalvaPagine, metodo scrivi(),%n%n"
@@ -69,9 +71,10 @@ if(NOME_VALIDO)
                         + "Origine del file: %s%n%n", DESTINAZIONE, NOME_PAGINA.strip(), VG.get_sito());
                 URL u = VG.get_sito();
                 URLConnection uc = u.openConnection();
-                java.io.InputStream in = uc.getInputStream();
+                stop = uc.getContentLength();
+                in = uc.getInputStream();
                 //java.io.BufferedInputStream orig = new BufferedInputStream(in);
-                reader = new InputStreamReader(in);
+                //reader = new InputStreamReader(in);
                 
                 File pagina = new File(DESTINAZIONE, NOME_PAGINA); 
                 fos = new FileOutputStream(pagina);
@@ -79,10 +82,11 @@ if(NOME_VALIDO)
                 StringBuilder build_pagina = new StringBuilder();
                 int c = 0;
                 int contatore = 0;
-                
+                System.out.printf("%nClasse SalvaPagine, metodo scrivi(),%n"
+                        + "%nIl file %s contiene %d bytes%n", NOME_PAGINA, stop);
                 if(testo)
                     {
-                        while ((c = reader.read()) != -1) 
+                        while ((c = in.read()) != -1) 
                             {
                                fos.write(c);
                                str_pagina = str_pagina + (char)c;
@@ -93,7 +97,7 @@ if(NOME_VALIDO)
                     }
                 else
                     {
-                        while ((c = reader.read()) != -1) 
+                        while ((c = in.read()) != -1) 
                             {          
                                 fos.write(c);
                                 contatore ++;
@@ -156,11 +160,11 @@ if(NOME_VALIDO)
                         
                         }
                     }
-                if(reader != null)
+                if(in != null)
                     {
                     try
                         {
-                            reader.close();
+                            in.close();
                         }
                     catch(IOException ioe)
                         {
