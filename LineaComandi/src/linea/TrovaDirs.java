@@ -48,7 +48,7 @@ CARTELLA_SITO = VG.get_destinazione_files_sito();
 
 public String cerca_dire()throws IOException
 {
-//System.out.printf("%nCLASSE TrovaDirs, metodo cerca_dire().%n");
+System.out.printf("%nCLASSE TrovaDirs, metodo cerca_dire().%n");
 String tmp = "";
 String riga = "";
 String move="";
@@ -92,7 +92,7 @@ if(collegamenti.hasNext())
         {
             riga = collegamenti.next().toString();
             find = true;//impostiamo a true per entrare nel ciclo interno
-            System.out.printf("%nDentro il loop esterno, Valore di riga da elaborare: %s%n",riga);
+            System.out.printf("%nDentro il loop esterno,%nValore di riga da elaborare: %s%n",riga);
             while (find)
                 {
                         if(coll_visitati.hasNext())
@@ -174,6 +174,9 @@ if(collegamenti.hasNext())
             
         }
         }
+    /**
+     * FINE DEL CICLO DI RICERCA DEI NUOVI FILE
+     */
     
                     if(find)
                         {
@@ -264,6 +267,35 @@ if(collegamenti.hasNext())
                         }
                     tmp = u_perc;
                     riga = "";
+                }
+            else
+                {
+                    file_name = riga;
+                    if(CARTELLA_SITO.lastIndexOf("/") == (CARTELLA_SITO.length() - 1))
+                        {
+                            u_perc = CARTELLA_SITO;
+                        }
+                    else
+                        {
+                            u_perc = CARTELLA_SITO + "/";
+                        }
+
+                    System.out.printf("%nClasse TrovaDIrs, "
+                                + "metodo cerca_dire(),%n"
+                                + "VALORE DI file_name: %s%n"
+                                + "VALORE DI sub_dir: %s%n"
+                                + "VALORE DI root_d: %s%n",file_name, sub_dir,u_perc);
+
+                    VG.set_name_page(file_name);
+                    nuovo_perc = new URL(VG.get_sito_ridotto() + "/" + file_name);
+                    //CV.get_NOME_PAGINA();
+                    //CV.get_URL_SITO();
+                    //CV.get_CARTELLA_SITO();
+                    VG.set_sito(nuovo_perc);
+                    CV.get_URL_SITO();
+                    tmp = u_perc;
+                    riga = "";
+
                 }
         }
 return tmp;

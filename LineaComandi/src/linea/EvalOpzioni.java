@@ -40,9 +40,6 @@ HOME_LINK = VG.get_set_collegamenti();
   * argomenti specificati nella riga di comando; l'URL del sito di cui si vogliono 
   * ottenere le pagine dovrà trovarsi subito dopo le opzioni di esecuzione del 
   * programma.
-  * La home page del sito viene aggiunta qui alla lista dei collegamenti del sito
-  * perchè un sito con una sola pagina possa avere il riferimento almeno a 
-  * quella stessa pagina.
   */
 //dalla stringa passata come argomento estraiamo un URL valido, se presente
 int i;
@@ -63,7 +60,7 @@ try
 catch(MalformedURLException mux)
     {
         sito_da_lavorare=null;
-        //System.err.printf("Eccezione nel metodo 'sito' della classe EvalOpzioni: %s%n ", mux);
+        System.err.printf("Eccezione nel metodo 'sito' della classe EvalOpzioni: %s%n ", mux);
     }
 
 return sito_da_lavorare;
@@ -77,6 +74,10 @@ return sito_da_lavorare;
   * A differenza del metodo sito() restituisce solo la radice del sito senza 
   * sottodirectory ne nomi di pagina, serve per l'impostazione della variabile
   * globale SITO_RIDOTTO
+  *  07/03/2024
+  * Accetta anche sotto directory come base di partenza della ricerca e come 
+  * impostazione della variabile globale SITO_RIDOTTO, modifica introdotta 
+  * dopo il test su http://www.menocchio.it/old/index.html
   */
 //dalla stringa passata come argomento estraiamo un URL valido, se presente
 int i;
@@ -278,8 +279,8 @@ String saluto = "";
         
         VG.set_sito(sito(VG.get_args()));
         VG.set_sito_ridotto(sito_ridotto(VG.get_args()));
-        //System.out.printf("Valore della variabile sito in EvalOpzioni.EvalOpz() %s%n", sito(VG.get_args()));
-        ////CV.get_URL_SITO();
+        System.out.printf("Valore della variabile sito in EvalOpzioni.EvalOpz() %s%n", sito(VG.get_args()));
+        CV.get_URL_SITO_RIDOTTO();
         VG.set_root(VG.get_destinazione_files_sito() + directory(VG.get_args()));
         //CV.get_ROOT_D();
         //CV.get_ROOT_DEST();
