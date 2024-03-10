@@ -35,6 +35,7 @@ private static boolean NOME_VALIDO;
 private final VariabiliGlobali VG = new VariabiliGlobali();
 private static CheckerVariabili CV = new CheckerVariabili();
 private Set<String> SET_LINKS_VISITATI = VG.get_set_scaricati();
+private Set<String> SET_PAGINE_NON_TROVATE = VG.get_set_fnf();
 private TrovaDirs TD;
 
 public SalvaPagine(String nome_pagina)throws IOException
@@ -65,10 +66,10 @@ if(NOME_VALIDO)
         java.io.InputStream in = null;
         try
             {
-                System.out.printf("%nClasse SalvaPagine, metodo scrivi(),%n%n"
+                /*System.out.printf("%nClasse SalvaPagine, metodo scrivi(),%n%n"
                         + "destinazione del file: %s%n"
                         + "Nome del file: %s%n"
-                        + "Origine del file: %s%n%n", DESTINAZIONE, NOME_PAGINA.strip(), VG.get_sito());
+                        + "Origine del file: %s%n%n", DESTINAZIONE, NOME_PAGINA.strip(), VG.get_sito());*/
                 URL u = VG.get_sito();
                 URLConnection uc = u.openConnection();
                 stop = uc.getContentLength();
@@ -82,8 +83,8 @@ if(NOME_VALIDO)
                 StringBuilder build_pagina = new StringBuilder();
                 int c = 0;
                 int contatore = 0;
-                System.out.printf("%nClasse SalvaPagine, metodo scrivi(),%n"
-                        + "%nIl file %s contiene %d bytes%n", NOME_PAGINA, stop);
+                /*System.out.printf("%nClasse SalvaPagine, metodo scrivi(),%n"
+                        + "%nIl file %s contiene %d bytes%n", NOME_PAGINA, stop);*/
                 if(testo)
                     {
                         while ((c = in.read()) != -1) 
@@ -103,8 +104,8 @@ if(NOME_VALIDO)
                                 contatore ++;
                             }
                     }
-                System.out.printf("%nClasse SalvaPagine, metodo scrivi(),%n%n"
-                        + "letti: %d byte dal file %s%n",contatore , NOME_PAGINA.strip());
+/*                System.out.printf("%nClasse SalvaPagine, metodo scrivi(),%n%n"
+                        + "letti: %d byte dal file %s%n",contatore , NOME_PAGINA.strip());*/
                 
                     
                 //Aggiorniamo il set dei links visitati
@@ -144,8 +145,19 @@ if(NOME_VALIDO)
             }
         catch(FileNotFoundException fnf)
             {
-                System.err.printf("Il file %s non è stato trovato dal metodo "
-                        + "scrivi della classe SalvaPagina().", fnf);
+                if(VG.get_subdir() != null)
+                    {
+                        this.SET_LINKS_VISITATI.add(VG.get_subdir() + NOME_PAGINA.strip());
+                        this.SET_PAGINE_NON_TROVATE.add(VG.get_subdir() + NOME_PAGINA.strip());
+                    }
+                else
+                    {
+                        this.SET_LINKS_VISITATI.add("" + NOME_PAGINA.strip());
+                        this.SET_PAGINE_NON_TROVATE.add("" + NOME_PAGINA.strip());
+                    }
+                
+                System.err.printf("%nIl file %s non è stato trovato dal metodo "
+                        + "scrivi della classe SalvaPagina().%n", fnf);
             }
         finally
             {

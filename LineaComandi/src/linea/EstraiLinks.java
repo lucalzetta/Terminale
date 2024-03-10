@@ -8,18 +8,24 @@ package linea;
  */
 import java.util.Set;
 import java.util.TreeSet;
+import java.util.Iterator;
 
 public class EstraiLinks 
 {
 private final String PAGINA;
 private final VariabiliGlobali VG = new VariabiliGlobali();
+private final CheckerVariabili CV = new CheckerVariabili();
+private final ErrorsClasse EC = new ErrorsClasse();
 private Set<String> SET_LINKS;
+private Set<String> SET_SITI;
+private Set<String> SET_PG;
+private Set<String> SET_IMG;
 
 public EstraiLinks(String pagina)
 {
 //System.out.printf("%nCLASSE EstraiLinks, costruttore di default.%n");
 PAGINA = pagina;
-SET_LINKS = new TreeSet<>();
+
 }
 
 public void links (boolean testo)
@@ -38,26 +44,24 @@ public void links (boolean testo)
         {
             int i = 0;
             Set <String> global_links = VG.get_set_collegamenti();
-            ciclo("href=");
-            ciclo("src=");
-            //i cicli seguenti i n realtà sono eliminabili ma temporaneamente li
-            //lasciamo funzionare a scopo di test
-            //ciclo("http:");
-            //ciclo("https:");
-            //ciclo("www.");
-            global_links.addAll(SET_LINKS);
-            System.out.printf("%n%nElenco dei link presenti nel sito%n%n");
-                for(String g : global_links)
-                    {
-                        System.out.printf("%s%n", g);
-                        i++;
-                        //System.out.printf(" %n%d ", i);
-                    }
-            System.out.printf("%n%40s%n", "£");
+            Set <String> global_www = VG.get_set_sitiext();
+            Set <String> global_pag = VG.get_set_pagina();
+            Set <String> global_img = VG.get_set_immagini();
+            
+            global_links.addAll(ciclo("href=", SET_LINKS));
+            global_pag.addAll(SET_LINKS);
+            
+            global_links.addAll(ciclo("src=", SET_IMG));
+            global_img.addAll(ciclo("src=", SET_IMG));
+
+            global_www.addAll(ciclo("http:", this.SET_SITI));
+            global_www.addAll(ciclo("https:", this.SET_SITI));
+            global_www.addAll(ciclo("www:", this.SET_SITI));
+
         }
 }
 
-private void ciclo(String par)
+private Set<String> ciclo(String par, Set<String> set)
 {
 //System.out.printf("%nCLASSE EstraiLinks, metodo ciclo().%n");    
 /**
@@ -67,6 +71,8 @@ private void ciclo(String par)
  * Tutto verrà aggiunto a global_links, dopo di che penseremo a separare le immagini
  * dagli altri tipi di file.
  */
+ SET_LINKS = set;
+        SET_LINKS = new TreeSet<>();
         int i = 0;
         int c = 0;
         int old_ref = 0;
@@ -103,7 +109,8 @@ private void ciclo(String par)
                          * tutti i casi possibili. 
                          */
                         
-                        while((PAGINA.charAt(i)!=';')&((PAGINA.charAt(i)!='?'))&((PAGINA.charAt(i)!='>'))&((PAGINA.charAt(i)!='\"')))
+                        while((PAGINA.charAt(i)!=';')&((PAGINA.charAt(i)!='?'))&((PAGINA.charAt(i)!='>'))
+                             &((PAGINA.charAt(i)!='\"'))&((PAGINA.charAt(i)!='&')))
                             {
                                 riga = riga + PAGINA.charAt(i);
                                 i++;
@@ -122,7 +129,7 @@ private void ciclo(String par)
                     }
             }
         /**righe di debug, commentabili 07/12/2023***********************/
- 
+return SET_LINKS;        
 }
 
 private String pulisci_link(String link)
@@ -130,12 +137,49 @@ private String pulisci_link(String link)
 String new_link = link;
 String par;
 int start;
-
+//eliminiamo le nidificazioni dlle cartelle fino al sesto livello
+//questo codice si può irrobustire con un loop su un char array
+// di '.', '.', '/'
 par = "../";
 
 if(link.startsWith(par))
     {
         new_link = link.substring(3);
+    }
+
+par = "../../";
+
+if(link.startsWith(par))
+    {
+        new_link = link.substring(6);
+    }
+
+par = "../../../";
+
+if(link.startsWith(par))
+    {
+        new_link = link.substring(9);
+    }
+
+par = "../../../../";
+
+if(link.startsWith(par))
+    {
+        new_link = link.substring(12);
+    }
+
+par = "../../../../../";
+
+if(link.startsWith(par))
+    {
+        new_link = link.substring(15);
+    }
+
+par = "../../../../../../";
+
+if(link.startsWith(par))
+    {
+        new_link = link.substring(16);
     }
 
 par = "//";
@@ -153,5 +197,42 @@ if(link.startsWith(par))
     }
 
 return new_link;
+}
+
+public void filtra_links()
+{
+/**
+ * 08/03/2024
+ * Questo metodo si occupa di estrarre dalla lista dei links quelli consideraati
+ * inutili e i riferimenti a pagine esterne al sito.
+ * Questi link non verranno eliminati ma riposti in liste alternative
+ */
+
+Set <String> global_links = VG.get_set_collegamenti();
+Set <String> global_www = VG.get_set_sitiext();
+Set <String> global_pag = VG.get_set_pagina();
+Set <String> global_img = VG.get_set_immagini();
+Iterator i = global_links.iterator();
+String riga = "";
+
+while (i.hasNext())
+    {
+        riga = i.next().toString();
+        switch (riga)
+        {
+            case ".jpg":
+            global_img.add(riga);
+            break;
+            
+            case ".jpeg":
+            global_img.add(riga);
+            break;
+
+            case ".png":
+            global_img.add(riga);
+            break;
+
+        }
+    }
 }
 }

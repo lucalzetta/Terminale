@@ -92,7 +92,7 @@ if(collegamenti.hasNext())
         {
             riga = collegamenti.next().toString();
             find = true;//impostiamo a true per entrare nel ciclo interno
-            System.out.printf("%nDentro il loop esterno,%nValore di riga da elaborare: %s%n",riga);
+            //System.out.printf("%nDentro il loop esterno,%nValore di riga da elaborare: %s%n",riga);
             while (find)
                 {
                         if(coll_visitati.hasNext())
@@ -103,19 +103,19 @@ if(collegamenti.hasNext())
                                 if (diffe != 0)
                                     {
                                         find_1 = true;
-                                        System.out.printf("%n\t\t\tDifferenza tra riga e tmp, valori e risultato (find_1):%n"
+                                        /*System.out.printf("%n\t\t\tDifferenza tra riga e tmp, valori e risultato (find_1):%n"
                                         + "\t\t\t%s%n"
                                         + "\t\t\t%s%n"
-                                        + "\t\t\t%s%n", riga, tmp, find_1);
+                                        + "\t\t\t%s%n", riga, tmp, find_1);*/
 
                                     }
                                 else
                                     {
                                         find_1 = false;
-                                        System.out.printf("%n\t\t\tDifferenza tra riga e tmp, valori e risultato (find_1):%n"
+/*                                        System.out.printf("%n\t\t\tDifferenza tra riga e tmp, valori e risultato (find_1):%n"
                                         + "\t\t\t%s%n"
                                         + "\t\t\t%s%n"
-                                        + "\t\t\t%s%n", riga, tmp, find_1);
+                                        + "\t\t\t%s%n", riga, tmp, find_1);*/
 
                                     }
                             
@@ -123,22 +123,22 @@ if(collegamenti.hasNext())
                                     {
                                         find = true;
                                         perc = false;
-                                        System.out.printf("%n\t\t\tValore di find:%s%n"
-                                        + "Primoif%n", find);
+/*                                        System.out.printf("%n\t\t\tValore di find:%s%n"
+                                        + "Primoif%n", find);*/
                                     }
                                 else if (find_1 & ! coll_visitati.hasNext())
                                     {
                                         find = false;
                                         perc = true;
-                                        System.out.printf("%n\t\t\tValore di find:%s%n"
-                                        + "Secondo if%n", find);
+/*                                        System.out.printf("%n\t\t\tValore di find:%s%n"
+                                        + "Secondo if%n", find);*/
                                     }
                                 else if(!find_1)
                                     {
                                         find = false;
                                         perc = false;
-                                        System.out.printf("%n\t\t\tValore di find:%s%n"
-                                        + "Terzo if%n", find);                                
+/*                                        System.out.printf("%n\t\t\tValore di find:%s%n"
+                                        + "Terzo if%n", find);                                */
                                     }
                                 else
                                     {
@@ -157,7 +157,7 @@ if(collegamenti.hasNext())
                         else
                             {
                                 find = false;
-                                System.out.printf("%n\t\t\tValore di find:%s%n", find);                                
+//                                System.out.printf("%n\t\t\tValore di find:%s%n", find);                                
                             }
                 }
 
@@ -188,13 +188,13 @@ if(collegamenti.hasNext())
                             perc = true;
                         }
         
-            System.out.printf("%nValore di riga da elaborare: %s%n",riga);
+            //System.out.printf("%nValore di riga da elaborare: %s%n",riga);
             perc = false;
 
     if((riga != "") & (riga != null))
         {
             perc = esame_directory(riga);
-            System.out.printf("%nRiga contiene una directory? %s%n",perc);
+            //System.out.printf("%nRiga contiene una directory? %s%n",perc);
             if(perc)
                 {
                     Path path_riga = Paths.get(riga);
@@ -226,19 +226,19 @@ if(collegamenti.hasNext())
                              * sottodirectory
                              */
                            
-                    System.out.printf("%nClasse TrovaDIrs, "
+                   /* System.out.printf("%nClasse TrovaDIrs, "
                                 + "metodo cerca_dire(),%n"
                                 + "VALORE DI file_name: %s%n"
                                 + "VALORE DI sub_dir: %s%n"
-                                + "VALORE DI root_d: %s%n",file_name, sub_dir,u_perc);
+                                + "VALORE DI root_d: %s%n",file_name, sub_dir,u_perc);*/
                     
                     if ((path_riga != null))
                         {
                             if(sub_dir.equalsIgnoreCase(VG.get_subdir()))
                                 {
-                                    System.out.printf("%nClasse TrovaDIrs, "
+              /*                      System.out.printf("%nClasse TrovaDIrs, "
                                             + "metodo cerca_dire() La vecchia "
-                                            + "subdirectory e la nuova corrispondono%n");
+                                            + "subdirectory e la nuova corrispondono%n");*/
                                 }
                             else
                                 {
@@ -280,13 +280,15 @@ if(collegamenti.hasNext())
                             u_perc = CARTELLA_SITO + "/";
                         }
 
-                    System.out.printf("%nClasse TrovaDIrs, "
+                    /*System.out.printf("%nClasse TrovaDIrs, "
                                 + "metodo cerca_dire(),%n"
                                 + "VALORE DI file_name: %s%n"
                                 + "VALORE DI sub_dir: %s%n"
-                                + "VALORE DI root_d: %s%n",file_name, sub_dir,u_perc);
+                                + "VALORE DI root_d: %s%n",file_name, sub_dir,u_perc);*/
 
                     VG.set_name_page(file_name);
+                    VG.set_root(u_perc);
+                    VG.set_subdir("");
                     nuovo_perc = new URL(VG.get_sito_ridotto() + "/" + file_name);
                     //CV.get_NOME_PAGINA();
                     //CV.get_URL_SITO();
@@ -377,7 +379,7 @@ n_elementi = riga.getNameCount();
 switch (n_elementi)
         {
             case 0:
-                System.out.printf("%s",testo);
+                //System.out.printf("%s",testo);
                 contatore_file = false;
             break;
             case 1://se ha un elemento supponiamo che si tratti di un file

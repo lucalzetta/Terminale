@@ -21,6 +21,7 @@ import java.net.*;
 public class TestGET 
 {
 private String SITO;
+private String SITO_RIDOTTO;
 private String ROOT_DIR;
 private String SUBDIR;
 private String NOME_FILE;
@@ -32,6 +33,7 @@ public TestGET()throws IOException
 //System.out.printf("%nCLASSE TestGet, costruttore di default.%n");
     ROOT_DIR = VG.get_root();
     SITO = VG.get_sito().toString();
+    SITO_RIDOTTO = VG.get_sito_ridotto().toString();
     SUBDIR = VG.get_subdir();
     NOME_FILE = VG.get_name_page();
 //    System.out.printf("Siamo nel costruttore di default della classe TestGET, sono state raccolte le "
@@ -62,6 +64,7 @@ public TestGET(boolean scarica_dati)
     SITO = VG.get_sito().toString();
   //      System.out.printf("%nTestGet, valore delle variabili iniziali della classe.%nSITO: %s", SITO);
     
+    SITO_RIDOTTO = VG.get_sito_ridotto().toString();
     SUBDIR = VG.get_subdir();
     //    System.out.printf("%nTestGet, valore delle variabili iniziali della classe.%nSUBDIR: %s", SUBDIR);
 

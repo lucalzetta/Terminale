@@ -13,7 +13,8 @@ package linea;
  * e offrire la possibilità di scaricare più siti simultaneamente.
  */
 import java.io.IOException;
-import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.util.Set;
 import java.util.Iterator;
 import java.net.URL;
@@ -58,7 +59,7 @@ private void cicloSito()throws IOException
 boolean interr = false;
 int control = 0;
 while(! interr)//riga per l'uso normale del programma
-//while (control < 4)//a scopo di debug limitiamo il numero di cicli
+//while (control < 10)//a scopo di debug limitiamo il numero di cicli
     {   
         /**
          * Area di azzeramento delle variabili, finito il primo passo,
@@ -121,6 +122,7 @@ TestGET TG = new TestGET(true);
 //TrovaDirs TD = new TrovaDirs();
 EstraiLinks el = new EstraiLinks(VG.get_page());
 el.links(VG.get_testo());
+el.filtra_links();
 //TD.cerca_dire();//già chiamato da TestGet
 //TD.imposta_sito(VG.get_subdir() + VG.get_name_page());
 }
@@ -133,40 +135,179 @@ System.out.printf("%nCLASSE Loopper, metodo risultati().%n");
  * di archiviazione dei link che verranno salvati sucessivamente nei 
  * file di log del programma
  */
-    
-//stampiamo un test dei set<> globali contenenti i link da visualizzare a console
-System.out.printf("%n=============================================================================================%n"
-                  + "Lista dei collegamenti presenti nel sito                      Lista dei collegamenti visitati%n");
-STRINGA = "";
-String spazi = "";
-String sub = "";
-//Iterator it = SET_LINKS_VISITATI.iterator();
-Iterator it = VG.get_set_scaricati().iterator();
-//for (String st : SET_LINKS)
-for (String st : VG.get_set_collegamenti())
+FileOutputStream wr = null;
+FileOutputStream page_wr = null;
+FileOutputStream fnf_wr = null;
+FileOutputStream www_wr = null;
+FileOutputStream img_wr = null;
+try
     {
-        INT = 60 - st.length();
-        if (INT > 0)
-            {
-                while (INT > 0)
-                    {
-                    spazi = spazi + " ";
-                    INT--;
-                    }
+        wr = new FileOutputStream(VG.get_file_DIRS());
+        page_wr = new FileOutputStream(VG.get_file_PAG());
+        fnf_wr = new FileOutputStream(VG.get_file_FNF());
+        www_wr = new FileOutputStream(VG.get_file_URLS());
+        img_wr = new FileOutputStream(VG.get_file_IMG());
+        //stampiamo un test dei set<> globali contenenti i link da visualizzare a console
+        String Tmp = "";
+        String separatore = "\n=============================================================================================\n";
+        Tmp = separatore + "Lista dei collegamenti presenti nel sito                        Lista dei collegamenti visitati\n";
+        STRINGA = "";
+        STRINGA = STRINGA + str_ris(Tmp, VG.get_set_scaricati(), VG.get_set_collegamenti());
+        
+        byte [] i_str = new byte[STRINGA.length()];
+        i_str = STRINGA.getBytes();
+        try
+            { 
+            for(int i = 0; i < i_str.length; i++)
+                {
+                    wr.write(i_str[i]);
+                }
             }
-        STRINGA = STRINGA + st;
-        STRINGA = STRINGA + spazi;
-        STRINGA = STRINGA + "\t";
-        spazi = "";
-        if(it.hasNext())
+        catch(IOException ioe)
             {
-                STRINGA = STRINGA + it.next() + "\n";
+                System.err.printf("%nErrore di IO nella classe Loopper metodo Risultati():%n"
+                        + "%s%n", ioe);
             }
-        else
+    
+        Tmp = "";
+        Tmp = separatore + "Lista delle pagine presenti nel sito                      Lista delle pagine non trovate nel sito\n";
+
+        STRINGA = "";
+        STRINGA = STRINGA + str_ris(Tmp, VG.get_set_pagina(), VG.get_set_fnf());
+        byte [] i_str_pag = new byte[STRINGA.length()];
+        i_str_pag = STRINGA.getBytes();
+        try
             {
-                STRINGA = STRINGA + "\n";
+            for(int i = 0; i < i_str_pag.length; i++)
+                {
+                    page_wr.write(i_str_pag[i]);
+                }
+
+            }
+        catch(IOException ioe)
+            {
+                System.err.printf("%nErrore di IO nella classe Loopper metodo Risultati():%n"
+                        + "%s%n", ioe);
+            }
+        
+        Tmp = "";
+        Tmp = separatore + "Lista delle pagine non trovate nel sito                   Lista delle pagine non trovate nel sito\n";
+
+        STRINGA = "";
+        STRINGA = STRINGA + str_ris(Tmp, VG.get_set_fnf(), VG.get_set_fnf());
+        byte [] i_str_pagnf = new byte[STRINGA.length()];
+        i_str_pagnf = STRINGA.getBytes();
+        try
+            {
+            
+            for(int i = 0; i < i_str_pagnf.length; i++)
+                {
+                    fnf_wr.write(i_str_pagnf[i]);
+                }
+
+            }
+        catch(IOException ioe)
+            {
+                System.err.printf("%nErrore di IO nella classe Loopper metodo Risultati():%n"
+                        + "%s%n", ioe);
+            }
+
+        Tmp = "";
+        Tmp = separatore + "Lista delle pagine esterne al sito                   Lista delle pagine non trovate nel sito\n";
+
+        STRINGA = "";
+        STRINGA = STRINGA + str_ris(Tmp, VG.get_set_sitiext(), VG.get_set_fnf());
+        byte [] www_str_pagnf = new byte[STRINGA.length()];
+        www_str_pagnf = STRINGA.getBytes();
+        try
+            {
+            for(int i = 0; i < www_str_pagnf.length; i++)
+                {
+                    www_wr.write(www_str_pagnf[i]);
+                }
+
+            }
+        catch(IOException ioe)
+            {
+                System.err.printf("%nErrore di IO nella classe Loopper metodo Risultati():%n"
+                        + "%s%n", ioe);
+            }
+        
+        Tmp = "";
+        Tmp = separatore + "Lista delle immagini presenti nel sito                   Lista delle pagine non trovate nel sito\n";
+
+        STRINGA = "";
+        STRINGA = STRINGA + str_ris(Tmp, VG.get_set_sitiext(), VG.get_set_fnf());
+        byte [] img_str_pagnf = new byte[STRINGA.length()];
+        img_str_pagnf = STRINGA.getBytes();
+        try
+            {
+            for(int i = 0; i < img_str_pagnf.length; i++)
+                {
+                    img_wr.write(img_str_pagnf[i]);
+                }
+
+            }
+        catch(IOException ioe)
+            {
+                System.err.printf("%nErrore di IO nella classe Loopper metodo Risultati():%n"
+                        + "%s%n", ioe);
             }
     }
-System.out.printf("%s", STRINGA);
+catch (FileNotFoundException fnf)
+    {
+                System.err.printf("%nErrore di FNF nella classe Loopper metodo Risultati():%n"
+                        + "%s%n", fnf);
+    }
+try
+    {
+    if (wr != null)
+        wr.close();
+    if (page_wr != null)
+        page_wr.close();
+    if (fnf_wr != null)
+        fnf_wr.close();
+
+    }
+catch (IOException ioe)
+    {
+            System.err.printf("%nErrore di IO nella classe Loopper metodo Risultati()"
+                    + " fase di chiusura degli stream:%n"
+                        + "%s%n", ioe);
+    }
+}
+private String str_ris(String Rich, Set<String> set_1, Set<String> set_2)
+{
+String ris = "";
+STRINGA = Rich;
+String spazi = "";
+String sub = "";
+Iterator it = set_2.iterator();
+    for (String st : set_1)
+        {
+            INT = 60 - st.length();
+            if (INT > 0)
+                {
+                while (INT > 0)
+                    {
+                        spazi = spazi + " ";
+                        INT--;
+                    }
+                }
+                STRINGA = STRINGA + st;
+                STRINGA = STRINGA + spazi;
+                STRINGA = STRINGA + "\t";
+                spazi = "";
+                if(it.hasNext())
+                    {
+                        STRINGA = STRINGA + it.next() + "\n";
+                    }
+                else
+                    {
+                        STRINGA = STRINGA + "\n";
+                    }
+            }
+//        System.out.printf("%s", STRINGA);
+return STRINGA;
 }
 }

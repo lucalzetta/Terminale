@@ -14,4 +14,5 @@ cd /home/lucaamministratore/GDrive/Luca/Programmazione/JAVA/Terminale/LineaComan
 #-s che permette di scaricare un sito e un indirizzo web valido come parametro.
 java linea.princip -s http://www.menocchio.it/old/index.html
 #java linea.princip -s http://www.scuoladipoliticamaniago.it/index.html
-
+#java linea.princip -s http://www.ripmat.it/index.html
+#java linea.princip -s https://www.osmer.fvg.it/home.php

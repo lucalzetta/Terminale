@@ -37,7 +37,10 @@ public class VariabiliGlobali
  * completato
  */
 private final String ARCHIVIO_DIRS ="ArchivioDIRS.txt";
-private final String LISTA_URLS ="ListaURLS.txt";
+private final String FILE_URLS ="ListaURLS.txt";
+private final String FILE_IMMAGINI ="ListaImmagini.txt";
+private final String FILE_PAGINE ="ListaPagine.txt";
+private final String FILE_FNF ="ListaPagineNonTrovate.txt";
 private static String PAGINA;//questa variabile conterrà il testo della pagina da scaricare
 private static String NOME_PAGINA;//questa variabile conterrà il nome della pagina da scaricare
 private static String CARTELLA_SITO = "/home/lucaamministratore/tmp/";
@@ -49,6 +52,9 @@ private static URL SITO;
 private static URL SITO_RIDOTTO;//rappresenta la root directory del sito in esame
 private static File URLS;
 private static File DIRS;
+private static File FNF;
+private static File IMG;
+private static File PAG;
 private static String ARGOMENTI_STRING;
 private static int[] ARGOMENTI_INT;
 private static int CONTATORE;
@@ -65,6 +71,9 @@ private final static Set <String> LISTA_LINKS = new TreeSet<>();//lo scopo di qu
                                                                 //i collegamenti a tutti i siti esterni al sito
 private final static Set <String> LISTA_SCARICATI = new TreeSet<>();//lo scopo di questa lista è quello di memorizzare 
                                                                 //l'elenco di tutte le pagine il cui download è 
+                                                                //andato a buon fine
+private final static Set <String> LISTA_FNF = new TreeSet<>();//lo scopo di questa lista è quello di memorizzare 
+                                                                //l'elenco di tutte le pagine il cui download NON è 
                                                                 //andato a buon fine
 private static CheckerVariabili CV = new CheckerVariabili();
 
@@ -210,7 +219,7 @@ public void set_files()throws IOException
 {
 try
     {
-        URLS = new File (ROOT_D, LISTA_URLS);
+        URLS = new File (ROOT_D, FILE_URLS);
         if(!URLS.exists())
             {
                 URLS.createNewFile();
@@ -222,6 +231,25 @@ try
                 //System.out.printf("Creato il file %s%n", DIRS.toString());
                 DIRS.createNewFile();
             }
+        IMG = new File (ROOT_D, FILE_IMMAGINI);
+        if(!IMG.exists())
+            {
+                IMG.createNewFile();
+                //System.out.printf("Creato il file %s%n", URLS.toString());
+            }
+        PAG = new File (ROOT_D, FILE_PAGINE);
+        if(!PAG.exists())
+            {
+                PAG.createNewFile();
+                //System.out.printf("Creato il file %s%n", URLS.toString());
+            }
+        FNF = new File (ROOT_D, FILE_FNF);
+        if(!FNF.exists())
+            {
+                URLS.createNewFile();
+                //System.out.printf("Creato il file %s%n", URLS.toString());
+            }
+        
     }
 catch(IOException ioe)
     {
@@ -285,17 +313,30 @@ CARTELLA_SITO = cartella_sito;
  */
 public String get_archivio_dirs()
 {
-return this.ARCHIVIO_DIRS;
-
+return ARCHIVIO_DIRS;
 }
 public String get_lista_urls()
 {
-return this.LISTA_URLS;
+return FILE_URLS;
 }
+public String get_nome_file_pagine()
+{
+return FILE_PAGINE;
+}
+public String get_nome_file_immagini()
+{
+return FILE_IMMAGINI;
+}
+public String get_nome_file_pagine_non_trovate()
+{
+return FILE_FNF;
+}
+
 public String get_page()
 {
 return PAGINA;
 }
+
 public String get_name_page()
 {
 return NOME_PAGINA;
@@ -340,6 +381,18 @@ public File get_file_DIRS()
 {
 return DIRS;
 }
+public File get_file_PAG()
+{
+return PAG;
+}
+public File get_file_IMG()
+{
+return IMG;
+}
+public File get_file_FNF()
+{
+return FNF;
+}
 public String get_args()
 {
 //System.out.printf("Valore degli argomenti in VariabiliGlobali.get_args: %s%n", ARGOMENTI_STRING);
@@ -380,5 +433,9 @@ return LISTA_LINKS;
 public Set<String> get_set_scaricati()
 {
 return LISTA_SCARICATI;
+}
+public Set<String> get_set_fnf()
+{
+return LISTA_FNF;
 }
 }
