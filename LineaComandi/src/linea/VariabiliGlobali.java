@@ -41,6 +41,8 @@ private final String FILE_URLS ="ListaURLS.txt";
 private final String FILE_IMMAGINI ="ListaImmagini.txt";
 private final String FILE_PAGINE ="ListaPagine.txt";
 private final String FILE_FNF ="ListaPagineNonTrovate.txt";
+private final String FILE_ERR ="FileDiLogErrori.txt";
+private final String FILE_LOG ="FileDiLog.txt";
 private static String PAGINA;//questa variabile conterrà il testo della pagina da scaricare
 private static String NOME_PAGINA;//questa variabile conterrà il nome della pagina da scaricare
 private static String CARTELLA_SITO = "/home/lucaamministratore/tmp/";
@@ -55,6 +57,8 @@ private static File DIRS;
 private static File FNF;
 private static File IMG;
 private static File PAG;
+private static File ERR;
+private static File LOG;
 private static String ARGOMENTI_STRING;
 private static int[] ARGOMENTI_INT;
 private static int CONTATORE;
@@ -76,6 +80,7 @@ private final static Set <String> LISTA_FNF = new TreeSet<>();//lo scopo di ques
                                                                 //l'elenco di tutte le pagine il cui download NON è 
                                                                 //andato a buon fine
 private static CheckerVariabili CV = new CheckerVariabili();
+private static ErrorsClasse EC = new ErrorsClasse();
 
 public VariabiliGlobali()
 {
@@ -110,18 +115,7 @@ if ((root_d != null))
         /*System.out.printf("%nCLASSE VariabiliGlobali, metodo set_root().%n"
                         + "Valore della variabile locale root_d"
                 + " fuori dall'if: %s%n", root_d );
-        //Una serie di controlli verificano l'identità dell'argomento con il
-        //valore già impostato di ROOT_D
-        if (root_d.equalsIgnoreCase(ROOT_D))
-            {
-                ROOT_D = "";
-            }
-        
-/*        if ((root_d.compareTo(ROOT_D)) >= 0)
-            {
-                ROOT_D = "";
-            }
-*/        
+        */        
         if (root_d.substring(0, 1) == "/")
             {
                 root_d = root_d.substring(1);
@@ -132,37 +126,7 @@ if ((root_d != null))
         //per risalirla
         ROOT_D = root_d;
         System.out.printf("ROOT_D: %s%n", ROOT_D);
-        
-        
-        /*if(ROOT_D == null)
-            {
-                ROOT_D = root_d;
-            }
-        else if(ROOT_D.contains(root_d))
-            {
-                ROOT_D = root_d;
-            }/*
-        
-        
-        */
-        //CV.get_ROOT_DEST();
-        /*if(ROOT_DEST.lastIndexOf("/") == (ROOT_DEST.length() - 1))
-            {
-                ROOT_D = ROOT_DEST + root_d;
-                System.out.printf("%nPercorso da creare: %s%n"
-                        + " con carattere slash finale +++++++++++++++++++%n"
-                        ,ROOT_D);
-                ROOT_DEST = ROOT_D;
-            }
-        else
-            {
-                ROOT_D = ROOT_DEST + "/" + root_d;
-                System.out.printf("%nPercorso da creare: %s%n"
-                        + " senza carattere slash finale ----------------%n"
-                        ,ROOT_D);
-                ROOT_DEST = ROOT_D;
-            }
-*/
+
         //System.out.printf("Root directory del progetto: %s%n", ROOT_D);
         ROOT_DEST = ROOT_D;
         Path percorso = Paths.get(ROOT_D);
@@ -194,26 +158,7 @@ if(subdir.startsWith("/"))
 SUBDIR = subdir;
 CV.get_SUBDIR();
 //System.out.printf("Percorso di salvataggio del file corrente: %s%n", ROOT_D + subdir);
-/**
- * Sospendiamo temporaneamente il seguente tratto di codice perché fuori posto.
- * UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU
- */
-/*
-boolean dir = (new File(SUBDIR)).mkdirs();//crea la cartella, resta false 
-                                                       //se l'operazione fallisce
-if(dir)
-    {
-        System.out.println("Cartella di destinazione del file: " + SUBDIR + " CREATA CON SUCCESSO!");
-    }
-else
-    {
-        System.out.println("La cartella di destinazione del FILE: " + SUBDIR + ""
-                + " NON è stata creata, VERIFICARE l'errore!");
-    }
-/**
- * Fine del tratto sospeso. 16/02/2024
- * OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
- */
+
 }
 public void set_files()throws IOException
 {
@@ -246,7 +191,19 @@ try
         FNF = new File (ROOT_D, FILE_FNF);
         if(!FNF.exists())
             {
-                URLS.createNewFile();
+                FNF.createNewFile();
+                //System.out.printf("Creato il file %s%n", URLS.toString());
+            }
+        ERR = new File (ROOT_D, FILE_ERR);
+        if(!ERR.exists())
+            {
+                ERR.createNewFile();
+                //System.out.printf("Creato il file %s%n", URLS.toString());
+            }
+        LOG = new File (ROOT_D, FILE_LOG);
+        if(!LOG.exists())
+            {
+                LOG.createNewFile();
                 //System.out.printf("Creato il file %s%n", URLS.toString());
             }
         
@@ -331,6 +288,10 @@ public String get_nome_file_pagine_non_trovate()
 {
 return FILE_FNF;
 }
+public String get_nome_file_errori()
+{
+return FILE_ERR;
+}
 
 public String get_page()
 {
@@ -392,6 +353,14 @@ return IMG;
 public File get_file_FNF()
 {
 return FNF;
+}
+public File get_file_ERR()
+{
+return ERR;
+}
+public File get_file_LOG()
+{
+return LOG;
 }
 public String get_args()
 {

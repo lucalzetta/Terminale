@@ -9,6 +9,10 @@ package linea;
 import java.util.Set;
 import java.util.TreeSet;
 import java.util.Iterator;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.FileNotFoundException;
 
 public class EstraiLinks 
 {
@@ -20,11 +24,28 @@ private Set<String> SET_LINKS;
 private Set<String> SET_SITI;
 private Set<String> SET_PG;
 private Set<String> SET_IMG;
+private File LOG_F;
+private FileOutputStream FOUT;
+private static String MSG;
 
 public EstraiLinks(String pagina)
 {
 //System.out.printf("%nCLASSE EstraiLinks, costruttore di default.%n");
 PAGINA = pagina;
+LOG_F = VG.get_file_LOG();
+MSG = "";
+try
+    {
+        FOUT = new FileOutputStream(LOG_F, true);
+    }
+catch(FileNotFoundException fnf)
+    {
+        MSG = "\nClasse EstraiLinks, costruttore con parametri, "
+                + "si è verificato un errore nella generazione del file "
+                + fnf + "\n";
+        EC.set_msg(MSG);
+        EC.scrivi_su_file();
+    }
 
 }
 
@@ -49,7 +70,7 @@ public void links (boolean testo)
             Set <String> global_img = VG.get_set_immagini();
             
             global_links.addAll(ciclo("href=", SET_LINKS));
-            global_pag.addAll(SET_LINKS);
+            global_pag.addAll(ciclo("href=", SET_LINKS));
             
             global_links.addAll(ciclo("src=", SET_IMG));
             global_img.addAll(ciclo("src=", SET_IMG));
@@ -76,9 +97,10 @@ private Set<String> ciclo(String par, Set<String> set)
         int i = 0;
         int c = 0;
         int old_ref = 0;
-        //int f = PAGINA.lastIndexOf("href=\"");
-                int f = PAGINA.length();
+        int f = PAGINA.length();
+        byte[] b_msg;
         String riga;
+        String msg = "";
         /**
          * Con un primo ciclo estraiamo i riferimenti degli attributi 'href'
          */
@@ -119,7 +141,23 @@ private Set<String> ciclo(String par, Set<String> set)
                         riga = pulisci_link(riga);
                         
                         SET_LINKS.add(riga);
-                        
+                        msg = "Trovata l'occorrenza n° " + c + 
+                                " di " + par + " in posizione: " + i + " nel file " + VG.get_name_page() + "\n";
+                        b_msg = msg.getBytes();
+                        try
+                            {
+                                FOUT.write(b_msg);
+                            }
+                        catch(IOException ioe)
+                            {
+                                MSG = "\nClasse EstraiLinks, metodo ciclo(), "
+                                + "si è verificato un errore nella scrittura del file"
+                                + " di Log."
+                                + ioe + "\n";
+                                EC.set_msg(MSG);
+                                EC.scrivi_su_file();
+                            }
+
                         //System.out.printf("Trovata l'occorrenza n° %d di '%s' in posizione: %d\t%s%n",c,par, i,riga);
                         i++;
                         old_ref = PAGINA.indexOf(par, 0 );//segna la prima occorrenza della 
@@ -214,25 +252,31 @@ Set <String> global_pag = VG.get_set_pagina();
 Set <String> global_img = VG.get_set_immagini();
 Iterator i = global_links.iterator();
 String riga = "";
+int start = 0;
 
 while (i.hasNext())
     {
         riga = i.next().toString();
-        switch (riga)
-        {
-            case ".jpg":
-            global_img.add(riga);
-            break;
+        start = riga.lastIndexOf(".");
+        if ( start != -1)
+            {
+                riga = riga.substring(start, riga.length());
+                switch (riga)
+                    {
+                        case ".jpg":
+                        global_img.add(riga);
+                        break;
             
-            case ".jpeg":
-            global_img.add(riga);
-            break;
+                        case ".jpeg":
+                        global_img.add(riga);
+                        break;
 
-            case ".png":
-            global_img.add(riga);
-            break;
+                        case ".png":
+                        global_img.add(riga);
+                        break;
 
-        }
+                    }
+            }
     }
 }
 }

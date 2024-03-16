@@ -34,6 +34,7 @@ private static String NOME_PAGINA;
 private static boolean NOME_VALIDO;
 private final VariabiliGlobali VG = new VariabiliGlobali();
 private static CheckerVariabili CV = new CheckerVariabili();
+private final ErrorsClasse EC = new ErrorsClasse();
 private Set<String> SET_LINKS_VISITATI = VG.get_set_scaricati();
 private Set<String> SET_PAGINE_NON_TROVATE = VG.get_set_fnf();
 private TrovaDirs TD;
@@ -156,8 +157,10 @@ if(NOME_VALIDO)
                         this.SET_PAGINE_NON_TROVATE.add("" + NOME_PAGINA.strip());
                     }
                 
-                System.err.printf("%nIl file %s non è stato trovato dal metodo "
-                        + "scrivi della classe SalvaPagina().%n", fnf);
+                String err = "\nIl file " + fnf + " non è stato trovato dal metodo "
+                        + "scrivi della classe SalvaPagina().\n";
+                EC.set_msg(err);
+                EC.scrivi_su_file();
             }
         finally
             {

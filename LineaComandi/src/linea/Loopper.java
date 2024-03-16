@@ -59,7 +59,7 @@ private void cicloSito()throws IOException
 boolean interr = false;
 int control = 0;
 while(! interr)//riga per l'uso normale del programma
-//while (control < 10)//a scopo di debug limitiamo il numero di cicli
+//while (control < 350)//a scopo di debug limitiamo il numero di cicli
     {   
         /**
          * Area di azzeramento delle variabili, finito il primo passo,
@@ -140,6 +140,7 @@ FileOutputStream page_wr = null;
 FileOutputStream fnf_wr = null;
 FileOutputStream www_wr = null;
 FileOutputStream img_wr = null;
+Set<String> setVuoto = null;
 try
     {
         wr = new FileOutputStream(VG.get_file_DIRS());
@@ -150,9 +151,9 @@ try
         //stampiamo un test dei set<> globali contenenti i link da visualizzare a console
         String Tmp = "";
         String separatore = "\n=============================================================================================\n";
-        Tmp = separatore + "Lista dei collegamenti presenti nel sito                        Lista dei collegamenti visitati\n";
+        Tmp = separatore + "Lista dei collegamenti presenti nel sito                        Lista delle pagine non trovate   \n";
         STRINGA = "";
-        STRINGA = STRINGA + str_ris(Tmp, VG.get_set_scaricati(), VG.get_set_collegamenti());
+        STRINGA = STRINGA + str_ris(Tmp, VG.get_set_collegamenti(), setVuoto);
         
         byte [] i_str = new byte[STRINGA.length()];
         i_str = STRINGA.getBytes();
@@ -170,10 +171,10 @@ try
             }
     
         Tmp = "";
-        Tmp = separatore + "Lista delle pagine presenti nel sito                      Lista delle pagine non trovate nel sito\n";
+        Tmp = separatore + "Lista delle pagine presenti nel sito\n";
 
         STRINGA = "";
-        STRINGA = STRINGA + str_ris(Tmp, VG.get_set_pagina(), VG.get_set_fnf());
+        STRINGA = STRINGA + str_ris(Tmp, VG.get_set_pagina(), setVuoto);
         byte [] i_str_pag = new byte[STRINGA.length()];
         i_str_pag = STRINGA.getBytes();
         try
@@ -194,7 +195,7 @@ try
         Tmp = separatore + "Lista delle pagine non trovate nel sito                   Lista delle pagine non trovate nel sito\n";
 
         STRINGA = "";
-        STRINGA = STRINGA + str_ris(Tmp, VG.get_set_fnf(), VG.get_set_fnf());
+        STRINGA = STRINGA + str_ris(Tmp, VG.get_set_fnf(), setVuoto);
         byte [] i_str_pagnf = new byte[STRINGA.length()];
         i_str_pagnf = STRINGA.getBytes();
         try
@@ -213,10 +214,10 @@ try
             }
 
         Tmp = "";
-        Tmp = separatore + "Lista delle pagine esterne al sito                   Lista delle pagine non trovate nel sito\n";
+        Tmp = separatore + "Lista delle pagine esterne al sito\n";
 
         STRINGA = "";
-        STRINGA = STRINGA + str_ris(Tmp, VG.get_set_sitiext(), VG.get_set_fnf());
+        STRINGA = STRINGA + str_ris(Tmp, VG.get_set_sitiext(), setVuoto);
         byte [] www_str_pagnf = new byte[STRINGA.length()];
         www_str_pagnf = STRINGA.getBytes();
         try
@@ -234,10 +235,10 @@ try
             }
         
         Tmp = "";
-        Tmp = separatore + "Lista delle immagini presenti nel sito                   Lista delle pagine non trovate nel sito\n";
+        Tmp = separatore + "Lista delle immagini presenti nel sito\n";
 
         STRINGA = "";
-        STRINGA = STRINGA + str_ris(Tmp, VG.get_set_sitiext(), VG.get_set_fnf());
+        STRINGA = STRINGA + str_ris(Tmp, VG.get_set_immagini(), setVuoto);
         byte [] img_str_pagnf = new byte[STRINGA.length()];
         img_str_pagnf = STRINGA.getBytes();
         try
@@ -267,6 +268,8 @@ try
         page_wr.close();
     if (fnf_wr != null)
         fnf_wr.close();
+    if (img_wr != null)
+        img_wr.close();
 
     }
 catch (IOException ioe)
@@ -282,7 +285,12 @@ String ris = "";
 STRINGA = Rich;
 String spazi = "";
 String sub = "";
-Iterator it = set_2.iterator();
+Iterator it = null;
+if(set_2 != null)
+    {
+        it = set_2.iterator();
+    }
+
     for (String st : set_1)
         {
             INT = 60 - st.length();
@@ -298,14 +306,19 @@ Iterator it = set_2.iterator();
                 STRINGA = STRINGA + spazi;
                 STRINGA = STRINGA + "\t";
                 spazi = "";
-                if(it.hasNext())
-                    {
-                        STRINGA = STRINGA + it.next() + "\n";
-                    }
+                if(it != null)
+                    if (it.hasNext())
+                        {
+                            STRINGA = STRINGA + it.next() + "\n";
+                        }
+                    else
+                        {
+                            STRINGA = STRINGA + "\n";
+                        }
                 else
-                    {
-                        STRINGA = STRINGA + "\n";
-                    }
+                        {
+                            STRINGA = STRINGA + "\n";
+                        }
             }
 //        System.out.printf("%s", STRINGA);
 return STRINGA;

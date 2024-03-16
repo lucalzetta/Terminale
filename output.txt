@@ -1,0 +1,3134 @@
+Valore di 'argomenti[0]: -s
+Valore della variabile sito in EvalOpzioni.EvalOpz() http://www.menocchio.it/old/index.html
+
+URL origine del sito che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+É stata scelta l'opzione 's', verrà scaricato il sito:
+http://www.menocchio.it/old/index.html
+Nella directory:
+/home/lucaamministratore/tmp/menocchio/
+e scritti i file:
+/home/lucaamministratore/tmp/menocchio/ListaURLS.txt
+/home/lucaamministratore/tmp/menocchio/ArchivioDIRS.txt
+scaricata la pagina: index.html
+
+CLASSE TrovaDirs, metodo cerca_dire().
+Abbiamo esplorato tutti i collegamenti!ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/index.html
+Nome della pagina da salvare: index.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/07-04-2018-mv.html
+Nome della pagina da salvare: 07-04-2018-mv.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 0
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:apis.google.com/js/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/apis.google.com/js/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/apis.google.com/js/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/apis.google.com/js/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/apis.google.com/js/plusone.js
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/apis.google.com/js/
+Nome della pagina da salvare: plusone.js
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 1
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso-aprile-maggio-2014.html
+Nome della pagina da salvare: attivita-in-corso-aprile-maggio-2014.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 2
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso-aprile-maggio-2014-cuori-nel-pozzo.html
+Nome della pagina da salvare: attivita-in-corso-aprile-maggio-2014-cuori-nel-pozzo.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 3
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso-aprile-maggio-2014-david-maria-turoldo.html
+Nome della pagina da salvare: attivita-in-corso-aprile-maggio-2014-david-maria-turoldo.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 4
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso-aprile-maggio-2014-omaggio-del-col.html
+Nome della pagina da salvare: attivita-in-corso-aprile-maggio-2014-omaggio-del-col.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 5
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso-aprile-maggio-2014-sos-cultura.html
+Nome della pagina da salvare: attivita-in-corso-aprile-maggio-2014-sos-cultura.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 6
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:attivita-in-corso/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/agosto---settembre-2014--.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: agosto---settembre-2014--.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 7
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/agosto---settembre-2014--.html
+Nome della pagina da salvare: agosto---settembre-2014--.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 8
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/agosto-2012.html
+Nome della pagina da salvare: agosto-2012.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 9
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/agosto-2013.html
+Nome della pagina da salvare: agosto-2013.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 10
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/aprile-maggio-2017.html
+Nome della pagina da salvare: aprile-maggio-2017.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 11
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso-agosto-settembre-2014-premio-donna-maior-soroptimist.html
+Nome della pagina da salvare: attivita-in-corso-agosto-settembre-2014-premio-donna-maior-soroptimist.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 12
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:attivita-in-corso/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/agosto-2012.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: agosto-2012.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 13
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:agosto-2012/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/agosto-2012/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/agosto-2012/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/agosto-2012/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/agosto-2012/viaggio-in-valcellina.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/agosto-2012/
+Nome della pagina da salvare: viaggio-in-valcellina.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 14
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/agosto-2012/voci-di-luoghi.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/agosto-2012/
+Nome della pagina da salvare: voci-di-luoghi.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 15
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:attivita-in-corso/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/agosto-2013.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: agosto-2013.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 16
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:agosto-2013/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/agosto-2013/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/agosto-2013/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/agosto-2013/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/agosto-2013/nei-luoghi-.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/agosto-2013/
+Nome della pagina da salvare: nei-luoghi-.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 17
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/agosto-2013/qualcosa-.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/agosto-2013/
+Nome della pagina da salvare: qualcosa-.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 18
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:attivita-in-corso/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/aprile-maggio-2017.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: aprile-maggio-2017.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 19
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/aprile-maggio-2017-canto-d-aprile.html
+Nome della pagina da salvare: aprile-maggio-2017-canto-d-aprile.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 20
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:aprile-maggio-2017/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/aprile-maggio-2017/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/aprile-maggio-2017/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/aprile-maggio-2017/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/aprile-maggio-2017/mostra-tutto-era-un-caos.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/aprile-maggio-2017/
+Nome della pagina da salvare: mostra-tutto-era-un-caos.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 21
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:attivita-in-corso/aprile-maggio-2017/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/aprile-maggio-2017/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/aprile-maggio-2017/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/aprile-maggio-2017/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/aprile-maggio-2017/mostra-tutto-era-un-caos.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/aprile-maggio-2017/
+Nome della pagina da salvare: mostra-tutto-era-un-caos.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 22
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:attivita-in-corso/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/dicembre-2014.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: dicembre-2014.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 23
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/dicembre-2016---gennaio-2017.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: dicembre-2016---gennaio-2017.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 24
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/dicembre-2019.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: dicembre-2019.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 25
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/febbraio-2013.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: febbraio-2013.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 26
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/febbraio-marzo-2017.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: febbraio-marzo-2017.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 27
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/gennaio-2014.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: gennaio-2014.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 28
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/gennaio-2020.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: gennaio-2020.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 29
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/gennaio-febbraio-2016.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: gennaio-febbraio-2016.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 30
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/albero-damore.html
+Nome della pagina da salvare: albero-damore.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 31
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:attivita-in-corso/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/gennaio-marzo-2018.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: gennaio-marzo-2018.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 32
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/giugno-2012.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: giugno-2012.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 33
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/giugno-agosto-2017.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: giugno-agosto-2017.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 34
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/giugno-luglio-2018.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: giugno-luglio-2018.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 35
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/luglio---agosto-2015.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: luglio---agosto-2015.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 36
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/luglio-2012.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: luglio-2012.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 37
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/luglio-2013.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: luglio-2013.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 38
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/luglio-2014-.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: luglio-2014-.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 39
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/luglio-agosto-2016.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: luglio-agosto-2016.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 40
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/andare-a-bottega-pierluigi-cappello.html
+Nome della pagina da salvare: andare-a-bottega-pierluigi-cappello.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 41
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:attivita-in-corso/luglio-agosto-2016/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/luglio-agosto-2016/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/luglio-agosto-2016/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/luglio-agosto-2016/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/luglio-agosto-2016/gocce-di-poesia.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/luglio-agosto-2016/
+Nome della pagina da salvare: gocce-di-poesia.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 42
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:attivita-in-corso/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/maggio-2012.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: maggio-2012.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 43
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/maggio-2013.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: maggio-2013.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 44
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/maggio-2019.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: maggio-2019.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 45
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/maggio-giugno-2016.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: maggio-giugno-2016.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 46
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/maggio-marzo-2018.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: maggio-marzo-2018.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 47
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/marzo-2013.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: marzo-2013.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 48
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/marzo-2019.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: marzo-2019.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 49
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/marzo-aprile-2016.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: marzo-aprile-2016.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 50
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/novembre-2012.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: novembre-2012.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 51
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/novembre-2013.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: novembre-2013.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 52
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso-novembre-2013-cercando-tra-le-carte.html
+Nome della pagina da salvare: attivita-in-corso-novembre-2013-cercando-tra-le-carte.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 53
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso-novembre-2013-vajont-1963-2013-.html
+Nome della pagina da salvare: attivita-in-corso-novembre-2013-vajont-1963-2013-.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 54
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:attivita-in-corso/novembre-2013/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/novembre-2013/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/novembre-2013/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/novembre-2013/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/novembre-2013/per-federico-tavan.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/novembre-2013/
+Nome della pagina da salvare: per-federico-tavan.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 55
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:attivita-in-corso/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/novembre-2019.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: novembre-2019.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 56
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/novembre-dicembre-2017.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: novembre-dicembre-2017.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 57
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/novembre-dicembre-2018.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: novembre-dicembre-2018.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 58
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/ottobre-2013.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: ottobre-2013.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 59
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/ottobre-2020.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: ottobre-2020.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 60
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:attivita-in-corso/ottobre-2020/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/ottobre-2020/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/ottobre-2020/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/ottobre-2020/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/ottobre-2020/in-scjapinela.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/ottobre-2020/
+Nome della pagina da salvare: in-scjapinela.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 61
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/ottobre-2020/tito-maniacco.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/ottobre-2020/
+Nome della pagina da salvare: tito-maniacco.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 62
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:attivita-in-corso/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/ottobre-novembre-2015.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: ottobre-novembre-2015.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 63
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/rassegna-stampa.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: rassegna-stampa.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 64
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:attivita-in-corso/rassegna-stampa/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/rassegna-stampa/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/rassegna-stampa/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/rassegna-stampa/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/rassegna-stampa/-10-01-2014-corriere-.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/rassegna-stampa/
+Nome della pagina da salvare: -10-01-2014-corriere-.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 65
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/-10-01-2014-corriere-.html
+Nome della pagina da salvare: -10-01-2014-corriere-.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 66
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/-10-11-2013-mv.html
+Nome della pagina da salvare: -10-11-2013-mv.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 67
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/-11-02-2014-mv.html
+Nome della pagina da salvare: -11-02-2014-mv.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 68
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/-12-02-2014-mv-.html
+Nome della pagina da salvare: -12-02-2014-mv-.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 69
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/-27-02-2014-mv-.html
+Nome della pagina da salvare: -27-02-2014-mv-.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 70
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/01-06-2014-mv.html
+Nome della pagina da salvare: 01-06-2014-mv.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 71
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/01-10-2016-corriere.html
+Nome della pagina da salvare: 01-10-2016-corriere.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 72
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/01-10-2016-il-piccolo.html
+Nome della pagina da salvare: 01-10-2016-il-piccolo.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 73
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/01-12-2016-mv-.html
+Nome della pagina da salvare: 01-12-2016-mv-.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 74
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/02-12-2016-mv.html
+Nome della pagina da salvare: 02-12-2016-mv.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 75
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/03-12-2016-il-piccolo-.html
+Nome della pagina da salvare: 03-12-2016-il-piccolo-.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 76
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/04-08-2018-mv.html
+Nome della pagina da salvare: 04-08-2018-mv.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 77
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/09-10-2020-mv.html
+Nome della pagina da salvare: 09-10-2020-mv.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 78
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/10-11-2013-mv.html
+Nome della pagina da salvare: 10-11-2013-mv.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 79
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/11-05-2016-mv.html
+Nome della pagina da salvare: 11-05-2016-mv.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 80
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/11-11-2015-mv.html
+Nome della pagina da salvare: 11-11-2015-mv.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 81
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/14-04-2017-mv.html
+Nome della pagina da salvare: 14-04-2017-mv.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 82
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/17-08-2018-mv.html
+Nome della pagina da salvare: 17-08-2018-mv.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 83
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/22-10-2014-mv.html
+Nome della pagina da salvare: 22-10-2014-mv.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 84
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/29-05-2014-mv.html
+Nome della pagina da salvare: 29-05-2014-mv.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 85
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/annecy-cinema-italien.html
+Nome della pagina da salvare: annecy-cinema-italien.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 86
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:attivita-in-corso/rassegna-stampa/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/rassegna-stampa/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/rassegna-stampa/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/rassegna-stampa/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/rassegna-stampa/-10-11-2013-mv.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/rassegna-stampa/
+Nome della pagina da salvare: -10-11-2013-mv.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 87
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/rassegna-stampa/-11-02-2014-mv.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/rassegna-stampa/
+Nome della pagina da salvare: -11-02-2014-mv.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 88
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/rassegna-stampa/-12-02-2014-mv-.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/rassegna-stampa/
+Nome della pagina da salvare: -12-02-2014-mv-.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 89
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/rassegna-stampa/-27-02-2014-mv-.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/rassegna-stampa/
+Nome della pagina da salvare: -27-02-2014-mv-.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 90
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/rassegna-stampa/01-06-2014-mv.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/rassegna-stampa/
+Nome della pagina da salvare: 01-06-2014-mv.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 91
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/rassegna-stampa/01-10-2016-corriere.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/rassegna-stampa/
+Nome della pagina da salvare: 01-10-2016-corriere.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 92
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/rassegna-stampa/01-10-2016-il-piccolo.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/rassegna-stampa/
+Nome della pagina da salvare: 01-10-2016-il-piccolo.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 93
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/rassegna-stampa/01-12-2016-mv-.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/rassegna-stampa/
+Nome della pagina da salvare: 01-12-2016-mv-.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 94
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/rassegna-stampa/02-12-2016-mv.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/rassegna-stampa/
+Nome della pagina da salvare: 02-12-2016-mv.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 95
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/rassegna-stampa/03-12-2016-il-piccolo-.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/rassegna-stampa/
+Nome della pagina da salvare: 03-12-2016-il-piccolo-.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 96
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/rassegna-stampa/04-08-2018-mv.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/rassegna-stampa/
+Nome della pagina da salvare: 04-08-2018-mv.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 97
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/rassegna-stampa/09-10-2020-mv.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/rassegna-stampa/
+Nome della pagina da salvare: 09-10-2020-mv.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 98
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/rassegna-stampa/10-11-2013-mv.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/rassegna-stampa/
+Nome della pagina da salvare: 10-11-2013-mv.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 99
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/rassegna-stampa/11-01-2015-mv--.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/rassegna-stampa/
+Nome della pagina da salvare: 11-01-2015-mv--.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 100
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/rassegna-stampa/11-05-2016-mv.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/rassegna-stampa/
+Nome della pagina da salvare: 11-05-2016-mv.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 101
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/rassegna-stampa/11-05-2016.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/rassegna-stampa/
+Nome della pagina da salvare: 11-05-2016.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 102
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/rassegna-stampa/11-11-2015-mv.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/rassegna-stampa/
+Nome della pagina da salvare: 11-11-2015-mv.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 103
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/rassegna-stampa/14-04-2017-mv.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/rassegna-stampa/
+Nome della pagina da salvare: 14-04-2017-mv.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 104
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/rassegna-stampa/17-08-2018-mv.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/rassegna-stampa/
+Nome della pagina da salvare: 17-08-2018-mv.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 105
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/rassegna-stampa/22-10-2014-mv-.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/rassegna-stampa/
+Nome della pagina da salvare: 22-10-2014-mv-.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 106
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/rassegna-stampa/22-10-2014-mv.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/rassegna-stampa/
+Nome della pagina da salvare: 22-10-2014-mv.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 107
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/rassegna-stampa/29-05-2014-mv.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/rassegna-stampa/
+Nome della pagina da salvare: 29-05-2014-mv.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 108
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/rassegna-stampa/annecy-cinema-italien.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/rassegna-stampa/
+Nome della pagina da salvare: annecy-cinema-italien.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 109
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:attivita-in-corso/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/settembre-2012.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: settembre-2012.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 110
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/settembre-2013.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: settembre-2013.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 111
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/settembre-ottobre-2016.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: settembre-ottobre-2016.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 112
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/1976-orcolat.html
+Nome della pagina da salvare: 1976-orcolat.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 113
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/ad-alcuni-piace-la-poesia.html
+Nome della pagina da salvare: ad-alcuni-piace-la-poesia.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 114
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:attivita-in-corso/settembre-ottobre-2016/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/settembre-ottobre-2016/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/settembre-ottobre-2016/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/settembre-ottobre-2016/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/settembre-ottobre-2016/documentari-al-menocchio.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/settembre-ottobre-2016/
+Nome della pagina da salvare: documentari-al-menocchio.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 115
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:attivita-in-corso/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/attivita-in-corso/settembre-ottobre-2017.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/attivita-in-corso/
+Nome della pagina da salvare: settembre-ottobre-2017.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 116
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/circolo-culturale.html
+Nome della pagina da salvare: circolo-culturale.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 117
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:circolo-culturale/collaborazioni/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/circolo-culturale/collaborazioni/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/circolo-culturale/collaborazioni/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/circolo-culturale/collaborazioni/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/circolo-culturale/collaborazioni/collaborazioni.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/circolo-culturale/collaborazioni/
+Nome della pagina da salvare: collaborazioni.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 118
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:circolo-culturale/le-persone/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/circolo-culturale/le-persone/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/circolo-culturale/le-persone/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/circolo-culturale/le-persone/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/circolo-culturale/le-persone/aldo-colonnello.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/circolo-culturale/le-persone/
+Nome della pagina da salvare: aldo-colonnello.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 119
+
+CLASSE TrovaDirs, metodo cerca_dire().
+ROOT_D: /home/lucaamministratore/tmp/menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/
+
+Sotto directory in cui verrà salvata la pagina:
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/aldo-colonnello.html
+Nome della pagina da salvare: aldo-colonnello.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 120
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:circolo-culturale/sostieni-il-menocchio/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/circolo-culturale/sostieni-il-menocchio/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/circolo-culturale/sostieni-il-menocchio/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/circolo-culturale/sostieni-il-menocchio/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/circolo-culturale/sostieni-il-menocchio/sostieni-il-menocchio.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/circolo-culturale/sostieni-il-menocchio/
+Nome della pagina da salvare: sostieni-il-menocchio.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 121
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/circolo-culturale/sostieni-il-menocchio/testimonianze.html
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/circolo-culturale/sostieni-il-menocchio/
+Nome della pagina da salvare: testimonianze.html
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: true
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 122
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_101/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_101/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_101/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_101/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_101/img/parco_dominu_1.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_101/img/
+Nome della pagina da salvare: parco_dominu_1.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 123
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_102/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_102/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_102/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_102/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_102/img/images.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_102/img/
+Nome della pagina da salvare: images.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 124
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_103/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_103/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_103/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_103/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_103/img/bambinisentirevoci_per_banner_sito.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_103/img/
+Nome della pagina da salvare: bambinisentirevoci_per_banner_sito.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 125
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_104/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_104/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_104/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_104/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_104/img/banner_illustrazione_home_1.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_104/img/
+Nome della pagina da salvare: banner_illustrazione_home_1.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 126
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_106/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_106/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_106/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_106/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_106/img/dedicace2.png
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_106/img/
+Nome della pagina da salvare: dedicace2.png
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 127
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_113/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_113/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_113/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_113/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_113/img/maggiomenocchio_mostra_sassi_e_colore_vallan_loc.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_113/img/
+Nome della pagina da salvare: maggiomenocchio_mostra_sassi_e_colore_vallan_loc.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 128
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_114/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_114/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_114/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_114/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_114/img/maggiomenocchio_per_novella_cantarutti_pieg2.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_114/img/
+Nome della pagina da salvare: maggiomenocchio_per_novella_cantarutti_pieg2.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 129
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_115/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_115/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_115/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_115/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_115/img/giugnomenocchio_in_quel_di_malnisio_loc.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_115/img/
+Nome della pagina da salvare: giugnomenocchio_in_quel_di_malnisio_loc.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 130
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_116/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_116/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_116/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_116/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_116/img/lugliomenocchio_premio_giuseppe_malattia_della_vallata_cartellina_omaggio_a_leo_zanier_loc.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_116/img/
+Nome della pagina da salvare: lugliomenocchio_premio_giuseppe_malattia_della_vallata_cartellina_omaggio_a_leo_zanier_loc.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 131
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_117/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_117/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_117/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_117/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_117/img/febbraioarticolo_mv_2202.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_117/img/
+Nome della pagina da salvare: febbraioarticolo_mv_2202.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 132
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_198/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_198/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_198/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_198/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_198/img/trasparente_20x20.png
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_198/img/
+Nome della pagina da salvare: trasparente_20x20.png
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 133
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_202/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_202/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_202/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_202/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_202/img/sotto_il_cielo_di_montereale__sito_web.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_202/img/
+Nome della pagina da salvare: sotto_il_cielo_di_montereale__sito_web.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 134
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_203/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_203/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_203/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_203/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_203/img/gris_in_fiera_locandina_mostra_marino_cao1.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_203/img/
+Nome della pagina da salvare: gris_in_fiera_locandina_mostra_marino_cao1.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 135
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_204/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_204/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_204/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_204/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_204/img/menocchio_mostra_era_una_volta_locandine_inaugurazione1.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_204/img/
+Nome della pagina da salvare: menocchio_mostra_era_una_volta_locandine_inaugurazione1.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 136
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_205/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_205/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_205/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_205/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_205/img/agostovoci_di_luoghi_volantino.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_205/img/
+Nome della pagina da salvare: agostovoci_di_luoghi_volantino.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 137
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_206/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_206/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_206/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_206/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_206/img/agossetviaggio_in_valcellina_volantino_a5.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_206/img/
+Nome della pagina da salvare: agossetviaggio_in_valcellina_volantino_a5.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 138
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_207/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_207/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_207/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_207/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_207/img/8_settembre_prima_e_dopo_locandina.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_207/img/
+Nome della pagina da salvare: 8_settembre_prima_e_dopo_locandina.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 139
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_208/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_208/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_208/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_208/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_208/img/volo_sbranato_locandina.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_208/img/
+Nome della pagina da salvare: volo_sbranato_locandina.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 140
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_209/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_209/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_209/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_209/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_209/img/poeti_del_friuli_locandina.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_209/img/
+Nome della pagina da salvare: poeti_del_friuli_locandina.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 141
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_210/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_210/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_210/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_210/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_210/img/carnia_1944.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_210/img/
+Nome della pagina da salvare: carnia_1944.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 142
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_211/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_211/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_211/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_211/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_211/img/trasparente_20x20.png
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_211/img/
+Nome della pagina da salvare: trasparente_20x20.png
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 143
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_227/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_227/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_227/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_227/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_227/img/attivita_menocchio_giornate_della_preistoria_depliant_montereale.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_227/img/
+Nome della pagina da salvare: attivita_menocchio_giornate_della_preistoria_depliant_montereale.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 144
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_229/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_229/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_229/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_229/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_229/img/premio_malattia_della_vallata_002.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_229/img/
+Nome della pagina da salvare: premio_malattia_della_vallata_002.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 145
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_238/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_238/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_238/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_238/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_238/img/canto_per_le_acque_bis.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_238/img/
+Nome della pagina da salvare: canto_per_le_acque_bis.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 146
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_239/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_239/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_239/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_239/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_239/img/menocchio_collana_vivevoci.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_239/img/
+Nome della pagina da salvare: menocchio_collana_vivevoci.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 147
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_241/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_241/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_241/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_241/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_241/img/trasparente_20x20.png
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_241/img/
+Nome della pagina da salvare: trasparente_20x20.png
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 148
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_242/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_242/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_242/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_242/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_242/img/mostra_barcis_1.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_242/img/
+Nome della pagina da salvare: mostra_barcis_1.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 149
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_244/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_244/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_244/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_244/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_244/img/mostra_qualcosa_locandina.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_244/img/
+Nome della pagina da salvare: mostra_qualcosa_locandina.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 150
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_245/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_245/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_245/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_245/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_245/img/beno_fignon_locandina_32x70_1.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_245/img/
+Nome della pagina da salvare: beno_fignon_locandina_32x70_1.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 151
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_246/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_246/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_246/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_246/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_246/img/trasparente_20x20.png
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_246/img/
+Nome della pagina da salvare: trasparente_20x20.png
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 152
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_248/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_248/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_248/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_248/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_248/img/pieghevole_pordenonelegge18.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_248/img/
+Nome della pagina da salvare: pieghevole_pordenonelegge18.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 153
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_249/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_249/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_249/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_249/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_249/img/pieghevole_pordenonelegge20.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_249/img/
+Nome della pagina da salvare: pieghevole_pordenonelegge20.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 154
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_250/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_250/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_250/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_250/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_250/img/pieghevole_pordenonelegge22.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_250/img/
+Nome della pagina da salvare: pieghevole_pordenonelegge22.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 155
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_251/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_251/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_251/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_251/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_251/img/pieghevole_pordenonelegge_1822.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_251/img/
+Nome della pagina da salvare: pieghevole_pordenonelegge_1822.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 156
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_252/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_252/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_252/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_252/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_252/img/segnalibro_pnlegge_news.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_252/img/
+Nome della pagina da salvare: segnalibro_pnlegge_news.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 157
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_254/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_254/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_254/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_254/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_254/img/giornate_europee_del_patrimonio_per_sito_web.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_254/img/
+Nome della pagina da salvare: giornate_europee_del_patrimonio_per_sito_web.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 158
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_255/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_255/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_255/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_255/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_255/img/andrea_del_col_al_caseificio_sito_menocchio.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_255/img/
+Nome della pagina da salvare: andrea_del_col_al_caseificio_sito_menocchio.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 159
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_256/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_256/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_256/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_256/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_256/img/casa_dei_dolii_per_attivita_in_corso.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_256/img/
+Nome della pagina da salvare: casa_dei_dolii_per_attivita_in_corso.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 160
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_257/img/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_257/img/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_257/img/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_257/img/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_257/img/vajont_gestione_della_memoria_locandina.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_257/img/
+Nome della pagina da salvare: vajont_gestione_della_memoria_locandina.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
+
+CLASSE Loopper, metodo risultati().
+
+Classe Loopper, metodo ciclo, variabile di interruzione del loop: false
+Contatore di cicli: 161
+
+CLASSE TrovaDirs, metodo cerca_dire().
+
+Sotto directory in cui verrà salvata la pagina:cms/contenuto/c_258/attach/t/
+ROOT_D: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_258/attach/t/
+
+Altra Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_258/attach/t/
+
+Root directory in cui verrà salvato il sito:/home/lucaamministratore/tmp/menocchio/cms/contenuto/c_258/attach/t/
+
+URL della pagina che si sta elaborando contenuto in una variabile di tipo URL: http://www.menocchio.it/old/cms/contenuto/c_258/attach/t/att_284.jpg
+
+Percorso da creare: /home/lucaamministratore/tmp/menocchio/cms/contenuto/c_258/attach/t/
+Nome della pagina da salvare: att_284.jpg
+Nome del sito da esplorare: http://www.menocchio.it/old
+
+Valore della variabile booleana TESTO che indica se il file che si stà elaborando è un file di testo o meno: false
