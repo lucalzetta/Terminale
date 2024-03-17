@@ -40,6 +40,8 @@ private final String ARCHIVIO_DIRS ="ArchivioDIRS.txt";
 private final String FILE_URLS ="ListaURLS.txt";
 private final String FILE_IMMAGINI ="ListaImmagini.txt";
 private final String FILE_PAGINE ="ListaPagine.txt";
+private final String FILE_PAGINE_VISITATE ="ListaPagineVisitate.txt";
+private final String FILE_PAGINE_SCARTATE ="ListaPagineScartate.txt";
 private final String FILE_FNF ="ListaPagineNonTrovate.txt";
 private final String FILE_ERR ="FileDiLogErrori.txt";
 private final String FILE_LOG ="FileDiLog.txt";
@@ -57,6 +59,8 @@ private static File DIRS;
 private static File FNF;
 private static File IMG;
 private static File PAG;
+private static File PAG_VISIT;
+private static File PAG_SCART;
 private static File ERR;
 private static File LOG;
 private static String ARGOMENTI_STRING;
@@ -79,6 +83,15 @@ private final static Set <String> LISTA_SCARICATI = new TreeSet<>();//lo scopo d
 private final static Set <String> LISTA_FNF = new TreeSet<>();//lo scopo di questa lista è quello di memorizzare 
                                                                 //l'elenco di tutte le pagine il cui download NON è 
                                                                 //andato a buon fine
+private final static Set <String> LISTA_PG_SCARTATE = new TreeSet<>();//lo scopo di questa lista è quello di memorizzare 
+                                                                //l'elenco di tutte le pagine a cui NON HA SENSO TENTARE di
+                                                                //accedere.
+                                                                //LISTA_SCARICATI
+private final static Set <String> LISTA_PG_VISITATE = new TreeSet<>();//lo scopo di questa lista è quello di memorizzare 
+                                                                //l'elenco di tutte le pagine a cui si è tentato di 
+                                                                //accedere, dovrebbe essere la somma di LISTA_FNF e
+                                                                //LISTA_SCARICATI
+
 private static CheckerVariabili CV = new CheckerVariabili();
 private static ErrorsClasse EC = new ErrorsClasse();
 
@@ -188,6 +201,18 @@ try
                 PAG.createNewFile();
                 //System.out.printf("Creato il file %s%n", URLS.toString());
             }
+        PAG_VISIT = new File (ROOT_D, FILE_PAGINE_VISITATE);
+        if(!PAG_VISIT.exists())
+            {
+                PAG_VISIT.createNewFile();
+                //System.out.printf("Creato il file %s%n", URLS.toString());
+            }
+        PAG_SCART = new File (ROOT_D, FILE_PAGINE_SCARTATE);
+        if(!PAG_SCART.exists())
+            {
+                PAG_SCART.createNewFile();
+                //System.out.printf("Creato il file %s%n", URLS.toString());
+            }
         FNF = new File (ROOT_D, FILE_FNF);
         if(!FNF.exists())
             {
@@ -280,6 +305,14 @@ public String get_nome_file_pagine()
 {
 return FILE_PAGINE;
 }
+public String get_nome_file_pagine_visitate()
+{
+return FILE_PAGINE_VISITATE;
+}
+public String get_nome_file_pagine_scartate()
+{
+return FILE_PAGINE_SCARTATE;
+}
 public String get_nome_file_immagini()
 {
 return FILE_IMMAGINI;
@@ -346,6 +379,14 @@ public File get_file_PAG()
 {
 return PAG;
 }
+public File get_file_PAG_VISIT()
+{
+return PAG_VISIT;
+}
+public File get_file_PAG_SCART()
+{
+return PAG_SCART;
+}
 public File get_file_IMG()
 {
 return IMG;
@@ -390,6 +431,10 @@ return LISTA_URLS_LIST;
 public Set<String> get_set_pagina()
 {
 return LISTA_PAGINE;
+}
+public Set<String> get_set_pagine_scartate()
+{
+return LISTA_PG_SCARTATE;
 }
 public Set<String> get_set_immagini()
 {

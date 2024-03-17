@@ -58,8 +58,8 @@ private void cicloSito()throws IOException
 //System.out.printf("%nCLASSE Loopper, metodo cicloSito().%n");
 boolean interr = false;
 int control = 0;
-while(! interr)//riga per l'uso normale del programma
-//while (control < 350)//a scopo di debug limitiamo il numero di cicli
+//while(! interr)//riga per l'uso normale del programma
+while (control < 350)//a scopo di debug limitiamo il numero di cicli
     {   
         /**
          * Area di azzeramento delle variabili, finito il primo passo,
@@ -121,8 +121,8 @@ CV.get_URL_SITO();*/
 TestGET TG = new TestGET(true);
 //TrovaDirs TD = new TrovaDirs();
 EstraiLinks el = new EstraiLinks(VG.get_page());
-el.links(VG.get_testo());
 el.filtra_links();
+el.links(VG.get_testo());
 //TD.cerca_dire();//già chiamato da TestGet
 //TD.imposta_sito(VG.get_subdir() + VG.get_name_page());
 }
@@ -137,6 +137,8 @@ System.out.printf("%nCLASSE Loopper, metodo risultati().%n");
  */
 FileOutputStream wr = null;
 FileOutputStream page_wr = null;
+FileOutputStream page_visit_wr = null;
+FileOutputStream page_scart_wr = null;
 FileOutputStream fnf_wr = null;
 FileOutputStream www_wr = null;
 FileOutputStream img_wr = null;
@@ -145,13 +147,15 @@ try
     {
         wr = new FileOutputStream(VG.get_file_DIRS());
         page_wr = new FileOutputStream(VG.get_file_PAG());
+        page_visit_wr = new FileOutputStream(VG.get_file_PAG_VISIT());
+        page_scart_wr = new FileOutputStream(VG.get_file_PAG_SCART());
         fnf_wr = new FileOutputStream(VG.get_file_FNF());
         www_wr = new FileOutputStream(VG.get_file_URLS());
         img_wr = new FileOutputStream(VG.get_file_IMG());
         //stampiamo un test dei set<> globali contenenti i link da visualizzare a console
         String Tmp = "";
         String separatore = "\n=============================================================================================\n";
-        Tmp = separatore + "Lista dei collegamenti presenti nel sito                        Lista delle pagine non trovate   \n";
+        Tmp = separatore + "Lista dei collegamenti presenti nel sito                                                         \n";
         STRINGA = "";
         STRINGA = STRINGA + str_ris(Tmp, VG.get_set_collegamenti(), setVuoto);
         
@@ -190,20 +194,42 @@ try
                 System.err.printf("%nErrore di IO nella classe Loopper metodo Risultati():%n"
                         + "%s%n", ioe);
             }
-        
+                
         Tmp = "";
-        Tmp = separatore + "Lista delle pagine non trovate nel sito                   Lista delle pagine non trovate nel sito\n";
+        Tmp = separatore + "Lista delle pagine visitate, sono comprese le pagine che hanno generato un errore di pagina non trovata\n";
 
         STRINGA = "";
-        STRINGA = STRINGA + str_ris(Tmp, VG.get_set_fnf(), setVuoto);
-        byte [] i_str_pagnf = new byte[STRINGA.length()];
-        i_str_pagnf = STRINGA.getBytes();
+        STRINGA = STRINGA + str_ris(Tmp, VG.get_set_scaricati(), setVuoto);
+        byte [] i_str_pag_visit = new byte[STRINGA.length()];
+        i_str_pag_visit = STRINGA.getBytes();
         try
             {
             
-            for(int i = 0; i < i_str_pagnf.length; i++)
+            for(int i = 0; i < i_str_pag_visit.length; i++)
                 {
-                    fnf_wr.write(i_str_pagnf[i]);
+                    page_visit_wr.write(i_str_pag_visit[i]);
+                }
+
+            }
+        catch(IOException ioe)
+            {
+                System.err.printf("%nErrore di IO nella classe Loopper metodo Risultati():%n"
+                        + "%s%n", ioe);
+            }
+        
+        Tmp = "";
+        Tmp = separatore + "Lista delle pagine scartate in quanto non scaricabili\n";
+
+        STRINGA = "";
+        STRINGA = STRINGA + str_ris(Tmp, VG.get_set_pagine_scartate(), setVuoto);
+        byte [] i_str_pag_scart = new byte[STRINGA.length()];
+        i_str_pag_scart = STRINGA.getBytes();
+        try
+            {
+            
+            for(int i = 0; i < i_str_pag_scart.length; i++)
+                {
+                    page_scart_wr.write(i_str_pag_scart[i]);
                 }
 
             }
@@ -225,6 +251,27 @@ try
             for(int i = 0; i < www_str_pagnf.length; i++)
                 {
                     www_wr.write(www_str_pagnf[i]);
+                }
+
+            }
+        catch(IOException ioe)
+            {
+                System.err.printf("%nErrore di IO nella classe Loopper metodo Risultati():%n"
+                        + "%s%n", ioe);
+            }
+        
+        Tmp = "";
+        Tmp = separatore + "Lista delle pagine non trovate\n";
+
+        STRINGA = "";
+        STRINGA = STRINGA + str_ris(Tmp, VG.get_set_fnf(), setVuoto);
+        byte [] pagnf = new byte[STRINGA.length()];
+        pagnf = STRINGA.getBytes();
+        try
+            {
+            for(int i = 0; i < pagnf.length; i++)
+                {
+                    fnf_wr.write(pagnf[i]);
                 }
 
             }
@@ -266,8 +313,12 @@ try
         wr.close();
     if (page_wr != null)
         page_wr.close();
+    if (page_visit_wr != null)
+        page_visit_wr.close();
     if (fnf_wr != null)
         fnf_wr.close();
+    if (www_wr != null)
+        www_wr.close();
     if (img_wr != null)
         img_wr.close();
 

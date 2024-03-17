@@ -249,19 +249,52 @@ public void filtra_links()
 Set <String> global_links = VG.get_set_collegamenti();
 Set <String> global_www = VG.get_set_sitiext();
 Set <String> global_pag = VG.get_set_pagina();
+Set <String> global_pag_scart = VG.get_set_pagine_scartate();
 Set <String> global_img = VG.get_set_immagini();
 Iterator i = global_links.iterator();
 String riga = "";
+String cerca = "";
+CharSequence ch_cerca;
 int start = 0;
 
 while (i.hasNext())
     {
         riga = i.next().toString();
+        
+        cerca = "javascript";
+        
+        if(riga.contains(cerca))
+            {
+                global_pag_scart.add(riga);
+                i.remove();
+                if(i.hasNext())
+                    {
+                        i.next();
+                    }
+            }
+        
+        cerca = "phpThumb";
+        
+        if(riga.contains(cerca))
+            {
+                global_pag_scart.add(riga);
+                i.remove();
+            }                        
+
+        cerca = "http";
+        
+        if(riga.contains(cerca))
+            {
+                global_www.add(riga);
+                i.remove();
+            }
+        
         start = riga.lastIndexOf(".");
+        
         if ( start != -1)
             {
-                riga = riga.substring(start, riga.length());
-                switch (riga)
+                cerca = riga.substring(start, riga.length());
+                switch (cerca)
                     {
                         case ".jpg":
                         global_img.add(riga);
@@ -277,6 +310,8 @@ while (i.hasNext())
 
                     }
             }
+        
     }
 }
+
 }

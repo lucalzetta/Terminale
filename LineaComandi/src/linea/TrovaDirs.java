@@ -84,11 +84,11 @@ Iterator collegamenti = ts.iterator();
  * @param SUBDIR
  * @param NOME_PAGINA
  */
-if(collegamenti.hasNext())
-{    
+//if(collegamenti.hasNext())
+//{    
     while(! perc)//coll_visitati.hasNext()
         {
-        if (collegamenti.hasNext())
+        if (collegamenti.hasNext() | perc)
         {
             riga = collegamenti.next().toString();
             find = true;//impostiamo a true per entrare nel ciclo interno
@@ -138,7 +138,7 @@ if(collegamenti.hasNext())
                                         find = false;
                                         perc = false;
 /*                                        System.out.printf("%n\t\t\tValore di find:%s%n"
-                                        + "Terzo if%n", find);                                */
+                                        + "Terzo if%n", find);                               */
                                     }
                                 else
                                     {
@@ -301,7 +301,7 @@ if(collegamenti.hasNext())
                 }
         }
 return tmp;
-}
+/*}
 else
 {
     /*System.out.println();
@@ -309,9 +309,9 @@ else
             {
                 System.out.printf("%s", "TOP ");
             }
-    System.out.printf("%nAl momento i treeSet sono vuoti%n");*/
+    System.out.printf("%nAl momento i treeSet sono vuoti%n");
 return tmp;
-}
+}*/
 }
 
 public void imposta_sito(String pagina_da_visitare)

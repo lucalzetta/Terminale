@@ -153,8 +153,8 @@ if(NOME_VALIDO)
                     }
                 else
                     {
-                        this.SET_LINKS_VISITATI.add("" + NOME_PAGINA.strip());
-                        this.SET_PAGINE_NON_TROVATE.add("" + NOME_PAGINA.strip());
+                        this.SET_LINKS_VISITATI.add(NOME_PAGINA.strip());
+                        this.SET_PAGINE_NON_TROVATE.add(NOME_PAGINA.strip());
                     }
                 
                 String err = "\nIl file " + fnf + " non è stato trovato dal metodo "
