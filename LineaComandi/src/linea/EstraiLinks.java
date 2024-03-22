@@ -132,15 +132,19 @@ private Set<String> ciclo(String par, Set<String> set)
                          */
                         
                         while((PAGINA.charAt(i)!=';')&((PAGINA.charAt(i)!='?'))&((PAGINA.charAt(i)!='>'))
-                             &((PAGINA.charAt(i)!='\"'))&((PAGINA.charAt(i)!='&')))
+                             &((PAGINA.charAt(i)!='\"'))&((PAGINA.charAt(i)!='&')) &((PAGINA.charAt(i)!='\\')))
                             {
                                 riga = riga + PAGINA.charAt(i);
                                 i++;
                             }
                         //riga A QUESTO PUNTO VA DEPURATA di alcuni caratteri non ammessi
                         riga = pulisci_link(riga);
-                        
-                        SET_LINKS.add(riga);
+                        //e se non è vuota o nulla la aggiungiamo al set 
+                        //delle pagine del sito
+                        if((riga != null) & (riga != ""))
+                            {
+                                SET_LINKS.add(riga);
+                            }
                         msg = "Trovata l'occorrenza n° " + c + 
                                 " di " + par + " in posizione: " + i + " nel file " + VG.get_name_page() + "\n";
                         b_msg = msg.getBytes();
@@ -286,6 +290,20 @@ while (i.hasNext())
         if(riga.contains(cerca))
             {
                 global_www.add(riga);
+                i.remove();
+            }
+        
+        if(riga == "")
+            {
+                System.out.printf("%nTrovata una stringa vuota nella lista dei "
+                        + "collegamenti.%n");
+                i.remove();
+            }
+        
+        if(riga == null)
+            {
+                System.out.printf("%nTrovata un valore null nella lista dei "
+                        + "collegamenti.%n");
                 i.remove();
             }
         

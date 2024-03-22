@@ -163,8 +163,7 @@ MostraRisultati(VG.get_set_scaricati());
 private void MostraRisultati(Set<String> InSet)
 {
    
-System.out.printf("%n=============================================================================================%n"
-                  + "Lista dei collegamenti presenti nel sito%n");
+System.out.printf("%n=============================================================================================%n");
 
 for (String st : InSet)
     {

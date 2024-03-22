@@ -35,8 +35,8 @@ private static boolean NOME_VALIDO;
 private final VariabiliGlobali VG = new VariabiliGlobali();
 private static CheckerVariabili CV = new CheckerVariabili();
 private final ErrorsClasse EC = new ErrorsClasse();
-private Set<String> SET_LINKS_VISITATI = VG.get_set_scaricati();
-private Set<String> SET_PAGINE_NON_TROVATE = VG.get_set_fnf();
+private static Set<String> SET_LINKS_VISITATI;
+private static Set<String> SET_PAGINE_NON_TROVATE;
 private TrovaDirs TD;
 
 public SalvaPagine(String nome_pagina)throws IOException
@@ -46,6 +46,8 @@ DESTINAZIONE = VG.get_root();
 NOME_PAGINA = nome_pagina.strip();
 TD = new TrovaDirs();
 NOME_VALIDO = TD.caratteri_vietati(nome_pagina);
+SET_LINKS_VISITATI = VG.get_set_scaricati();
+SET_PAGINE_NON_TROVATE = VG.get_set_fnf();
 }
 public SalvaPagine(String dir, String nome_pagina)throws IOException
 {
@@ -54,6 +56,8 @@ DESTINAZIONE = dir;
 NOME_PAGINA = nome_pagina.strip();
 TD = new TrovaDirs();
 NOME_VALIDO = TD.caratteri_vietati(nome_pagina);
+SET_LINKS_VISITATI = VG.get_set_scaricati();
+SET_PAGINE_NON_TROVATE = VG.get_set_fnf();
 }
 
 public void scrivi(boolean testo)throws IOException
@@ -65,6 +69,7 @@ if(NOME_VALIDO)
         OutputStream fos = null;
         InputStreamReader reader = null;
         java.io.InputStream in = null;
+        boolean test = VG.get_name_page().contains("matve");
         try
             {
                 /*System.out.printf("%nClasse SalvaPagine, metodo scrivi(),%n%n"
@@ -110,19 +115,15 @@ if(NOME_VALIDO)
                 
                     
                 //Aggiorniamo il set dei links visitati
-                if(VG.get_subdir() != null)
+                if((VG.get_subdir() != null) & (VG.get_subdir() != ""))
                     {
-                        this.SET_LINKS_VISITATI.add(VG.get_subdir() + NOME_PAGINA.strip());
+                        SET_LINKS_VISITATI.add(VG.get_subdir() + NOME_PAGINA.strip());
                     }
-                else
+                else if ((NOME_PAGINA != null) & (NOME_PAGINA != ""))
                     {
-                        this.SET_LINKS_VISITATI.add("" + NOME_PAGINA.strip());
+                        SET_LINKS_VISITATI.add(NOME_PAGINA.strip());
                     }
                     
-                /**
-                * tratto  di codice di debug per una prima valutazione dei metadati
-                * del file tentiamo una lettura dei primi 200 caratteri
-                */
                 if (! VG.get_testo())
                     {
                         //System.out.printf("%nClasse SalvaPagine, metodo scrivi(), il file "
@@ -132,17 +133,15 @@ if(NOME_VALIDO)
                     {
                         VG.set_page(str_pagina);
                         VG.set_page_builder(build_pagina);
-                        /*System.out.printf("%nCLasse SalvaPagine, metodo scrivi(), risultato "
-                                        + "della lettura dei primi caratteri del file:%n%n");
-                        for (int i = 0; i < 300; i++)
-                            {
-                                System.out.printf("%s", build_pagina.charAt(i));
-                            }
-                        System.out.printf("%n%n%n");*/
                     }
-                /**
-                 * Fine del codice di debug
-                 */
+                //tratto di debug
+                /*if (test)
+                    {
+                        System.out.printf("%nCLASSE SalvaPagine, metodo scrivi().%n");
+                        CV.get_Set_URLS_LIST();
+                        CV.get_Set_LISTA_SCARICATI();
+                    }
+                //fine del tratto di debug*/
             }
         catch(FileNotFoundException fnf)
             {

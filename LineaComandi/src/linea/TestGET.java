@@ -183,22 +183,13 @@ private void OttieniPagina()throws IOException
         
         VF = new ValutaFile(nome);
         VG.set_testo(VF.visitabile());
-        CV.get_TESTO();
+        //CV.get_TESTO();
         SalvaPagine sp = new SalvaPagine(dir, nome);//Questa riga salva la pagina richiesta nel file locale
                                                              //corrispondente
         //System.out.printf("La pagina: %s, verrà salvata in %s%n"
           //      + "con l'opzione testo = %b%n",nome, dir, VG.get_testo());
         sp.scrivi(VG.get_testo());
-/*********************************************************************************/        
 
-        /**
-         * Il codice seguente valuta le directory presenti nella lista LISTA_URLS_LIST
-         * e crea l'albero delle directory nel file system locale.
-         */
-        //System.out.printf("%nControllo passato a TrovaDirs%n");
-/*        EstraiLinks el = new EstraiLinks(nome);
-        TrovaDirs td = new TrovaDirs();
-        td.cerca_dire();*/
        }
       catch (IOException ex) 
        {

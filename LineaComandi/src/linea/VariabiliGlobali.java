@@ -143,8 +143,8 @@ if ((root_d != null))
         //System.out.printf("Root directory del progetto: %s%n", ROOT_D);
         ROOT_DEST = ROOT_D;
         Path percorso = Paths.get(ROOT_D);
-        CV.get_ROOT_D();
-        CV.get_ROOT_DEST();
+        //CV.get_ROOT_D();
+        //CV.get_ROOT_DEST();
         
         if(Files.notExists(percorso, LinkOption.NOFOLLOW_LINKS))
             {
@@ -169,7 +169,7 @@ if(subdir.startsWith("/"))
         subdir = subdir.substring(1);
     }    
 SUBDIR = subdir;
-CV.get_SUBDIR();
+//CV.get_SUBDIR();
 //System.out.printf("Percorso di salvataggio del file corrente: %s%n", ROOT_D + subdir);
 
 }

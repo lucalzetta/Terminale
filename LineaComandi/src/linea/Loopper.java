@@ -58,8 +58,9 @@ private void cicloSito()throws IOException
 //System.out.printf("%nCLASSE Loopper, metodo cicloSito().%n");
 boolean interr = false;
 int control = 0;
-//while(! interr)//riga per l'uso normale del programma
-while (control < 350)//a scopo di debug limitiamo il numero di cicli
+
+while(! interr)//riga per l'uso normale del programma
+//while (control < 350)//a scopo di debug limitiamo il numero di cicli
     {   
         /**
          * Area di azzeramento delle variabili, finito il primo passo,
@@ -90,8 +91,9 @@ while (control < 350)//a scopo di debug limitiamo il numero di cicli
         CV.get_CONTATORE();
         CV.get_SUBDIR();*/
 //IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII        
+       
         passo();
-        risultati();
+        //risultati();
         
         if(VG.get_set_collegamenti().equals(VG.get_set_scaricati()))
             {

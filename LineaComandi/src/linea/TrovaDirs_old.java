@@ -28,7 +28,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.file.FileAlreadyExistsException;
 
-public class TrovaDirs 
+public class TrovaDirs_old 
 {
 private static String TESTO;
 private final VariabiliGlobali VG = new VariabiliGlobali();
@@ -39,16 +39,16 @@ private static CheckerVariabili CV = new CheckerVariabili();
 //private final File FILE_OUT;
 //private final File FILE_IN;
 
-public TrovaDirs()throws IOException
+public TrovaDirs_old()throws IOException
 {
-//System.out.printf("%nCLASSE TrovaDirs, costruttore di default.%n");
+//System.out.printf("%nCLASSE TrovaDirs_old, costruttore di default.%n");
 ROOT = VG.get_root();
 CARTELLA_SITO = VG.get_destinazione_files_sito();
 }
 
 public String cerca_dire()throws IOException
 {
-System.out.printf("%n?????????????CLASSE TrovaDirs_REV01, metodo cerca_dire().%n");
+System.out.printf("%nCLASSE TrovaDirs, metodo cerca_dire().%n");
 String tmp = "";
 String riga = "";
 String move="";
@@ -59,8 +59,8 @@ int diffe;
 URL nuovo_perc;
 boolean perc = false;
 boolean find = false;
-int ext_cont = 0;
-int int_cont = 0;
+boolean find_1 = false;
+boolean find_2 = false;
 Set <String> ts = VG.get_set_collegamenti();
 Set <String> visitati = VG.get_set_scaricati();
 LinkedList<String> l_visitati = new LinkedList<>(visitati);
@@ -86,90 +86,111 @@ Iterator collegamenti = ts.iterator();
  */
 //if(collegamenti.hasNext())
 //{    
-    while(! perc & collegamenti.hasNext())//coll_visitati.hasNext()
+    while(! perc)//coll_visitati.hasNext()
+        {
+        if (collegamenti.hasNext() | perc)
         {
             riga = collegamenti.next().toString();
             find = true;//impostiamo a true per entrare nel ciclo interno
-            //tratto di debug
-/*            boolean test = VG.get_name_page().contains("matve");
-            if(test)
+            //System.out.printf("%nDentro il loop esterno,%nValore di riga da elaborare: %s%n",riga);
+            while (find)
                 {
-                    if(riga == null | riga == "")
-                        {
-                            riga = riga.replace(' ', 'Y');
-                            System.out.printf("%n",riga);
-                            for (int i = 0; i < 50; i++)
-                                {
-                                    System.out.printf("T",riga);
-                                }
-                            System.out.printf("%nDentro il loop esterno,%n"
-                                    + "riga vale null oppure stringa vuota%n"
-                                    + "Valore di riga da elaborare: %s%n",riga);
-                        }
-                    //System.out.printf("%nDentro il loop esterno,%nValore di riga da elaborare: %s%n",riga);
-                    CV.get_Set_LISTA_PAGINE();
-                    CV.get_Set_LISTA_SCARICATI();
-                }
-            //fine tratto di debug*/
-            //dobbiamo prevenire l'analisi delle righe vuote o nulle'
-            if(riga != null & riga != "")
-            {
-            while (find & coll_visitati.hasNext())
-                {
-                    tmp = coll_visitati.next().toString();
-                    diffe = riga.compareToIgnoreCase(tmp);
-                    if (diffe == 0)
+                        if(coll_visitati.hasNext())
+                            {
+                                tmp = coll_visitati.next().toString();
+                                diffe = riga.compareToIgnoreCase(tmp);
+                    
+                                if (diffe != 0)
+                                    {
+                                        find_1 = true;
+                                        /*System.out.printf("%n\t\t\tDifferenza tra riga e tmp, valori e risultato (find_1):%n"
+                                        + "\t\t\t%s%n"
+                                        + "\t\t\t%s%n"
+                                        + "\t\t\t%s%n", riga, tmp, find_1);*/
+
+                                    }
+                                else
+                                    {
+                                        find_1 = false;
+/*                                        System.out.printf("%n\t\t\tDifferenza tra riga e tmp, valori e risultato (find_1):%n"
+                                        + "\t\t\t%s%n"
+                                        + "\t\t\t%s%n"
+                                        + "\t\t\t%s%n", riga, tmp, find_1);*/
+
+                                    }
+                            
+                                if(find_1 & coll_visitati.hasNext())
+                                    {
+                                        find = true;
+                                        perc = false;
+/*                                        System.out.printf("%n\t\t\tValore di find:%s%n"
+                                        + "Primoif%n", find);*/
+                                    }
+                                else if (find_1 & ! coll_visitati.hasNext())
+                                    {
+                                        find = false;
+                                        perc = true;
+/*                                        System.out.printf("%n\t\t\tValore di find:%s%n"
+                                        + "Secondo if%n", find);*/
+                                    }
+                                else if(!find_1)
+                                    {
+                                        find = false;
+                                        perc = false;
+/*                                        System.out.printf("%n\t\t\tValore di find:%s%n"
+                                        + "Terzo if%n", find);                               */
+                                    }
+                                else
+                                    {
+                                        System.out.printf("%n\t\t\tSi è verificato un caso non contemplato%n"
+                                        + "Valore di find_1:%s%n"
+                                        + "Valore di find_2:%s%n"
+                                        + "Valore di find:%s%n"
+                                        + "Valore di perc:%s%n",find_1, find_2, find, perc);
+                                    }
+/*                    System.out.printf("%n\tDentro il loop interno,%n"
+                            + "\t\tValore di riga  "
+                            + "elaborato: %s%n"
+                            + "\t\tValore di tmp confrontato: %s%n"
+                            + "\t\tValore di controllo %s%n",riga, tmp, find);*/
+                            }
+                        else
                             {
                                 find = false;
+                                //perc = true;
+//                                System.out.printf("%n\t\t\tValore di find:%s%n", find);                                
                             }
-                    //tratto di debug
-                    /*if(test & (int_cont > 330))
-                        {
-                            System.out.printf("%n\tDentro il loop interno,%n\tCICLO N° %d su %d elementi.%n",int_cont, l_visitati.size());
-                            System.out.printf("%n\tDentro il loop interno,%n\tValore di riga da elaborare: %s%n",riga);
-                            System.out.printf("%n\tDentro il loop interno,%n\tValore di tmp da elaborare: %s%n",tmp);
-                            System.out.printf("%n\tDentro il loop interno,%n\tValore di find da elaborare: %s%n",find);
-                            System.out.printf("%n\tDentro il loop interno,%n\tValore di diffe da elaborare: %d%n",diffe);
-                        }
-
-                    //fine tratto di debug*/
-                        
-                        int_cont +=1;
-                        
                 }
-            }
-            else
-            {
-                collegamenti.next();
-            }
 
             //riportiamo all'inizio la lista dei collegamenti
             while(coll_visitati.hasPrevious())
                 {
                     coll_visitati.previous();
                 }
-            
-            if (find)
-                {
-                    perc = true;
-                }
-            int_cont = 0;
-            ext_cont +=1;
 
         }
-        
+        else 
+        {
+            perc = true;
+            
+        }
+        }
     /**
      * FINE DEL CICLO DI RICERCA DEI NUOVI FILE
      */
     
-    if (! coll_visitati.hasNext())
-        {
-            System.out.printf("Abbiamo esplorato tutti i collegamenti!");
-            perc = true;
-        }
+                    if(find)
+                        {
+                            perc = true;
+                        }
+                    if (! coll_visitati.hasNext())
+                        {
+                            System.out.printf("Abbiamo esplorato tutti i collegamenti!");
+                            perc = true;
+                        }
         
-    System.out.printf("%n########Valore di riga da elaborare: %s%n",riga);
-    perc = false;
+            //System.out.printf("%nValore di riga da elaborare: %s%n",riga);
+            perc = false;
 
     if((riga != "") & (riga != null))
         {
@@ -235,7 +256,7 @@ Iterator collegamenti = ts.iterator();
                             ////CV.get_URL_SITO();
                             //CV.get_CARTELLA_SITO();
                             VG.set_sito(nuovo_perc);
-                            //CV.get_URL_SITO();
+                            CV.get_URL_SITO();
                             System.out.printf("%nPercorso da creare: %s%n",u_perc);
                             
                             path_riga = Paths.get(u_perc);
@@ -274,7 +295,7 @@ Iterator collegamenti = ts.iterator();
                     //CV.get_URL_SITO();
                     //CV.get_CARTELLA_SITO();
                     VG.set_sito(nuovo_perc);
-                    //CV.get_URL_SITO();
+                    CV.get_URL_SITO();
                     tmp = u_perc;
                     riga = "";
 
@@ -296,7 +317,7 @@ return tmp;
 
 public void imposta_sito(String pagina_da_visitare)
 {
-//System.out.printf("%nCLASSE TrovaDirs, metodo imposta_sito().%n");    
+//System.out.printf("%nCLASSE TrovaDirs_old, metodo imposta_sito().%n");    
 boolean t = false;
 boolean u = false;
 String to_visit = "";
@@ -320,11 +341,11 @@ try
         nuovo_perc = new URL(tmp);
         
         VG.set_sito(nuovo_perc);
-        //CV.get_URL_SITO();
-        //CV.get_URL_SITO_RIDOTTO();
+        CV.get_URL_SITO();
+        CV.get_URL_SITO_RIDOTTO();
         //CV.get_URL_SITO();
         //CV.get_CARTELLA_SITO();
-        System.out.printf("%nProssima pagina da visitare: %s%nclasse TrovaDirs_REV01 metodo imposta_sito().%n", tmp);
+        System.out.printf("%nProssima pagina da visitare: %s%nclasse TrovaDirs metodo imposta_sito().%n", tmp);
         System.out.printf("Scaricheremo il file %s%nNella directory %s%n", VG.get_name_page(), VG.get_subdir());
     }
 catch(MalformedURLException mue)
@@ -335,7 +356,7 @@ catch(MalformedURLException mue)
 
 public boolean esame_directory(String dir)
 {
-//System.out.printf("%nCLASSE TrovaDirs, metodo esame_directory().%n");
+//System.out.printf("%nCLASSE TrovaDirs_old, metodo esame_directory().%n");
 /**
  * Questo metodo riceve una stringa e valuta se si tratta di una 
  * directory, a scopo di test valuteremo alcune caratteristiche
@@ -379,7 +400,7 @@ return contatore_file;
 
 public boolean caratteri_vietati(String nome)
 {
-//System.out.printf("%nCLASSE TrovaDirs, metodo caratteri_vietati().%n");
+//System.out.printf("%nCLASSE TrovaDirs_old, metodo caratteri_vietati().%n");
 /**
  * RITORNA TRUE SOLO SE IL NOME DI fILE È considerato valido.
  */
