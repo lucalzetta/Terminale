@@ -428,6 +428,12 @@ boolean abeam_strada;
                     index= nome_file.indexOf("#");*/
                     abeam_strada = false;
                 }
+            else if(nome_file.contains("'"))
+                {
+                    System.out.println("Trovato la stringa \"'\" in posizione " + nome_file.indexOf("'"));
+                    //index= nome_file.indexOf("'");
+                    abeam_strada = false;
+                }
 //            else if (index > -1)
   //              {
                     //nome_file = riga.getFileName().toString();

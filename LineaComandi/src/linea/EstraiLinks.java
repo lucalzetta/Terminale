@@ -132,7 +132,8 @@ private Set<String> ciclo(String par, Set<String> set)
                          */
                         
                         while((PAGINA.charAt(i)!=';')&((PAGINA.charAt(i)!='?'))&((PAGINA.charAt(i)!='>'))
-                             &((PAGINA.charAt(i)!='\"'))&((PAGINA.charAt(i)!='&')) &((PAGINA.charAt(i)!='\\')))
+                             &((PAGINA.charAt(i)!='\"'))&((PAGINA.charAt(i)!='&')) &((PAGINA.charAt(i)!='\\'))
+                             &((PAGINA.charAt(i)!='\'')))
                             {
                                 riga = riga + PAGINA.charAt(i);
                                 i++;
@@ -277,13 +278,13 @@ while (i.hasNext())
                     }
             }
         
-        cerca = "phpThumb";
+/*        cerca = "phpThumb";
         
         if(riga.contains(cerca))
             {
                 global_pag_scart.add(riga);
                 i.remove();
-            }                        
+            }                        */
 
         cerca = "http";
         

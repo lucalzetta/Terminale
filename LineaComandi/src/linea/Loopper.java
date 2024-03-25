@@ -59,8 +59,8 @@ private void cicloSito()throws IOException
 boolean interr = false;
 int control = 0;
 
-while(! interr)//riga per l'uso normale del programma
-//while (control < 350)//a scopo di debug limitiamo il numero di cicli
+//while(! interr)//riga per l'uso normale del programma
+while (control < 200)//a scopo di debug limitiamo il numero di cicli
     {   
         /**
          * Area di azzeramento delle variabili, finito il primo passo,
@@ -100,6 +100,12 @@ while(! interr)//riga per l'uso normale del programma
                 System.out.printf("Lavoro ultimato! Tutti i links sono stati visitati e scaricati.");
                 interr = true;
             }
+        else
+            {
+                int coll = SET_LINKS.size();
+                int visit = SET_LINKS_VISITATI.size();
+                System.out.printf("Links presenti: %d%nLinks visitati %d%n", coll, visit);            
+            }            
         
         System.out.printf("%nClasse Loopper, metodo ciclo, "
                 + "variabile di interruzione del loop: "

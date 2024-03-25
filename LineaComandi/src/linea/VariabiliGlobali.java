@@ -47,7 +47,8 @@ private final String FILE_ERR ="FileDiLogErrori.txt";
 private final String FILE_LOG ="FileDiLog.txt";
 private static String PAGINA;//questa variabile conterrà il testo della pagina da scaricare
 private static String NOME_PAGINA;//questa variabile conterrà il nome della pagina da scaricare
-private static String CARTELLA_SITO = "/home/lucaamministratore/tmp/";
+//private static String CARTELLA_SITO = "/home/lucaamministratore/tmp/"; //Percorso per Debian
+private static String CARTELLA_SITO = "/home/luca/tmp/";//percorso per sistema operativo Linux Mint
 private static String ROOT_DEST = "";
 private static String ROOT_D;
 private static String SUBDIR;//questa variabile conterrà i percorsi relativi in cui salvare i file
